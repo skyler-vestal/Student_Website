@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS 303E on Skyler ~ UTCS</title>
+    <link>/docs/ta/cs303e/</link>
+    <description>Recent content in CS 303E on Skyler ~ UTCS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/docs/ta/cs303e/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Syntax</title>
+      <link>/docs/ta/cs303e/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/ta/cs303e/syntax/</guid>
+      <description>Python Syntax Review for CS 303E#Under construction
+🔨#</description>
+    </item>
+    
+    <item>
+      <title>Style</title>
+      <link>/docs/ta/cs303e/style/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/ta/cs303e/style/</guid>
+      <description>Python Style Guide for CS 303E#Under construction
+🔨#</description>
+    </item>
+    
+  </channel>
+</rss>

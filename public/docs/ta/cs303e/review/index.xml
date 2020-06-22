@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exam Review on Skyler ~ UTCS</title>
+    <link>/docs/ta/cs303e/review/</link>
+    <description>Recent content in Exam Review on Skyler ~ UTCS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/docs/ta/cs303e/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
