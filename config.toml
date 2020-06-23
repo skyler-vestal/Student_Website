@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://www.cs.utexas.edu/~ves314/"
 languageCode = "en-us"
 title = "Skyler ~ UTCS"
 theme = "book"
