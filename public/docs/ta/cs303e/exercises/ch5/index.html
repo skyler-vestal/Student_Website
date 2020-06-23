@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Chapter 5 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 5 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 5.1 input_prompt = &#34;Enter an integer, the input ends if it is 0: &#34; keep_running = eval(input(input_prompt)) != 0 while keep_running: keep_running = eval(input(input_prompt)) != 0 # 5.3 print(&#34;Kilograms Pounds&#34;) for kilos in range(1, 200): pounds = kilos * 2.2 print(format(kilos, &#34;&lt;14&#34;) &#43; format(pounds, &#34;5.">
+# Exercises for Chapter 5 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) import math # 5.1 input_prompt = &#34;Enter an integer, the input ends if it is 0: &#34; keep_running = eval(input(input_prompt)) != 0 while keep_running: keep_running = eval(input(input_prompt)) != 0 # 5.3 print(&#34;Kilograms Pounds&#34;) for kilos in range(1, 200): pounds = kilos * 2.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Chapter 5" />
 <meta property="og:description" content="Chapter 5 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 5 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 5.1 input_prompt = &#34;Enter an integer, the input ends if it is 0: &#34; keep_running = eval(input(input_prompt)) != 0 while keep_running: keep_running = eval(input(input_prompt)) != 0 # 5.3 print(&#34;Kilograms Pounds&#34;) for kilos in range(1, 200): pounds = kilos * 2.2 print(format(kilos, &#34;&lt;14&#34;) &#43; format(pounds, &#34;5." />
+# Exercises for Chapter 5 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) import math # 5.1 input_prompt = &#34;Enter an integer, the input ends if it is 0: &#34; keep_running = eval(input(input_prompt)) != 0 while keep_running: keep_running = eval(input(input_prompt)) != 0 # 5.3 print(&#34;Kilograms Pounds&#34;) for kilos in range(1, 200): pounds = kilos * 2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/" />
 
@@ -18,7 +18,7 @@ Embedded solutions:
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.eb1ec4721cac4faf49667bff62d9a4888d9b452f76554dc7110b5d6e54306337.js" integrity="sha256-6x7EchysT69JZnv/YtmkiI2bRS92VU3HEQtdblQwYzc="></script>
+<script defer src="/~ves314/en.search.min.e5da592737bfff616992034b7cf251f4f682b9b9d682dba40f31f54f0fa7acd2.js" integrity="sha256-5dpZJze//2FpkgNLfPJR9PaCubnWgtukDzH1Tw&#43;nrNI="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -177,6 +177,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/~ves314/docs/ta/cs303e/exercises/ch5/" class="active">Chapter 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch6/" class="">Chapter 6</a>
   
 
         </li>
@@ -373,6 +383,7 @@ https://github.com/alex-shpak/hugo-book
 <p>Embedded solutions:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Exercises for Chapter 5 of &#34;Introduction to Programming using Python&#34;</span>
 <span style="color:#75715e"># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
+<span style="color:#f92672">import</span> math
 
 <span style="color:#75715e"># 5.1</span>
 input_prompt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Enter an integer, the input ends if it is 0: &#34;</span>
@@ -391,7 +402,8 @@ value <span style="color:#f92672">=</span> <span style="color:#ae81ff">10000</sp
 INTEREST <span style="color:#f92672">=</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">05</span>
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
     value <span style="color:#f92672">*=</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> INTEREST)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tutition cost 10 years from now (ouch): $&#34;</span> <span style="color:#f92672">+</span> format(value, <span style="color:#e6db74">&#34;.2f&#34;</span>))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Tutition cost 10 years from now (ouch): $&#34;</span> 
+        <span style="color:#f92672">+</span> format(value, <span style="color:#e6db74">&#34;.2f&#34;</span>))
 four_year_cost <span style="color:#f92672">=</span> value
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
     value <span style="color:#f92672">*=</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> INTEREST)
@@ -404,6 +416,106 @@ n <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 <span style="color:#66d9ef">while</span> n <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">12000</span>:
     n <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 <span style="color:#66d9ef">print</span>(n, <span style="color:#e6db74">&#34;is the smallest number that is less than 12,000&#34;</span>)
+
+<span style="color:#75715e"># 5.18</span>
+<span style="color:#75715e"># BUCKLE IN!!! This one is hard =(</span>
+<span style="color:#75715e"># Also don&#39;t comment like this at home.</span>
+<span style="color:#75715e"># Just want to go through my thought process here.</span>
+fact_num <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Give me an integer: &#34;</span>))
+<span style="color:#75715e"># Start with 2 since every number is divisible by 1</span>
+div <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+print_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#75715e"># As long as we still have factors left to divide out</span>
+<span style="color:#66d9ef">while</span> fact_num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
+    <span style="color:#75715e"># Check if this number is divisble in the first place</span>
+    <span style="color:#66d9ef">if</span> fact_num <span style="color:#f92672">%</span> div <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#75715e"># Assume the number is prime</span>
+        div_is_prime <span style="color:#f92672">=</span> True
+        <span style="color:#75715e"># Check to see if it&#39;s not prime for numbers &gt; 3</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> (div <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">or</span> div <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>):
+            <span style="color:#75715e"># Check every possible factor &gt; 1 </span>
+            <span style="color:#75715e"># to see if the number is divisble</span>
+            <span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, int(math<span style="color:#f92672">.</span>sqrt(div) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)):
+                <span style="color:#66d9ef">if</span> div <span style="color:#f92672">%</span> num <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                    <span style="color:#75715e"># If a number is divisble we know </span>
+                    <span style="color:#75715e"># it&#39;s not prime. stop</span>
+                    div_is_prime <span style="color:#f92672">=</span> False
+                    <span style="color:#66d9ef">break</span>
+        <span style="color:#75715e"># If the number is prime see how many times you can divide</span>
+        <span style="color:#66d9ef">if</span> div_is_prime:
+            <span style="color:#66d9ef">while</span> fact_num <span style="color:#f92672">%</span> div <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                <span style="color:#75715e"># Reduce the number to get the remaining factors</span>
+                fact_num <span style="color:#f92672">/=</span> div
+                <span style="color:#75715e"># Append the number to the list. If it&#39;s not the last</span>
+                <span style="color:#75715e"># number add a comma as well</span>
+                print_str <span style="color:#f92672">+=</span> str(div) 
+                <span style="color:#66d9ef">if</span> fact_num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
+                    print_str <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;, &#34;</span>
+    <span style="color:#75715e"># Check the next number</span>
+    div <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">print</span>(print_str)
+
+<span style="color:#75715e"># 5.19</span>
+max_num <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter the number of lines: &#34;</span>))
+<span style="color:#75715e"># Make n layers</span>
+<span style="color:#66d9ef">for</span> layer <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, max_num <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+    layer_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+    <span style="color:#75715e"># Get some spacing that gets smaller for each layer from the left</span>
+    <span style="color:#75715e"># Each number and the spaces after is 3 wide so 3 * layer makes sense</span>
+    edge_spacing <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</span> <span style="color:#f92672">-</span> (<span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> layer)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(edge_spacing):
+        layer_str <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34; &#34;</span>
+    <span style="color:#75715e"># Add the first number (fence-post problem)</span>
+    layer_str <span style="color:#f92672">+=</span> str(layer)
+    <span style="color:#75715e"># For every number less than the first &gt; 0 add it to the pyramid</span>
+    tmp_num <span style="color:#f92672">=</span> layer <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">while</span> tmp_num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#75715e"># Adjust spacing based on if double-digit</span>
+        str_add <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;  &#34;</span> <span style="color:#66d9ef">if</span> tmp_num <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">9</span> <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34; &#34;</span>
+        layer_str <span style="color:#f92672">+=</span> str_add <span style="color:#f92672">+</span> str(tmp_num)
+        tmp_num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#75715e"># Add the opposite way back up</span>
+    tmp_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+    <span style="color:#66d9ef">while</span> tmp_num <span style="color:#f92672">&lt;=</span> layer:
+        str_add <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;  &#34;</span> <span style="color:#66d9ef">if</span> tmp_num <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span> <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34; &#34;</span>
+        layer_str <span style="color:#f92672">+=</span> str_add <span style="color:#f92672">+</span> str(tmp_num)
+        tmp_num <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>        
+    <span style="color:#66d9ef">print</span>(layer_str)
+
+<span style="color:#75715e"># 5.21</span>
+<span style="color:#66d9ef">for</span> layer <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">8</span>):
+    layer_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+    <span style="color:#75715e"># Each space and numbers before it take 4 spaces total</span>
+    edge_spacing <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">-</span> (<span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> layer)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(edge_spacing <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>):
+        layer_str <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;  &#34;</span>
+    <span style="color:#75715e"># 1 is always first</span>
+    layer_str <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;1&#34;</span>
+    <span style="color:#75715e"># Each power of 2 &gt; 1 less than 2^layer</span>
+    <span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, layer <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+        num_sq <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">**</span> num
+        <span style="color:#75715e"># For each digit take away a space</span>
+        <span style="color:#66d9ef">if</span> num_sq <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+            sp_width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   &#34;</span>
+        <span style="color:#66d9ef">elif</span> num_sq <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
+            sp_width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;  &#34;</span>
+        <span style="color:#66d9ef">else</span>:
+            sp_width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span>
+        layer_str <span style="color:#f92672">+=</span> sp_width <span style="color:#f92672">+</span> str(num_sq)
+    num <span style="color:#f92672">=</span> layer <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#75715e"># Count down powers of 2 to 1</span>
+    <span style="color:#66d9ef">while</span> num <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#75715e"># For each digit take away a space</span>
+        num_sq <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">**</span> num
+        <span style="color:#66d9ef">if</span> num_sq <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+            sp_width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   &#34;</span>
+        <span style="color:#66d9ef">elif</span> num_sq <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
+            sp_width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;  &#34;</span>
+        <span style="color:#66d9ef">else</span>:
+            sp_width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span>
+        layer_str <span style="color:#f92672">+=</span> sp_width <span style="color:#f92672">+</span> str(num_sq)
+        num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">print</span>(layer_str)
 </code></pre></div></article>
  
       

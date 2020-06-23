@@ -62,7 +62,18 @@ Embedded solutions:
       <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/</guid>
       <description>Chapter 5 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 5 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 5.1 input_prompt = &amp;#34;Enter an integer, the input ends if it is 0: &amp;#34; keep_running = eval(input(input_prompt)) != 0 while keep_running: keep_running = eval(input(input_prompt)) != 0 # 5.3 print(&amp;#34;Kilograms Pounds&amp;#34;) for kilos in range(1, 200): pounds = kilos * 2.2 print(format(kilos, &amp;#34;&amp;lt;14&amp;#34;) + format(pounds, &amp;#34;5.</description>
+# Exercises for Chapter 5 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math # 5.1 input_prompt = &amp;#34;Enter an integer, the input ends if it is 0: &amp;#34; keep_running = eval(input(input_prompt)) != 0 while keep_running: keep_running = eval(input(input_prompt)) != 0 # 5.3 print(&amp;#34;Kilograms Pounds&amp;#34;) for kilos in range(1, 200): pounds = kilos * 2.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 6</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/</guid>
+      <description>Chapter 6 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 6 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 + 1)) for j in range(2, 11): line_str += &amp;#34;, &amp;#34; + str(getPentagonalNumber(i * 10 + j)) print(line_str) # 6.</description>
     </item>
     
   </channel>
