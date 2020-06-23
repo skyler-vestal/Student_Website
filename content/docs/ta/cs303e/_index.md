@@ -15,5 +15,5 @@ If you have any questions you can reach me with whatever mode of communication w
 
 My main responsibilities for this class include being in charge of managing the grades of students with the last names [KRU, RIC] along with being the main developer of the class's grading script:
 
-![](/img/grading_script.png?raw=true)
+![](/~ves314/img/grading_script.png?raw=true)
 

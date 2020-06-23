@@ -5,7 +5,7 @@ type: docs
 
 # Welcome to My UTCS Page!
 
-![](/img/dino.jpg)
+![](/~ves314/img/dino.jpg)
 
 ## Introduction
 
@@ -38,7 +38,7 @@ type: docs
     skyler_vestal@HUGO:~/personality$ cat cat
     He doesn't have a name yet but:
 
-![](/img/cat.jpg)
+![](/~ves314/img/cat.jpg)
 Photographed by [my sister](https://www.ranivestal.com/)
 
 ## Contact
