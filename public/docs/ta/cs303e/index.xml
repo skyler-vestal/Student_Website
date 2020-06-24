@@ -16,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</guid>
-      <description>Python Syntax Review for CS 303E#Under construction
-🔨#</description>
+      <description>Python Syntax Review for CS 303E#Variables and Datatypes#Types of Data## Integer datatype: Stores whole numbers like -32, 0, 66, 2332312, ... int_var = -54 # Float datatype: Stores decimal numbers like 3.0, -2.3232, .00033, # 5.6e+15 float_var = -.04 # Boolean datatype: Stores the value true or false bool_var = True bool_var = False # String datatype: Stores any word str_var = &amp;#34;You can use double quotes&amp;#34; str_var = &amp;#39;or single quotes for strings&amp;#39; Modification## These two are the same # This works for +, -, *, /, //, %, ** int_var = int_var + 5 int_var += 5 # Operators examples 10 / 3 # == 3.</description>
     </item>
     
     <item>

@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Python Syntax Review for CS 303E#Under construction
-🔨#">
+<meta name="description" content="Python Syntax Review for CS 303E#Variables and Datatypes#Types of Data## Integer datatype: Stores whole numbers like -32, 0, 66, 2332312, ... int_var = -54 # Float datatype: Stores decimal numbers like 3.0, -2.3232, .00033, # 5.6e&#43;15 float_var = -.04 # Boolean datatype: Stores the value true or false bool_var = True bool_var = False # String datatype: Stores any word str_var = &#34;You can use double quotes&#34; str_var = &#39;or single quotes for strings&#39; Modification## These two are the same # This works for &#43;, -, *, /, //, %, ** int_var = int_var &#43; 5 int_var &#43;= 5 # Operators examples 10 / 3 # == 3.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Syntax" />
-<meta property="og:description" content="Python Syntax Review for CS 303E#Under construction
-🔨#" />
+<meta property="og:description" content="Python Syntax Review for CS 303E#Variables and Datatypes#Types of Data## Integer datatype: Stores whole numbers like -32, 0, 66, 2332312, ... int_var = -54 # Float datatype: Stores decimal numbers like 3.0, -2.3232, .00033, # 5.6e&#43;15 float_var = -.04 # Boolean datatype: Stores the value true or false bool_var = True bool_var = False # String datatype: Stores any word str_var = &#34;You can use double quotes&#34; str_var = &#39;or single quotes for strings&#39; Modification## These two are the same # This works for &#43;, -, *, /, //, %, ** int_var = int_var &#43; 5 int_var &#43;= 5 # Operators examples 10 / 3 # == 3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/" />
 
@@ -16,7 +14,7 @@
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.e5da592737bfff616992034b7cf251f4f682b9b9d682dba40f31f54f0fa7acd2.js" integrity="sha256-5dpZJze//2FpkgNLfPJR9PaCubnWgtukDzH1Tw&#43;nrNI="></script>
+<script defer src="/~ves314/en.search.min.b130ae8c2ca6ed298e8e6219ac6df55bc7191fc44d5e7709dde8df0d7c434ce2.js" integrity="sha256-sTCujCym7SmOjmIZrG31W8cZH8RNXncJ3ejfDXxDTOI="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -289,10 +287,58 @@ https://github.com/alex-shpak/hugo-book
 
   <label for="toc-control">
     
+    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#variables-and-datatypes">Variables and Datatypes</a>
+      <ul>
+        <li><a href="#types-of-data">Types of Data</a></li>
+        <li><a href="#modification">Modification</a></li>
+      </ul>
+    </li>
+    <li><a href="#input--output">Input / Output</a>
+      <ul>
+        <li><a href="#concatenation">Concatenation</a></li>
+        <li><a href="#multi-line-outputs">Multi-line Outputs</a></li>
+        <li><a href="#multi-line-strings">Multi-line Strings</a></li>
+        <li><a href="#escape-sequences">Escape Sequences</a></li>
+        <li><a href="#handling-input">Handling Input</a></li>
+      </ul>
+    </li>
+    <li><a href="#libraries">Libraries</a>
+      <ul>
+        <li><a href="#importing">Importing</a></li>
+      </ul>
+    </li>
+    <li><a href="#conditionals">Conditionals</a>
+      <ul>
+        <li><a href="#logical-operators">Logical Operators</a></li>
+        <li><a href="#comparison-operators">Comparison Operators</a></li>
+        <li><a href="#if-statements">if Statements</a></li>
+        <li><a href="#multi-line-conditions">Multi-line conditions</a></li>
+        <li><a href="#ifelifelse-statements">if/elif/else Statements</a></li>
+      </ul>
+    </li>
+    <li><a href="#iteration">Iteration</a>
+      <ul>
+        <li><a href="#while-loops">while Loops</a></li>
+        <li><a href="#for-loops">for Loops</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
   
  
       </header>
@@ -303,13 +349,298 @@ https://github.com/alex-shpak/hugo-book
   Python Syntax Review for CS 303E
   <a class="anchor" href="#python-syntax-review-for-cs-303e">#</a>
 </h1>
-<p>Under construction</p>
-<h1 id="heading">
-  🔨
-  <a class="anchor" href="#heading">#</a>
-</h1>
-<p><img src="/~ves314/img/construction.png?raw=true" alt="" /></p>
-</article>
+<h2 id="variables-and-datatypes">
+  Variables and Datatypes
+  <a class="anchor" href="#variables-and-datatypes">#</a>
+</h2>
+<h3 id="types-of-data">
+  Types of Data
+  <a class="anchor" href="#types-of-data">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Integer datatype: Stores whole numbers like -32, 0, 66, 2332312, ...</span>
+int_var <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">54</span>
+
+<span style="color:#75715e"># Float datatype: Stores decimal numbers like 3.0, -2.3232, .00033,</span>
+<span style="color:#75715e"># 5.6e+15</span>
+float_var <span style="color:#f92672">=</span> <span style="color:#f92672">-.</span><span style="color:#ae81ff">04</span>
+
+<span style="color:#75715e"># Boolean datatype: Stores the value true or false</span>
+bool_var <span style="color:#f92672">=</span> True
+bool_var <span style="color:#f92672">=</span> False
+
+<span style="color:#75715e"># String datatype: Stores any word</span>
+str_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;You can use double quotes&#34;</span>
+str_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;or single quotes for strings&#39;</span>
+</code></pre></div><h3 id="modification">
+  Modification
+  <a class="anchor" href="#modification">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># These two are the same</span>
+<span style="color:#75715e"># This works for +, -, *, /, //, %, **</span>
+int_var <span style="color:#f92672">=</span> int_var <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>
+int_var <span style="color:#f92672">+=</span> <span style="color:#ae81ff">5</span>
+
+<span style="color:#75715e"># Operators examples</span>
+<span style="color:#ae81ff">10</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># == 3.3333333333333335</span>
+<span style="color:#ae81ff">10</span> <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span> <span style="color:#75715e"># == 3</span>
+<span style="color:#ae81ff">10</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># == 1</span>
+<span style="color:#ae81ff">10</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">3</span> <span style="color:#75715e"># == 1000</span>
+
+<span style="color:#75715e"># Negative division</span>
+<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># == -3.3333333333333335</span>
+<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span> <span style="color:#75715e"># == -4</span>
+<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span>  <span style="color:#75715e"># == 2</span>
+<span style="color:#ae81ff">10</span> <span style="color:#f92672">**</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">3</span> <span style="color:#75715e"># == .001</span>
+
+<span style="color:#75715e"># Boolean negation</span>
+<span style="color:#f92672">not</span> True  <span style="color:#75715e"># == False</span>
+<span style="color:#f92672">not</span> False <span style="color:#75715e"># == True</span>
+
+<span style="color:#75715e"># Concatenation</span>
+<span style="color:#e6db74">&#34;This is an example of &#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;concatenation&#34;</span>
+str_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is also an example of&#34;</span>
+str_var <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34; concatenation&#34;</span>
+</code></pre></div><h2 id="input--output">
+  Input / Output
+  <a class="anchor" href="#input--output">#</a>
+</h2>
+<h3 id="concatenation">
+  Concatenation
+  <a class="anchor" href="#concatenation">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: Mike Scott teaches 1 class on MWTH</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Mike Scott teaches 1 class on MWTH&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Mike Scott teaches &#34;</span> <span style="color:#f92672">+</span> str(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; class on MWTH&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Mike&#34;</span>, <span style="color:#e6db74">&#34;Scott&#34;</span>, <span style="color:#e6db74">&#34;teaches&#34;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;class&#34;</span>, <span style="color:#e6db74">&#34;on&#34;</span>, <span style="color:#e6db74">&#34;MWTH&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Mike &#34;</span>, <span style="color:#e6db74">&#34;Scott &#34;</span>, <span style="color:#e6db74">&#34;teaches &#34;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34; class &#34;</span>, <span style="color:#e6db74">&#34;on &#34;</span>, <span style="color:#e6db74">&#34;MWTH&#34;</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Mike &#34;</span>, <span style="color:#e6db74">&#34;Scott &#34;</span>, <span style="color:#e6db74">&#34;teaches &#34;</span>, str(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; class &#34;</span>, <span style="color:#e6db74">&#34;on &#34;</span>, <span style="color:#e6db74">&#34;MWTH&#34;</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+
+<span style="color:#75715e"># Doesn&#39;t work - Can&#39;t concatenate non String datatypes</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Mike Scott teaches &#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; class on MWTH&#34;</span>)
+</code></pre></div><h3 id="multi-line-outputs">
+  Multi-line Outputs
+  <a class="anchor" href="#multi-line-outputs">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#39;&#39;&#39;Output:
+</span><span style="color:#e6db74">    This is line 1
+</span><span style="color:#e6db74">    This is line 2
+</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is line 1&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is line 2&#34;</span>)
+
+<span style="color:#75715e"># Output: This is one line. This is on the same line</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is one line. &#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is on the same line&#34;</span>)
+</code></pre></div><h3 id="multi-line-strings">
+  Multi-line Strings
+  <a class="anchor" href="#multi-line-strings">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Best way</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;In case your string is &#34;</span> <span style="color:#f92672">+</span>
+        <span style="color:#e6db74">&#34;a bit too long&#34;</span>)
+
+<span style="color:#75715e"># Works but looks bad</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;In case your string is </span><span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span><span style="color:#e6db74">a bit too long&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;&#34;&#34;In case your string is
+</span><span style="color:#e6db74">a bit too long&#34;&#34;&#34;</span>)
+
+<span style="color:#75715e"># Doesn&#39;t work (too many spaces)</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;In case your string is </span><span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span><span style="color:#e6db74">        a bit too long&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;&#34;&#34;In case your string is
+</span><span style="color:#e6db74">        a bit too long&#34;&#34;&#34;</span>)
+</code></pre></div><h3 id="escape-sequences">
+  Escape Sequences
+  <a class="anchor" href="#escape-sequences">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#39;&#39;&#39; Output:
+</span><span style="color:#e6db74">        This is line 1
+</span><span style="color:#e6db74">        This is line 2
+</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is line 1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">This is line 2&#34;</span>)
+
+<span style="color:#75715e"># Output: This is line 1    This is line 2</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is line 1</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">This is line 2)</span>
+</code></pre></div><h3 id="handling-input">
+  Handling Input
+  <a class="anchor" href="#handling-input">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#39;&#39;&#39; Output:
+</span><span style="color:#e6db74">        Enter user input: [input]
+</span><span style="color:#e6db74">        What you typed: [user input relayed]
+</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+user_input <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter user input: &#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;What you typed:&#34;</span>, user_input)
+
+<span style="color:#e6db74">&#39;&#39;&#39; Output:
+</span><span style="color:#e6db74">        Enter an integer: [input]
+</span><span style="color:#e6db74">        Input num squared: [input^2]
+</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+num <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter an integer: &#34;</span>))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Input num squared:&#34;</span>, str(num <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>))
+</code></pre></div><h2 id="libraries">
+  Libraries
+  <a class="anchor" href="#libraries">#</a>
+</h2>
+<h3 id="importing">
+  Importing
+  <a class="anchor" href="#importing">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
+math<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">9</span>)
+math<span style="color:#f92672">.</span>floor(<span style="color:#ae81ff">4.3</span>)
+
+<span style="color:#f92672">import</span> math <span style="color:#f92672">as</span> m
+m<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">9</span>)
+m<span style="color:#f92672">.</span>floor(<span style="color:#ae81ff">4.3</span>)
+
+<span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> sqrt, floor
+sqrt(<span style="color:#ae81ff">9</span>)
+floor(<span style="color:#ae81ff">4.3</span>)
+</code></pre></div><h2 id="conditionals">
+  Conditionals
+  <a class="anchor" href="#conditionals">#</a>
+</h2>
+<h3 id="logical-operators">
+  Logical Operators
+  <a class="anchor" href="#logical-operators">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">True <span style="color:#f92672">==</span> True  <span style="color:#75715e"># True</span>
+True <span style="color:#f92672">==</span> False <span style="color:#75715e"># False</span>
+
+<span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># True</span>
+<span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span> <span style="color:#75715e"># False</span>
+
+<span style="color:#e6db74">&#34;UT&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;UT&#34;</span>  <span style="color:#75715e"># True</span>
+<span style="color:#e6db74">&#34;UT&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;UTe&#34;</span> <span style="color:#75715e"># False</span>
+<span style="color:#e6db74">&#34;UT&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;UT &#34;</span> <span style="color:#75715e"># False</span>
+
+<span style="color:#f92672">not</span> True  <span style="color:#75715e"># False</span>
+<span style="color:#f92672">not</span> False <span style="color:#75715e"># True</span>
+
+True <span style="color:#f92672">!=</span> False    <span style="color:#75715e"># True</span>
+True <span style="color:#f92672">!=</span> True     <span style="color:#75715e"># False</span>
+True <span style="color:#f92672">!=</span> <span style="color:#f92672">not</span> True <span style="color:#75715e"># ... True</span>
+
+True <span style="color:#f92672">and</span> True   <span style="color:#75715e"># True</span>
+True <span style="color:#f92672">and</span> False  <span style="color:#75715e"># False</span>
+False <span style="color:#f92672">and</span> False <span style="color:#75715e"># False</span>
+
+True <span style="color:#f92672">or</span> True   <span style="color:#75715e"># True</span>
+True <span style="color:#f92672">or</span> False  <span style="color:#75715e"># True</span>
+False <span style="color:#f92672">or</span> False <span style="color:#75715e"># False</span>
+</code></pre></div><h3 id="comparison-operators">
+  Comparison Operators
+  <a class="anchor" href="#comparison-operators">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Technically == and != are comparison operators</span>
+
+<span style="color:#ae81ff">5</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># True</span>
+<span style="color:#ae81ff">4</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># False</span>
+<span style="color:#ae81ff">3</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># False</span>
+<span style="color:#ae81ff">5</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span> <span style="color:#75715e"># True</span>
+
+<span style="color:#ae81ff">5</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># True</span>
+<span style="color:#ae81ff">4</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># True</span>
+<span style="color:#ae81ff">3</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># False</span>
+
+<span style="color:#ae81ff">5</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># False</span>
+<span style="color:#ae81ff">4</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># False</span>
+<span style="color:#ae81ff">3</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># True</span>
+<span style="color:#ae81ff">3</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span> <span style="color:#75715e"># True</span>
+
+<span style="color:#ae81ff">5</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># False</span>
+<span style="color:#ae81ff">4</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># True</span>
+<span style="color:#ae81ff">3</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># True</span>
+</code></pre></div><h3 id="if-statements">
+  if Statements
+  <a class="anchor" href="#if-statements">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> True:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This always prints&#34;</span>)
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;There can be multiple lines&#34;</span>)
+
+<span style="color:#66d9ef">if</span> var_1 <span style="color:#f92672">==</span> var_2 <span style="color:#f92672">or</span> var_2 <span style="color:#f92672">==</span> var_3:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Two variables are equal&#34;</span>)
+
+<span style="color:#66d9ef">if</span> var_1 <span style="color:#f92672">==</span> var_2 <span style="color:#f92672">and</span> var_2 <span style="color:#f92672">==</span> var_3:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;All three variables are equal&#34;</span>)
+
+<span style="color:#75715e"># If the conditional is a string tests if the</span>
+<span style="color:#75715e"># string is non-empty</span>
+<span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;abc&#34;</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This always prints&#34;</span>)
+
+<span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;&#34;</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This never prints&#34;</span>)
+
+<span style="color:#75715e"># If the conditional is a number tests if the</span>
+<span style="color:#75715e"># number is not zero</span>
+<span style="color:#66d9ef">if</span> <span style="color:#ae81ff">1</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This always prints&#34;</span>)
+
+<span style="color:#66d9ef">if</span> <span style="color:#ae81ff">0</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This never prints&#34;</span>)
+</code></pre></div><h3 id="multi-line-conditions">
+  Multi-line conditions
+  <a class="anchor" href="#multi-line-conditions">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> var_1 <span style="color:#f92672">==</span> var_2 <span style="color:#f92672">or</span> var_1 <span style="color:#f92672">==</span> var_3 <span style="color:#f92672">or</span> \
+        var_1 <span style="color:#f92672">==</span> var_4:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Var 1 equals some other variable&#34;</span>)
+
+<span style="color:#66d9ef">if</span> (var_1 <span style="color:#f92672">==</span> var_2 <span style="color:#f92672">and</span> var_1 <span style="color:#f92672">==</span> var_3 <span style="color:#f92672">and</span> 
+        var_1 <span style="color:#f92672">==</span> var_4):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;All variables are equal&#34;</span>)
+</code></pre></div><h3 id="ifelifelse-statements">
+  if/elif/else Statements
+  <a class="anchor" href="#ifelifelse-statements">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> (month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;December&#34;</span> <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;January&#34;</span>
+        <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;February&#34;</span>):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;It&#39;s winter&#34;</span>)
+<span style="color:#66d9ef">elif</span> (month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;March&#34;</span> <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;May&#34;</span>
+        <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;April&#34;</span>):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;It&#39;s spring&#34;</span>)
+<span style="color:#66d9ef">elif</span> (month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;June&#34;</span> <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;July&#34;</span>
+        <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;August&#34;</span>):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;It&#39;s summer&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;It&#39;s fall! My favorite.&#34;</span>)
+</code></pre></div><h2 id="iteration">
+  Iteration
+  <a class="anchor" href="#iteration">#</a>
+</h2>
+<h3 id="while-loops">
+  while Loops
+  <a class="anchor" href="#while-loops">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">while</span> count <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1000</span>:
+    total <span style="color:#f92672">+=</span> count
+
+count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">while</span> count <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1000</span> <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> (count <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">and</span> count <span style="color:#f92672">%</span> <span style="color:#ae81ff">17</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>):
+    total <span style="color:#f92672">+=</span> count
+</code></pre></div><h3 id="for-loops">
+  for Loops
+  <a class="anchor" href="#for-loops">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: 0 1 2 ... 9</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+    <span style="color:#66d9ef">print</span>(str(i) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span>)
+
+<span style="color:#75715e"># Output: 3 4 5 ... 9</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">10</span>):
+    <span style="color:#66d9ef">print</span>(str(i) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span>)
+
+<span style="color:#75715e"># Output: 3 5 7 ... 19</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">2</span>):
+    <span style="color:#66d9ef">print</span>(str(i) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span>)  
+</code></pre></div></article>
  
       
 
@@ -338,6 +669,51 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#variables-and-datatypes">Variables and Datatypes</a>
+      <ul>
+        <li><a href="#types-of-data">Types of Data</a></li>
+        <li><a href="#modification">Modification</a></li>
+      </ul>
+    </li>
+    <li><a href="#input--output">Input / Output</a>
+      <ul>
+        <li><a href="#concatenation">Concatenation</a></li>
+        <li><a href="#multi-line-outputs">Multi-line Outputs</a></li>
+        <li><a href="#multi-line-strings">Multi-line Strings</a></li>
+        <li><a href="#escape-sequences">Escape Sequences</a></li>
+        <li><a href="#handling-input">Handling Input</a></li>
+      </ul>
+    </li>
+    <li><a href="#libraries">Libraries</a>
+      <ul>
+        <li><a href="#importing">Importing</a></li>
+      </ul>
+    </li>
+    <li><a href="#conditionals">Conditionals</a>
+      <ul>
+        <li><a href="#logical-operators">Logical Operators</a></li>
+        <li><a href="#comparison-operators">Comparison Operators</a></li>
+        <li><a href="#if-statements">if Statements</a></li>
+        <li><a href="#multi-line-conditions">Multi-line conditions</a></li>
+        <li><a href="#ifelifelse-statements">if/elif/else Statements</a></li>
+      </ul>
+    </li>
+    <li><a href="#iteration">Iteration</a>
+      <ul>
+        <li><a href="#while-loops">while Loops</a></li>
+        <li><a href="#for-loops">for Loops</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
     
   </main>
 
