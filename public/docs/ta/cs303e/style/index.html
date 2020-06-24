@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Python Style Guide for CS 303E#Under construction
-🔨#">
+<meta name="description" content="Python Style Guide for CS 303E#Highlights#The following are highlighted style guidelines to follow based off the assignment page here.
+Two Blank Lines#This highlight states to include two blank lines both before and after our function:
+# ... # Grader: Skyler # # On my honor, Skyler Vestal, this programming assignment is my own work # and I have not provided this code to any other student.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Style" />
-<meta property="og:description" content="Python Style Guide for CS 303E#Under construction
-🔨#" />
+<meta property="og:description" content="Python Style Guide for CS 303E#Highlights#The following are highlighted style guidelines to follow based off the assignment page here.
+Two Blank Lines#This highlight states to include two blank lines both before and after our function:
+# ... # Grader: Skyler # # On my honor, Skyler Vestal, this programming assignment is my own work # and I have not provided this code to any other student." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/" />
 
@@ -16,7 +18,7 @@
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.b130ae8c2ca6ed298e8e6219ac6df55bc7191fc44d5e7709dde8df0d7c434ce2.js" integrity="sha256-sTCujCym7SmOjmIZrG31W8cZH8RNXncJ3ejfDXxDTOI="></script>
+<script defer src="/~ves314/en.search.min.b2aed8215a1490cc2ac29632cca07a0f832001df63f6ef828942ee662a061c5a.js" integrity="sha256-sq7YIVoUkMwqwpYyzKB6D4MgAd9j9u&#43;CiULuZioGHFo="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -289,10 +291,55 @@ https://github.com/alex-shpak/hugo-book
 
   <label for="toc-control">
     
+    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#highlights">Highlights</a>
+      <ul>
+        <li><a href="#two-blank-lines">Two Blank Lines</a></li>
+        <li><a href="#four-spaces-per-indent">Four Spaces per Indent</a></li>
+        <li><a href="#limitting-lines">Limitting Lines</a></li>
+        <li><a href="#limiting-comment-lines">Limiting Comment Lines</a></li>
+        <li><a href="#using-blank-lines">Using Blank Lines</a></li>
+        <li><a href="#spacing">Spacing</a></li>
+        <li><a href="#cursed-variable-characters">Cursed Variable Characters</a></li>
+        <li><a href="#variable-names">Variable Names</a></li>
+        <li><a href="#main-method">Main Method</a></li>
+      </ul>
+    </li>
+    <li><a href="#expressions">Expressions</a>
+      <ul>
+        <li><a href="#paranthesis">Paranthesis</a></li>
+        <li><a href="#multi-line-expression">Multi-line expression</a></li>
+      </ul>
+    </li>
+    <li><a href="#conditionals">Conditionals</a>
+      <ul>
+        <li><a href="#boolean-zen">Boolean Zen</a></li>
+        <li><a href="#paranthesis-1">Paranthesis</a></li>
+        <li><a href="#ifelifelse-spacing">if/elif/else Spacing</a></li>
+      </ul>
+    </li>
+    <li><a href="#functions">Functions</a>
+      <ul>
+        <li><a href="#calling">Calling</a></li>
+        <li><a href="#defining">Defining</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
   
  
       </header>
@@ -303,12 +350,309 @@ https://github.com/alex-shpak/hugo-book
   Python Style Guide for CS 303E
   <a class="anchor" href="#python-style-guide-for-cs-303e">#</a>
 </h1>
-<p>Under construction</p>
-<h1 id="heading">
-  🔨
-  <a class="anchor" href="#heading">#</a>
-</h1>
-<p><img src="/~ves314/img/construction.png?raw=true" alt="" /></p>
+<h2 id="highlights">
+  Highlights
+  <a class="anchor" href="#highlights">#</a>
+</h2>
+<p>The following are highlighted style guidelines to follow based off the assignment page <a href="https://www.cs.utexas.edu/~scottm/cs303e/Assignments/index.htm">here</a>.</p>
+<h3 id="two-blank-lines">
+  Two Blank Lines
+  <a class="anchor" href="#two-blank-lines">#</a>
+</h3>
+<p>This highlight states to include two blank lines both before and after our function:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># ...</span>
+<span style="color:#75715e"># Grader: Skyler</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e">#  On my honor, Skyler Vestal, this programming assignment is my own work</span>
+<span style="color:#75715e">#  and I have not provided this code to any other student.</span>
+<span style="color:#f92672">import</span> random
+
+
+<span style="color:#75715e"># Here&#39;s a summary comment about the main method</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    <span style="color:#75715e"># Estimates my test scores in CS 439</span>
+    MAX_POITNS <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+    count <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>)
+    <span style="color:#66d9ef">print</span>(count<span style="color:#f92672">/</span>MAX_POITNS)
+
+
+main()
+</code></pre></div><p>So the two blank lines both above <code>def main()</code> and after the last line within the main method are not overridden by comments. Always make sure there are two lines before and after!</p>
+<h3 id="four-spaces-per-indent">
+  Four Spaces per Indent
+  <a class="anchor" href="#four-spaces-per-indent">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    <span style="color:#f92672">...</span>
+    <span style="color:#66d9ef">if</span> check_1 <span style="color:#f92672">&gt;</span> num_1:
+        index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">while</span> index <span style="color:#f92672">&lt;</span> check_1:
+            count <span style="color:#f92672">+=</span> index
+            <span style="color:#66d9ef">if</span> (count <span style="color:#f92672">%</span> <span style="color:#ae81ff">31</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>):
+                <span style="color:#66d9ef">break</span>
+        <span style="color:#66d9ef">print</span>(count)
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Nothing.&#34;</span>)
+    <span style="color:#f92672">...</span>
+</code></pre></div><h3 id="limitting-lines">
+  Limitting Lines
+  <a class="anchor" href="#limitting-lines">#</a>
+</h3>
+<p>Lines are limitted to 79 characters.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    month <span style="color:#f92672">==</span> input(<span style="color:#e6db74">&#34;You know what a month is? Like the &#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;arbitrary assignments of groups of days in a year.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;Why is October the 10th month and not the 8th?</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;Why is December the 12th month and not the 10th?</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;I heard someone added in two months or something. &#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;I&#39;d guess July and August cause those sound like &#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;Julius and August. Not sure.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">How come the months &#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;only start being numerical after August? &#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;Why is November an exception? Strange.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+            <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;Oh sorry, anyway enter a month: &#34;</span> )
+    <span style="color:#66d9ef">if</span> (month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;January&#34;</span> <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;February&#34;</span> <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;March&#34;</span> <span style="color:#f92672">or</span> 
+            month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;April&#34;</span> <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;June&#34;</span>):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This month is in the first half of the year.&#34;</span>)
+    <span style="color:#66d9ef">if</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;January&#34;</span> <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;June&#34;</span> <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;July&#34;</span> \
+            <span style="color:#f92672">or</span> month <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;October&#34;</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This month starts with a letter I think is weird&#34;</span>)
+</code></pre></div><h3 id="limiting-comment-lines">
+  Limiting Comment Lines
+  <a class="anchor" href="#limiting-comment-lines">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    <span style="color:#75715e"># This line can go a fair bit out but I have to stop here sadly =(.</span>
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;However, I can go a bit farther out. Silly comment. Be jealous =)&#34;</span>)
+</code></pre></div><h3 id="using-blank-lines">
+  Using Blank Lines
+  <a class="anchor" href="#using-blank-lines">#</a>
+</h3>
+<p>Blank lines are useful for organizing sections of code within a singular function. Make sure to make a summary comment for each non-trivial section of code.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Gather user inputs</span>
+input_1 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a number please: &#34;</span>)
+input_2 <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Hey uhh I&#39;m going to trust you to enter a #: ))</span>
+input_3 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;I feel bad for restricting you so enter anything&#34;</span>)
+
+<span style="color:#75715e"># Do some arbitrary calculations</span>
+foo <span style="color:#f92672">=</span> input_2 <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">7</span>
+bar <span style="color:#f92672">=</span> ((foo <span style="color:#f92672">*</span> input_1) <span style="color:#f92672">**</span> (<span style="color:#ae81ff">3</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span>
+outcome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#66d9ef">if</span> bar <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+    outcome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;even&#34;</span>
+<span style="color:#66d9ef">else</span>:
+    outcome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;odd&#34;</span>
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Sorry&#34;</span>, input_3 <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;,&#34;</span>, <span style="color:#e6db74">&#34;but the calculation is&#34;</span>, outcome)
+</code></pre></div><h3 id="spacing">
+  Spacing
+  <a class="anchor" href="#spacing">#</a>
+</h3>
+<p>Always include a space around any operator. The one exception is keyword arguments (commented below) which occasionally include no spaces. I&rsquo;d advise to still put one to be safe.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> a <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;some expression&#34;</span> <span style="color:#f92672">or</span> b <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;an other expression&#34;</span>:
+    <span style="color:#66d9ef">print</span>(a <span style="color:#f92672">==</span> b)
+<span style="color:#66d9ef">elif</span> a <span style="color:#f92672">in</span> str_list:
+    <span style="color:#66d9ef">print</span>(b <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> str_list)
+    <span style="color:#66d9ef">print</span>(a <span style="color:#f92672">is</span> c)
+<span style="color:#66d9ef">elif</span> a <span style="color:#f92672">&lt;=</span> b:
+    <span style="color:#66d9ef">print</span>(a <span style="color:#f92672">!=</span> c)
+
+sum <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> b
+sum <span style="color:#f92672">-=</span> c
+
+<span style="color:#75715e"># The sep argument here is a keyword argument</span>
+<span style="color:#66d9ef">print</span>(a, <span style="color:#e6db74">&#34;-&#34;</span>, b, <span style="color:#e6db74">&#34;-&#34;</span>, c, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+<span style="color:#75715e"># This also can work but to be safe do the line above. Ask your TA.</span>
+<span style="color:#66d9ef">print</span>(a, <span style="color:#e6db74">&#34;-&#34;</span>, b, <span style="color:#e6db74">&#34;-&#34;</span>, c, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</code></pre></div><h3 id="cursed-variable-characters">
+  Cursed Variable Characters
+  <a class="anchor" href="#cursed-variable-characters">#</a>
+</h3>
+<p>Don&rsquo;t use &lsquo;l&rsquo; (in &ldquo;lime&rdquo;), &lsquo;O&rsquo; (in &ldquo;Ostrich&rdquo;), or &lsquo;I&rsquo; (in &ldquo;Italian pizza sucks&rdquo;) as single character variable names.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># The nice syntax highlighting kinda ruins the fun but you&#39;ll get the jist </span>
+
+<span style="color:#75715e"># ... Am I adding 1, var l, or var I? Clarity will vary by text font</span>
+some_var <span style="color:#f92672">+=</span> l
+some_var <span style="color:#f92672">+=</span> I
+<span style="color:#75715e"># Other potential problems on why l is cursed:</span>
+l <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">|</span> i <span style="color:#f92672">|</span> I
+l <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> l
+I <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> l <span style="color:#f92672">*</span> I <span style="color:#f92672">|</span> i
+
+<span style="color:#75715e"># Why O is cursed</span>
+some_var <span style="color:#f92672">+=</span> O <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>
+O <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">+</span> big_o(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> o
+</code></pre></div><h3 id="variable-names">
+  Variable Names
+  <a class="anchor" href="#variable-names">#</a>
+</h3>
+<p>Python recommends <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> (unofficial) as opposed to <a href="https://en.wikipedia.org/wiki/Camel_case">camelCase</a> (official). Don&rsquo;t ask me why snake_case doesn&rsquo;t have any actual official name ¯\_(ツ)_/¯</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">week <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is a short but easily understood variable&#34;</span>
+comment_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;It&#39;s good to have meaning in your variables though&#34;</span>
+descriptive_comment_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is for sure on the edge of length though&#34;</span>
+good_descriptive_comment_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is way too far&#34;</span>
+a_name_like_this <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is also weird from the amount of words&#34;</span>
+
+<span style="color:#75715e"># Don&#39;t do camelCase</span>
+likeThis <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Avoid! This is cursedCase for this class.&#34;</span>
+</code></pre></div><h3 id="main-method">
+  Main Method
+  <a class="anchor" href="#main-method">#</a>
+</h3>
+<p>We will ALWAYS have a main function in our programs. It isn&rsquo;t required for your program to run, but it&rsquo;s  beneifical for structure and <a href="https://stackoverflow.com/a/22492572">for checking if a progam is being run by itself or if it&rsquo;s imported from another module</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This code will run.&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;However, you&#39;re going to get a point off.&#34;</span>)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;So don&#39;t do it in the first place.)</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This code will also run.&#34;</span>)
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;It gives some better structure to your program.&#34;</span>)
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This will be especially relevant when we have multiple functions.&#34;</span>)
+
+
+main()
+</code></pre></div><h2 id="expressions">
+  Expressions
+  <a class="anchor" href="#expressions">#</a>
+</h2>
+<h3 id="paranthesis">
+  Paranthesis
+  <a class="anchor" href="#paranthesis">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Good:</span>
+test_expr_1 <span style="color:#f92672">=</span> ((<span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">9</span> <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">4</span>
+
+<span style="color:#75715e"># Paranthesis can still be good if they don&#39;t change the order</span>
+<span style="color:#75715e"># of operations if they help describe what you&#39;re doing:</span>
+<span style="color:#75715e"># test_expr_3 is better than test_expr_2 here since it&#39;s clearer</span>
+<span style="color:#75715e"># to see we&#39;re converting from hours -&gt; days -&gt; years with ()s</span>
+test_expr_2 <span style="color:#f92672">=</span> hours <span style="color:#f92672">/</span> HOURS_IN_DAY <span style="color:#f92672">/</span> DAYS_IN_YEAR
+test_expr_3 <span style="color:#f92672">=</span> (hours <span style="color:#f92672">/</span> HOURS_IN_DAY) <span style="color:#f92672">/</span> DAYS_IN_YEAR
+
+<span style="color:#75715e"># Bad:</span>
+<span style="color:#75715e"># Paranthesis here don&#39;t add much, so they aren&#39;t needed.</span>
+<span style="color:#75715e"># Also may look like a tuple instead to some programmers</span>
+test_expr_4 <span style="color:#f92672">=</span> (<span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> days <span style="color:#f92672">//</span> weeks)
+</code></pre></div><h3 id="multi-line-expression">
+  Multi-line expression
+  <a class="anchor" href="#multi-line-expression">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Good:</span>
+long_expression <span style="color:#f92672">=</span> (days_in_year <span style="color:#f92672">*</span> ARBITRARY_CONSTANT <span style="color:#f92672">+</span> months <span style="color:#f92672">*</span> score
+                    <span style="color:#f92672">+</span> years <span style="color:#f92672">*</span> OTHER_CONSTANT)
+long_expression <span style="color:#f92672">=</span> days_in_year <span style="color:#f92672">*</span> ARBITRARY_CONSTANT <span style="color:#f92672">+</span> months <span style="color:#f92672">*</span> score \
+                    <span style="color:#f92672">+</span> years <span style="color:#f92672">*</span> OTHER_CONSTANT
+
+<span style="color:#75715e"># Okay:</span>
+<span style="color:#75715e"># Looks kinda goofy to me when you can fit more expressions on a line</span>
+long_expression <span style="color:#f92672">=</span> (days_in_year <span style="color:#f92672">*</span> ARBITRARY_CONSTANT 
+                    <span style="color:#f92672">+</span> months <span style="color:#f92672">*</span> score
+                    <span style="color:#f92672">+</span> years <span style="color:#f92672">*</span> OTHER_CONSTANT)
+
+<span style="color:#75715e"># Bad:</span>
+<span style="color:#75715e"># Doesn&#39;t compile</span>
+long_expression <span style="color:#f92672">=</span> days_in_year <span style="color:#f92672">*</span> ARBITRARY_CONSTANT <span style="color:#f92672">+</span> months <span style="color:#f92672">*</span> score
+    <span style="color:#f92672">+</span> years <span style="color:#f92672">*</span> OTHER_CONSTANT
+<span style="color:#75715e"># Looks kinda bad with the expression to the left of the assignment)</span>
+long_expression <span style="color:#f92672">=</span> (days_in_year <span style="color:#f92672">*</span> ARBITRARY_CONSTANT <span style="color:#f92672">+</span> months <span style="color:#f92672">*</span> score
+    <span style="color:#f92672">+</span> years <span style="color:#f92672">*</span> OTHER_CONSTANT)
+
+<span style="color:#75715e"># VERY BAD:</span>
+<span style="color:#75715e"># This won&#39;t have a compile error but the last term won&#39;t be</span>
+<span style="color:#75715e"># included in the expression. SCARY!</span>
+long_expression <span style="color:#f92672">=</span> days_in_year <span style="color:#f92672">*</span> ARBITRARY_CONSTANT <span style="color:#f92672">+</span> months <span style="color:#f92672">*</span> score
+<span style="color:#f92672">+</span> years <span style="color:#f92672">*</span> OTHER_CONSTANT
+</code></pre></div><h2 id="conditionals">
+  Conditionals
+  <a class="anchor" href="#conditionals">#</a>
+</h2>
+<h3 id="boolean-zen">
+  Boolean Zen
+  <a class="anchor" href="#boolean-zen">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Good:</span>
+<span style="color:#66d9ef">if</span> var_1:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Ah. How zenful.&#34;</span>)
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> var_2:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Still zenful.&#34;</span>)
+
+<span style="color:#75715e"># Bad:</span>
+<span style="color:#66d9ef">if</span> var_1 <span style="color:#f92672">==</span> True:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;MY EYES&#34;</span>)
+
+<span style="color:#66d9ef">if</span> var_2 <span style="color:#f92672">==</span> False:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;EVERYTHING BURNS&#34;</span>)
+</code></pre></div><h3 id="paranthesis-1">
+  Paranthesis
+  <a class="anchor" href="#paranthesis-1">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Good:</span>
+<span style="color:#66d9ef">if</span> (day <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Friday&#34;</span> <span style="color:#f92672">or</span> day <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Sunday&#34;</span>) <span style="color:#f92672">and</span> location <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;West Campus&#34;</span> \
+        <span style="color:#f92672">and</span> homework <span style="color:#f92672">is</span> None <span style="color:#f92672">and</span> hour <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">18</span>:
+    location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;6th Street&#34;</span>
+    bac <span style="color:#f92672">=</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">10</span>
+
+<span style="color:#66d9ef">if</span> (<span style="color:#f92672">not</span> (day <span style="color:#f92672">==</span> Saturday <span style="color:#f92672">or</span> day <span style="color:#f92672">==</span> Sunday) <span style="color:#f92672">and</span> cs_class <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;439&#34;</span>
+        <span style="color:#f92672">and</span> (hour <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> hour <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">24</span>)):
+    homework <span style="color:#f92672">=</span> float(<span style="color:#e6db74">&#34;inf&#34;</span>)
+    sanity <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>float(<span style="color:#e6db74">&#34;inf&#34;</span>)
+    sleep <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    error <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Segmentation fault&#34;</span>
+
+<span style="color:#75715e"># Bad:</span>
+<span style="color:#66d9ef">if</span> (day <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;January&#34;</span> <span style="color:#f92672">or</span> day <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;February&#34;</span>):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;what&#34;</span>)
+
+<span style="color:#66d9ef">if</span> (day <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;March&#34;</span>) <span style="color:#f92672">or</span> (day <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;April&#34;</span>):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;still what&#34;</span>)
+
+<span style="color:#66d9ef">if</span> ( day <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;May&#34;</span> <span style="color:#f92672">or</span> day <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;June&#34;</span> ):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;still still what&#34;</span>)
+</code></pre></div><h3 id="ifelifelse-spacing">
+  if/elif/else Spacing
+  <a class="anchor" href="#ifelifelse-spacing">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Good:</span>
+<span style="color:#75715e"># Describing the first if statement condition</span>
+<span style="color:#66d9ef">if</span> condition_1:
+    <span style="color:#f92672">...</span>
+<span style="color:#75715e"># Describing the second if statement condition</span>
+<span style="color:#66d9ef">elif</span> condition_2:
+    <span style="color:#f92672">...</span>
+<span style="color:#75715e"># Describing the last if statement condition</span>
+<span style="color:#66d9ef">else</span>
+    <span style="color:#f92672">...</span>
+
+<span style="color:#75715e"># Bad:</span>
+<span style="color:#75715e"># Describing the first if statement condition</span>
+<span style="color:#66d9ef">if</span> condition_1:
+    <span style="color:#f92672">...</span>
+
+<span style="color:#75715e"># Describing the second if statement condition</span>
+<span style="color:#66d9ef">elif</span> condition_2:
+    <span style="color:#f92672">...</span>
+
+<span style="color:#75715e"># Describing the last if statement condition</span>
+<span style="color:#66d9ef">else</span>
+    <span style="color:#f92672">...</span>
+</code></pre></div><h2 id="functions">
+  Functions
+  <a class="anchor" href="#functions">#</a>
+</h2>
+<h3 id="calling">
+  Calling
+  <a class="anchor" href="#calling">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Good:</span>
+str(<span style="color:#ae81ff">32</span>)
+
+<span style="color:#75715e"># Bad:</span>
+str (<span style="color:#ae81ff">32</span>)
+</code></pre></div><h3 id="defining">
+  Defining
+  <a class="anchor" href="#defining">#</a>
+</h3>
+<p>Next lecture =)</p>
 </article>
  
       
@@ -338,6 +682,48 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#highlights">Highlights</a>
+      <ul>
+        <li><a href="#two-blank-lines">Two Blank Lines</a></li>
+        <li><a href="#four-spaces-per-indent">Four Spaces per Indent</a></li>
+        <li><a href="#limitting-lines">Limitting Lines</a></li>
+        <li><a href="#limiting-comment-lines">Limiting Comment Lines</a></li>
+        <li><a href="#using-blank-lines">Using Blank Lines</a></li>
+        <li><a href="#spacing">Spacing</a></li>
+        <li><a href="#cursed-variable-characters">Cursed Variable Characters</a></li>
+        <li><a href="#variable-names">Variable Names</a></li>
+        <li><a href="#main-method">Main Method</a></li>
+      </ul>
+    </li>
+    <li><a href="#expressions">Expressions</a>
+      <ul>
+        <li><a href="#paranthesis">Paranthesis</a></li>
+        <li><a href="#multi-line-expression">Multi-line expression</a></li>
+      </ul>
+    </li>
+    <li><a href="#conditionals">Conditionals</a>
+      <ul>
+        <li><a href="#boolean-zen">Boolean Zen</a></li>
+        <li><a href="#paranthesis-1">Paranthesis</a></li>
+        <li><a href="#ifelifelse-spacing">if/elif/else Spacing</a></li>
+      </ul>
+    </li>
+    <li><a href="#functions">Functions</a>
+      <ul>
+        <li><a href="#calling">Calling</a></li>
+        <li><a href="#defining">Defining</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
     
   </main>
 
