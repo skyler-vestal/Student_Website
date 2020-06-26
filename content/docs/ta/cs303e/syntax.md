@@ -287,3 +287,14 @@ for i in range(3, 10):
 for i in range(3, 20, 2):
     print(str(i) + " ")  
 ```
+
+## Functions
+
+### Defining
+```python
+# Output: 3    
+def useless_sum(x, y):
+    return x + y
+
+print(useless_sum(1, 2))
+```

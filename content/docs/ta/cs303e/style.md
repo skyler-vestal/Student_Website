@@ -315,12 +315,29 @@ else
 
 ```python
 # Good:
-str(32)
+print(str(32) + ",")
 
 # Bad:
-str (32)
+print (str (32) + ",")
 ```
 
 ### Defining
 
-Next lecture =)
+```python
+# Good:
+def other_func():
+    ...
+    return val
+
+def some_function(argument_1, argument_2):
+    ...
+    return x_var
+
+# Bad:
+def other_func( ):
+    ...
+    return val
+
+def some_function (arg_1,arg_2) :
+    ...
+```
