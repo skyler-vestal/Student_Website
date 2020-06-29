@@ -291,10 +291,28 @@ for i in range(3, 20, 2):
 ## Functions
 
 ### Defining
+
 ```python
-# Output: 3    
-def useless_sum(x, y):
+# Output: This works! 
+def simple_func():
+    print("This works!")
+
+simple_func()
+```
+
+### Returning
+
+```python
+# Output: 3
+def simple_sum(x, y):
     return x + y
 
-print(useless_sum(1, 2))
+print(simple_sum(1, 2))
+
+# Output: 6 0 1 9
+def simple_ops(x, y):
+    return x + y, x - y, x / y, x * y
+
+add, sub, div, mult = simple_ops(3, 3)
+print(add, sub, div, mult)
 ```

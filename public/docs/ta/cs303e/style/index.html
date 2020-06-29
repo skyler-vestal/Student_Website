@@ -18,7 +18,7 @@ Two Blank Lines#This highlight states to include two blank lines both before 
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.83e6ed332368d46ea178014a5854ae4166a900de469140c172377b989cf57c50.js" integrity="sha256-g&#43;btMyNo1G6heAFKWFSuQWapAN5GkUDBcjd7mJz1fFA="></script>
+<script defer src="/~ves314/en.search.min.5b7dd98c801f95393c20c5944951787aba4021ddbe55812faf42274cf9d8443e.js" integrity="sha256-W33ZjIAflTk8IMWUSVF4erpAId2&#43;VYEvr0InTPnYRD4="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -333,6 +333,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#calling">Calling</a></li>
         <li><a href="#defining">Defining</a></li>
+        <li><a href="#comments">Comments</a></li>
       </ul>
     </li>
   </ul>
@@ -655,18 +656,32 @@ long_expression <span style="color:#f92672">=</span> days_in_year <span style="c
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Good:</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">other_func</span>():
     <span style="color:#f92672">...</span>
-    <span style="color:#66d9ef">return</span> val
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">some_function</span>(argument_1, argument_2):
     <span style="color:#f92672">...</span>
-    <span style="color:#66d9ef">return</span> x_var
 
 <span style="color:#75715e"># Bad:</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">other_func</span>( ):
     <span style="color:#f92672">...</span>
-    <span style="color:#66d9ef">return</span> val
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">some_function</span> (arg_1,arg_2) :
+    <span style="color:#f92672">...</span>
+</code></pre></div><h3 id="comments">
+  Comments
+  <a class="anchor" href="#comments">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Both acceptable:</span>
+
+<span style="color:#75715e"># Given otherName, which is another name like this class&#39;s name,</span>
+<span style="color:#75715e"># decides which of the names is first according to tie breaker</span>
+<span style="color:#75715e"># rules and returns the first name</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">breakTieBreaker</span>(otherName):
+    <span style="color:#f92672">...</span>
+
+<span style="color:#75715e"># Break the tie breaker for the name in this class and otherName</span>
+<span style="color:#75715e"># pre: otherName != null</span>
+<span style="color:#75715e"># post: return the String that is seen as &#34;best&#34; by tiebreaker rules</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">breakTieBreaker</span>(otherName):
     <span style="color:#f92672">...</span>
 </code></pre></div></article>
  
@@ -732,6 +747,7 @@ long_expression <span style="color:#f92672">=</span> days_in_year <span style="c
       <ul>
         <li><a href="#calling">Calling</a></li>
         <li><a href="#defining">Defining</a></li>
+        <li><a href="#comments">Comments</a></li>
       </ul>
     </li>
   </ul>

@@ -327,17 +327,32 @@ print (str (32) + ",")
 # Good:
 def other_func():
     ...
-    return val
 
 def some_function(argument_1, argument_2):
     ...
-    return x_var
 
 # Bad:
 def other_func( ):
     ...
-    return val
 
 def some_function (arg_1,arg_2) :
     ...
 ```
+
+### Comments
+```python
+# Both acceptable:
+
+# Given otherName, which is another name like this class's name,
+# decides which of the names is first according to tie breaker
+# rules and returns the first name
+def breakTieBreaker(otherName):
+    ...
+
+# Break the tie breaker for the name in this class and otherName
+# pre: otherName != null
+# post: return the String that is seen as "best" by tiebreaker rules
+def breakTieBreaker(otherName):
+    ...
+```
+
