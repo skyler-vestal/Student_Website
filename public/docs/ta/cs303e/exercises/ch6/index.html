@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Chapter 6 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 6 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 &#43; 1)) for j in range(2, 11): line_str &#43;= &#34;, &#34; &#43; str(getPentagonalNumber(i * 10 &#43; j)) print(line_str) # 6.">
+# Exercises for Chapter 6 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) import random # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 &#43; 1)) for j in range(2, 11): line_str &#43;= &#34;, &#34; &#43; str(getPentagonalNumber(i * 10 &#43; j)) print(line_str) # 6.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Chapter 6" />
 <meta property="og:description" content="Chapter 6 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 6 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 &#43; 1)) for j in range(2, 11): line_str &#43;= &#34;, &#34; &#43; str(getPentagonalNumber(i * 10 &#43; j)) print(line_str) # 6." />
+# Exercises for Chapter 6 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) import random # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 &#43; 1)) for j in range(2, 11): line_str &#43;= &#34;, &#34; &#43; str(getPentagonalNumber(i * 10 &#43; j)) print(line_str) # 6." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/" />
 
@@ -18,7 +18,7 @@ Embedded solutions:
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.5b7dd98c801f95393c20c5944951787aba4021ddbe55812faf42274cf9d8443e.js" integrity="sha256-W33ZjIAflTk8IMWUSVF4erpAId2&#43;VYEvr0InTPnYRD4="></script>
+<script defer src="/~ves314/en.search.min.6e7f4f013f2e07e9c3e61b4725075ae22ca11e81a8d5439aa7e3323df0aff5ec.js" integrity="sha256-bn9PAT8uB&#43;nD5htHJQda4iyhHoGo1UOap&#43;MyPfCv9ew="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -187,6 +187,16 @@ https://github.com/alex-shpak/hugo-book
           
   
     <a href="/~ves314/docs/ta/cs303e/exercises/ch6/" class="active">Chapter 6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch7/" class="">Chapter 7</a>
   
 
         </li>
@@ -383,6 +393,7 @@ https://github.com/alex-shpak/hugo-book
 <p>Embedded solutions:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Exercises for Chapter 6 of &#34;Introduction to Programming using Python&#34;</span>
 <span style="color:#75715e"># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
+<span style="color:#f92672">import</span> random
 
 <span style="color:#75715e"># 6.1</span>
 <span style="color:#75715e"># CS 311 exercise =) - Prove that for any n the pentagonal number</span>
@@ -429,6 +440,82 @@ f_temp <span style="color:#f92672">=</span> <span style="color:#ae81ff">120.0</s
         format(c_conv, <span style="color:#e6db74">&#34;&lt;10.1f&#34;</span>), sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
     c_temp <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
     f_temp <span style="color:#f92672">-=</span> <span style="color:#ae81ff">10</span>
+
+<span style="color:#75715e"># 6.13</span>
+sum_ser <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">print</span>(format(<span style="color:#e6db74">&#34;i&#34;</span>, <span style="color:#e6db74">&#34;14&#34;</span>), <span style="color:#e6db74">&#34;m(i)&#34;</span>)
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">21</span>):
+    sum_ser <span style="color:#f92672">+=</span> i <span style="color:#f92672">/</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
+    <span style="color:#66d9ef">print</span>(format(i, <span style="color:#e6db74">&#34;&lt;12&#34;</span>), format(sum_ser, <span style="color:#e6db74">&#34;7.4f&#34;</span>))
+
+<span style="color:#75715e"># 6.14</span>
+sum_ser <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">print</span>(format(<span style="color:#e6db74">&#34;i&#34;</span>, <span style="color:#e6db74">&#34;14&#34;</span>), <span style="color:#e6db74">&#34;m(i)&#34;</span>)
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">902</span>):
+    sum_ser <span style="color:#f92672">+=</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> (((<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">**</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>))
+    <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#66d9ef">print</span>(format(i, <span style="color:#e6db74">&#34;&lt;12&#34;</span>), format(sum_ser, <span style="color:#e6db74">&#34;7.4f&#34;</span>))
+
+<span style="color:#75715e"># 6.18</span>
+n <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter n: &#34;</span>))
+<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> range(n):
+    line_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+    <span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> range(n):
+        line_str <span style="color:#f92672">+=</span> str(random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span>
+    <span style="color:#66d9ef">print</span>(line_str)
+
+<span style="color:#75715e"># 6.19 - This one has really weird instructions for functions</span>
+<span style="color:#75715e"># Don&#39;t name your methods like this at home kids:</span>
+<span style="color:#75715e"># Also don&#39;t have three different functions for this ...</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leftOfTheLine</span>(x_0, y_0, x_1, y_1, x_2, y_2):
+    <span style="color:#66d9ef">return</span> point_calculation(x_0, y_0, x_1, y_1, x_2, y_2) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">onTheSameLine</span>(x_0, y_0, x_1, y_1, x_2, y_2):
+    <span style="color:#66d9ef">return</span> point_calculation(x_0, y_0, x_1, y_1, x_2, y_2) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
+
+<span style="color:#75715e"># Another textbook mistake here :/</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rightOfTheLine</span>(x_0, y_0, x_1, y_1, x_2, y_2):
+    <span style="color:#66d9ef">return</span> point_calculation(x_0, y_0, x_1, y_1, x_2, y_2) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>
+
+<span style="color:#75715e"># Making this to make things easier</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">point_calculation</span>(x_0, y_0, x_1, y_1, x_2, y_2):
+    <span style="color:#66d9ef">return</span> (x_1 <span style="color:#f92672">-</span> x_0) <span style="color:#f92672">*</span> (y_2 <span style="color:#f92672">-</span> y_0) <span style="color:#f92672">-</span> (x_2 <span style="color:#f92672">-</span> x_0) <span style="color:#f92672">*</span> (y_1 <span style="color:#f92672">-</span> y_0)
+
+x_0, y_0, x_1, y_1, x_2, y_2 <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter &#34;</span> <span style="color:#f92672">+</span>
+    <span style="color:#e6db74">&#34;coordinates for the three points p0, p1, and p2: &#34;</span>))
+
+<span style="color:#75715e"># You only need two if statements here ...</span>
+result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#66d9ef">if</span> leftOfTheLine(x_0, y_0, x_1, y_1, x_2, y_2):
+    result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;left side of the line&#34;</span>
+<span style="color:#66d9ef">elif</span> rightOfTheLine(x_0, y_0, x_1, y_1, x_2, y_2):
+    result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;right side of the line&#34;</span>
+<span style="color:#66d9ef">elif</span> point_calculation(x_0, y_0, x_1, y_1, x_2, y_2):
+    result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;same line from&#34;</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;p2 is on the&#34;</span>, result, <span style="color:#e6db74">&#34;from p0 to p1&#34;</span>)
+
+<span style="color:#75715e"># Better solution only needing 1 function o-o:</span>
+<span style="color:#75715e"># result = &#34;same line from&#34;</span>
+<span style="color:#75715e"># if point_calculation(x_0, y_0, x_1, y_1, x_2, y_2) &gt; 0:</span>
+<span style="color:#75715e">#     result = &#34;left side of the line&#34;</span>
+<span style="color:#75715e"># elif point_calculation(x_0, y_0, x_1, y_1, x_2, y_2) &lt; 0:</span>
+<span style="color:#75715e">#     result = &#34;right side of the line&#34;</span>
+<span style="color:#75715e"># print(&#34;p2 is on the&#34;, result, &#34;from p0 to p1&#34;)</span>
+
+<span style="color:#75715e"># 6.21</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sqrt</span>(n):
+    lastGuess <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.01</span>
+    nextGuess <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">while</span> abs(nextGuess <span style="color:#f92672">-</span> lastGuess) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.0001</span>:
+        lastGuess <span style="color:#f92672">=</span> nextGuess
+        nextGuess <span style="color:#f92672">=</span> (lastGuess <span style="color:#f92672">+</span> (n <span style="color:#f92672">/</span> lastGuess)) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+    <span style="color:#66d9ef">return</span> nextGuess
+
+num <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter a number: &#34;</span>))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Sqrt:&#34;</span>, sqrt(num))
+
+<span style="color:#75715e"># 6.28</span>
+<span style="color:#75715e"># Withheld due to similarity with assignment 6</span>
 </code></pre></div></article>
  
       

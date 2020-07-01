@@ -93,7 +93,18 @@ Embedded solutions:
       <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/</guid>
       <description>Chapter 6 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 6 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 + 1)) for j in range(2, 11): line_str += &amp;#34;, &amp;#34; + str(getPentagonalNumber(i * 10 + j)) print(line_str) # 6.</description>
+# Exercises for Chapter 6 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import random # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 + 1)) for j in range(2, 11): line_str += &amp;#34;, &amp;#34; + str(getPentagonalNumber(i * 10 + j)) print(line_str) # 6.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 7</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/</guid>
+      <description>Chapter 7 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 6 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import time # 7.1 class Rectangle: def __init__(self, width = 1, height = 2): self.width = width self.height = height # Don&amp;#39;t name functions like this at home kids def getArea(self): return self.width * self.height def getPerimeter(self): return 2 * (self.width + self.</description>
     </item>
     
   </channel>
