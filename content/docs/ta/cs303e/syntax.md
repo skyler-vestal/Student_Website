@@ -316,3 +316,39 @@ def simple_ops(x, y):
 add, sub, div, mult = simple_ops(3, 3)
 print(add, sub, div, mult)
 ```
+
+## Classes
+
+### Declaration
+```python
+class ClassName:
+
+    # Constructor for class. If you create an object of this class
+    # this function is executed when the object is made.
+    # var_2 is assigned a default value in case none is provided
+    def __init__(self, var_1, var_2 = 0):
+        # self.____ are instance variables - Each object gets their
+        # own 
+        self.var_1 = var_1
+        self.var_2 = var_2
+
+
+    def do_something(self, some_val):
+        difference = self.var_2 - some_val
+        self.var_1 += some_val
+        return difference
+```
+
+### Creating Objects
+
+```python
+some_obj = ClassName(4, 3)
+```
+
+### Using Objects
+
+```python
+some_obj.do_something(3)
+x = some_obj.do_something(5)
+print(x)
+```

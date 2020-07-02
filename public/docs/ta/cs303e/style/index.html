@@ -18,7 +18,7 @@ Two Blank Lines#This highlight states to include two blank lines both before 
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.6e7f4f013f2e07e9c3e61b4725075ae22ca11e81a8d5439aa7e3323df0aff5ec.js" integrity="sha256-bn9PAT8uB&#43;nD5htHJQda4iyhHoGo1UOap&#43;MyPfCv9ew="></script>
+<script defer src="/~ves314/en.search.min.69b5844622ab31d242a12f9c3836a2c7c6dd406950e34b2da0b8773c0c16da36.js" integrity="sha256-abWERiKrMdJCoS&#43;cODaix8bdQGlQ40stoLh3PAwW2jY="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -334,6 +334,11 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#calling">Calling</a></li>
         <li><a href="#defining">Defining</a></li>
         <li><a href="#comments">Comments</a></li>
+      </ul>
+    </li>
+    <li><a href="#classes">Classes</a>
+      <ul>
+        <li><a href="#declaration">Declaration</a></li>
       </ul>
     </li>
   </ul>
@@ -683,6 +688,41 @@ long_expression <span style="color:#f92672">=</span> days_in_year <span style="c
 <span style="color:#75715e"># post: return the String that is seen as &#34;best&#34; by tiebreaker rules</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">breakTieBreaker</span>(otherName):
     <span style="color:#f92672">...</span>
+</code></pre></div><h2 id="classes">
+  Classes
+  <a class="anchor" href="#classes">#</a>
+</h2>
+<h3 id="declaration">
+  Declaration
+  <a class="anchor" href="#declaration">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># This class creates an instance of NameLikeThis, that acts</span>
+<span style="color:#75715e"># as a sheep you&#39;d find on a farm</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FarmSheep</span>:
+
+
+    <span style="color:#75715e"># The sheep by default has just been born with short fur</span>
+    <span style="color:#66d9ef">def</span> __init__(self, age <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, fur_length <span style="color:#f92672">=</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>, noise <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ba&#34;</span>):
+        self<span style="color:#f92672">.</span>age <span style="color:#f92672">=</span> age
+        self<span style="color:#f92672">.</span>growth_factor <span style="color:#f92672">=</span> <span style="color:#ae81ff">38.2</span> <span style="color:#f92672">/</span> age<span style="color:#f92672">^</span><span style="color:#ae81ff">2</span>
+        self<span style="color:#f92672">.</span>fur_length <span style="color:#f92672">=</span> fur_length
+        self<span style="color:#f92672">.</span>noise <span style="color:#f92672">=</span> noise
+
+
+    <span style="color:#75715e"># Makes the sheep let out its cry whenever scared</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">noise</span>(self):
+        <span style="color:#66d9ef">print</span>(self<span style="color:#f92672">.</span>noise)
+
+
+    <span style="color:#75715e"># Grows the fur of the sheep based off the amount of nutrition</span>
+    <span style="color:#75715e"># Do sheep grow hay?</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">grow_fur</span>(self, hay):
+        <span style="color:#75715e"># The growth of fur is based off age and hay</span>
+        growth_num <span style="color:#f92672">=</span> hay <span style="color:#f92672">*</span> self<span style="color:#f92672">.</span>growth_factor
+        self<span style="color:#f92672">.</span>fur_length <span style="color:#f92672">+=</span> growth_num
+        <span style="color:#75715e"># Nature ...</span>
+        waste <span style="color:#f92672">=</span> hay <span style="color:#f92672">*</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">65</span>
+        <span style="color:#66d9ef">return</span> waste
 </code></pre></div></article>
  
       
@@ -748,6 +788,11 @@ long_expression <span style="color:#f92672">=</span> days_in_year <span style="c
         <li><a href="#calling">Calling</a></li>
         <li><a href="#defining">Defining</a></li>
         <li><a href="#comments">Comments</a></li>
+      </ul>
+    </li>
+    <li><a href="#classes">Classes</a>
+      <ul>
+        <li><a href="#declaration">Declaration</a></li>
       </ul>
     </li>
   </ul>

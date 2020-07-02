@@ -356,3 +356,36 @@ def breakTieBreaker(otherName):
     ...
 ```
 
+## Classes
+
+### Declaration
+
+```python
+# This class creates an instance of NameLikeThis, that acts
+# as a sheep you'd find on a farm
+class FarmSheep:
+
+
+    # The sheep by default has just been born with short fur
+    def __init__(self, age = 0, fur_length = .1, noise = "ba"):
+        self.age = age
+        self.growth_factor = 38.2 / age^2
+        self.fur_length = fur_length
+        self.noise = noise
+
+
+    # Makes the sheep let out its cry whenever scared
+    def noise(self):
+        print(self.noise)
+
+
+    # Grows the fur of the sheep based off the amount of nutrition
+    # Do sheep grow hay?
+    def grow_fur(self, hay):
+        # The growth of fur is based off age and hay
+        growth_num = hay * self.growth_factor
+        self.fur_length += growth_num
+        # Nature ...
+        waste = hay * .65
+        return waste
+```
