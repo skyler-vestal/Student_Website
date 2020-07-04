@@ -144,4 +144,108 @@ for layer in range(8):
         layer_str += sp_width + str(num_sq)
         num -= 1
     print(layer_str)
+    
+# 5.23 - A little off since the sample output doesn't round
+loan = eval(input("Loan Amount: "))
+years = eval(input("Number of Years: "))
+print(format("Interest Rate", "<16"), format("Monthly Payment", "<16"),
+        format("Total Payment", "<16"))
+yearly_interest = .05
+while yearly_interest < .08125:
+    monthly_interest = yearly_interest / 12
+    monthly_payment = (loan * monthly_interest / (1 - 
+        1 / (1 + monthly_interest) ** (years * 12)))
+    total_payment = monthly_payment * years * 12
+    print(format(yearly_interest, "<16.3%"), format(monthly_payment, "<16.2f"),
+            format(total_payment, "<16.2f"))
+    yearly_interest += .00125
+
+# 5.24
+loan = eval(input("Loan Amount: "))
+years = eval(input("Number of Years: "))
+ann_interest = eval(input("Annual Interest Rate: "))
+
+monthly_interest = ann_interest / 1200
+monthly_payment = (loan * monthly_interest / (1 - 
+         1 / (1 + monthly_interest) ** (years * 12)))
+total_payment = monthly_interest * years * 12
+print("\nMonthly Payment:", format(monthly_payment, ".2"))
+print("Total Payment:", format(total_payment, ".2"))
+print()
+
+print(format("Payment #", "<10"), format("Interest", "<10"),
+        format("Principal", "<10"), format("Balance", "<10"))
+for i in range(1, 12 * years + 1):
+    interest = monthly_interest * loan
+    principal = monthly_payment - interest
+    loan -= principal
+    print(format(i, "<10.0f"), format(interest, "<10.2f"),
+        format(principal, "<10.2f"), format(loan, "10.2f"))
+
+# 5.25
+sum_left = 0
+sum_right = 0
+n = 50_000
+for i in range(1, n + 1):
+    sum_left += 1 / i
+    sum_right += 1 / abs(n - (i - 1))
+print("Sum from left :", sum_left)
+print("Sum from right:", sum_right)
+print("Difference    :", abs(sum_left - sum_right))
+
+# 5.28
+item = 1
+e = 1
+for i in range(1, 1_000_000 + 1):
+    item = item / i
+    e += item
+    # Added i < 20 since it's the same
+    if i % 10_000 == 0 or i < 20:
+        print("e for", i, "iterations is:", format(e, ".51"))
+
+# 5.29
+count = 0
+curr_line = ""
+for year in range(2001, 2100 + 1):
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+        count += 1
+        curr_line += str(year) + " "
+        if count == 10:
+            print(curr_line)
+            count = 0
+            curr_line = ""
+
+# 5.35
+perfect_nums = ""
+for num in range(2, 10_000):
+    div_sum = 1
+    for div_num in range(2, num):
+        if num % div_num == 0:
+            div_sum += div_num
+    if num == div_sum:
+        perfect_nums += str(num) + " "
+print("Perfect Numbers:", perfect_nums)
+
+# 5.45
+num = eval(input("Enter a decimal integer: "))
+hex_num = ""
+while num > 0:
+    div_digit = num % 16
+    num //= 16
+    if div_digit < 10:
+        div_digit = str(div_digit)
+    elif div_digit == 10:
+        div_digit = "A"
+    elif div_digit == 11:
+        div_digit = "B"
+    elif div_digit == 12:
+        div_digit = "C"
+    elif div_digit == 13:
+        div_digit = "D"
+    elif div_digit == 14:
+        div_digit = "E"
+    else:
+        div_digit = "F"
+    hex_num = div_digit + hex_num
+print("Hexadecimal equivelant:", hex_num)
 ```

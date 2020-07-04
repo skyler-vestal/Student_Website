@@ -1,4 +1,4 @@
-# Exercises for Chapter 6 of "Introduction to Programming using Python"
+# Exercises for Chapter 7 of "Introduction to Programming using Python"
 # Solutions made by Skyler Vestal (Hook 'Em)
 import time
 

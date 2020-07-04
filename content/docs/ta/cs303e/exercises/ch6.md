@@ -1,6 +1,6 @@
 ---
 title: "Chapter 6"
-weight: 50
+weight: 60
 ---
 
 # Chapter 6 Exercise Solutions

@@ -1,6 +1,6 @@
 ---
 title: "Chapter 7"
-weight: 50
+weight: 70
 ---
 
 # Chapter 7 Exercise Solutions
@@ -9,7 +9,7 @@ weight: 50
 
 Embedded solutions:
 ```python
-# Exercises for Chapter 6 of "Introduction to Programming using Python"
+# Exercises for Chapter 7 of "Introduction to Programming using Python"
 # Solutions made by Skyler Vestal (Hook 'Em)
 import time
 

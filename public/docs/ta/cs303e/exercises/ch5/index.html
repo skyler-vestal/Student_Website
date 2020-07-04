@@ -18,7 +18,7 @@ Embedded solutions:
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.69b5844622ab31d242a12f9c3836a2c7c6dd406950e34b2da0b8773c0c16da36.js" integrity="sha256-abWERiKrMdJCoS&#43;cODaix8bdQGlQ40stoLh3PAwW2jY="></script>
+<script defer src="/~ves314/en.search.min.191fbe01770ed73ac797ba6b1e68a3168acef0a697a34c170f48f6e204fa627a.js" integrity="sha256-GR&#43;&#43;AXcO1zrHl7prHmijForO8KaXo0wXD0j24gT6Yno="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -526,6 +526,110 @@ max_num <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db
         layer_str <span style="color:#f92672">+=</span> sp_width <span style="color:#f92672">+</span> str(num_sq)
         num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
     <span style="color:#66d9ef">print</span>(layer_str)
+    
+<span style="color:#75715e"># 5.23 - A little off since the sample output doesn&#39;t round</span>
+loan <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Loan Amount: &#34;</span>))
+years <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Number of Years: &#34;</span>))
+<span style="color:#66d9ef">print</span>(format(<span style="color:#e6db74">&#34;Interest Rate&#34;</span>, <span style="color:#e6db74">&#34;&lt;16&#34;</span>), format(<span style="color:#e6db74">&#34;Monthly Payment&#34;</span>, <span style="color:#e6db74">&#34;&lt;16&#34;</span>),
+        format(<span style="color:#e6db74">&#34;Total Payment&#34;</span>, <span style="color:#e6db74">&#34;&lt;16&#34;</span>))
+yearly_interest <span style="color:#f92672">=</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">05</span>
+<span style="color:#66d9ef">while</span> yearly_interest <span style="color:#f92672">&lt;</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">08125</span>:
+    monthly_interest <span style="color:#f92672">=</span> yearly_interest <span style="color:#f92672">/</span> <span style="color:#ae81ff">12</span>
+    monthly_payment <span style="color:#f92672">=</span> (loan <span style="color:#f92672">*</span> monthly_interest <span style="color:#f92672">/</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> 
+        <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> monthly_interest) <span style="color:#f92672">**</span> (years <span style="color:#f92672">*</span> <span style="color:#ae81ff">12</span>)))
+    total_payment <span style="color:#f92672">=</span> monthly_payment <span style="color:#f92672">*</span> years <span style="color:#f92672">*</span> <span style="color:#ae81ff">12</span>
+    <span style="color:#66d9ef">print</span>(format(yearly_interest, <span style="color:#e6db74">&#34;&lt;16.3%&#34;</span>), format(monthly_payment, <span style="color:#e6db74">&#34;&lt;16.2f&#34;</span>),
+            format(total_payment, <span style="color:#e6db74">&#34;&lt;16.2f&#34;</span>))
+    yearly_interest <span style="color:#f92672">+=</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">00125</span>
+
+<span style="color:#75715e"># 5.24</span>
+loan <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Loan Amount: &#34;</span>))
+years <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Number of Years: &#34;</span>))
+ann_interest <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Annual Interest Rate: &#34;</span>))
+
+monthly_interest <span style="color:#f92672">=</span> ann_interest <span style="color:#f92672">/</span> <span style="color:#ae81ff">1200</span>
+monthly_payment <span style="color:#f92672">=</span> (loan <span style="color:#f92672">*</span> monthly_interest <span style="color:#f92672">/</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> 
+         <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> monthly_interest) <span style="color:#f92672">**</span> (years <span style="color:#f92672">*</span> <span style="color:#ae81ff">12</span>)))
+total_payment <span style="color:#f92672">=</span> monthly_interest <span style="color:#f92672">*</span> years <span style="color:#f92672">*</span> <span style="color:#ae81ff">12</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Monthly Payment:&#34;</span>, format(monthly_payment, <span style="color:#e6db74">&#34;.2&#34;</span>))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Total Payment:&#34;</span>, format(total_payment, <span style="color:#e6db74">&#34;.2&#34;</span>))
+<span style="color:#66d9ef">print</span>()
+
+<span style="color:#66d9ef">print</span>(format(<span style="color:#e6db74">&#34;Payment #&#34;</span>, <span style="color:#e6db74">&#34;&lt;10&#34;</span>), format(<span style="color:#e6db74">&#34;Interest&#34;</span>, <span style="color:#e6db74">&#34;&lt;10&#34;</span>),
+        format(<span style="color:#e6db74">&#34;Principal&#34;</span>, <span style="color:#e6db74">&#34;&lt;10&#34;</span>), format(<span style="color:#e6db74">&#34;Balance&#34;</span>, <span style="color:#e6db74">&#34;&lt;10&#34;</span>))
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">12</span> <span style="color:#f92672">*</span> years <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+    interest <span style="color:#f92672">=</span> monthly_interest <span style="color:#f92672">*</span> loan
+    principal <span style="color:#f92672">=</span> monthly_payment <span style="color:#f92672">-</span> interest
+    loan <span style="color:#f92672">-=</span> principal
+    <span style="color:#66d9ef">print</span>(format(i, <span style="color:#e6db74">&#34;&lt;10.0f&#34;</span>), format(interest, <span style="color:#e6db74">&#34;&lt;10.2f&#34;</span>),
+        format(principal, <span style="color:#e6db74">&#34;&lt;10.2f&#34;</span>), format(loan, <span style="color:#e6db74">&#34;10.2f&#34;</span>))
+
+<span style="color:#75715e"># 5.25</span>
+sum_left <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+sum_right <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+n <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>_000
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+    sum_left <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> i
+    sum_right <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> abs(n <span style="color:#f92672">-</span> (i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Sum from left :&#34;</span>, sum_left)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Sum from right:&#34;</span>, sum_right)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Difference    :&#34;</span>, abs(sum_left <span style="color:#f92672">-</span> sum_right))
+
+<span style="color:#75715e"># 5.28</span>
+item <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+e <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>_000_000 <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+    item <span style="color:#f92672">=</span> item <span style="color:#f92672">/</span> i
+    e <span style="color:#f92672">+=</span> item
+    <span style="color:#75715e"># Added i &lt; 20 since it&#39;s the same</span>
+    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span>_000 <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;e for&#34;</span>, i, <span style="color:#e6db74">&#34;iterations is:&#34;</span>, format(e, <span style="color:#e6db74">&#34;.51&#34;</span>))
+
+<span style="color:#75715e"># 5.29</span>
+count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+curr_line <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#66d9ef">for</span> year <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2100</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+    <span style="color:#66d9ef">if</span> (year <span style="color:#f92672">%</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> year <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">or</span> year <span style="color:#f92672">%</span> <span style="color:#ae81ff">400</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        curr_line <span style="color:#f92672">+=</span> str(year) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span>
+        <span style="color:#66d9ef">if</span> count <span style="color:#f92672">==</span> <span style="color:#ae81ff">10</span>:
+            <span style="color:#66d9ef">print</span>(curr_line)
+            count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            curr_line <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+
+<span style="color:#75715e"># 5.35</span>
+perfect_nums <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>_000):
+    div_sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">for</span> div_num <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, num):
+        <span style="color:#66d9ef">if</span> num <span style="color:#f92672">%</span> div_num <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+            div_sum <span style="color:#f92672">+=</span> div_num
+    <span style="color:#66d9ef">if</span> num <span style="color:#f92672">==</span> div_sum:
+        perfect_nums <span style="color:#f92672">+=</span> str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Perfect Numbers:&#34;</span>, perfect_nums)
+
+<span style="color:#75715e"># 5.45</span>
+num <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter a decimal integer: &#34;</span>))
+hex_num <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#66d9ef">while</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+    div_digit <span style="color:#f92672">=</span> num <span style="color:#f92672">%</span> <span style="color:#ae81ff">16</span>
+    num <span style="color:#f92672">//=</span> <span style="color:#ae81ff">16</span>
+    <span style="color:#66d9ef">if</span> div_digit <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+        div_digit <span style="color:#f92672">=</span> str(div_digit)
+    <span style="color:#66d9ef">elif</span> div_digit <span style="color:#f92672">==</span> <span style="color:#ae81ff">10</span>:
+        div_digit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;A&#34;</span>
+    <span style="color:#66d9ef">elif</span> div_digit <span style="color:#f92672">==</span> <span style="color:#ae81ff">11</span>:
+        div_digit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;B&#34;</span>
+    <span style="color:#66d9ef">elif</span> div_digit <span style="color:#f92672">==</span> <span style="color:#ae81ff">12</span>:
+        div_digit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;C&#34;</span>
+    <span style="color:#66d9ef">elif</span> div_digit <span style="color:#f92672">==</span> <span style="color:#ae81ff">13</span>:
+        div_digit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>
+    <span style="color:#66d9ef">elif</span> div_digit <span style="color:#f92672">==</span> <span style="color:#ae81ff">14</span>:
+        div_digit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;E&#34;</span>
+    <span style="color:#66d9ef">else</span>:
+        div_digit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;F&#34;</span>
+    hex_num <span style="color:#f92672">=</span> div_digit <span style="color:#f92672">+</span> hex_num
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hexadecimal equivelant:&#34;</span>, hex_num)
 </code></pre></div></article>
  
       
