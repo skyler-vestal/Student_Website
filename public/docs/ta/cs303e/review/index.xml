@@ -16,8 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</guid>
-      <description>Midterm Review#Multiple Choice Section#The following is Mike&amp;rsquo;s CS 312 Exam 1 from Fall 2019 and 2018. You can find the original page here. I&amp;rsquo;ve translated a few questions from Java to Python
-CS 312 Fall &amp;lsquo;19# What is output by the following code when it is run?  x1 = 10 y1 = 2 + x1 // 3 x1 += 2 y1 -= 1 y1 = 3 + y1 print(x1, y1) What is output by the following code when it is run?</description>
+      <description>Midterm Review#MC/Short Answer Section#Noah&amp;rsquo;s Multiple Choice#Noah (fellow TA) has made a lot of great multiple choice questions that he&amp;rsquo;s decided to share with me. Big 👏 for him.
+Assume libraries have been imported correctly for the following questions.
+ What is output by the following code?  x = int(52.2) y = math.floor(999.9) print(x, y) A. 52 1000B. 52 999C.</description>
     </item>
     
     <item>
