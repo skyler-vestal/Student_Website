@@ -10,5 +10,24 @@
 	<atom:link href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Midterm</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</guid>
+      <description>Midterm Review#Multiple Choice Section#The following is Mike&amp;rsquo;s CS 312 Exam 1 from Fall 2019 and 2018. You can find the original page here. I&amp;rsquo;ve translated a few questions from Java to Python
+CS 312 Fall &amp;lsquo;19# What is output by the following code when it is run?  x1 = 10 y1 = 2 + x1 // 3 x1 += 2 y1 -= 1 y1 = 3 + y1 print(x1, y1) What is output by the following code when it is run?</description>
+    </item>
+    
+    <item>
+      <title>Final</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</guid>
+      <description>Final Review#S̷̡̨̨̛̜̮̩̗̜̠̦̪̮͉̩̫͓̼͖͙̩͎͚͚̩̝̩͓̲̝͕̹̠͖̫̰̜̞͎͙͍̗̟̝̲͕̤̱̩̯͉̟̬͍̙̙͔̿̎͒̌́̀͐̀̄̅͗̐̽͒̊͗̌̆̑̐̊́̈́͛̀́͋̈́̒̀̾̓̄̾̊̽͐̇̇̂̔͋͐̄͂̎͌̓̍͑͑̌̅̃̓̍́͑̇͘̚̕̚͜͝͝ͅͅͅ ̴̧̨̛̣̰̭̬̱̝͈̣͇͙͖̺̥̱̯̼͕͇͕̟͇̩̘̹̟͔̯̲͚̣̲͓͙͍̟̪̪̮̝̟̩̞̯̖̖̳̗͈̤̘̰̯͒̈́̍̏̏̍͊̾͆̓̈́̏̓͂̾̍̐̉̄͗̂͒̋̃̏̋́͌͋̀̊̎͂̅́͆͆̒̑͊̈̍̑͋̎̒̈́̽̾̂̾̀̐̔̇́̊̂̓̃̈́̀̈́̒͗̉̆̅͌̕͘̚̚͘͠͝͠ͅǪ̴̡̛͓̣̻͉͍͍͚̼͙̦͙̻̺̰̌͆͂̈͐̎̌̿͊̍͑̇̌͛̆̕͜͝͝͝͝ ̵̦̲̤̪̙̻̳͚̦̠̻̳̩͇̘̓̋̏̑̾́͛͌͂̍̋̋̅͗̀́̅̅͊̏̃̅̀̒̈͛̅͘̚͠͝Ở̸̡̨̨̤̜̪̯̤̜͇̟̫͙̝̲͍͇͖̘̯̰͍̤͖͍̖̖̭͈̣̲̣̺̺͓̜̲̮̬̞̣̳͙͍͋͋̑̄̀̌̅́̆̃̏̅̔̉͊͋̓̾̌̓͌̄̀̓͂̈́̕͘͜͜͜ ̵̡̢̨̧̢̢̡̡̫̘̻̭̣̤̞͚̟̤̟̳͖̟̮̣̦̙̟̺̼͈̯͚̬̳̩̘̖͔̪̺̩͕͈͇͎̹̙̭̤͉̱̹̱̠̟̳̱̦̼́̐̊̀̌̄̀͌̈́͋̿̉̊̐̿̓͆͑̍̿̈́̈́̚͜͜͝ͅN̴̢̧̢̢̯̝̱̭̬̮̬̭̗̭̬̭̱̫͉̳͉̟̱̠͇̱̺̺͎͍̗̖͈̟̥̬̘̖͍̮̱͈͖̼̗̱̖̤͈͓͕̠̱̦̘̝͓̠̜̹͇͓̠̹͓̹͙̣̼͍̽̉̇̆̿̏̏̍͒̂̒͑̽̄̑͐͊͊̏̐́̔̏̈̓̉͊͑̀̆͗̃̀͐̌̊̀̿̒̾̓̔̋̏̚͘̕̚̚͜͜͝͠ͅͅ</description>
+    </item>
+    
   </channel>
 </rss>

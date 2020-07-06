@@ -22,6 +22,16 @@ Embdedded solutions:
     </item>
     
     <item>
+      <title>Midterm</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</guid>
+      <description>Midterm Review#Multiple Choice Section#The following is Mike&amp;rsquo;s CS 312 Exam 1 from Fall 2019 and 2018. You can find the original page here. I&amp;rsquo;ve translated a few questions from Java to Python
+CS 312 Fall &amp;lsquo;19# What is output by the following code when it is run?  x1 = 10 y1 = 2 + x1 // 3 x1 += 2 y1 -= 1 y1 = 3 + y1 print(x1, y1) What is output by the following code when it is run?</description>
+    </item>
+    
+    <item>
       <title>Syntax</title>
       <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -39,6 +49,15 @@ Embdedded solutions:
       <description>Chapter 2 Exercise Solutions#Download Solutions
 Embedded solutions:
 # Exercies for Chapter 2 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 2.1 celsius = eval(input(&amp;#34;Enter a degree in Celsius: &amp;#34;)) fahrenheit = (9 / 5) * celsius + 32 print(celsius, &amp;#34;Celsius is&amp;#34;, fahrenheit, &amp;#34;Fahrenheit&amp;#34;) # 2.2 radius, length = eval(input(&amp;#34;Enter area and volume: &amp;#34;)) area = radius * radius * 3.14 volume = area * length print(&amp;#34;The area is&amp;#34;, area) print(&amp;#34;The volume is&amp;#34;, volume) # 2.</description>
+    </item>
+    
+    <item>
+      <title>Final</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</guid>
+      <description>Final Review#S̷̡̨̨̛̜̮̩̗̜̠̦̪̮͉̩̫͓̼͖͙̩͎͚͚̩̝̩͓̲̝͕̹̠͖̫̰̜̞͎͙͍̗̟̝̲͕̤̱̩̯͉̟̬͍̙̙͔̿̎͒̌́̀͐̀̄̅͗̐̽͒̊͗̌̆̑̐̊́̈́͛̀́͋̈́̒̀̾̓̄̾̊̽͐̇̇̂̔͋͐̄͂̎͌̓̍͑͑̌̅̃̓̍́͑̇͘̚̕̚͜͝͝ͅͅͅ ̴̧̨̛̣̰̭̬̱̝͈̣͇͙͖̺̥̱̯̼͕͇͕̟͇̩̘̹̟͔̯̲͚̣̲͓͙͍̟̪̪̮̝̟̩̞̯̖̖̳̗͈̤̘̰̯͒̈́̍̏̏̍͊̾͆̓̈́̏̓͂̾̍̐̉̄͗̂͒̋̃̏̋́͌͋̀̊̎͂̅́͆͆̒̑͊̈̍̑͋̎̒̈́̽̾̂̾̀̐̔̇́̊̂̓̃̈́̀̈́̒͗̉̆̅͌̕͘̚̚͘͠͝͠ͅǪ̴̡̛͓̣̻͉͍͍͚̼͙̦͙̻̺̰̌͆͂̈͐̎̌̿͊̍͑̇̌͛̆̕͜͝͝͝͝ ̵̦̲̤̪̙̻̳͚̦̠̻̳̩͇̘̓̋̏̑̾́͛͌͂̍̋̋̅͗̀́̅̅͊̏̃̅̀̒̈͛̅͘̚͠͝Ở̸̡̨̨̤̜̪̯̤̜͇̟̫͙̝̲͍͇͖̘̯̰͍̤͖͍̖̖̭͈̣̲̣̺̺͓̜̲̮̬̞̣̳͙͍͋͋̑̄̀̌̅́̆̃̏̅̔̉͊͋̓̾̌̓͌̄̀̓͂̈́̕͘͜͜͜ ̵̡̢̨̧̢̢̡̡̫̘̻̭̣̤̞͚̟̤̟̳͖̟̮̣̦̙̟̺̼͈̯͚̬̳̩̘̖͔̪̺̩͕͈͇͎̹̙̭̤͉̱̹̱̠̟̳̱̦̼́̐̊̀̌̄̀͌̈́͋̿̉̊̐̿̓͆͑̍̿̈́̈́̚͜͜͝ͅN̴̢̧̢̢̯̝̱̭̬̮̬̭̗̭̬̭̱̫͉̳͉̟̱̠͇̱̺̺͎͍̗̖͈̟̥̬̘̖͍̮̱͈͖̼̗̱̖̤͈͓͕̠̱̦̘̝͓̠̜̹͇͓̠̹͓̹͙̣̼͍̽̉̇̆̿̏̏̍͒̂̒͑̽̄̑͐͊͊̏̐́̔̏̈̓̉͊͑̀̆͗̃̀͐̌̊̀̿̒̾̓̔̋̏̚͘̕̚̚͜͜͝͠ͅͅ</description>
     </item>
     
     <item>
