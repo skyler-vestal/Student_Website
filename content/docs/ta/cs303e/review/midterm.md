@@ -943,3 +943,6 @@ def swap_case(s):
             new_str += let
     return new_str
 ```
+
+Colette made me put this:  
+![](/~ves314/img/ein.gif?raw=true)

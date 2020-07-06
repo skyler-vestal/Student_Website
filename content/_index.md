@@ -36,7 +36,7 @@ type: docs
     skyler_vestal@HUGO:~/personality$ cat dog
     cat: dog: No such file or directory
     skyler_vestal@HUGO:~/personality$ cat cat
-    He doesn't have a name yet but:
+    Furrari:
 
 ![](/~ves314/img/cat.jpg)
 Photographed by [my sister](https://www.ranivestal.com/)
