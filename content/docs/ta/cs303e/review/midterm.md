@@ -311,7 +311,7 @@ D. 49
 
 21. What is output by the following code?
 ```python
-ount = 0
+count = 0
 for i in range(3, 15, 3):
     count += 1
 print(count)
@@ -365,11 +365,10 @@ what_am_i = a(5)
 print(what_am_i)
 ```
 ```
-A. 0
-B. INFINITE LOOP
+A. 7
+B. 9
 C. 10
-D. 11
-E. 9
+D. 12
 ```
 
 25. What is output by the following code?
@@ -786,11 +785,11 @@ Difficult (Above Exam) Problems:
 17. C
 18. B
 19. C
-20. D
+20. C
 21. D
 22. A
 23. C
-24. A
+24. D
 25. A
 26. D
 ```
