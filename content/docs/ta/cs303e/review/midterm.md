@@ -142,7 +142,7 @@ E. RUNTIME ERROR
 10. What is output by the following code?
 ```python
 x = eval('9 + 1')
-print(a)
+print(x)
 ```
 ```
 A. 9 + 1
