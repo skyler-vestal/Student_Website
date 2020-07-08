@@ -18,7 +18,7 @@ Hey! I've created a test file to help with your current assignment, since enteri
 if __name__ == "__main__":            
     main()
 ```
-(MAKE SURE TO REMOVE THIS WHEN YOU'RE DONE TESTING AND WILL SUBMIT)
+**Make sure to remove this when you're about to submit your program**  
 5. Run the strings_tester.py file!
 
 ## Mike's Outputs
