@@ -352,3 +352,85 @@ some_obj.do_something(3)
 x = some_obj.do_something(5)
 print(x)
 ```
+
+## Data Structures
+
+### Strings
+
+#### Initializing:
+```python
+test_str = "some string"
+```
+
+#### Indexing
+```python
+# Output: 2
+print(test_str[2])
+```
+
+#### Slicing
+```python
+# Output: string string
+print(test_str[4:10], test_str[4:])
+# Output: some
+print(test_str[:-6])
+# Output: sm tig
+print(test_str[::2])
+```
+
+#### Iterating
+```python
+# Output: ss
+for let in test_str:
+    if let == "s"
+        print("s", end="")
+```
+
+#### * Operator
+```python
+# Output: sssssnake
+print("s" * 5 + "nake")
+```
+
+### Lists
+
+#### Initializing:
+```python
+test_list = []
+# [1, 1, 1, 1, 1]
+test_list = [1] * 5
+test_list = [5, 1, 4, 2, 10]
+```
+
+#### Indexing
+```python
+# Output: 4
+print(test_list[2])
+```
+
+#### Slicing
+```python
+# Output: [4, 2, 10]
+print(test_list[2:5], test_list[2:])
+# Output: [1, 4, 2, 10]
+print(test_list[:-4])
+# Output: [5, 4, 10]
+print(test_list[::2])
+```
+
+#### Modifying
+```python
+# Output: [5, 5, 4]
+test_list[1] = 5
+print(test_list[:2])
+```
+
+#### Iterating
+```python
+# Output: 22
+total = 0
+test_list = [5, 1, 4, 2, 10]
+for num in test_list:
+    total += num
+print(total)
+```

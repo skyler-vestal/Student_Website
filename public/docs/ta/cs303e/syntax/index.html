@@ -14,7 +14,7 @@
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.2d0b72d20a2dec38670d169d19574725ecbb137d45e0151bddcffca3d99212db.js" integrity="sha256-LQty0got7DhnDRadGVdHJey7E31F4BUb3c/8o9mSEts="></script>
+<script defer src="/~ves314/en.search.min.07c9d38b6dcafd2b62ad9c131e3707b8ad26a2b3d233db06f5029cf16d80a82b.js" integrity="sha256-B8nTi23K/StirZwTHjcHuK0morPSM9sG9QKc8W2AqCs="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -362,6 +362,12 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#declaration">Declaration</a></li>
         <li><a href="#creating-objects">Creating Objects</a></li>
         <li><a href="#using-objects">Using Objects</a></li>
+      </ul>
+    </li>
+    <li><a href="#data-structures">Data Structures</a>
+      <ul>
+        <li><a href="#strings">Strings</a></li>
+        <li><a href="#lists">Lists</a></li>
       </ul>
     </li>
   </ul>
@@ -735,6 +741,94 @@ add, sub, div, mult <span style="color:#f92672">=</span> simple_ops(<span style=
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">some_obj<span style="color:#f92672">.</span>do_something(<span style="color:#ae81ff">3</span>)
 x <span style="color:#f92672">=</span> some_obj<span style="color:#f92672">.</span>do_something(<span style="color:#ae81ff">5</span>)
 <span style="color:#66d9ef">print</span>(x)
+</code></pre></div><h2 id="data-structures">
+  Data Structures
+  <a class="anchor" href="#data-structures">#</a>
+</h2>
+<h3 id="strings">
+  Strings
+  <a class="anchor" href="#strings">#</a>
+</h3>
+<h4 id="initializing">
+  Initializing:
+  <a class="anchor" href="#initializing">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">test_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;some string&#34;</span>
+</code></pre></div><h4 id="indexing">
+  Indexing
+  <a class="anchor" href="#indexing">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: 2</span>
+<span style="color:#66d9ef">print</span>(test_str[<span style="color:#ae81ff">2</span>])
+</code></pre></div><h4 id="slicing">
+  Slicing
+  <a class="anchor" href="#slicing">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: string string</span>
+<span style="color:#66d9ef">print</span>(test_str[<span style="color:#ae81ff">4</span>:<span style="color:#ae81ff">10</span>], test_str[<span style="color:#ae81ff">4</span>:])
+<span style="color:#75715e"># Output: some</span>
+<span style="color:#66d9ef">print</span>(test_str[:<span style="color:#f92672">-</span><span style="color:#ae81ff">6</span>])
+<span style="color:#75715e"># Output: sm tig</span>
+<span style="color:#66d9ef">print</span>(test_str[::<span style="color:#ae81ff">2</span>])
+</code></pre></div><h4 id="iterating">
+  Iterating
+  <a class="anchor" href="#iterating">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: ss</span>
+<span style="color:#66d9ef">for</span> let <span style="color:#f92672">in</span> test_str:
+    <span style="color:#66d9ef">if</span> let <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;s&#34;</span>
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;s&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</code></pre></div><h4 id="-operator">
+  * Operator
+  <a class="anchor" href="#-operator">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: sssssnake</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;s&#34;</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;nake&#34;</span>)
+</code></pre></div><h3 id="lists">
+  Lists
+  <a class="anchor" href="#lists">#</a>
+</h3>
+<h4 id="initializing-1">
+  Initializing:
+  <a class="anchor" href="#initializing-1">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">test_list <span style="color:#f92672">=</span> []
+<span style="color:#75715e"># [1, 1, 1, 1, 1]</span>
+test_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>
+test_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>]
+</code></pre></div><h4 id="indexing-1">
+  Indexing
+  <a class="anchor" href="#indexing-1">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: 4</span>
+<span style="color:#66d9ef">print</span>(test_list[<span style="color:#ae81ff">2</span>])
+</code></pre></div><h4 id="slicing-1">
+  Slicing
+  <a class="anchor" href="#slicing-1">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: [4, 2, 10]</span>
+<span style="color:#66d9ef">print</span>(test_list[<span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">5</span>], test_list[<span style="color:#ae81ff">2</span>:])
+<span style="color:#75715e"># Output: [1, 4, 2, 10]</span>
+<span style="color:#66d9ef">print</span>(test_list[:<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>])
+<span style="color:#75715e"># Output: [5, 4, 10]</span>
+<span style="color:#66d9ef">print</span>(test_list[::<span style="color:#ae81ff">2</span>])
+</code></pre></div><h4 id="modifying">
+  Modifying
+  <a class="anchor" href="#modifying">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: [5, 5, 4]</span>
+test_list[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+<span style="color:#66d9ef">print</span>(test_list[:<span style="color:#ae81ff">2</span>])
+</code></pre></div><h4 id="iterating-1">
+  Iterating
+  <a class="anchor" href="#iterating-1">#</a>
+</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Output: 22</span>
+total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+test_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>]
+<span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> test_list:
+    total <span style="color:#f92672">+=</span> num
+<span style="color:#66d9ef">print</span>(total)
 </code></pre></div></article>
  
       
@@ -815,6 +909,12 @@ x <span style="color:#f92672">=</span> some_obj<span style="color:#f92672">.</sp
         <li><a href="#declaration">Declaration</a></li>
         <li><a href="#creating-objects">Creating Objects</a></li>
         <li><a href="#using-objects">Using Objects</a></li>
+      </ul>
+    </li>
+    <li><a href="#data-structures">Data Structures</a>
+      <ul>
+        <li><a href="#strings">Strings</a></li>
+        <li><a href="#lists">Lists</a></li>
       </ul>
     </li>
   </ul>
