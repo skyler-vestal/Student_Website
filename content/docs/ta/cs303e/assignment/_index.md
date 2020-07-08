@@ -155,36 +155,36 @@ Enter one of the following
 
 Your choice: r
 Enter the number of random tests: 5
-Enter a # for the seed for the test: 69
+Enter a # for the seed for the test: 27600
 --------------------
-Function name: length_of_matching_suffix
-Parameter 1: PDXl
-Parameter 2: HikdDoZxUUJcvdTepMnFadueMeudLjhgTDXl
-Return value: 3
---------------------
---------------------
-Function name: length_of_matching_suffix
-Parameter 1: QXBhDVxF
-Parameter 2: QXBhDVxF
-Return value: 8
+Function name: num_chars_same
+Parameter 1: rZQ
+Parameter 2: bfQ
+Return value: 1
 --------------------
 --------------------
-Function name: stretch
-Parameter 1: PYqEDYyPVzmyhw
-Parameter 2: 0
-Return value:
+Function name: num_chars_same
+Parameter 1: dfE
+Parameter 2: DZE
+Return value: 1
 --------------------
 --------------------
 Function name: stretch
-Parameter 1: RauNxsfxJHZLdBz
-Parameter 2: 1
-Return value: RaauuuNNNNxxxxxssssssfffffffxxxxxxxxJJJJJJJJJHHHHHHHHHHZZZZZZZZZZZLLLLLLLLLLLLdddddddddddddBBBBBBBBBBBBBBzzzzzzzzzzzzzzz
+Parameter 1: siXxTBaRzvOlq
+Parameter 2: 5
+Return value: sssssiiiiiiiiiiXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxTTTTTTTTTTTTTTTTTTTTTTTTTBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 --------------------
 --------------------
 Function name: length_of_matching_suffix
-Parameter 1: SBydmzuxBJwN
-Parameter 2: kaoVFcoOpFGrMnPZbASpMsQnEZXWzuxBJwN
+Parameter 1: hXiKWdNLfeTjpc
+Parameter 2: vAjICLSmAlemtDWIUANCxyjPASUupXTdhrLfeTjpc
 Return value: 7
+--------------------
+--------------------
+Function name: num_chars_same
+Parameter 1: eNuCnEMgYRRso
+Parameter 2: vrBzLyYgRQCii
+Return value: 1
 --------------------
 
 Tests done. Enter y to do more tests: n
