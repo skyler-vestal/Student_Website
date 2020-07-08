@@ -241,3 +241,7 @@ Return value: 7
 
 Tests done. Enter y to do more tests: n
 ```
+
+Here's Colette's dog Hunter:
+
+![](/~ves314/img/hunter.jpg?raw=true)
