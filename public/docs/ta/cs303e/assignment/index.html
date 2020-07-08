@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Test File for Assignment 9#Hey! I&rsquo;ve created a test file to help with your current assignment, since entering all of Mike&rsquo;s inputs is quite tedious while troubleshooting. Additionally, I&rsquo;ve created methods to generate random tests along with easily testing the other functions yourself with custom inputs!
+Click here to access the file
+Steps to Install# Access the file Right click on the file and select &ldquo;Save as&rdquo; or something similar Move this file into the same folder as your strings.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="A9 Tester" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/" />
+
+<title>A9 Tester | Skyler ~ UTCS</title>
+<link rel="manifest" href="/~ves314/manifest.json">
+<link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
+<script defer src="/~ves314/en.search.min.c08caa15c257cbcb100ba3b75075b3556b49fd9aaef10cfb2597c2a2df4dc2d4.js" integrity="sha256-wIyqFcJXy8sQC6O3UHWzVWtJ/Zqu8Qz7JZfCot9NwtQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/index.xml" title="Skyler ~ UTCS" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~ves314"><span>Skyler ~ UTCS</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>TA Classes</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/" class="collapsed ">CS 303E</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/syntax/" class="">Syntax</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/" class="collapsed ">Exercises</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/review/" class="collapsed ">Exam Reviews</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/assignment/" class="active">A9 Tester</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs314/" class="">CS 314</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Personal Work</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Projects</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Research</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>A9 Tester</strong>
+
+  <label for="toc-control">
+    
+    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#steps-to-install">Steps to Install</a></li>
+    <li><a href="#mikes-outputs">Mike&rsquo;s Outputs</a>
+      <ul>
+        <li><a href="#example-1">Example 1</a></li>
+        <li><a href="#example-2">Example 2</a></li>
+        <li><a href="#example-3">Example 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#random-output-sample">Random Output Sample</a></li>
+    <li><a href="#custom-input-sample">Custom Input Sample</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="test-file-for-assignment-9">
+  Test File for Assignment 9
+  <a class="anchor" href="#test-file-for-assignment-9">#</a>
+</h1>
+<p>Hey! I&rsquo;ve created a test file to help with your current assignment, since entering all of Mike&rsquo;s inputs is quite tedious while troubleshooting. Additionally, I&rsquo;ve created methods to generate random tests along with easily testing the other functions yourself with custom inputs!</p>
+<p><a href="strings_tester.py">Click here to access the file</a></p>
+<h2 id="steps-to-install">
+  Steps to Install
+  <a class="anchor" href="#steps-to-install">#</a>
+</h2>
+<ol>
+<li>Access the file</li>
+<li>Right click on the file and select &ldquo;Save as&rdquo; or something similar</li>
+<li>Move this file into the same folder as your strings.py</li>
+<li>In strings.py, at the bottom of the program change it so it looks like:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:            
+    main()
+</code></pre></div><p>(MAKE SURE TO REMOVE THIS WHEN YOU&rsquo;RE DONE TESTING AND WILL SUBMIT)
+5. Run the strings_tester.py file!</p>
+<h2 id="mikes-outputs">
+  Mike&rsquo;s Outputs
+  <a class="anchor" href="#mikes-outputs">#</a>
+</h2>
+<h3 id="example-1">
+  Example 1
+  <a class="anchor" href="#example-1">#</a>
+</h3>
+<pre><code>----- EXAMPLE 1 -----
+--------------------
+Function name: num_chars_same
+Parameter 1: catch
+Parameter 2: cots
+Return value: 2
+--------------------
+--------------------
+Function name: num_chars_same
+Parameter 1: catch
+Parameter 2: cat chaser
+Return value: 3
+--------------------
+--------------------
+Function name: stretch
+Parameter 1: dog
+Parameter 2: 3
+Return value: dddooooooggggggggg
+--------------------
+--------------------
+Function name: stretch
+Parameter 1: dog
+Parameter 2: 1
+Return value: dooggg
+--------------------
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: cat
+Parameter 2: doggo
+Return value: 0
+--------------------
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: dog
+Parameter 2: doggo
+Return value: 0
+--------------------
+</code></pre><h3 id="example-2">
+  Example 2
+  <a class="anchor" href="#example-2">#</a>
+</h3>
+<pre><code>----- EXAMPLE 2 -----        
+--------------------
+Function name: num_chars_same
+Parameter 1: catch
+Parameter 2: batches
+Return value: 4
+--------------------
+--------------------
+Function name: stretch
+Parameter 1: dog
+Parameter 2: 0
+Return value:
+--------------------
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: cats
+Parameter 2: dogs
+Return value: 1
+--------------------
+</code></pre><h3 id="example-3">
+  Example 3
+  <a class="anchor" href="#example-3">#</a>
+</h3>
+<pre><code>----- EXAMPLE 3 -----
+--------------------
+Function name: num_chars_same
+Parameter 1: dog
+Parameter 2: cats
+Return value: 0
+--------------------
+--------------------
+Function name: num_chars_same
+Parameter 1:
+Parameter 2: cats
+Return value: 0
+--------------------
+--------------------
+Function name: num_chars_same
+Parameter 1: Hamilton
+Parameter 2: ham stands!
+Return value: 4
+--------------------
+--------------------
+Function name: stretch
+Parameter 1: Dogs!
+Parameter 2: 4
+Return value: DDDDooooooooggggggggggggssssssssssssssss!!!!!!!!!!!!!!!!!!!!
+--------------------
+--------------------
+Function name: stretch
+Parameter 1: 1234
+Parameter 2: 2
+Return value: 11222233333344444444
+--------------------
+--------------------
+Function name: stretch
+Parameter 1: !!!
+Parameter 2: 1
+Return value: !!!!!!
+--------------------
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: cats
+Parameter 2:
+Return value: 0
+--------------------
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: cats
+Parameter 2: maniacs
+Return value: 1
+--------------------
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: dog
+Parameter 2: cat and dog
+Return value: 3
+--------------------
+</code></pre><h2 id="random-output-sample">
+  Random Output Sample
+  <a class="anchor" href="#random-output-sample">#</a>
+</h2>
+<pre><code>Enter one of the following
+    - m to Mike's same example
+    - r to run random tests
+    - s to select a certain method
+
+Your choice: r
+Enter the number of random tests: 5
+Enter a # for the seed for the test: 69
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: PDXl
+Parameter 2: HikdDoZxUUJcvdTepMnFadueMeudLjhgTDXl
+Return value: 3
+--------------------
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: QXBhDVxF
+Parameter 2: QXBhDVxF
+Return value: 8
+--------------------
+--------------------
+Function name: stretch
+Parameter 1: PYqEDYyPVzmyhw
+Parameter 2: 0
+Return value:
+--------------------
+--------------------
+Function name: stretch
+Parameter 1: RauNxsfxJHZLdBz
+Parameter 2: 1
+Return value: RaauuuNNNNxxxxxssssssfffffffxxxxxxxxJJJJJJJJJHHHHHHHHHHZZZZZZZZZZZLLLLLLLLLLLLdddddddddddddBBBBBBBBBBBBBBzzzzzzzzzzzzzzz
+--------------------
+--------------------
+Function name: length_of_matching_suffix
+Parameter 1: SBydmzuxBJwN
+Parameter 2: kaoVFcoOpFGrMnPZbASpMsQnEZXWzuxBJwN
+Return value: 7
+--------------------
+
+Tests done. Enter y to do more tests: n
+</code></pre><h2 id="custom-input-sample">
+  Custom Input Sample
+  <a class="anchor" href="#custom-input-sample">#</a>
+</h2>
+<pre><code>Enter one of the following
+    - m to Mike's same example
+    - r to run random tests
+    - s to select a certain method
+
+Your choice: s
+Enter the number of select tests: 3
+
+Enter a function choice number:
+     - 0 for num_chars_same
+     - 1 for stretch
+     - 2 for length_of_matching_suffix
+Enter your function number choice: 0
+--------------------
+Trial #: 1
+Function name: num_chars_same
+First parameter: sample string
+Second parameter: sample word
+Return value: 8
+--------------------
+
+Enter a function choice number:
+     - 0 for num_chars_same
+     - 1 for stretch
+     - 2 for length_of_matching_suffix
+Enter your function number choice: 1
+--------------------
+Trial #: 2
+Function name: stretch
+First parameter: beanin'
+Second parameter: 7
+Return value: bbbbbbbeeeeeeeeeeeeeeaaaaaaaaaaaaaaaaaaaaannnnnnnnnnnnnnnnnnnnnnnnnnnniiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiinnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn'''''''''''''''''''''''''''''''''''''''''''''''''
+--------------------
+
+Enter a function choice number:
+     - 0 for num_chars_same
+     - 1 for stretch
+     - 2 for length_of_matching_suffix
+Enter your function number choice: 2
+--------------------
+Trial #: 3
+Function name: length_of_matching_suffix
+First parameter: eeeeeeEEEEEEE
+Second parameter: REEEEEEEEEEE
+Return value: 7
+--------------------
+
+Tests done. Enter y to do more tests: n
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#steps-to-install">Steps to Install</a></li>
+    <li><a href="#mikes-outputs">Mike&rsquo;s Outputs</a>
+      <ul>
+        <li><a href="#example-1">Example 1</a></li>
+        <li><a href="#example-2">Example 2</a></li>
+        <li><a href="#example-3">Example 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#random-output-sample">Random Output Sample</a></li>
+    <li><a href="#custom-input-sample">Custom Input Sample</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
