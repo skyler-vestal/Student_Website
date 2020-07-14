@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chapter 11 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 11 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) import math import random # 11.1 def sumColumn(m, columnIndex): mat_sum = 0 for i in range(len(m)): mat_sum &#43;= m[i][columnIndex] return mat_sum matrix = [] for i in range(3): user_input = input(&#34;Enter a 3-by-4 matrix row for row &#34; &#43; str(i) &#43; &#34;: &#34;) row = [eval(x) for x in user_input.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Chapter 11" />
+<meta property="og:description" content="Chapter 11 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 11 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) import math import random # 11.1 def sumColumn(m, columnIndex): mat_sum = 0 for i in range(len(m)): mat_sum &#43;= m[i][columnIndex] return mat_sum matrix = [] for i in range(3): user_input = input(&#34;Enter a 3-by-4 matrix row for row &#34; &#43; str(i) &#43; &#34;: &#34;) row = [eval(x) for x in user_input." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/" />
+
+<title>Chapter 11 | Skyler ~ UTCS</title>
+<link rel="manifest" href="/~ves314/manifest.json">
+<link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
+<script defer src="/~ves314/en.search.min.8549503f0fdd3b7a1bf631f7f5373b7cf6909ead5b4512cd476e0aca26ae3ec7.js" integrity="sha256-hUlQPw/dO3ob9jH39Tc7fPaQnq1bRRLNR24KyiauPsc="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~ves314"><span>Skyler ~ UTCS</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>TA Classes</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/" class="collapsed ">CS 303E</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/syntax/" class="">Syntax</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/" class="collapsed ">Exercises</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch1/" class="">Chapter 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch2/" class="">Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch3/" class="">Chapter 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch4/" class="">Chapter 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch5/" class="">Chapter 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch6/" class="">Chapter 6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch7/" class="">Chapter 7</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch8/" class="">Chapter 8</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch10/" class="">Chapter 10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch11/" class="active">Chapter 11</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/review/" class="collapsed ">Exam Reviews</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs303e/assignment/" class="">A9 Tester</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~ves314/docs/ta/cs314/" class="">CS 314</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Personal Work</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Projects</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Research</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Chapter 11</strong>
+
+  <label for="toc-control">
+    
+    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents"></nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="chapter-11-exercise-solutions">
+  Chapter 11 Exercise Solutions
+  <a class="anchor" href="#chapter-11-exercise-solutions">#</a>
+</h1>
+<p><a href="../files/Ch_11.py">Download Solutions</a></p>
+<p>Embedded solutions:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Exercises for Chapter 11 of &#34;Introduction to Programming using Python&#34;</span>
+<span style="color:#75715e"># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
+<span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> random
+
+<span style="color:#75715e"># 11.1</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sumColumn</span>(m, columnIndex):
+    mat_sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(m)):
+        mat_sum <span style="color:#f92672">+=</span> m[i][columnIndex]
+    <span style="color:#66d9ef">return</span> mat_sum
+
+matrix <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+    user_input <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a 3-by-4 matrix row for row &#34;</span> <span style="color:#f92672">+</span> str(i) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span>)
+    row <span style="color:#f92672">=</span> [eval(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> user_input<span style="color:#f92672">.</span>split()]
+    matrix<span style="color:#f92672">.</span>append(row)
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Sum of the elements for column&#34;</span>, i, <span style="color:#e6db74">&#34;is&#34;</span>, sumColumn(matrix, i))
+
+<span style="color:#75715e"># 11.2</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sumMajorDiagonal</span>(m):
+    mat_sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(m)):
+        mat_sum <span style="color:#f92672">+=</span> m[i][i]
+    <span style="color:#66d9ef">return</span> mat_sum
+
+matrix <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):
+    user_input <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a 4-by-4 matrix row for row &#34;</span> <span style="color:#f92672">+</span> str(i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span>)
+    row <span style="color:#f92672">=</span> [eval(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> user_input<span style="color:#f92672">.</span>split()]
+    matrix<span style="color:#f92672">.</span>append(row)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Sum of the elements in the major diagonal is&#34;</span>, 
+            sumMajorDiagonal(matrix))
+
+<span style="color:#75715e"># 11.5</span>
+<span style="color:#75715e"># Textbook&#39;s example output is wrong. Strange.</span>
+<span style="color:#75715e"># Also don&#39;t worry about getting the format stuff ... at all</span>
+<span style="color:#75715e"># Just test to make sure your addMatrix function works or else you&#39;re in</span>
+<span style="color:#75715e"># for a rough time T_T</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addMatrix</span>(a, b):
+    res_mat <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(a)):
+        row <span style="color:#f92672">=</span> []
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(b)):
+            row<span style="color:#f92672">.</span>append(a[i][j] <span style="color:#f92672">+</span> b[i][j])
+        res_mat<span style="color:#f92672">.</span>append(row)
+    <span style="color:#66d9ef">return</span> res_mat
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_matrix</span>(entry_str):
+    user_nums <span style="color:#f92672">=</span> input(entry_str)<span style="color:#f92672">.</span>split()
+    mat <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+        row <span style="color:#f92672">=</span> []
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+            row<span style="color:#f92672">.</span>append(eval(user_nums[i <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> j]))
+        mat<span style="color:#f92672">.</span>append(row)
+    <span style="color:#66d9ef">return</span> mat
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">display_matrix</span>(mats, sign):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;The matrices are added as follows:&#34;</span>)
+    <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+        line <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span>
+        <span style="color:#66d9ef">for</span> mat <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+            mat_row <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+            <span style="color:#66d9ef">for</span> column <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+                mat_row <span style="color:#f92672">+=</span> format(mats[mat][row][column], <span style="color:#e6db74">&#34;.1f&#34;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> 
+                <span style="color:#66d9ef">if</span> row <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> column <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+                    <span style="color:#66d9ef">if</span> mat <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+                        mat_row <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> sign
+                    <span style="color:#66d9ef">elif</span> mat <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+                        mat_row <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34; =&#34;</span>
+            line <span style="color:#f92672">+=</span> format(mat_row, <span style="color:#e6db74">&#34;&lt;16&#34;</span>)
+        <span style="color:#66d9ef">print</span>(line)
+
+<span style="color:#75715e"># mat_1 = make_matrix(&#34;Enter matrix1: &#34;)</span>
+<span style="color:#75715e"># mat_2 = make_matrix(&#34;Enter matrix2: &#34;)</span>
+<span style="color:#75715e"># mat_3 = addMatrix(mat_1, mat_2)</span>
+<span style="color:#75715e"># mats = [mat_1, mat_2, mat_3]</span>
+<span style="color:#75715e"># display_matrix(mats, &#34;+&#34;)</span>
+
+<span style="color:#75715e"># 11.6</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">multiplyMatrix</span>(a, b):
+    res_mat <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(a)):
+        row <span style="color:#f92672">=</span> []
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(b)):
+            c_sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            <span style="color:#66d9ef">for</span> k <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+                c_sum <span style="color:#f92672">+=</span> a[i][k] <span style="color:#f92672">*</span> b[k][j]
+            row<span style="color:#f92672">.</span>append(c_sum)
+        res_mat<span style="color:#f92672">.</span>append(row)
+    <span style="color:#66d9ef">return</span> res_mat
+
+mat_1 <span style="color:#f92672">=</span> make_matrix(<span style="color:#e6db74">&#34;Enter matrix1: &#34;</span>)
+mat_2 <span style="color:#f92672">=</span> make_matrix(<span style="color:#e6db74">&#34;Enter matrix2: &#34;</span>)
+mat_3 <span style="color:#f92672">=</span> multiplyMatrix(mat_1, mat_2)
+mats <span style="color:#f92672">=</span> [mat_1, mat_2, mat_3]
+display_matrix(mats, <span style="color:#e6db74">&#34;*&#34;</span>)
+
+<span style="color:#75715e"># 11.7</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">min_dist</span>(pts):
+    min_dist <span style="color:#f92672">=</span> float(<span style="color:#e6db74">&#34;inf&#34;</span>)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(pts)):
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, len(pts)):
+            dist <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            <span style="color:#66d9ef">for</span> k <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
+                dist <span style="color:#f92672">+=</span> (pts[j][k] <span style="color:#f92672">-</span> pts[i][k]) <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+            dist <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>sqrt(dist)
+            min_dist <span style="color:#f92672">=</span> min(min_dist, dist)
+    <span style="color:#66d9ef">return</span> min_dist
+
+<span style="color:#66d9ef">print</span>(min_dist([[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>],
+                [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">9</span>], [<span style="color:#ae81ff">3.5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1.5</span>, <span style="color:#ae81ff">3</span>],
+                [<span style="color:#f92672">-</span><span style="color:#ae81ff">1.5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">5.5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.5</span>]]))
+
+<span style="color:#75715e"># 11.13</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">locateLargest</span>(a):
+    maxs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>]
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(a)):
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(a[i])):
+            <span style="color:#66d9ef">if</span> a[i][j] <span style="color:#f92672">&gt;</span> a[maxs[<span style="color:#ae81ff">0</span>]][maxs[<span style="color:#ae81ff">1</span>]]:
+                maxs <span style="color:#f92672">=</span> [i, j]
+    <span style="color:#66d9ef">return</span> maxs
+
+rows <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter the number of rows in the list: &#34;</span>))
+mat <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(rows):
+    user_input <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a row: &#34;</span>)
+    mat<span style="color:#f92672">.</span>append([eval(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> user_input<span style="color:#f92672">.</span>split()])
+index <span style="color:#f92672">=</span> locateLargest(mat)
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;The location of the largest element is at (&#34;</span> <span style="color:#f92672">+</span> 
+        str(index[<span style="color:#ae81ff">0</span>]) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, &#34;</span> <span style="color:#f92672">+</span> (str(index[<span style="color:#ae81ff">1</span>])) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;)&#34;</span>)
+
+<span style="color:#75715e"># 11.23</span>
+<span style="color:#75715e"># I added an extra while loop to run until an even case was found</span>
+runs <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+match <span style="color:#f92672">=</span> False
+<span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> match:
+    rand_mat <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">6</span>):
+        row <span style="color:#f92672">=</span> []
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">6</span>):
+            row<span style="color:#f92672">.</span>append(random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>))
+        rand_mat<span style="color:#f92672">.</span>append(row)
+    all_even <span style="color:#f92672">=</span> True
+    row <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">6</span>):
+        <span style="color:#66d9ef">print</span>(rand_mat[row])
+        <span style="color:#66d9ef">if</span> all_even:
+            all_even <span style="color:#f92672">=</span> rand_mat[row]<span style="color:#f92672">.</span>count(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
+            col <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            <span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">6</span>):
+                <span style="color:#66d9ef">if</span> rand_mat[col][row] <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+                    count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+            all_even <span style="color:#f92672">=</span> all_even <span style="color:#f92672">and</span> count <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
+        row <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+    result_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;All&#34;</span> <span style="color:#66d9ef">if</span> all_even <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;Not all&#34;</span>
+    <span style="color:#66d9ef">print</span>(result_str, <span style="color:#e6db74">&#34;rows and columns have an event amount of 1s&#34;</span>)
+    match <span style="color:#f92672">=</span> all_even
+    runs <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Took&#34;</span>, runs, <span style="color:#e6db74">&#34;trials to finish.&#34;</span>)
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

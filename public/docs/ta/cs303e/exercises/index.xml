@@ -87,5 +87,38 @@ Embedded solutions:
 # Exercises for Chapter 7 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import time # 7.1 class Rectangle: def __init__(self, width = 1, height = 2): self.width = width self.height = height # Don&amp;#39;t name functions like this at home kids def getArea(self): return self.width * self.height def getPerimeter(self): return 2 * (self.width + self.</description>
     </item>
     
+    <item>
+      <title>Chapter 8</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/</guid>
+      <description>Chapter 8 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 8 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 8.1 # Look up Regular Expressions to see how string checks are normally done =) ssn = input(&amp;#34;Enter a Social Security number: &amp;#34;) ssn_valid = True ssn_valid = len(ssn) == 11 index = 0 while ssn_valid and index &amp;lt; len(ssn): if index == 3 or index == 6: ssn_valid = ssn[index] == &amp;#39;-&amp;#39; else: ssn_valid = ssn[index].</description>
+    </item>
+    
+    <item>
+      <title>Chapter 10</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/</guid>
+      <description>Chapter 10 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 10 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import random # 10.2 # Not sure what format this question wants ... n = int(input(&amp;#34;Enter the quantity of #s you&amp;#39;d like to enter: &amp;#34;)) num_list = [] for i in range(n): num_list.append(int(input(&amp;#34;Enter a number: &amp;#34;))) num_list.reverse() print(&amp;#34;Your numbers reversed:&amp;#34;, num_list) # 10.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 11</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/</guid>
+      <description>Chapter 11 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 11 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math import random # 11.1 def sumColumn(m, columnIndex): mat_sum = 0 for i in range(len(m)): mat_sum += m[i][columnIndex] return mat_sum matrix = [] for i in range(3): user_input = input(&amp;#34;Enter a 3-by-4 matrix row for row &amp;#34; + str(i) + &amp;#34;: &amp;#34;) row = [eval(x) for x in user_input.</description>
+    </item>
+    
   </channel>
 </rss>
