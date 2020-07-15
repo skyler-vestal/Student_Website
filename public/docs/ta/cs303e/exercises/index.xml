@@ -120,5 +120,16 @@ Embedded solutions:
 # Exercises for Chapter 11 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math import random # 11.1 def sumColumn(m, columnIndex): mat_sum = 0 for i in range(len(m)): mat_sum += m[i][columnIndex] return mat_sum matrix = [] for i in range(3): user_input = input(&amp;#34;Enter a 3-by-4 matrix row for row &amp;#34; + str(i) + &amp;#34;: &amp;#34;) row = [eval(x) for x in user_input.</description>
     </item>
     
+    <item>
+      <title>Chapter 13</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/</guid>
+      <description>Chapter 13 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 13 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 13.1 # Could use r+ instead to read and write but book doesn&amp;#39;t cover that &amp;gt;_&amp;gt; file_name = input(&amp;#34;Enter a filename: &amp;#34;) f = open(file_name, &amp;#34;r&amp;#34;) lines = f.readlines() lines = [x.replace(&amp;#34;morning&amp;#34;, &amp;#34;&amp;#34;) for x in lines] f.close() # Book didn&amp;#39;t cover writelines file UGH.</description>
+    </item>
+    
   </channel>
 </rss>
