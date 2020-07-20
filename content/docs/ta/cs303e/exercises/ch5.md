@@ -46,42 +46,7 @@ while n ** 2 <= 12000:
 print(n, "is the smallest number that is less than 12,000")
 
 # 5.18
-# BUCKLE IN!!! This one is hard =(
-# Also don't comment like this at home.
-# Just want to go through my thought process here.
-fact_num = eval(input("Give me an integer: "))
-# Start with 2 since every number is divisible by 1
-div = 2
-print_str = ""
-# As long as we still have factors left to divide out
-while fact_num > 1:
-    # Check if this number is divisble in the first place
-    if fact_num % div == 0:
-        # Assume the number is prime
-        div_is_prime = True
-        # Check to see if it's not prime for numbers > 3
-        if not (div == 2 or div == 3):
-            # Check every possible factor > 1 
-            # to see if the number is divisble
-            for num in range(2, int(math.sqrt(div) + 1)):
-                if div % num == 0:
-                    # If a number is divisble we know 
-                    # it's not prime. stop
-                    div_is_prime = False
-                    break
-        # If the number is prime see how many times you can divide
-        if div_is_prime:
-            while fact_num % div == 0:
-                # Reduce the number to get the remaining factors
-                fact_num /= div
-                # Append the number to the list. If it's not the last
-                # number add a comma as well
-                print_str += str(div) 
-                if fact_num > 1:
-                    print_str += ", "
-    # Check the next number
-    div += 1
-print(print_str)
+# Witheld due to similarity with assignment 11
 
 # 5.19
 max_num = eval(input("Enter the number of lines: "))
