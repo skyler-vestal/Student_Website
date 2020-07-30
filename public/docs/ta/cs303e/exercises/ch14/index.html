@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Chapter 13 Exercise Solutions#Download Solutions
+<meta name="description" content="Chapter 14 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 13 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 13.1 # Could use r&#43; instead to read and write but book doesn&#39;t cover that &gt;_&gt; file_name = input(&#34;Enter a filename: &#34;) f = open(file_name, &#34;r&#34;) lines = f.readlines() lines = [x.replace(&#34;morning&#34;, &#34;&#34;) for x in lines] f.close() # Book didn&#39;t cover writelines file UGH.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Chapter 13" />
-<meta property="og:description" content="Chapter 13 Exercise Solutions#Download Solutions
+# Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 14.2 nums = input(&#34;Enter some numbers separated by spaces: &#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] &#43; 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ &gt; max_num: max_list = [num] max_num = occ elif occ == max_num: max_list.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Chapter 14" />
+<meta property="og:description" content="Chapter 14 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 13 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 13.1 # Could use r&#43; instead to read and write but book doesn&#39;t cover that &gt;_&gt; file_name = input(&#34;Enter a filename: &#34;) f = open(file_name, &#34;r&#34;) lines = f.readlines() lines = [x.replace(&#34;morning&#34;, &#34;&#34;) for x in lines] f.close() # Book didn&#39;t cover writelines file UGH." />
+# Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 14.2 nums = input(&#34;Enter some numbers separated by spaces: &#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] &#43; 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ &gt; max_num: max_list = [num] max_num = occ elif occ == max_num: max_list." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/" />
 
-<title>Chapter 13 | Skyler ~ UTCS</title>
+<title>Chapter 14 | Skyler ~ UTCS</title>
 <link rel="manifest" href="/~ves314/manifest.json">
 <link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
@@ -236,7 +236,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch13/" class="active">Chapter 13</a>
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch13/" class="">Chapter 13</a>
   
 
         </li>
@@ -246,7 +246,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch14/" class="">Chapter 14</a>
+    <a href="/~ves314/docs/ta/cs303e/exercises/ch14/" class="active">Chapter 14</a>
   
 
         </li>
@@ -438,7 +438,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Chapter 13</strong>
+  <strong>Chapter 14</strong>
 
   <label for="toc-control">
     
@@ -462,54 +462,57 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="chapter-13-exercise-solutions">
-  Chapter 13 Exercise Solutions
-  <a class="anchor" href="#chapter-13-exercise-solutions">#</a>
+  <article class="markdown"><h1 id="chapter-14-exercise-solutions">
+  Chapter 14 Exercise Solutions
+  <a class="anchor" href="#chapter-14-exercise-solutions">#</a>
 </h1>
-<p><a href="../files/Ch_13.py">Download Solutions</a></p>
+<p><a href="../files/Ch_14.py">Download Solutions</a></p>
 <p>Embedded solutions:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Exercises for Chapter 13 of &#34;Introduction to Programming using Python&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34;</span>
 <span style="color:#75715e"># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
 
-<span style="color:#75715e"># 13.1</span>
-<span style="color:#75715e"># Could use r+ instead to read and write but book doesn&#39;t cover that &gt;_&gt;</span>
-file_name <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a filename: &#34;</span>)
-f <span style="color:#f92672">=</span> open(file_name, <span style="color:#e6db74">&#34;r&#34;</span>)
-lines <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readlines()
-lines <span style="color:#f92672">=</span> [x<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;morning&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> lines]
-f<span style="color:#f92672">.</span>close()
-<span style="color:#75715e"># Book didn&#39;t cover writelines file UGH. Could just call</span>
-<span style="color:#75715e"># f.writelines(lines)</span>
-f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;file_name&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>)
-<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
-    f<span style="color:#f92672">.</span>write(line)
-f<span style="color:#f92672">.</span>close()
+<span style="color:#75715e"># 14.2</span>
+nums <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter some numbers separated by spaces: &#34;</span>)<span style="color:#f92672">.</span>split()
+num_dict <span style="color:#f92672">=</span> {}
+<span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> nums:
+    num_dict[num] <span style="color:#f92672">=</span> num_dict[num] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> num <span style="color:#f92672">in</span> num_dict <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span>
+max_num <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+max_list <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> num_dict<span style="color:#f92672">.</span>keys():
+    occ <span style="color:#f92672">=</span> num_dict[num]
+    <span style="color:#66d9ef">if</span> occ <span style="color:#f92672">&gt;</span> max_num:
+        max_list <span style="color:#f92672">=</span> [num]
+        max_num <span style="color:#f92672">=</span> occ
+    <span style="color:#66d9ef">elif</span> occ <span style="color:#f92672">==</span> max_num:
+        max_list<span style="color:#f92672">.</span>append(num)
+<span style="color:#75715e"># You could make this prettier if you wanted</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Numbers that occured the most:&#34;</span>, max_list)
 
-<span style="color:#75715e"># 13.2</span>
-file_name <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a filename: &#34;</span>)
-f <span style="color:#f92672">=</span> open(file_name, <span style="color:#e6db74">&#34;r&#34;</span>)
-lines <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readlines()
-f<span style="color:#f92672">.</span>close()
-char_total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-word_total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
-    char_total <span style="color:#f92672">+=</span> len(line)
-    word_total <span style="color:#f92672">+=</span> len(line<span style="color:#f92672">.</span>split())
-<span style="color:#66d9ef">print</span>(char_total, <span style="color:#e6db74">&#34; characters</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, 
-        word_total, <span style="color:#e6db74">&#34; words</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, 
-        len(lines), <span style="color:#e6db74">&#34; lines&#34;</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+<span style="color:#75715e"># 14.4</span>
+<span style="color:#75715e"># Are we supposed to do this one? Seems weird to mess with Tkinter</span>
 
-<span style="color:#75715e"># 13.3</span>
-file_name <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a filename: &#34;</span>)
-f <span style="color:#f92672">=</span> open(file_name, <span style="color:#e6db74">&#34;r&#34;</span>)
-scores <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>split()
-f<span style="color:#f92672">.</span>close()
-scores <span style="color:#f92672">=</span> [int(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> scores]
-total <span style="color:#f92672">=</span> sum(scores)
-avg <span style="color:#f92672">=</span> sum(scores)<span style="color:#f92672">/</span>len(scores)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;There are&#34;</span>, len(scores), <span style="color:#e6db74">&#34;scores&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;The total is&#34;</span>, total)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;The average is&#34;</span>, format(avg, <span style="color:#e6db74">&#34;.2f&#34;</span>))
+<span style="color:#75715e"># 14.8</span>
+sort_list <span style="color:#f92672">=</span> []
+word_file <span style="color:#f92672">=</span> open(input(<span style="color:#e6db74">&#34;Enter a text file: &#34;</span>), <span style="color:#e6db74">&#34;r&#34;</span>)
+<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> word_file<span style="color:#f92672">.</span>readlines():
+    <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> line<span style="color:#f92672">.</span>split():
+        <span style="color:#66d9ef">if</span> word <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> sort_list:
+            sort_list<span style="color:#f92672">.</span>append(word)
+sort_list<span style="color:#f92672">.</span>sort()
+<span style="color:#66d9ef">print</span>(sort_list)
+
+<span style="color:#75715e"># 14.11</span>
+vowel_count, const_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>
+word_file <span style="color:#f92672">=</span> open(input(<span style="color:#e6db74">&#34;Enter a text file: &#34;</span>), <span style="color:#e6db74">&#34;r&#34;</span>)
+<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> word_file<span style="color:#f92672">.</span>readlines():
+    <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> line:
+        <span style="color:#66d9ef">for</span> char <span style="color:#f92672">in</span> word:
+            <span style="color:#66d9ef">if</span> char<span style="color:#f92672">.</span>isalpha():
+                <span style="color:#66d9ef">if</span> char<span style="color:#f92672">.</span>upper() <span style="color:#f92672">in</span> <span style="color:#e6db74">&#34;AEIOU&#34;</span>:
+                    vowel_count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+                <span style="color:#66d9ef">else</span>:
+                    const_count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Vowel Count:&#34;</span>, vowel_count, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Consonant Count:&#34;</span>, const_count)
 </code></pre></div></article>
  
       

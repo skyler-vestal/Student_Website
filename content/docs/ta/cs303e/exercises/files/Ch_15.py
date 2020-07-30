@@ -1,0 +1,29 @@
+# Exercises for Chapter 15 of "Introduction to Programming using Python"
+# Solutions made by Skyler Vestal (Hook 'Em)
+
+# 15.1
+def sumDigits(n):
+    if n == 0:
+        return 0
+    return n % 10 + sumDigits(n // 10)
+
+num = int(input("Please enter a number: "))
+print("The sum of the digits in", num, "is", sumDigits(num))
+
+# 15.9
+def reverseDisplay(value):
+    if len(value) == 1:
+        return value
+    return value[-1] + reverseDisplay(value[:-1])
+
+string = input("Please enter a string: ")
+print("The reverse of", string,  "is", reverseDisplay(string))
+
+# 15.12
+def max_num(num_list):
+    if len(num_list) == 1:
+        return num_list[0]
+    return max(num_list[0], max_num(num_list[1:]))
+
+input_list = input("Enter a list of numbers separated by commas and spaces: ")
+print("The max value is", max_num(input_list))

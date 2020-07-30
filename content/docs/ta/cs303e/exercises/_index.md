@@ -21,3 +21,4 @@ If you think I made an error in a solution make sure to contact me [here]({{< re
 | 5 | [6.13 - 6.28](ch6) --- [7.1 - 7.8](ch7) |
 | 6 | [8.1 - 8.15](ch8) --- [10.2 - 10.27](ch10) |
 | 7 | [11.1 - 11.22](ch11) --- [13.1 - 13.3](ch13) |
+| 8 | [14.2 - 14.11](ch14) --- [15.1 - 15.2](ch15) |

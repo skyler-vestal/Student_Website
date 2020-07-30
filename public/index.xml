@@ -171,5 +171,27 @@ Embedded solutions:
 # Exercises for Chapter 13 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 13.1 # Could use r+ instead to read and write but book doesn&amp;#39;t cover that &amp;gt;_&amp;gt; file_name = input(&amp;#34;Enter a filename: &amp;#34;) f = open(file_name, &amp;#34;r&amp;#34;) lines = f.readlines() lines = [x.replace(&amp;#34;morning&amp;#34;, &amp;#34;&amp;#34;) for x in lines] f.close() # Book didn&amp;#39;t cover writelines file UGH.</description>
     </item>
     
+    <item>
+      <title>Chapter 14</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/</guid>
+      <description>Chapter 14 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 14 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 14.2 nums = input(&amp;#34;Enter some numbers separated by spaces: &amp;#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] + 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ &amp;gt; max_num: max_list = [num] max_num = occ elif occ == max_num: max_list.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 15</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/</guid>
+      <description>Chapter 15 Exercise Solutions#Download Solutions
+Embedded solutions:
+# Exercises for Chapter 15 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 15.1 def sumDigits(n): if n == 0: return 0 return n % 10 + sumDigits(n // 10) num = int(input(&amp;#34;Please enter a number: &amp;#34;)) print(&amp;#34;The sum of the digits in&amp;#34;, num, &amp;#34;is&amp;#34;, sumDigits(num)) # 15.9 def reverseDisplay(value): if len(value) == 1: return value return value[-1] + reverseDisplay(value[:-1]) string = input(&amp;#34;Please enter a string: &amp;#34;) print(&amp;#34;The reverse of&amp;#34;, string, &amp;#34;is&amp;#34;, reverseDisplay(string)) # 15.</description>
+    </item>
+    
   </channel>
 </rss>
