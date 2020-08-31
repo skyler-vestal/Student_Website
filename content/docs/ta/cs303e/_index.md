@@ -1,6 +1,6 @@
 ---
 title: "CS 303E"
-weight: 10
+weight: 0
 bookCollapseSection: true
 bookToc: false
 ---
