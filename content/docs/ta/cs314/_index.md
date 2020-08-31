@@ -18,3 +18,5 @@ My main responsibilities for this class include holding discussion and grading a
 I'm very happy to be here! I love TAing, computer science, and the GDC. We can chat about whatever you want if you're ever bored =)
 
 I also use =) too much on Piazza if you haven't figured that out already.
+
+![](/~ves314/img/computer_1.gif?raw=true)
