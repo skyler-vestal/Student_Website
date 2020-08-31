@@ -51,7 +51,7 @@ Reach out to me for any reason! I respond quickest to Discord, but I also try to
 | :--- | :--- |
 | Email | skylervestal@utexas.edu |
 | LinkedIn | www.linkedin.com/in/skyler-vestal-a20027197 |
-| Discord | Dinoswarleafs#4349 |
+| Discord | Dinoswarleafs#3140 |
 
 ## Media
 
