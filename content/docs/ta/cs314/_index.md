@@ -1,6 +1,7 @@
 ---
 title: "CS 314"
 bookToc: false
+bookCollapseSection: true
 weight: 10
 ---
 
