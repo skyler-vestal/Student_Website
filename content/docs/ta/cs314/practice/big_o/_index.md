@@ -176,7 +176,7 @@ private void three_two(int N) {
 #### Level 2
 
 {{<katex>}}
-1) \; O(N \cdot log_2(N) \cdot log_3(N))\\
+1) \; O(N^{5/2})\\
 2) \; O(1)\\
 3) \; O(N)\\
 {{</katex>}}
