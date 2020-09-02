@@ -73,7 +73,7 @@ Assume **N == data.length** and **Arrays.sort** is \\( O(Nlog_2(N)) \\)
 
 ```java
 private void two_one(int[] data) {
-    for (int i = 0; i < data.length; i *= 3) {
+    for (int i = 1; i < data.length; i *= 3) {
         Arrays.sort(arrayCopy(data));
     }
 } 
