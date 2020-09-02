@@ -150,7 +150,7 @@ private void insertionSort(int[] arr) {
 ```java
 private void three_two(int N) {
     int r = 0;
-    for (int i = 0; i < N; i *= 2) {
+    for (int i = 1; i < N; i *= 2) {
         for (int j = 0; j < i; j++) {
             for (int k = 0; k < N; k++) {
                 r += 1;
