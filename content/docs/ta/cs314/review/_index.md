@@ -12,6 +12,8 @@ These reviews are designed to fill in the gaps in your knowledge or sharpen your
 
 Best of luck!
 
+[---> HOW TO STUDY! <---]({{< relref "guide" >}})
+
 | Exam | Date | Review |
 | :--- | :--- | :--- |
 | Exam 1 | 10/7 | Developing |
