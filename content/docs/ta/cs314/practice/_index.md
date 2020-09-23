@@ -1,6 +1,6 @@
 ---
 title: "Practice"
-weight: 0
+weight: 20
 bookCollapseSection: true
 bookToc: false
 ---

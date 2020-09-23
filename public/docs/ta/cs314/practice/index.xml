@@ -10,5 +10,15 @@
 	<atom:link href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Big O</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/</guid>
+      <description>Big O / Time Complexity Practice#Determining Big O#For the following examples, assume the correct libraries have been imported.
+Level 1#Method 1#private int[] one_one(int N) { int k = 0; int m = i; int[] nums; for (int i = 0; i &amp;lt; N; i++) { for (int j = 0; j &amp;lt; N; j++) { nums = new int[5]; } } return nums; } Method 2#private int one_two(int N) { int j = 1; int count = 0; while (j &amp;lt; 1_000_000) { for (int i = 1; i &amp;lt;= N; i++) { j += N / i + 1; } count += 1; } return count; } Method 3#Assume N == data.</description>
+    </item>
+    
   </channel>
 </rss>
