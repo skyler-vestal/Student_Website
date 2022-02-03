@@ -1,227 +1,115 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Introduction on Skyler ~ UTCS</title>
-    <link>https://www.cs.utexas.edu/~ves314/</link>
-    <description>Recent content in Introduction on Skyler ~ UTCS</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://www.cs.utexas.edu/~ves314/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/</guid>
-      <description>Chapter 1 Exercise Solutions#Download Solutions
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Skyler ~ UTCS</title><link>https://www.cs.utexas.edu/~ves314/</link><description>Recent content in Introduction on Skyler ~ UTCS</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://www.cs.utexas.edu/~ves314/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 1</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/</guid><description>Chapter 1 Exercise Solutions
+#
+Download Solutions
 Embdedded solutions:
-# Exercises for Chapter 1 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 1.2 print(&amp;#34;Welcome to Python&amp;#34;) print(&amp;#34;Welcome to Python&amp;#34;) print(&amp;#34;Welcome to Python&amp;#34;) print(&amp;#34;Welcome to Python&amp;#34;) print(&amp;#34;Welcome to Python&amp;#34;) # 1.4 print(&amp;#34;a a^2 a^3&amp;#34;) print(&amp;#34;1 1 1&amp;#34;) print(&amp;#34;2 4 8&amp;#34;) print(&amp;#34;3 9 27&amp;#34;) print(&amp;#34;4 16 64&amp;#34;) # 1.7 print(4 * (1 - (1 / 3) + (1 / 5) - (1 / 7) + (1 / 9) - (1 / 11))) print(4 * (1 - (1 / 3) + (1 / 5) - (1 / 7) + (1 / 9) - (1 / 11) + (1 / 13) - (1 / 15))) # 1.</description>
-    </item>
-    
-    <item>
-      <title>Midterm</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</guid>
-      <description>Midterm Review#MC/Short Answer Section#Noah&amp;rsquo;s Multiple Choice#Noah (fellow TA) has made a lot of great multiple choice questions that he&amp;rsquo;s decided to share with me. Big 👏 for him.
+# Exercises for Chapter 1 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 1.2 print(&amp;#34;Welcome to Python&amp;#34;) print(&amp;#34;Welcome to Python&amp;#34;) print(&amp;#34;Welcome to Python&amp;#34;) print(&amp;#34;Welcome to Python&amp;#34;) print(&amp;#34;Welcome to Python&amp;#34;) # 1.4 print(&amp;#34;a a^2 a^3&amp;#34;) print(&amp;#34;1 1 1&amp;#34;) print(&amp;#34;2 4 8&amp;#34;) print(&amp;#34;3 9 27&amp;#34;) print(&amp;#34;4 16 64&amp;#34;) # 1.7 print(4 * (1 - (1 / 3) + (1 / 5) - (1 / 7) + (1 / 9) - (1 / 11))) print(4 * (1 - (1 / 3) + (1 / 5) - (1 / 7) + (1 / 9) - (1 / 11) + (1 / 13) - (1 / 15))) # 1.</description></item><item><title>Midterm</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</guid><description>Midterm Review
+#
+MC/Short Answer Section
+#
+Noah&amp;rsquo;s Multiple Choice
+#
+Noah (fellow TA) has made a lot of great multiple choice questions that he&amp;rsquo;s decided to share with me. Big 👏 for him.
 Assume libraries have been imported correctly for the following questions.
- What is output by the following code?  x = int(52.2) y = math.floor(999.9) print(x, y) A. 52 1000B. 52 999C.</description>
-    </item>
-    
-    <item>
-      <title>Syntax</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</guid>
-      <description>Python Syntax Review for CS 303E#Variables and Datatypes#Types of Data## Integer datatype: Stores whole numbers like -32, 0, 66, 2332312, ... int_var = -54 # Float datatype: Stores decimal numbers like 3.0, -2.3232, .00033, # 5.6e+15 float_var = -.04 # Boolean datatype: Stores the value true or false bool_var = True bool_var = False # String datatype: Stores any word str_var = &amp;#34;You can use double quotes&amp;#34; str_var = &amp;#39;or single quotes for strings&amp;#39; Modification## These two are the same # This works for +, -, *, /, //, %, ** int_var = int_var + 5 int_var += 5 # Operators examples 10 / 3 # == 3.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/</guid>
-      <description>Chapter 2 Exercise Solutions#Download Solutions
+What is output by the following code? x = int(52.2) y = math.floor(999.9) print(x, y) A. 52 1000
+B. 52 999
+C.</description></item><item><title>Syntax</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</guid><description>Python Syntax Review for CS 303E
+#
+Variables and Datatypes
+#
+Types of Data
+#
+# Integer datatype: Stores whole numbers like -32, 0, 66, 2332312, ... int_var = -54 # Float datatype: Stores decimal numbers like 3.0, -2.3232, .00033, # 5.6e+15 float_var = -.04 # Boolean datatype: Stores the value true or false bool_var = True bool_var = False # String datatype: Stores any word str_var = &amp;#34;You can use double quotes&amp;#34; str_var = &amp;#39;or single quotes for strings&amp;#39; Modification
+#
+# These two are the same # This works for +, -, *, /, //, %, ** int_var = int_var + 5 int_var += 5 # Operators examples 10 / 3 # == 3.</description></item><item><title>Chapter 2</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/</guid><description>Chapter 2 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercies for Chapter 2 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 2.1 celsius = eval(input(&amp;#34;Enter a degree in Celsius: &amp;#34;)) fahrenheit = (9 / 5) * celsius + 32 print(celsius, &amp;#34;Celsius is&amp;#34;, fahrenheit, &amp;#34;Fahrenheit&amp;#34;) # 2.2 radius, length = eval(input(&amp;#34;Enter area and volume: &amp;#34;)) area = radius * radius * 3.14 volume = area * length print(&amp;#34;The area is&amp;#34;, area) print(&amp;#34;The volume is&amp;#34;, volume) # 2.</description>
-    </item>
-    
-    <item>
-      <title>Final</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</guid>
-      <description>Free Response Final Review#Classes#Stacks#Stacks are a commonly used data structure in computer science, and especially for memory: Quite complicated. However, the foundation of stacks is quite simple. Just think of &amp;lsquo;em as pancakes!
-If you wanted to add to a stack, where would you add it to? Well, of course the top, since it&amp;rsquo;d be a hastle and borderline dangerous to your breakfast to lift up a bunch of pancakes for no reason.</description>
-    </item>
-    
-    <item>
-      <title>Style</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/</guid>
-      <description>Python Style Guide for CS 303E#Highlights#The following are highlighted style guidelines to follow based off the assignment page here.
-Two Blank Lines#This highlight states to include two blank lines both before and after our function:
-# ... # Grader: Skyler # # On my honor, Skyler Vestal, this programming assignment is my own work # and I have not provided this code to any other student.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 3</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/</guid>
-      <description>Chapter 3 Exercise Solutions#Download Solutions
+# Exercies for Chapter 2 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 2.1 celsius = eval(input(&amp;#34;Enter a degree in Celsius: &amp;#34;)) fahrenheit = (9 / 5) * celsius + 32 print(celsius, &amp;#34;Celsius is&amp;#34;, fahrenheit, &amp;#34;Fahrenheit&amp;#34;) # 2.2 radius, length = eval(input(&amp;#34;Enter area and volume: &amp;#34;)) area = radius * radius * 3.14 volume = area * length print(&amp;#34;The area is&amp;#34;, area) print(&amp;#34;The volume is&amp;#34;, volume) # 2.</description></item><item><title>Final</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</guid><description>Free Response Final Review
+#
+Classes
+#
+Stacks
+#
+Stacks are a commonly used data structure in computer science, and especially for memory: Quite complicated. However, the foundation of stacks is quite simple. Just think of &amp;lsquo;em as pancakes!
+If you wanted to add to a stack, where would you add it to? Well, of course the top, since it&amp;rsquo;d be a hastle and borderline dangerous to your breakfast to lift up a bunch of pancakes for no reason.</description></item><item><title>Style</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/</guid><description>Python Style Guide for CS 303E
+#
+Highlights
+#
+The following are highlighted style guidelines to follow based off the assignment page here.
+Two Blank Lines
+#
+This highlight states to include two blank lines both before and after our function:
+# ... # Grader: Skyler # # On my honor, Skyler Vestal, this programming assignment is my own work # and I have not provided this code to any other student.</description></item><item><title>Chapter 3</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/</guid><description>Chapter 3 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 3 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math import time # 3.2 length = eval(input(&amp;#34;Enter the length from the center to a vertex: &amp;#34;)) side = 2 * length * math.sin(math.pi / 5) area = (3 * math.sqrt(3)/2) * side**2 print(&amp;#34;The area of the pentagon is&amp;#34;, round(area, 2)) # 3.</description>
-    </item>
-    
-    <item>
-      <title>Studying Guide</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/</guid>
-      <description>How to Prepare For Exams#The exams are by far the biggest portion of this class. They will be what determines your letter grade.
-Feeling a bit anxious the closer you get to the exam? Good! That means you understand the significane of these exams in the class. If this feeling makes you study harder for the exam that&amp;rsquo;s great. However, if this feeling prevents you from wanting to study out of fear then please reach out to me ASAP.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 4</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/</guid>
-      <description>Chapter 4 Exercise Solutions#Download Solutions
+# Exercises for Chapter 3 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math import time # 3.2 length = eval(input(&amp;#34;Enter the length from the center to a vertex: &amp;#34;)) side = 2 * length * math.sin(math.pi / 5) area = (3 * math.sqrt(3)/2) * side**2 print(&amp;#34;The area of the pentagon is&amp;#34;, round(area, 2)) # 3.</description></item><item><title>Studying Guide</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/</guid><description>How to Prepare For Exams
+#
+The exams are by far the biggest portion of this class. They will be what determines your letter grade.
+Feeling a bit anxious the closer you get to the exam? Good! That means you understand the significane of these exams in the class. If this feeling makes you study harder for the exam that&amp;rsquo;s great. However, if this feeling prevents you from wanting to study out of fear then please reach out to me ASAP.</description></item><item><title>Chapter 4</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/</guid><description>Chapter 4 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercies for Chapter 4 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math import random # 4.1 a, b, c = eval(input(&amp;#34;Enter, a, b, c: &amp;#34;)) discrim = b ** 2 - (4 * a * c) if discrim &amp;lt; 0: print(&amp;#34;The equation has no real roots&amp;#34;) else: root_1 = (-b + math.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 5</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/</guid>
-      <description>Chapter 5 Exercise Solutions#Download Solutions
+# Exercies for Chapter 4 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math import random # 4.1 a, b, c = eval(input(&amp;#34;Enter, a, b, c: &amp;#34;)) discrim = b ** 2 - (4 * a * c) if discrim &amp;lt; 0: print(&amp;#34;The equation has no real roots&amp;#34;) else: root_1 = (-b + math.</description></item><item><title>Chapter 5</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/</guid><description>Chapter 5 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 5 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math # 5.1 input_prompt = &amp;#34;Enter an integer, the input ends if it is 0: &amp;#34; keep_running = eval(input(input_prompt)) != 0 while keep_running: keep_running = eval(input(input_prompt)) != 0 # 5.3 print(&amp;#34;Kilograms Pounds&amp;#34;) for kilos in range(1, 200): pounds = kilos * 2.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 6</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/</guid>
-      <description>Chapter 6 Exercise Solutions#Download Solutions
+# Exercises for Chapter 5 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math # 5.1 input_prompt = &amp;#34;Enter an integer, the input ends if it is 0: &amp;#34; keep_running = eval(input(input_prompt)) != 0 while keep_running: keep_running = eval(input(input_prompt)) != 0 # 5.3 print(&amp;#34;Kilograms Pounds&amp;#34;) for kilos in range(1, 200): pounds = kilos * 2.</description></item><item><title>Chapter 6</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/</guid><description>Chapter 6 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 6 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import random # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 + 1)) for j in range(2, 11): line_str += &amp;#34;, &amp;#34; + str(getPentagonalNumber(i * 10 + j)) print(line_str) # 6.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 7</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/</guid>
-      <description>Chapter 7 Exercise Solutions#Download Solutions
+# Exercises for Chapter 6 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import random # 6.1 # CS 311 exercise =) - Prove that for any n the pentagonal number # is an integer def getPentagonalNumber(n): return n * (3 * n - 1) // 2 for i in range(10): line_str = str(getPentagonalNumber(i * 10 + 1)) for j in range(2, 11): line_str += &amp;#34;, &amp;#34; + str(getPentagonalNumber(i * 10 + j)) print(line_str) # 6.</description></item><item><title>Chapter 7</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/</guid><description>Chapter 7 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 7 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import time # 7.1 class Rectangle: def __init__(self, width = 1, height = 2): self.width = width self.height = height # Don&amp;#39;t name functions like this at home kids def getArea(self): return self.width * self.height def getPerimeter(self): return 2 * (self.width + self.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 8</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/</guid>
-      <description>Chapter 8 Exercise Solutions#Download Solutions
+# Exercises for Chapter 7 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import time # 7.1 class Rectangle: def __init__(self, width = 1, height = 2): self.width = width self.height = height # Don&amp;#39;t name functions like this at home kids def getArea(self): return self.width * self.height def getPerimeter(self): return 2 * (self.width + self.</description></item><item><title>Chapter 8</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/</guid><description>Chapter 8 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 8 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 8.1 # Look up Regular Expressions to see how string checks are normally done =) ssn = input(&amp;#34;Enter a Social Security number: &amp;#34;) ssn_valid = True ssn_valid = len(ssn) == 11 index = 0 while ssn_valid and index &amp;lt; len(ssn): if index == 3 or index == 6: ssn_valid = ssn[index] == &amp;#39;-&amp;#39; else: ssn_valid = ssn[index].</description>
-    </item>
-    
-    <item>
-      <title>Chapter 10</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/</guid>
-      <description>Chapter 10 Exercise Solutions#Download Solutions
+# Exercises for Chapter 8 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 8.1 # Look up Regular Expressions to see how string checks are normally done =) ssn = input(&amp;#34;Enter a Social Security number: &amp;#34;) ssn_valid = True ssn_valid = len(ssn) == 11 index = 0 while ssn_valid and index &amp;lt; len(ssn): if index == 3 or index == 6: ssn_valid = ssn[index] == &amp;#39;-&amp;#39; else: ssn_valid = ssn[index].</description></item><item><title>Chapter 10</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/</guid><description>Chapter 10 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 10 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import random # 10.2 # Not sure what format this question wants ... n = int(input(&amp;#34;Enter the quantity of #s you&amp;#39;d like to enter: &amp;#34;)) num_list = [] for i in range(n): num_list.append(int(input(&amp;#34;Enter a number: &amp;#34;))) num_list.reverse() print(&amp;#34;Your numbers reversed:&amp;#34;, num_list) # 10.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 11</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/</guid>
-      <description>Chapter 11 Exercise Solutions#Download Solutions
+# Exercises for Chapter 10 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import random # 10.2 # Not sure what format this question wants ... n = int(input(&amp;#34;Enter the quantity of #s you&amp;#39;d like to enter: &amp;#34;)) num_list = [] for i in range(n): num_list.append(int(input(&amp;#34;Enter a number: &amp;#34;))) num_list.reverse() print(&amp;#34;Your numbers reversed:&amp;#34;, num_list) # 10.</description></item><item><title>Chapter 11</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/</guid><description>Chapter 11 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 11 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math import random # 11.1 def sumColumn(m, columnIndex): mat_sum = 0 for i in range(len(m)): mat_sum += m[i][columnIndex] return mat_sum matrix = [] for i in range(3): user_input = input(&amp;#34;Enter a 3-by-4 matrix row for row &amp;#34; + str(i) + &amp;#34;: &amp;#34;) row = [eval(x) for x in user_input.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 13</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/</guid>
-      <description>Chapter 13 Exercise Solutions#Download Solutions
+# Exercises for Chapter 11 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) import math import random # 11.1 def sumColumn(m, columnIndex): mat_sum = 0 for i in range(len(m)): mat_sum += m[i][columnIndex] return mat_sum matrix = [] for i in range(3): user_input = input(&amp;#34;Enter a 3-by-4 matrix row for row &amp;#34; + str(i) + &amp;#34;: &amp;#34;) row = [eval(x) for x in user_input.</description></item><item><title>Chapter 13</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/</guid><description>Chapter 13 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 13 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 13.1 # Could use r+ instead to read and write but book doesn&amp;#39;t cover that &amp;gt;_&amp;gt; file_name = input(&amp;#34;Enter a filename: &amp;#34;) f = open(file_name, &amp;#34;r&amp;#34;) lines = f.readlines() lines = [x.replace(&amp;#34;morning&amp;#34;, &amp;#34;&amp;#34;) for x in lines] f.close() # Book didn&amp;#39;t cover writelines file UGH.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 14</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/</guid>
-      <description>Chapter 14 Exercise Solutions#Download Solutions
+# Exercises for Chapter 13 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 13.1 # Could use r+ instead to read and write but book doesn&amp;#39;t cover that &amp;gt;_&amp;gt; file_name = input(&amp;#34;Enter a filename: &amp;#34;) f = open(file_name, &amp;#34;r&amp;#34;) lines = f.readlines() lines = [x.replace(&amp;#34;morning&amp;#34;, &amp;#34;&amp;#34;) for x in lines] f.close() # Book didn&amp;#39;t cover writelines file UGH.</description></item><item><title>Chapter 14</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/</guid><description>Chapter 14 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 14 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 14.2 nums = input(&amp;#34;Enter some numbers separated by spaces: &amp;#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] + 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ &amp;gt; max_num: max_list = [num] max_num = occ elif occ == max_num: max_list.</description>
-    </item>
-    
-    <item>
-      <title>Chapter 15</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/</guid>
-      <description>Chapter 15 Exercise Solutions#Download Solutions
+# Exercises for Chapter 14 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 14.2 nums = input(&amp;#34;Enter some numbers separated by spaces: &amp;#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] + 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ &amp;gt; max_num: max_list = [num] max_num = occ elif occ == max_num: max_list.</description></item><item><title>Chapter 15</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/</guid><description>Chapter 15 Exercise Solutions
+#
+Download Solutions
 Embedded solutions:
-# Exercises for Chapter 15 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 15.1 def sumDigits(n): if n == 0: return 0 return n % 10 + sumDigits(n // 10) num = int(input(&amp;#34;Please enter a number: &amp;#34;)) print(&amp;#34;The sum of the digits in&amp;#34;, num, &amp;#34;is&amp;#34;, sumDigits(num)) # 15.9 def reverseDisplay(value): if len(value) == 1: return value return value[-1] + reverseDisplay(value[:-1]) string = input(&amp;#34;Please enter a string: &amp;#34;) print(&amp;#34;The reverse of&amp;#34;, string, &amp;#34;is&amp;#34;, reverseDisplay(string)) # 15.</description>
-    </item>
-    
-    <item>
-      <title>Big O</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/</guid>
-      <description>Big O / Time Complexity Practice#Explaining Big O#Determining Big O#  Standard Dependent Example#  Logarithmic and Exponential Example#  Calculating Times Based on Big O#Fast Calculation Method#  </description>
-    </item>
-    
-    <item>
-      <title>Big O</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/</guid>
-      <description>Big O / Time Complexity Practice#Determining Big O#For the following examples, assume the correct libraries have been imported.
-Level 1#Method 1#private int[] one_one(int N) { int k = 0; int m = i; int[] nums; for (int i = 0; i &amp;lt; N; i++) { for (int j = 0; j &amp;lt; N; j++) { nums = new int[5]; } } return nums; } Method 2#private int one_two(int N) { int j = 1; int count = 0; while (j &amp;lt; 1_000_000) { for (int i = 1; i &amp;lt;= N; i++) { j += N / i + 1; } count += 1; } return count; } Method 3#Assume N == data.</description>
-    </item>
-    
-  </channel>
-</rss>
+# Exercises for Chapter 15 of &amp;#34;Introduction to Programming using Python&amp;#34; # Solutions made by Skyler Vestal (Hook &amp;#39;Em) # 15.1 def sumDigits(n): if n == 0: return 0 return n % 10 + sumDigits(n // 10) num = int(input(&amp;#34;Please enter a number: &amp;#34;)) print(&amp;#34;The sum of the digits in&amp;#34;, num, &amp;#34;is&amp;#34;, sumDigits(num)) # 15.9 def reverseDisplay(value): if len(value) == 1: return value return value[-1] + reverseDisplay(value[:-1]) string = input(&amp;#34;Please enter a string: &amp;#34;) print(&amp;#34;The reverse of&amp;#34;, string, &amp;#34;is&amp;#34;, reverseDisplay(string)) # 15.</description></item><item><title>Big O</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/</guid><description>Big O / Time Complexity Practice
+#
+Explaining Big O
+#
+Determining Big O
+#
+Standard Dependent Example
+#
+Logarithmic and Exponential Example
+#
+Calculating Times Based on Big O
+#
+Fast Calculation Method
+#</description></item><item><title>Big O</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/</guid><description>Big O / Time Complexity Practice
+#
+Determining Big O
+#
+For the following examples, assume the correct libraries have been imported.
+Level 1
+#
+Method 1
+#
+private int[] one_one(int N) { int k = 0; int m = i; int[] nums; for (int i = 0; i &amp;lt; N; i++) { for (int j = 0; j &amp;lt; N; j++) { nums = new int[5]; } } return nums; } Method 2
+#
+private int one_two(int N) { int j = 1; int count = 0; while (j &amp;lt; 1_000_000) { for (int i = 1; i &amp;lt;= N; i++) { j += N / i + 1; } count += 1; } return count; } Method 3
+#
+Assume N == data.</description></item></channel></rss>

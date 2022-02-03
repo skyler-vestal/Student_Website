@@ -112,32 +112,5 @@ If you're still not doing as well as you want, it's not the end of the world. I 
 * Looking at a question, looking at the answer, and then reasoning why the question's answer is that.
     * You aren't going to remember anything from this. You need to attempt the question first to get the solution to stick in your brain and improve your soft skills
 
-## Studying Music
-
-Okay this is just an opportunity to share music I like listening to while working on stuff :)
-
-#### Lofi Stuffs
-
-{{< youtube 1rwAvUvvQzQ >}}
-{{< youtube VXIqXaX1blY >}}
-{{< youtube D5jPwnzyRu8 >}}
-{{< youtube axkOqrLtDXo >}}
-{{< youtube 6K5vlOSh_uU >}}
-{{< youtube 12R2OjvVtUE >}}
-{{< youtube jPIKOhjeRZw >}}
-
-#### ALSO I'm Attack on Titan's #1 Fan.
-
-![](/~ves314/img/aot.gif?raw=true)
-
-{{< youtube Tg4m7sJmGFw >}}
-{{< youtube mwa8PLKPBsU >}}
-{{< youtube KNNQhZC6MVE >}}
-{{< youtube hBdWb34RKwc >}}
-{{< youtube Pn7dCgtwX2c >}}
-{{< youtube cbanptJTgBI >}}
-
-![](/~ves314/img/the_squad.gif?raw=true)
-
 {{<katex>}}
 {{</katex>}}

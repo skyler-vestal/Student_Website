@@ -16,8 +16,8 @@ Best of luck!
 
 | Exam | Date | Review |
 | :--- | :--- | :--- |
-| Exam 1 | 10/7 | Developing |
-| Exam 2 | 11/4 | N/A |
-| Exam 3 | 12/10 | N/A |
+| Exam 1 | I'm lazy | I'm lazy |
+| Exam 2 | I'm lazy | I'm lazy |
+| Exam 3 | I'm lazy | I'm lazy |
 
 ![](/~ves314/img/stab.gif?raw=true)

@@ -1,626 +1,331 @@
-<!DOCTYPE html>
-<html lang="en" dir=>
-
+<!doctype html><html lang=en-us dir=ltr>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Chapter 8 Exercise Solutions#Download Solutions
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Chapter 8 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 8 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 8.1 # Look up Regular Expressions to see how string checks are normally done =) ssn = input(&#34;Enter a Social Security number: &#34;) ssn_valid = True ssn_valid = len(ssn) == 11 index = 0 while ssn_valid and index &lt; len(ssn): if index == 3 or index == 6: ssn_valid = ssn[index] == &#39;-&#39; else: ssn_valid = ssn[index].">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Chapter 8" />
+# Exercises for Chapter 8 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook 'Em) # 8.1 # Look up Regular Expressions to see how string checks are normally done =) ssn = input(&#34;Enter a Social Security number: &#34;) ssn_valid = True ssn_valid = len(ssn) == 11 index = 0 while ssn_valid and index < len(ssn): if index == 3 or index == 6: ssn_valid = ssn[index] == '-' else: ssn_valid = ssn[index].">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Chapter 8">
 <meta property="og:description" content="Chapter 8 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 8 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 8.1 # Look up Regular Expressions to see how string checks are normally done =) ssn = input(&#34;Enter a Social Security number: &#34;) ssn_valid = True ssn_valid = len(ssn) == 11 index = 0 while ssn_valid and index &lt; len(ssn): if index == 3 or index == 6: ssn_valid = ssn[index] == &#39;-&#39; else: ssn_valid = ssn[index]." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/" />
-
+# Exercises for Chapter 8 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook 'Em) # 8.1 # Look up Regular Expressions to see how string checks are normally done =) ssn = input(&#34;Enter a Social Security number: &#34;) ssn_valid = True ssn_valid = len(ssn) == 11 index = 0 while ssn_valid and index < len(ssn): if index == 3 or index == 6: ssn_valid = ssn[index] == '-' else: ssn_valid = ssn[index].">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/"><meta property="article:section" content="docs">
 <title>Chapter 8 | Skyler ~ UTCS</title>
-<link rel="manifest" href="/~ves314/manifest.json">
-<link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.f000f60592691270692cffb6b18bf0846343e90c0f22cfe8bda6bf8ae36183ed.js" integrity="sha256-8AD2BZJpEnBpLP&#43;2sYvwhGND6QwPIs/ovaa/iuNhg&#43;0="></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-
-  
+<link rel=manifest href=/~ves314/manifest.json>
+<link rel=icon href=/~ves314/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/~ves314/flexsearch.min.js></script>
+<script defer src=/~ves314/en.search.min.3a7053bb48bd226734ae8ddf4f80001a00821dc797d0e9c47b160eb66c6661ad.js integrity="sha256-OnBTu0i9Imc0ro3fT4AAGgCCHceX0OnEexYOtmxmYa0=" crossorigin=anonymous></script>
 </head>
-
-<body dir=>
-  <input type="checkbox" class="hidden" id="menu-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      
-  <nav>
-<h2 class="book-brand">
-  <a href="/~ves314"><span>Skyler ~ UTCS</span>
-  </a>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/~ves314/><span>Skyler ~ UTCS</span>
+</a>
 </h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li class="book-section-flat" >
-          
-  
-    <span>TA Classes</span>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs314/" class="collapsed ">CS 314</a>
-  
-
-          
-  
-  
-  
-
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/" class="collapsed ">CS 303E</a>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/syntax/" class="">Syntax</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/style/" class="">Style</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/" class="collapsed ">Exercises</a>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch1/" class="">Chapter 1</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch2/" class="">Chapter 2</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch3/" class="">Chapter 3</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch4/" class="">Chapter 4</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch5/" class="">Chapter 5</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch6/" class="">Chapter 6</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch7/" class="">Chapter 7</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch8/" class="active">Chapter 8</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch10/" class="">Chapter 10</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch11/" class="">Chapter 11</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch13/" class="">Chapter 13</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch14/" class="">Chapter 14</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/ch15/" class="">Chapter 15</a>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/review/" class="collapsed ">Exam Reviews</a>
-  
-
-          
-  
-  
-  
-
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/assignment/" class="">A9 Tester</a>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-  </ul>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-        </li>
-      
-    
-      
-        <li class="book-section-flat" >
-          
-  
-    <span>Personal Work</span>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <span>Projects</span>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-  </ul>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <span>Research</span>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-  </ul>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<ul>
+<li class=book-section-flat>
+<span>TA Classes</span>
+<ul>
+<li>
+<input type=checkbox id=section-33af6ef1d279801de2f779931fe7714a class=toggle>
+<label for=section-33af6ef1d279801de2f779931fe7714a class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/>CS 314</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-c172f569569f14516626820cca02b95a class=toggle>
+<label for=section-c172f569569f14516626820cca02b95a class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/>Explanations</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/>Big O</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-af21d64a3e1d155d273311b14a7fdf1c class=toggle>
+<label for=section-af21d64a3e1d155d273311b14a7fdf1c class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/>Practice</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/>Big O</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/>Slides</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-cd9969c9531e65499ac6445bfce50541 class=toggle>
+<label for=section-cd9969c9531e65499ac6445bfce50541 class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/>Exam Reviews</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-0353b14a7f76e905c757a5cc55b058a0 class=toggle>
+<label for=section-0353b14a7f76e905c757a5cc55b058a0 class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/>Studying Guide</a>
+</label>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c1e9ef8e25f48d65bad575ca842d14f6 class=toggle checked>
+<label for=section-c1e9ef8e25f48d65bad575ca842d14f6 class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/>CS 303E</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/>Syntax</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/>Style</a>
+</li>
+<li>
+<input type=checkbox id=section-194fbff478cddfab80ada7a56b30c489 class=toggle checked>
+<label for=section-194fbff478cddfab80ada7a56b30c489 class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/>Exercises</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/>Chapter 1</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/>Chapter 2</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/>Chapter 3</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/>Chapter 4</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/>Chapter 5</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/>Chapter 6</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/>Chapter 7</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/ class=active>Chapter 8</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/>Chapter 10</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/>Chapter 11</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/>Chapter 13</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/>Chapter 14</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/>Chapter 15</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class=toggle>
+<label for=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/>Exam Reviews</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/>Midterm</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/>Final</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/>A9 Tester</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<span>Personal Work</span>
+<ul>
+<li>
+<span>Projects</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </nav>
-
-
-
-
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
-
-
- 
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>Chapter 8</strong>
-
-  <label for="toc-control">
-    
-    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 </div>
-
-
-  
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
-  <nav id="TableOfContents"></nav>
-
-
-    </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown"><h1 id="chapter-8-exercise-solutions">
-  Chapter 8 Exercise Solutions
-  <a class="anchor" href="#chapter-8-exercise-solutions">#</a>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/~ves314/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Chapter 8</strong>
+<label for=toc-control>
+<img src=/~ves314/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents></nav>
+</aside>
+</header>
+<article class=markdown><h1 id=chapter-8-exercise-solutions>
+Chapter 8 Exercise Solutions
+<a class=anchor href=#chapter-8-exercise-solutions>#</a>
 </h1>
-<p><a href="../files/Ch_8.py">Download Solutions</a></p>
+<p><a href=../files/Ch_8.py>Download Solutions</a></p>
 <p>Embedded solutions:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Exercises for Chapter 8 of &#34;Introduction to Programming using Python&#34;</span>
-<span style="color:#75715e"># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e># Exercises for Chapter 8 of &#34;Introduction to Programming using Python&#34;</span>
+<span style=color:#75715e># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
 
-<span style="color:#75715e"># 8.1</span>
-<span style="color:#75715e"># Look up Regular Expressions to see how string checks are normally done =)</span>
-ssn <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a Social Security number: &#34;</span>)
-ssn_valid <span style="color:#f92672">=</span> True
-ssn_valid <span style="color:#f92672">=</span> len(ssn) <span style="color:#f92672">==</span> <span style="color:#ae81ff">11</span>
-index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">while</span> ssn_valid <span style="color:#f92672">and</span> index <span style="color:#f92672">&lt;</span> len(ssn):
-    <span style="color:#66d9ef">if</span> index <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">or</span> index <span style="color:#f92672">==</span> <span style="color:#ae81ff">6</span>:
-        ssn_valid <span style="color:#f92672">=</span> ssn[index] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;-&#39;</span>
-    <span style="color:#66d9ef">else</span>:
-        ssn_valid <span style="color:#f92672">=</span> ssn[index]<span style="color:#f92672">.</span>isnumeric()
-    index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-valid_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Valid&#34;</span> <span style="color:#66d9ef">if</span> ssn_valid <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;Invalid&#34;</span>
-<span style="color:#66d9ef">print</span>(valid_str, <span style="color:#e6db74">&#34;SSN&#34;</span>)
+<span style=color:#75715e># 8.1</span>
+<span style=color:#75715e># Look up Regular Expressions to see how string checks are normally done =)</span>
+ssn <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter a Social Security number: &#34;</span>)
+ssn_valid <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+ssn_valid <span style=color:#f92672>=</span> len(ssn) <span style=color:#f92672>==</span> <span style=color:#ae81ff>11</span>
+index <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#66d9ef>while</span> ssn_valid <span style=color:#f92672>and</span> index <span style=color:#f92672>&lt;</span> len(ssn):
+    <span style=color:#66d9ef>if</span> index <span style=color:#f92672>==</span> <span style=color:#ae81ff>3</span> <span style=color:#f92672>or</span> index <span style=color:#f92672>==</span> <span style=color:#ae81ff>6</span>:
+        ssn_valid <span style=color:#f92672>=</span> ssn[index] <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;-&#39;</span>
+    <span style=color:#66d9ef>else</span>:
+        ssn_valid <span style=color:#f92672>=</span> ssn[index]<span style=color:#f92672>.</span>isnumeric()
+    index <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+valid_str <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Valid&#34;</span> <span style=color:#66d9ef>if</span> ssn_valid <span style=color:#66d9ef>else</span> <span style=color:#e6db74>&#34;Invalid&#34;</span>
+print(valid_str, <span style=color:#e6db74>&#34;SSN&#34;</span>)
 
-<span style="color:#75715e"># 8.3</span>
-pw <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter your ... password?: &#34;</span>)
-pw_valid <span style="color:#f92672">=</span> len(pw) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">8</span>
-digits <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">while</span> pw_valid <span style="color:#f92672">and</span> index <span style="color:#f92672">&lt;</span> len(pw) <span style="color:#f92672">and</span> digits <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>:
-    <span style="color:#66d9ef">if</span> pw[index]<span style="color:#f92672">.</span>isnumeric():
-        digits <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">elif</span> <span style="color:#f92672">not</span> pw[index]<span style="color:#f92672">.</span>isalpha():
-        pw_valid <span style="color:#f92672">=</span> False
-    index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-valid_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;valid&#34;</span> <span style="color:#66d9ef">if</span> ssn_valid <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;invalid&#34;</span>
-<span style="color:#66d9ef">print</span>(valid_str, <span style="color:#e6db74">&#34;password&#34;</span>)
+<span style=color:#75715e># 8.3</span>
+pw <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter your ... password?: &#34;</span>)
+pw_valid <span style=color:#f92672>=</span> len(pw) <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>8</span>
+digits <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+index <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#66d9ef>while</span> pw_valid <span style=color:#f92672>and</span> index <span style=color:#f92672>&lt;</span> len(pw) <span style=color:#f92672>and</span> digits <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>2</span>:
+    <span style=color:#66d9ef>if</span> pw[index]<span style=color:#f92672>.</span>isnumeric():
+        digits <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+    <span style=color:#66d9ef>elif</span> <span style=color:#f92672>not</span> pw[index]<span style=color:#f92672>.</span>isalpha():
+        pw_valid <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+    index <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+valid_str <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;valid&#34;</span> <span style=color:#66d9ef>if</span> ssn_valid <span style=color:#66d9ef>else</span> <span style=color:#e6db74>&#34;invalid&#34;</span>
+print(valid_str, <span style=color:#e6db74>&#34;password&#34;</span>)
 
-<span style="color:#75715e"># 8.7</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getNumber</span>(uppercaseLetter):
-    <span style="color:#66d9ef">if</span> uppercaseLetter<span style="color:#f92672">.</span>isalpha():
-        <span style="color:#66d9ef">if</span> uppercaseLetter <span style="color:#f92672">&lt;=</span> <span style="color:#e6db74">&#34;O&#34;</span>:
-            let_ascii <span style="color:#f92672">=</span> ord(uppercaseLetter) <span style="color:#f92672">-</span> <span style="color:#ae81ff">65</span>
-            phone_num <span style="color:#f92672">=</span> let_ascii <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
-        <span style="color:#75715e"># Eh just cut your losses and check it manually</span>
-        <span style="color:#66d9ef">elif</span> uppercaseLetter <span style="color:#f92672">&lt;=</span> <span style="color:#e6db74">&#34;S&#34;</span>: phone_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
-        <span style="color:#66d9ef">elif</span> uppercaseLetter <span style="color:#f92672">&lt;=</span> <span style="color:#e6db74">&#34;V&#34;</span>: phone_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>
-        <span style="color:#66d9ef">else</span>: phone_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
-    <span style="color:#66d9ef">else</span>:
-        phone_num <span style="color:#f92672">=</span> int(uppercaseLetter)
-    <span style="color:#66d9ef">return</span> phone_num
+<span style=color:#75715e># 8.7</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>getNumber</span>(uppercaseLetter):
+    <span style=color:#66d9ef>if</span> uppercaseLetter<span style=color:#f92672>.</span>isalpha():
+        <span style=color:#66d9ef>if</span> uppercaseLetter <span style=color:#f92672>&lt;=</span> <span style=color:#e6db74>&#34;O&#34;</span>:
+            let_ascii <span style=color:#f92672>=</span> ord(uppercaseLetter) <span style=color:#f92672>-</span> <span style=color:#ae81ff>65</span>
+            phone_num <span style=color:#f92672>=</span> let_ascii <span style=color:#f92672>//</span> <span style=color:#ae81ff>3</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>2</span>
+        <span style=color:#75715e># Eh just cut your losses and check it manually</span>
+        <span style=color:#66d9ef>elif</span> uppercaseLetter <span style=color:#f92672>&lt;=</span> <span style=color:#e6db74>&#34;S&#34;</span>: phone_num <span style=color:#f92672>=</span> <span style=color:#ae81ff>7</span>
+        <span style=color:#66d9ef>elif</span> uppercaseLetter <span style=color:#f92672>&lt;=</span> <span style=color:#e6db74>&#34;V&#34;</span>: phone_num <span style=color:#f92672>=</span> <span style=color:#ae81ff>8</span>
+        <span style=color:#66d9ef>else</span>: phone_num <span style=color:#f92672>=</span> <span style=color:#ae81ff>9</span>
+    <span style=color:#66d9ef>else</span>:
+        phone_num <span style=color:#f92672>=</span> int(uppercaseLetter)
+    <span style=color:#66d9ef>return</span> phone_num
 
-phone_str <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a string: &#34;</span>)
-phone_num <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
-<span style="color:#66d9ef">for</span> let <span style="color:#f92672">in</span> phone_str:
-    <span style="color:#66d9ef">if</span> let<span style="color:#f92672">.</span>isalpha():
-        phone_num <span style="color:#f92672">+=</span> str(getNumber(let<span style="color:#f92672">.</span>upper()))
-    <span style="color:#66d9ef">elif</span> let<span style="color:#f92672">.</span>isnumeric():
-        phone_num <span style="color:#f92672">+=</span> str(getNumber(let))
-    <span style="color:#66d9ef">else</span>:
-        phone_num <span style="color:#f92672">+=</span> let
+phone_str <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter a string: &#34;</span>)
+phone_num <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+<span style=color:#66d9ef>for</span> let <span style=color:#f92672>in</span> phone_str:
+    <span style=color:#66d9ef>if</span> let<span style=color:#f92672>.</span>isalpha():
+        phone_num <span style=color:#f92672>+=</span> str(getNumber(let<span style=color:#f92672>.</span>upper()))
+    <span style=color:#66d9ef>elif</span> let<span style=color:#f92672>.</span>isnumeric():
+        phone_num <span style=color:#f92672>+=</span> str(getNumber(let))
+    <span style=color:#66d9ef>else</span>:
+        phone_num <span style=color:#f92672>+=</span> let
 
-<span style="color:#75715e"># 8.12</span>
-genome <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a genome string: &#34;</span>)
-start_gene <span style="color:#f92672">=</span> False
-curr_gene <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
-start <span style="color:#f92672">=</span> False
-<span style="color:#66d9ef">for</span> nuc <span style="color:#f92672">in</span> genome:
-    <span style="color:#75715e"># Keep a string of the current genes to consider</span>
-    curr_gene <span style="color:#f92672">+=</span> nuc
-    <span style="color:#66d9ef">if</span> len(curr_gene) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">3</span>:
-        last_trip <span style="color:#f92672">=</span> curr_gene[<span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>:]
-        <span style="color:#75715e"># If we hit a start gene and aren&#39;t recording then start recording</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> start <span style="color:#f92672">and</span> last_trip <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;ATG&#34;</span>:
-            start <span style="color:#f92672">=</span> True
-            curr_gene <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
-        <span style="color:#75715e"># If we are recording and hit an end gene stop </span>
-        <span style="color:#75715e"># and print the current result</span>
-        <span style="color:#66d9ef">elif</span> start <span style="color:#f92672">and</span> (last_trip <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;TAG&#34;</span> <span style="color:#f92672">or</span> 
-                last_trip <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;TAA&#34;</span> <span style="color:#f92672">or</span> last_trip <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;TGA&#34;</span>):
-            start <span style="color:#f92672">=</span> False
-            <span style="color:#66d9ef">print</span>(curr_gene[:<span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>])
-            curr_gene <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
-<span style="color:#75715e"># if we never hit a start then all of genome is in curr_gene</span>
-<span style="color:#66d9ef">if</span> curr_gene <span style="color:#f92672">==</span> genome:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;no gene is found&#34;</span>)
+<span style=color:#75715e># 8.12</span>
+genome <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter a genome string: &#34;</span>)
+start_gene <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+curr_gene <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+start <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+<span style=color:#66d9ef>for</span> nuc <span style=color:#f92672>in</span> genome:
+    <span style=color:#75715e># Keep a string of the current genes to consider</span>
+    curr_gene <span style=color:#f92672>+=</span> nuc
+    <span style=color:#66d9ef>if</span> len(curr_gene) <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>3</span>:
+        last_trip <span style=color:#f92672>=</span> curr_gene[<span style=color:#f92672>-</span><span style=color:#ae81ff>3</span>:]
+        <span style=color:#75715e># If we hit a start gene and aren&#39;t recording then start recording</span>
+        <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> start <span style=color:#f92672>and</span> last_trip <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;ATG&#34;</span>:
+            start <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+            curr_gene <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+        <span style=color:#75715e># If we are recording and hit an end gene stop </span>
+        <span style=color:#75715e># and print the current result</span>
+        <span style=color:#66d9ef>elif</span> start <span style=color:#f92672>and</span> (last_trip <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;TAG&#34;</span> <span style=color:#f92672>or</span> 
+                last_trip <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;TAA&#34;</span> <span style=color:#f92672>or</span> last_trip <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;TGA&#34;</span>):
+            start <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+            print(curr_gene[:<span style=color:#f92672>-</span><span style=color:#ae81ff>3</span>])
+            curr_gene <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+<span style=color:#75715e># if we never hit a start then all of genome is in curr_gene</span>
+<span style=color:#66d9ef>if</span> curr_gene <span style=color:#f92672>==</span> genome:
+    print(<span style=color:#e6db74>&#34;no gene is found&#34;</span>)
         
-<span style="color:#75715e"># 8.13</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prefix</span>(s1, s2):
-    prefix <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
-    index <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    small_len <span style="color:#f92672">=</span> min(len(s1), len(s2))
-    still_same <span style="color:#f92672">=</span> True
-    <span style="color:#66d9ef">while</span> still_same <span style="color:#f92672">and</span> index <span style="color:#f92672">&lt;</span> small_len <span style="color:#f92672">and</span> s1[index] <span style="color:#f92672">==</span> s2[index]:
-        prefix <span style="color:#f92672">+=</span> s1[index]
-        index <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> prefix
+<span style=color:#75715e># 8.13</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>prefix</span>(s1, s2):
+    prefix <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+    index <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+    small_len <span style=color:#f92672>=</span> min(len(s1), len(s2))
+    still_same <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+    <span style=color:#66d9ef>while</span> still_same <span style=color:#f92672>and</span> index <span style=color:#f92672>&lt;</span> small_len <span style=color:#f92672>and</span> s1[index] <span style=color:#f92672>==</span> s2[index]:
+        prefix <span style=color:#f92672>+=</span> s1[index]
+        index <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+    <span style=color:#66d9ef>return</span> prefix
 
-<span style="color:#75715e"># Not writing a main function for the sake of the format of this page</span>
-s1 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a string (1): &#34;</span>)
-s2 <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter a string (2): &#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Common prefix between strings:&#34;</span>, prefix(s1, s2))
+<span style=color:#75715e># Not writing a main function for the sake of the format of this page</span>
+s1 <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter a string (1): &#34;</span>)
+s2 <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter a string (2): &#34;</span>)
+print(<span style=color:#e6db74>&#34;Common prefix between strings:&#34;</span>, prefix(s1, s2))
 
-<span style="color:#75715e"># 8.15</span>
-isbn <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter the first 9 digits of an ISBN-10 as a string: &#34;</span>)
-curr_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">for</span> index <span style="color:#f92672">in</span> range(len(isbn)):
-    curr_num <span style="color:#f92672">+=</span> (index <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> int(isbn[index])
-last_num <span style="color:#f92672">=</span> curr_num <span style="color:#f92672">%</span> <span style="color:#ae81ff">11</span>
-last_num <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;X&#34;</span> <span style="color:#66d9ef">if</span> last_num <span style="color:#f92672">==</span> <span style="color:#ae81ff">10</span> <span style="color:#66d9ef">else</span> str(last_num)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;The ISBN-10 number is&#34;</span>, isbn <span style="color:#f92672">+</span> last_num)
+<span style=color:#75715e># 8.15</span>
+isbn <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter the first 9 digits of an ISBN-10 as a string: &#34;</span>)
+curr_num <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#66d9ef>for</span> index <span style=color:#f92672>in</span> range(len(isbn)):
+    curr_num <span style=color:#f92672>+=</span> (index <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>) <span style=color:#f92672>*</span> int(isbn[index])
+last_num <span style=color:#f92672>=</span> curr_num <span style=color:#f92672>%</span> <span style=color:#ae81ff>11</span>
+last_num <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;X&#34;</span> <span style=color:#66d9ef>if</span> last_num <span style=color:#f92672>==</span> <span style=color:#ae81ff>10</span> <span style=color:#66d9ef>else</span> str(last_num)
+print(<span style=color:#e6db74>&#34;The ISBN-10 number is&#34;</span>, isbn <span style=color:#f92672>+</span> last_num)
 </code></pre></div></article>
- 
-      
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
 </div>
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
 </div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      
-  <nav id="TableOfContents"></nav>
-
- 
-    </aside>
-    
-  </main>
-
-  
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents></nav>
+</div>
+</aside>
+</main>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

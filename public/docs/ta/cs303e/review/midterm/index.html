@@ -1,975 +1,824 @@
-<!DOCTYPE html>
-<html lang="en" dir=>
-
+<!doctype html><html lang=en-us dir=ltr>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Midterm Review#MC/Short Answer Section#Noah&rsquo;s Multiple Choice#Noah (fellow TA) has made a lot of great multiple choice questions that he&rsquo;s decided to share with me. Big 👏 for him.
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Midterm Review#MC/Short Answer Section#Noah&rsquo;s Multiple Choice#Noah (fellow TA) has made a lot of great multiple choice questions that he&rsquo;s decided to share with me. Big 👏 for him.
 Assume libraries have been imported correctly for the following questions.
  What is output by the following code?  x = int(52.2) y = math.floor(999.9) print(x, y) A. 52 1000B. 52 999C.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Midterm" />
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Midterm">
 <meta property="og:description" content="Midterm Review#MC/Short Answer Section#Noah&rsquo;s Multiple Choice#Noah (fellow TA) has made a lot of great multiple choice questions that he&rsquo;s decided to share with me. Big 👏 for him.
 Assume libraries have been imported correctly for the following questions.
- What is output by the following code?  x = int(52.2) y = math.floor(999.9) print(x, y) A. 52 1000B. 52 999C." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/" />
-
+ What is output by the following code?  x = int(52.2) y = math.floor(999.9) print(x, y) A. 52 1000B. 52 999C.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/"><meta property="article:section" content="docs">
 <title>Midterm | Skyler ~ UTCS</title>
-<link rel="manifest" href="/~ves314/manifest.json">
-<link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/~ves314/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/~ves314/en.search.min.f000f60592691270692cffb6b18bf0846343e90c0f22cfe8bda6bf8ae36183ed.js" integrity="sha256-8AD2BZJpEnBpLP&#43;2sYvwhGND6QwPIs/ovaa/iuNhg&#43;0="></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-
-  
+<link rel=manifest href=/~ves314/manifest.json>
+<link rel=icon href=/~ves314/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/~ves314/flexsearch.min.js></script>
+<script defer src=/~ves314/en.search.min.3a7053bb48bd226734ae8ddf4f80001a00821dc797d0e9c47b160eb66c6661ad.js integrity="sha256-OnBTu0i9Imc0ro3fT4AAGgCCHceX0OnEexYOtmxmYa0=" crossorigin=anonymous></script>
 </head>
-
-<body dir=>
-  <input type="checkbox" class="hidden" id="menu-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      
-  <nav>
-<h2 class="book-brand">
-  <a href="/~ves314"><span>Skyler ~ UTCS</span>
-  </a>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/~ves314/><span>Skyler ~ UTCS</span>
+</a>
 </h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li class="book-section-flat" >
-          
-  
-    <span>TA Classes</span>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs314/" class="collapsed ">CS 314</a>
-  
-
-          
-  
-  
-  
-
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/" class="collapsed ">CS 303E</a>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/syntax/" class="">Syntax</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/style/" class="">Style</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/exercises/" class="collapsed ">Exercises</a>
-  
-
-          
-  
-  
-  
-
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/review/" class="collapsed ">Exam Reviews</a>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/review/midterm/" class="active">Midterm</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/review/final/" class="">Final</a>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/~ves314/docs/ta/cs303e/assignment/" class="">A9 Tester</a>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-  </ul>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-        </li>
-      
-    
-      
-        <li class="book-section-flat" >
-          
-  
-    <span>Personal Work</span>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <span>Projects</span>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-  </ul>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <span>Research</span>
-  
-
-          
-  
-  
-  
-
-  
-  <ul>
-    
-  </ul>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-        </li>
-      
-    
-  </ul>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<ul>
+<li class=book-section-flat>
+<span>TA Classes</span>
+<ul>
+<li>
+<input type=checkbox id=section-33af6ef1d279801de2f779931fe7714a class=toggle>
+<label for=section-33af6ef1d279801de2f779931fe7714a class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/>CS 314</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-c172f569569f14516626820cca02b95a class=toggle>
+<label for=section-c172f569569f14516626820cca02b95a class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/>Explanations</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/>Big O</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-af21d64a3e1d155d273311b14a7fdf1c class=toggle>
+<label for=section-af21d64a3e1d155d273311b14a7fdf1c class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/>Practice</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/>Big O</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/>Slides</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-cd9969c9531e65499ac6445bfce50541 class=toggle>
+<label for=section-cd9969c9531e65499ac6445bfce50541 class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/>Exam Reviews</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-0353b14a7f76e905c757a5cc55b058a0 class=toggle>
+<label for=section-0353b14a7f76e905c757a5cc55b058a0 class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/>Studying Guide</a>
+</label>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c1e9ef8e25f48d65bad575ca842d14f6 class=toggle checked>
+<label for=section-c1e9ef8e25f48d65bad575ca842d14f6 class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/>CS 303E</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/>Syntax</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/>Style</a>
+</li>
+<li>
+<input type=checkbox id=section-194fbff478cddfab80ada7a56b30c489 class=toggle>
+<label for=section-194fbff478cddfab80ada7a56b30c489 class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/>Exercises</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/>Chapter 1</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/>Chapter 2</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/>Chapter 3</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/>Chapter 4</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/>Chapter 5</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/>Chapter 6</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/>Chapter 7</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/>Chapter 8</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/>Chapter 10</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/>Chapter 11</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/>Chapter 13</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/>Chapter 14</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/>Chapter 15</a>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class=toggle checked>
+<label for=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class="flex justify-between">
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/>Exam Reviews</a>
+</label>
+<ul>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/ class=active>Midterm</a>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/>Final</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/>A9 Tester</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<span>Personal Work</span>
+<ul>
+<li>
+<span>Projects</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </nav>
-
-
-
-
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
-
-
- 
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>Midterm</strong>
-
-  <label for="toc-control">
-    
-    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 </div>
-
-
-  
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#mcshort-answer-section">MC/Short Answer Section</a>
-      <ul>
-        <li><a href="#noahs-multiple-choice">Noah&rsquo;s Multiple Choice</a></li>
-        <li><a href="#cs-312-fall-19">CS 312 Fall &lsquo;19</a></li>
-        <li><a href="#cs-312-fall-18">CS 312 Fall &lsquo;18</a></li>
-      </ul>
-    </li>
-    <li><a href="#written-section">Written Section</a>
-      <ul>
-        <li><a href="#original-questions">Original Questions</a></li>
-        <li><a href="#hackerrank-questions">HackerRank Questions</a></li>
-      </ul>
-    </li>
-    <li><a href="#solutions">Solutions</a>
-      <ul>
-        <li><a href="#mcshort-answers">MC/Short Answers</a></li>
-        <li><a href="#written-section-1">Written Section</a></li>
-      </ul>
-    </li>
-  </ul>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/~ves314/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Midterm</strong>
+<label for=toc-control>
+<img src=/~ves314/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#mcshort-answer-section>MC/Short Answer Section</a>
+<ul>
+<li><a href=#noahs-multiple-choice>Noah&rsquo;s Multiple Choice</a></li>
+<li><a href=#cs-312-fall-19>CS 312 Fall &lsquo;19</a></li>
+<li><a href=#cs-312-fall-18>CS 312 Fall &lsquo;18</a></li>
+</ul>
+</li>
+<li><a href=#written-section>Written Section</a>
+<ul>
+<li><a href=#original-questions>Original Questions</a></li>
+<li><a href=#hackerrank-questions>HackerRank Questions</a></li>
+</ul>
+</li>
+<li><a href=#solutions>Solutions</a>
+<ul>
+<li><a href=#mcshort-answers>MC/Short Answers</a></li>
+<li><a href=#written-section-1>Written Section</a></li>
+</ul>
+</li>
+</ul>
 </nav>
-
-
-    </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown"><p><img src="/~ves314/img/study_2.gif?raw=true" alt="" /></p>
-<h1 id="midterm-review">
-  Midterm Review
-  <a class="anchor" href="#midterm-review">#</a>
+</aside>
+</header>
+<article class=markdown><p><img src="/~ves314/img/study_2.gif?raw=true" alt></p>
+<h1 id=midterm-review>
+Midterm Review
+<a class=anchor href=#midterm-review>#</a>
 </h1>
-<h2 id="mcshort-answer-section">
-  MC/Short Answer Section
-  <a class="anchor" href="#mcshort-answer-section">#</a>
+<h2 id=mcshort-answer-section>
+MC/Short Answer Section
+<a class=anchor href=#mcshort-answer-section>#</a>
 </h2>
-<h3 id="noahs-multiple-choice">
-  Noah&rsquo;s Multiple Choice
-  <a class="anchor" href="#noahs-multiple-choice">#</a>
+<h3 id=noahs-multiple-choice>
+Noah&rsquo;s Multiple Choice
+<a class=anchor href=#noahs-multiple-choice>#</a>
 </h3>
 <p>Noah (fellow TA) has made a lot of great multiple choice questions that he&rsquo;s decided to share with me. Big 👏 for him.</p>
 <p><strong>Assume libraries have been imported correctly for the following questions.</strong></p>
 <ol>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> int(<span style="color:#ae81ff">52.2</span>)
-y <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>floor(<span style="color:#ae81ff">999.9</span>)
-<span style="color:#66d9ef">print</span>(x, y)
-</code></pre></div><pre><code>A. 52 1000
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x <span style=color:#f92672>=</span> int(<span style=color:#ae81ff>52.2</span>)
+y <span style=color:#f92672>=</span> math<span style=color:#f92672>.</span>floor(<span style=color:#ae81ff>999.9</span>)
+print(x, y)
+</code></pre></div><pre tabindex=0><code>A. 52 1000
 B. 52 999
 C. 52.0 999.0
 D. 52.0 1000.0
-</code></pre><ol start="2">
+</code></pre><ol start=2>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">t <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>floor(<span style="color:#f92672">-</span><span style="color:#ae81ff">909.1</span>)
-a <span style="color:#f92672">=</span> int(<span style="color:#f92672">-</span><span style="color:#ae81ff">49.1</span>)
-<span style="color:#66d9ef">print</span>(t, a)
-</code></pre></div><pre><code>A. -908 -49
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>t <span style=color:#f92672>=</span> math<span style=color:#f92672>.</span>floor(<span style=color:#f92672>-</span><span style=color:#ae81ff>909.1</span>)
+a <span style=color:#f92672>=</span> int(<span style=color:#f92672>-</span><span style=color:#ae81ff>49.1</span>)
+print(t, a)
+</code></pre></div><pre tabindex=0><code>A. -908 -49
 B. -909 -50
 C. -910 -50
 D. -908 -50
 E. -909 -49
 F. -910 -49
-</code></pre><ol start="3">
+</code></pre><ol start=3>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">y <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>floor(<span style="color:#f92672">-</span><span style="color:#ae81ff">3.99</span> <span style="color:#f92672">-</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">01</span>)
-j <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>floor(<span style="color:#ae81ff">5.99</span> <span style="color:#f92672">+</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>)
-<span style="color:#66d9ef">print</span>(y, j)
-</code></pre></div><pre><code>A. -3 5
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>y <span style=color:#f92672>=</span> math<span style=color:#f92672>.</span>floor(<span style=color:#f92672>-</span><span style=color:#ae81ff>3.99</span> <span style=color:#f92672>-</span> <span style=color:#ae81ff>.01</span>)
+j <span style=color:#f92672>=</span> math<span style=color:#f92672>.</span>floor(<span style=color:#ae81ff>5.99</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>.1</span>)
+print(y, j)
+</code></pre></div><pre tabindex=0><code>A. -3 5
 B. -4 5
 C. -3 6
 D. RUNTIME ERROR
 E. -4 6
-</code></pre><ol start="4">
+</code></pre><ol start=4>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">m <span style="color:#f92672">=</span> int(<span style="color:#ae81ff">52.9</span> <span style="color:#f92672">+</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>)
-<span style="color:#66d9ef">print</span>(m)
-</code></pre></div><pre><code>A. 53.0
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>m <span style=color:#f92672>=</span> int(<span style=color:#ae81ff>52.9</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>.1</span>)
+print(m)
+</code></pre></div><pre tabindex=0><code>A. 53.0
 B. 52
 C. RUNTIME ERROR
 D. 52.0
 E. 53
-</code></pre><ol start="5">
+</code></pre><ol start=5>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">p <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span>
-q <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">//</span> <span style="color:#ae81ff">10</span>
-<span style="color:#66d9ef">print</span>(p, q)
-</code></pre></div><pre><code>A. 3.0 3.0
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>p <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span> <span style=color:#f92672>//</span> <span style=color:#ae81ff>3</span>
+q <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span> <span style=color:#f92672>//</span> <span style=color:#ae81ff>10</span>
+print(p, q)
+</code></pre></div><pre tabindex=0><code>A. 3.0 3.0
 B. 3 3
 C. 3.0 0.0
 D. 3 0
-</code></pre><ol start="6">
+</code></pre><ol start=6>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">y <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
-a <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">6</span>
-<span style="color:#66d9ef">print</span>(y, a)
-</code></pre></div><pre><code>A. 2.0 2.0
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>y <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span> <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span>
+a <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>%</span> <span style=color:#ae81ff>6</span>
+print(y, a)
+</code></pre></div><pre tabindex=0><code>A. 2.0 2.0
 B. 2 2
 C. 2 0
 D. 2.0 0.0
 E. 2.0 2
-</code></pre><ol start="7">
+</code></pre><ol start=7>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">f <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span> <span style="color:#f92672">%</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>
-g <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">7</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">13</span>
-<span style="color:#66d9ef">print</span>(f, g)
-</code></pre></div><pre><code>A. -3 -6
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>f <span style=color:#f92672>=</span> <span style=color:#ae81ff>9</span> <span style=color:#f92672>%</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>4</span>
+g <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>7</span> <span style=color:#f92672>%</span> <span style=color:#ae81ff>13</span>
+print(f, g)
+</code></pre></div><pre tabindex=0><code>A. -3 -6
 B. -1 -7
 C. -3 6
 D. 1 -7
-</code></pre><ol start="8">
+</code></pre><ol start=8>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-y <span style="color:#f92672">=</span> x <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>
-x <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
-y <span style="color:#f92672">+=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">print</span>(x, y)
-</code></pre></div><pre><code>A. 0, 1
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>
+y <span style=color:#f92672>=</span> x <span style=color:#f92672>-</span> <span style=color:#ae81ff>2</span>
+x <span style=color:#f92672>*=</span> <span style=color:#ae81ff>2</span>
+y <span style=color:#f92672>+=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>
+print(x, y)
+</code></pre></div><pre tabindex=0><code>A. 0, 1
 B. 4 1
 C. 0 -1
 D. 4 -1
-</code></pre><ol start="9">
+</code></pre><ol start=9>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> eval(<span style="color:#e6db74">&#39;4&#39;</span>)
-y <span style="color:#f92672">=</span> int(<span style="color:#e6db74">&#39;-23&#39;</span>)
-<span style="color:#66d9ef">print</span>(y, x)
-</code></pre></div><pre><code>A. 4 23
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x <span style=color:#f92672>=</span> eval(<span style=color:#e6db74>&#39;4&#39;</span>)
+y <span style=color:#f92672>=</span> int(<span style=color:#e6db74>&#39;-23&#39;</span>)
+print(y, x)
+</code></pre></div><pre tabindex=0><code>A. 4 23
 B. -23 4
 C. 23 -4
 D. SYNTAX ERROR
 E. RUNTIME ERROR
-</code></pre><ol start="10">
+</code></pre><ol start=10>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> eval(<span style="color:#e6db74">&#39;9 + 1&#39;</span>)
-<span style="color:#66d9ef">print</span>(x)
-</code></pre></div><pre><code>A. 9 + 1
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x <span style=color:#f92672>=</span> eval(<span style=color:#e6db74>&#39;9 + 1&#39;</span>)
+print(x)
+</code></pre></div><pre tabindex=0><code>A. 9 + 1
 B. SYNTAX ERROR
 C. RUNTIME ERROR
 D. 10
 E. 10.0
-</code></pre><ol start="11">
+</code></pre><ol start=11>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">t <span style="color:#f92672">=</span> int(<span style="color:#e6db74">&#39;1 - 1&#39;</span>)
-<span style="color:#66d9ef">print</span>(t)
-</code></pre></div><pre><code>A. SYNTAX ERROR
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>t <span style=color:#f92672>=</span> int(<span style=color:#e6db74>&#39;1 - 1&#39;</span>)
+print(t)
+</code></pre></div><pre tabindex=0><code>A. SYNTAX ERROR
 B. 1 - 1
 C. RUNTIME ERROR
 D. 0
 E. 0.0
-</code></pre><ol start="12">
+</code></pre><ol start=12>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">k <span style="color:#f92672">=</span> eval(<span style="color:#e6db74">&#39;99.0 + 1&#39;</span>)
-<span style="color:#66d9ef">print</span>(k)
-</code></pre></div><pre><code>A. RUNTIME ERROR
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>k <span style=color:#f92672>=</span> eval(<span style=color:#e6db74>&#39;99.0 + 1&#39;</span>)
+print(k)
+</code></pre></div><pre tabindex=0><code>A. RUNTIME ERROR
 B. 100.0
 C. SYNTAX ERROR
 D. 100
-</code></pre><ol start="13">
+</code></pre><ol start=13>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-y <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
-z <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
-<span style="color:#66d9ef">if</span> x <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">and</span> y <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">4</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;case1&#39;</span>)
-<span style="color:#66d9ef">elif</span> z <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">9</span> <span style="color:#f92672">or</span> x <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;case2&#39;</span>)
-<span style="color:#66d9ef">else</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;case3&#39;</span>)
-</code></pre></div><pre><code>A. case2
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>
+y <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>
+z <span style=color:#f92672>=</span> <span style=color:#ae81ff>9</span>
+<span style=color:#66d9ef>if</span> x <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>and</span> y <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>4</span>:
+    print(<span style=color:#e6db74>&#39;case1&#39;</span>)
+<span style=color:#66d9ef>elif</span> z <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>9</span> <span style=color:#f92672>or</span> x <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>2</span>:
+    print(<span style=color:#e6db74>&#39;case2&#39;</span>)
+<span style=color:#66d9ef>else</span>:
+    print(<span style=color:#e6db74>&#39;case3&#39;</span>)
+</code></pre></div><pre tabindex=0><code>A. case2
 B. case3
 C. case1
-</code></pre><ol start="14">
+</code></pre><ol start=14>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;A&#39;</span>
-y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;B&#39;</span>
-<span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;X&#39;</span> <span style="color:#f92672">or</span> y <span style="color:#f92672">==</span> x:
-    count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">elif</span> count <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">and</span> y <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;B&#39;</span>:
-    count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">5</span>
-<span style="color:#66d9ef">else</span>:
-    count <span style="color:#f92672">*=</span> <span style="color:#ae81ff">3</span>
-count <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
-<span style="color:#66d9ef">print</span>(count)
-</code></pre></div><pre><code>A. 8
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>count <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+x <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;A&#39;</span>
+y <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;B&#39;</span>
+<span style=color:#66d9ef>if</span> x <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;X&#39;</span> <span style=color:#f92672>or</span> y <span style=color:#f92672>==</span> x:
+    count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+<span style=color:#66d9ef>elif</span> count <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>50</span> <span style=color:#f92672>and</span> y <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;B&#39;</span>:
+    count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>5</span>
+<span style=color:#66d9ef>else</span>:
+    count <span style=color:#f92672>*=</span> <span style=color:#ae81ff>3</span>
+count <span style=color:#f92672>*=</span> <span style=color:#ae81ff>2</span>
+print(count)
+</code></pre></div><pre tabindex=0><code>A. 8
 B. 2
 C. 10
 D. 5
 E. 1
-</code></pre><ol start="15">
+</code></pre><ol start=15>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random
-num <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>)
-<span style="color:#66d9ef">if</span> num <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-    <span style="color:#66d9ef">print</span>(num)
-<span style="color:#66d9ef">elif</span> num <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
-    <span style="color:#66d9ef">print</span>(num <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
-<span style="color:#66d9ef">else</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">50</span>)
-</code></pre></div><pre><code>A. 1
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> random
+num <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>1</span>)
+<span style=color:#66d9ef>if</span> num <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
+    print(num)
+<span style=color:#66d9ef>elif</span> num <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>:
+    print(num <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
+<span style=color:#66d9ef>else</span>:
+    print(<span style=color:#ae81ff>50</span>)
+</code></pre></div><pre tabindex=0><code>A. 1
 B. 0
 C. Impossible to Determine
 D. 50
-</code></pre><ol start="16">
+</code></pre><ol start=16>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1&#39;</span>
-a <span style="color:#f92672">=</span> x <span style="color:#f92672">==</span> y <span style="color:#f92672">and</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
-b <span style="color:#f92672">=</span> y <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;1&#39;</span> <span style="color:#f92672">or</span> x <span style="color:#f92672">%</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">print</span>(a, b)
-</code></pre></div><pre><code>A. True True
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+y <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;1&#39;</span>
+a <span style=color:#f92672>=</span> x <span style=color:#f92672>==</span> y <span style=color:#f92672>and</span> x <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>
+b <span style=color:#f92672>=</span> y <span style=color:#f92672>!=</span> <span style=color:#e6db74>&#39;1&#39;</span> <span style=color:#f92672>or</span> x <span style=color:#f92672>%</span> <span style=color:#ae81ff>5</span> <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>1</span>
+print(a, b)
+</code></pre></div><pre tabindex=0><code>A. True True
 B. False True
 C. True False
 D. False False
-</code></pre><ol start="17">
+</code></pre><ol start=17>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>):
-    count <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
-<span style="color:#66d9ef">print</span>(count)
-</code></pre></div><pre><code>A. 1024
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>count <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>10</span>):
+    count <span style=color:#f92672>*=</span> <span style=color:#ae81ff>2</span>
+print(count)
+</code></pre></div><pre tabindex=0><code>A. 1024
 B. 2
 C. 0
 D. 20
-</code></pre><ol start="18">
+</code></pre><ol start=18>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">loop_control <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">while</span> loop_control <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
-    loop_control <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
-    count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">print</span>(count)
-</code></pre></div><pre><code>A. 6
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>loop_control <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+count <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#66d9ef>while</span> loop_control <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>10</span>:
+    loop_control <span style=color:#f92672>*=</span> <span style=color:#ae81ff>2</span>
+    count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+print(count)
+</code></pre></div><pre tabindex=0><code>A. 6
 B. 4
 C. 3
 D. 10
 E. 5
-</code></pre><ol start="19">
+</code></pre><ol start=19>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">what_am_i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">50</span>):
-    what_am_i <span style="color:#f92672">=</span> i
-<span style="color:#66d9ef">print</span>(what_am_i)
-</code></pre></div><pre><code>A. RUNTIME ERROR
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>what_am_i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>50</span>):
+    what_am_i <span style=color:#f92672>=</span> i
+print(what_am_i)
+</code></pre></div><pre tabindex=0><code>A. RUNTIME ERROR
 B. 50
 C. 49
 D. 1
-</code></pre><ol start="20">
+</code></pre><ol start=20>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">loop_control <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>
-<span style="color:#66d9ef">while</span> loop_control <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">50</span>:
-    loop_control <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">print</span>(loop_control)
-</code></pre></div><pre><code>A. 51
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>loop_control <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>2</span>
+<span style=color:#66d9ef>while</span> loop_control <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>50</span>:
+    loop_control <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+print(loop_control)
+</code></pre></div><pre tabindex=0><code>A. 51
 B. 48
 C. 50
 D. 49
-</code></pre><ol start="21">
+</code></pre><ol start=21>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">3</span>):
-    count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">print</span>(count)
-</code></pre></div><pre><code>A. 3
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>count <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>15</span>, <span style=color:#ae81ff>3</span>):
+    count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+print(count)
+</code></pre></div><pre tabindex=0><code>A. 3
 B. INFINITE LOOP
 C. 5
 D. 4
-</code></pre><ol start="22">
+</code></pre><ol start=22>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">loop_control <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>
-<span style="color:#66d9ef">while</span> loop_control <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>:
-    loop_control <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
-<span style="color:#66d9ef">print</span>(loop_control)
-</code></pre></div><pre><code>A. INFINITE LOOP
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>loop_control <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>10</span>
+<span style=color:#66d9ef>while</span> loop_control <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>0</span>:
+    loop_control <span style=color:#f92672>*=</span> <span style=color:#ae81ff>2</span>
+print(loop_control)
+</code></pre></div><pre tabindex=0><code>A. INFINITE LOOP
 B. 1
 C. 20
 D. 0
-</code></pre><ol start="23">
+</code></pre><ol start=23>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
-    count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">print</span>(count)
-</code></pre></div><pre><code>A. 0
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>count <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>0</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>):
+    count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+print(count)
+</code></pre></div><pre tabindex=0><code>A. 0
 B. INFINITE LOOP
 C. 10
 D. 11
 E. 9
-</code></pre><ol start="24">
+</code></pre><ol start=24>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">a</span>(x):
-    x <span style="color:#f92672">=</span> b(x)
-    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>a</span>(x):
+    x <span style=color:#f92672>=</span> b(x)
+    <span style=color:#66d9ef>return</span> x <span style=color:#f92672>+</span> <span style=color:#ae81ff>2</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">b</span>(y):
-    <span style="color:#66d9ef">return</span> y <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>b</span>(y):
+    <span style=color:#66d9ef>return</span> y <span style=color:#f92672>*</span> <span style=color:#ae81ff>2</span>
 
-what_am_i <span style="color:#f92672">=</span> a(<span style="color:#ae81ff">5</span>)
-<span style="color:#66d9ef">print</span>(what_am_i)
-</code></pre></div><pre><code>A. 7
+what_am_i <span style=color:#f92672>=</span> a(<span style=color:#ae81ff>5</span>)
+print(what_am_i)
+</code></pre></div><pre tabindex=0><code>A. 7
 B. 9
 C. 10
 D. 12
-</code></pre><ol start="25">
+</code></pre><ol start=25>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">a</span>(x, y):
-    x <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-    y <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> y
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>a</span>(x, y):
+    x <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>
+    y <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>
+    <span style=color:#66d9ef>return</span> x <span style=color:#f92672>*</span> y
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">b</span>(z, t):
-    z <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>
-    t <span style="color:#f92672">=</span> a(z, t)
-    <span style="color:#66d9ef">return</span> z <span style="color:#f92672">*</span> t
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>b</span>(z, t):
+    z <span style=color:#f92672>+=</span> <span style=color:#ae81ff>2</span>
+    t <span style=color:#f92672>=</span> a(z, t)
+    <span style=color:#66d9ef>return</span> z <span style=color:#f92672>*</span> t
 
-what_am_i <span style="color:#f92672">=</span> b(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
-<span style="color:#66d9ef">print</span>(what_am_i)
-</code></pre></div><pre><code>A. 18
+what_am_i <span style=color:#f92672>=</span> b(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>)
+print(what_am_i)
+</code></pre></div><pre tabindex=0><code>A. 18
 B. 0
 C. 9
 D. 27
-</code></pre><ol start="26">
+</code></pre><ol start=26>
 <li>What is output by the following code?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">a</span>(x, y):
-    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> y
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>a</span>(x, y):
+    <span style=color:#66d9ef>return</span> x <span style=color:#f92672>+</span> y
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">b</span>(z, t):
-    z <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    t <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> a(z, t)
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>b</span>(z, t):
+    z <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+    t <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+    <span style=color:#66d9ef>return</span> a(z, t)
 
-z <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
-t <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">print</span>(b(z, t), z, t)
-</code></pre></div><pre><code>A. 1 0 1
+z <span style=color:#f92672>=</span> <span style=color:#ae81ff>50</span>
+t <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+print(b(z, t), z, t)
+</code></pre></div><pre tabindex=0><code>A. 1 0 1
 B. 50 0 1
 C. 50 50 0
 D. 1 50 0
-</code></pre><h3 id="cs-312-fall-19">
-  CS 312 Fall &lsquo;19
-  <a class="anchor" href="#cs-312-fall-19">#</a>
+</code></pre><h3 id=cs-312-fall-19>
+CS 312 Fall &lsquo;19
+<a class=anchor href=#cs-312-fall-19>#</a>
 </h3>
-<p>The following is Mike&rsquo;s CS 312 Exam 1 from Fall 2019 and 2018. You can find the original page <a href="https://www.cs.utexas.edu/~scottm/cs312/testStudyMaterials.htm">here</a>. I&rsquo;ve translated a few questions from Java to Python</p>
+<p>The following is Mike&rsquo;s CS 312 Exam 1 from Fall 2019 and 2018. You can find the original page <a href=https://www.cs.utexas.edu/~scottm/cs312/testStudyMaterials.htm>here</a>. I&rsquo;ve translated a few questions from Java to Python</p>
 <ol>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-y1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> x1 <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span>
-x1 <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>
-y1 <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
-y1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> y1
-<span style="color:#66d9ef">print</span>(x1, y1)
-</code></pre></div><ol start="2">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x1 <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>
+y1 <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>+</span> x1 <span style=color:#f92672>//</span> <span style=color:#ae81ff>3</span>
+x1 <span style=color:#f92672>+=</span> <span style=color:#ae81ff>2</span>
+y1 <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
+y1 <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span> <span style=color:#f92672>+</span> y1
+print(x1, y1)
+</code></pre></div><ol start=2>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
-b2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.0</span>
-c2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
-b2 <span style="color:#f92672">*=</span> c2 <span style="color:#f92672">*</span> (a2 <span style="color:#f92672">+</span> b2)
-<span style="color:#66d9ef">print</span>(b2, c2)
-</code></pre></div><ol start="3">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a2 <span style=color:#f92672>=</span> <span style=color:#ae81ff>2.0</span>
+b2 <span style=color:#f92672>=</span> <span style=color:#ae81ff>3.0</span>
+c2 <span style=color:#f92672>=</span> <span style=color:#ae81ff>2.0</span>
+b2 <span style=color:#f92672>*=</span> c2 <span style=color:#f92672>*</span> (a2 <span style=color:#f92672>+</span> b2)
+print(b2, c2)
+</code></pre></div><ol start=3>
 <li>How many asterisks does the following code print out?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;***&#34;</span>)
-    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;***&#34;</span>)
-    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">6</span>):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-</code></pre></div><ol start="4">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>5</span>):
+    print(<span style=color:#e6db74>&#34;***&#34;</span>)
+    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>):
+        print(<span style=color:#e6db74>&#34;*&#34;</span>)
+    print(<span style=color:#e6db74>&#34;***&#34;</span>)
+    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>6</span>):
+        print(<span style=color:#e6db74>&#34;*&#34;</span>)
+</code></pre></div><ol start=4>
 <li>How many asterisks does the following code print out?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">2</span>):
-    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(i):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-</code></pre></div><ol start="5">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>11</span>, <span style=color:#ae81ff>2</span>):
+    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(i):
+        print(<span style=color:#e6db74>&#34;*&#34;</span>)
+</code></pre></div><ol start=5>
 <li>How many asteriks does the following code print out?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">a</span>():
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">9</span>):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>a</span>():
+    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>9</span>):
+        print(<span style=color:#e6db74>&#34;*&#34;</span>)
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">b</span>():
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>b</span>():
+    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>):
+        print(<span style=color:#e6db74>&#34;*&#34;</span>)
         a()
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
+        print(<span style=color:#e6db74>&#34;*&#34;</span>)
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">c</span>():
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>c</span>():
     a()
     b()
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>):
+    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>4</span>):
         a()
         b()
 
 a()
 b()
 c()
-</code></pre></div><ol start="6">
+</code></pre></div><ol start=6>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(x6, y6):
-    y6 <span style="color:#f92672">-=</span> <span style="color:#ae81ff">3</span>
-    x6 <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
-    <span style="color:#66d9ef">print</span>(x6, y6)
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>f</span>(x6, y6):
+    y6 <span style=color:#f92672>-=</span> <span style=color:#ae81ff>3</span>
+    x6 <span style=color:#f92672>*=</span> <span style=color:#ae81ff>2</span>
+    print(x6, y6)
 
-x6 <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>
-y6 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+x6 <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>5</span>
+y6 <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>
 f(x6, y6)
 f(y6, x6)
-<span style="color:#66d9ef">print</span>(x6, y6)
-</code></pre></div><ol start="7">
+print(x6, y6)
+</code></pre></div><ol start=7>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x5 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-y5 <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
-<span style="color:#66d9ef">while</span> y5 <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">4</span>:
-    x5 <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
-    y5 <span style="color:#f92672">=</span> y5 <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
-<span style="color:#66d9ef">print</span>(x5, y5)
-</code></pre></div><ol start="8">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x5 <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>
+y5 <span style=color:#f92672>=</span> <span style=color:#ae81ff>30</span>
+<span style=color:#66d9ef>while</span> y5 <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>4</span>:
+    x5 <span style=color:#f92672>*=</span> <span style=color:#ae81ff>2</span>
+    y5 <span style=color:#f92672>=</span> y5 <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span>
+print(x5, y5)
+</code></pre></div><ol start=8>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> math
 
-a3 <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">2.75</span>
-b3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.751</span>
-c3 <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">5.0</span>
-<span style="color:#66d9ef">print</span>(math<span style="color:#f92672">.</span>ceil(a3), math<span style="color:#f92672">.</span>floor(b3), math<span style="color:#f92672">.</span>ceil(c3))
-</code></pre></div><h3 id="cs-312-fall-18">
-  CS 312 Fall &lsquo;18
-  <a class="anchor" href="#cs-312-fall-18">#</a>
+a3 <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>2.75</span>
+b3 <span style=color:#f92672>=</span> <span style=color:#ae81ff>3.751</span>
+c3 <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>5.0</span>
+print(math<span style=color:#f92672>.</span>ceil(a3), math<span style=color:#f92672>.</span>floor(b3), math<span style=color:#f92672>.</span>ceil(c3))
+</code></pre></div><h3 id=cs-312-fall-18>
+CS 312 Fall &lsquo;18
+<a class=anchor href=#cs-312-fall-18>#</a>
 </h3>
 <ol>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-y1 <span style="color:#f92672">=</span> x1 <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>
-a1 <span style="color:#f92672">=</span> x1 <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> y1 <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>
-x1 <span style="color:#f92672">=</span> x1 <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>
-y1 <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
-a1 <span style="color:#f92672">=</span> a1 <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
-<span style="color:#66d9ef">print</span>(x1, y1, a1)
-</code></pre></div><ol start="2">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x1 <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>
+y1 <span style=color:#f92672>=</span> x1 <span style=color:#f92672>*</span> <span style=color:#ae81ff>3</span>
+a1 <span style=color:#f92672>=</span> x1 <span style=color:#f92672>//</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>+</span> y1 <span style=color:#f92672>//</span> <span style=color:#ae81ff>2</span>
+x1 <span style=color:#f92672>=</span> x1 <span style=color:#f92672>+</span> <span style=color:#ae81ff>2</span>
+y1 <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
+a1 <span style=color:#f92672>=</span> a1 <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span>
+print(x1, y1, a1)
+</code></pre></div><ol start=2>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-y2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-y2 <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> x2 <span style="color:#f92672">*</span> (y2 <span style="color:#f92672">-</span> <span style="color:#ae81ff">12</span>)
-<span style="color:#66d9ef">print</span>(y2 <span style="color:#f92672">-</span> <span style="color:#ae81ff">10</span>)
-</code></pre></div><ol start="3">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x2 <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+y2 <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>
+y2 <span style=color:#f92672>*=</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>+</span> x2 <span style=color:#f92672>*</span> (y2 <span style=color:#f92672>-</span> <span style=color:#ae81ff>12</span>)
+print(y2 <span style=color:#f92672>-</span> <span style=color:#ae81ff>10</span>)
+</code></pre></div><ol start=3>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s3 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;x3&#34;</span>
-x3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
-a3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span>
-<span style="color:#66d9ef">print</span>(x3, <span style="color:#ae81ff">2</span>, s3, a3, <span style="color:#ae81ff">1</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
-</code></pre></div><ol start="4">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>s3 <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;x3&#34;</span>
+x3 <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>
+a3 <span style=color:#f92672>=</span> <span style=color:#ae81ff>2.0</span>
+print(x3, <span style=color:#ae81ff>2</span>, s3, a3, <span style=color:#ae81ff>1</span>, sep<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</code></pre></div><ol start=4>
 <li>How many asteriks does the following code print out?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">7</span>):
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-</code></pre></div><ol start="5">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>print(<span style=color:#e6db74>&#34;*&#34;</span>)
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>7</span>):
+    print(<span style=color:#e6db74>&#34;*&#34;</span>)
+    print(<span style=color:#e6db74>&#34;*&#34;</span>)
+print(<span style=color:#e6db74>&#34;*&#34;</span>)
+</code></pre></div><ol start=5>
 <li>How many asteriks does the following code print out?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">6</span>):
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;**&#34;</span>)
-    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">11</span>):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;**&#34;</span>)
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;***&#34;</span>)
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-</code></pre></div><ol start="6">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>6</span>):
+    print(<span style=color:#e6db74>&#34;**&#34;</span>)
+    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>11</span>):
+        print(<span style=color:#e6db74>&#34;**&#34;</span>)
+        print(<span style=color:#e6db74>&#34;***&#34;</span>)
+    print(<span style=color:#e6db74>&#34;*&#34;</span>)
+</code></pre></div><ol start=6>
 <li>How many asteriks does the following code print out?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>):
-    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-        <span style="color:#66d9ef">for</span> k <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>):
-            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;*&#34;</span>)
-</code></pre></div><ol start="7">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>5</span>):
+    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, i <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
+        print(<span style=color:#e6db74>&#34;*&#34;</span>)
+    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>4</span>):
+        print(<span style=color:#e6db74>&#34;*&#34;</span>)
+        <span style=color:#66d9ef>for</span> k <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>4</span>):
+            print(<span style=color:#e6db74>&#34;*&#34;</span>)
+</code></pre></div><ol start=7>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x7 <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>
-y7 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-z7 <span style="color:#f92672">=</span> y7 <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">%</span> (x7 <span style="color:#f92672">-</span> (y7 <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>))
-<span style="color:#66d9ef">print</span>(z7)
-</code></pre></div><ol start="8">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x7 <span style=color:#f92672>=</span> <span style=color:#ae81ff>6</span>
+y7 <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>
+z7 <span style=color:#f92672>=</span> y7 <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span> <span style=color:#f92672>%</span> (x7 <span style=color:#f92672>-</span> (y7 <span style=color:#f92672>*</span> <span style=color:#ae81ff>2</span>))
+print(z7)
+</code></pre></div><ol start=8>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">function8</span>(x, y):
-    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    y <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">print</span>(x <span style="color:#f92672">+</span> y)
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>function8</span>(x, y):
+    x <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+    y <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
+    print(x <span style=color:#f92672>+</span> y)
     
-x8 <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>
-y8 <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>
+x8 <span style=color:#f92672>=</span> <span style=color:#ae81ff>8</span>
+y8 <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>5</span>
 function8(y8, x8)
 function8(x8, x8)
-<span style="color:#66d9ef">print</span>(x8, y8)
-</code></pre></div><ol start="9">
+print(x8, y8)
+</code></pre></div><ol start=9>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">function9</span>(x, y):
-    x <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
-    y <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>
-    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> y
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>function9</span>(x, y):
+    x <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
+    y <span style=color:#f92672>*=</span> <span style=color:#ae81ff>2</span>
+    <span style=color:#66d9ef>return</span> x <span style=color:#f92672>+</span> y
 
-x9 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
-y9 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-x9 <span style="color:#f92672">=</span> function9(x9, y9)
-<span style="color:#66d9ef">print</span>(x9, y9)
-</code></pre></div><ol start="10">
+x9 <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>
+y9 <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>
+x9 <span style=color:#f92672>=</span> function9(x9, y9)
+print(x9, y9)
+</code></pre></div><ol start=10>
 <li>What is output by the following code when it is run?</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">function10</span>(x, y):
-    x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>
-    y <span style="color:#f92672">-=</span> <span style="color:#ae81ff">2</span>
-    <span style="color:#66d9ef">print</span>(x <span style="color:#f92672">*</span> y)
-    <span style="color:#66d9ef">return</span> x <span style="color:#f92672">+</span> y
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>function10</span>(x, y):
+    x <span style=color:#f92672>+=</span> <span style=color:#ae81ff>2</span>
+    y <span style=color:#f92672>-=</span> <span style=color:#ae81ff>2</span>
+    print(x <span style=color:#f92672>*</span> y)
+    <span style=color:#66d9ef>return</span> x <span style=color:#f92672>+</span> y
 
-x <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-y <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-<span style="color:#66d9ef">print</span>(function10(x, y) <span style="color:#f92672">+</span> x <span style="color:#f92672">*</span> y <span style="color:#f92672">+</span> function10(y, y))
-</code></pre></div><h2 id="written-section">
-  Written Section
-  <a class="anchor" href="#written-section">#</a>
+x <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>
+y <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>
+print(function10(x, y) <span style=color:#f92672>+</span> x <span style=color:#f92672>*</span> y <span style=color:#f92672>+</span> function10(y, y))
+</code></pre></div><h2 id=written-section>
+Written Section
+<a class=anchor href=#written-section>#</a>
 </h2>
-<h3 id="original-questions">
-  Original Questions
-  <a class="anchor" href="#original-questions">#</a>
+<h3 id=original-questions>
+Original Questions
+<a class=anchor href=#original-questions>#</a>
 </h3>
-<h4 id="level-1-difficulty">
-  Level 1 Difficulty
-  <a class="anchor" href="#level-1-difficulty">#</a>
+<h4 id=level-1-difficulty>
+Level 1 Difficulty
+<a class=anchor href=#level-1-difficulty>#</a>
 </h4>
-<h4 id="3x3-determinant">
-  3x3 Determinant
-  <a class="anchor" href="#3x3-determinant">#</a>
+<h4 id=3x3-determinant>
+3x3 Determinant
+<a class=anchor href=#3x3-determinant>#</a>
 </h4>
 <p>A determinant is a very useful calculation in linear algebra that can tell you how much an area or volume shrinks or grows when you squish and stretch out an area of space.
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Ip3X9LOh2dk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube.com/embed/Ip3X9LOh2dk style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
 </div>
-
 The video above is awesome if you want an intuitive feel for what this exactly means, and why the following calculations are the way they are. This video isn&rsquo;t required to be watch to write the following function.</p>
 <p>Consider a \( 2 \times 2 \) determinant calculation:</p>
-
-<link rel="stylesheet" href="/~ves314/katex/katex.min.css" />
-<script defer src="/~ves314/katex/katex.min.js"></script>
-<script defer src="/~ves314/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
-  \[
+<link rel=stylesheet href=/~ves314/katex/katex.min.css>
+<script defer src=/~ves314/katex/katex.min.js></script>
+<script defer src=/~ves314/katex/auto-render.min.js onload=renderMathInElement(document.body)></script><span>
+\[
 \text{det}
 \begin{bmatrix}
-   a &amp; b \\
-   c &amp; d
-\end{bmatrix} = ad - bc\]
+a & b \\
+c & d
+\end{bmatrix} = ad - bc
+\]
 </span>
-
 <p>In terms of Python, this can be implemented with the following function:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">det_2x2</span>(a, b, c, d):
-    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">*</span> d <span style="color:#f92672">-</span> b <span style="color:#f92672">*</span> c
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>det_2x2</span>(a, b, c, d):
+    <span style=color:#66d9ef>return</span> a <span style=color:#f92672>*</span> d <span style=color:#f92672>-</span> b <span style=color:#f92672>*</span> c
 </code></pre></div><p>In your case, use this function written above to make the process of calculating the determinannt of a \(3 \times 3\) matrix easier:</p>
 <span>
-  \[
+\[
 \text{det}
 \begin{bmatrix}
-   a &amp; b &amp; c \\
-   d &amp; e &amp; f \\
-   g &amp; h &amp; i
-\end{bmatrix} = 
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{bmatrix} =
 a \cdot \text{det}\begin{bmatrix}
-   e &amp; f \\
-   h &amp; i
+e & f \\
+h & i
 \end{bmatrix} -
 b \cdot \text{det}\begin{bmatrix}
-   d &amp; f \\
-   g &amp; i
-\end{bmatrix} &#43;
+d & f \\
+g & i
+\end{bmatrix} +
 c \cdot \text{det}\begin{bmatrix}
-   d &amp; e \\
-   g &amp; h
-\end{bmatrix}\]
+d & e \\
+g & h
+\end{bmatrix}
+\]
 </span>
-
 <p>Implement:</p>
 <p><code>def det_3x3(a, b, c, d, e, f, g, h, i)</code></p>
 <p>using <code>def det_2x2(a, b, c, d)</code> described above.<br>
 The function returns the determinant of the 3x3 matrix.</p>
-<h4 id="level-2-difficulty">
-  Level 2 Difficulty
-  <a class="anchor" href="#level-2-difficulty">#</a>
+<h4 id=level-2-difficulty>
+Level 2 Difficulty
+<a class=anchor href=#level-2-difficulty>#</a>
 </h4>
-<h4 id="1-dimensional-random-walker">
-  1 Dimensional Random Walker
-  <a class="anchor" href="#1-dimensional-random-walker">#</a>
+<h4 id=1-dimensional-random-walker>
+1 Dimensional Random Walker
+<a class=anchor href=#1-dimensional-random-walker>#</a>
 </h4>
 <p>A 1D random walker is an agent that starts at the poisition 0 on a number line. Every turn, the agent has a 50% chance of moving left one unit to -1, and a 50% chance of moving right one unit to 1. As a result, the random walker will appear to dart back and fourth on the number line forever if you don&rsquo;t give it any constraints. In this case, we want to run the random walker until our agent is \( n \) units away from its starting location</p>
 <p>Implement:</p>
@@ -977,7 +826,7 @@ The function returns the determinant of the 3x3 matrix.</p>
 <p>where \( n \) represents the distance from the agent to its starting point. The simulation will stop once this distance is reached
 The function will return 2 parameters. The first represents the total moves required to reach this distance, and the second represents the average position of this random walker on its journey to this location.</p>
 <p>Samples:</p>
-<pre><code>Seed = &quot;Mike Scott&quot;:
+<pre tabindex=0><code>Seed = &quot;Mike Scott&quot;:
 random_walker_1d(10) = (64, -1.875)
 random_walker_1d(25) = (189, -9.645502645502646)
 random_walker_1d(50) = (1562, -22.51920614596671)
@@ -986,51 +835,50 @@ random_walker_1d(300) = (21250, -169.24823529411765)
 random_walker_1d(500) = (82660, -272.5082748608759)
 random_walker_1d(1000) = (1989318, -233.90734362228665)
 random_walker_1d(5000) = (16308946, 284.5807719885761)
-</code></pre><h4 id="level-3-difficulty">
-  Level 3 Difficulty
-  <a class="anchor" href="#level-3-difficulty">#</a>
+</code></pre><h4 id=level-3-difficulty>
+Level 3 Difficulty
+<a class=anchor href=#level-3-difficulty>#</a>
 </h4>
-<h5 id="counting-part-1">
-  Counting Part 1
-  <a class="anchor" href="#counting-part-1">#</a>
+<h5 id=counting-part-1>
+Counting Part 1
+<a class=anchor href=#counting-part-1>#</a>
 </h5>
 <p>Counting in probability and discrete math have a more complete meaning than the every day meaning. Essentially, counting is determining the total number of elements in a set. This really is what we do when we count normally, but this can be taken much further:</p>
 <p>In mathematics, if you have \(n\) unique objects together, the amount of unique orderings is simply:</p>
 <span>
-  \[
+\[
 \text{Unique Combinations} = n!\\
-
-n! = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot 3 \cdot 2 \cdot 1\]
+n! = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot 3 \cdot 2 \cdot 1
+\]
 </span>
-
 <p>This can be used to calculate the number of unique orderings of letters in a word. For example, according to this formula, cat should have 6 unique ordering of letters since there are 3 unique letters, so \(n = 3\):</p>
 <table>
 <thead>
 <tr>
-<th align="left">#</th>
-<th align="left">Word</th>
-<th align="left">#</th>
-<th align="left">Word</th>
+<th style=text-align:left>#</th>
+<th style=text-align:left>Word</th>
+<th style=text-align:left>#</th>
+<th style=text-align:left>Word</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">1</td>
-<td align="left">cat</td>
-<td align="left">3</td>
-<td align="left">tca</td>
+<td style=text-align:left>1</td>
+<td style=text-align:left>cat</td>
+<td style=text-align:left>3</td>
+<td style=text-align:left>tca</td>
 </tr>
 <tr>
-<td align="left">2</td>
-<td align="left">cta</td>
-<td align="left">4</td>
-<td align="left">tac</td>
+<td style=text-align:left>2</td>
+<td style=text-align:left>cta</td>
+<td style=text-align:left>4</td>
+<td style=text-align:left>tac</td>
 </tr>
 <tr>
-<td align="left">5</td>
-<td align="left">act</td>
-<td align="left">6</td>
-<td align="left">atc</td>
+<td style=text-align:left>5</td>
+<td style=text-align:left>act</td>
+<td style=text-align:left>6</td>
+<td style=text-align:left>atc</td>
 </tr>
 </tbody>
 </table>
@@ -1038,44 +886,44 @@ n! = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot 3 \cdot 2 \cdot 1\]
 <table>
 <thead>
 <tr>
-<th align="left">#</th>
-<th align="left">Word</th>
+<th style=text-align:left>#</th>
+<th style=text-align:left>Word</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">1</td>
-<td align="left">eel</td>
+<td style=text-align:left>1</td>
+<td style=text-align:left>eel</td>
 </tr>
 <tr>
-<td align="left">2</td>
-<td align="left">ele</td>
+<td style=text-align:left>2</td>
+<td style=text-align:left>ele</td>
 </tr>
 <tr>
-<td align="left">3</td>
-<td align="left">lee</td>
+<td style=text-align:left>3</td>
+<td style=text-align:left>lee</td>
 </tr>
 </tbody>
 </table>
 <p>As it turns out, the more useful formula for unique combinations is as follows, where \( a_k \) is the # of occurences of the identical objects in the entire group. For example, in eel, \( a_e = 2 \):</p>
 <p>$$
-\text{Unique Combinations} = \dfrac{n!}{a_1!a_2! &hellip; a_k!}
+\text{Unique Combinations} = \dfrac{n!}{a_1!a_2! &mldr; a_k!}
 $$</p>
 <p>For this problem, we&rsquo;re going to calculate the unique combinations of <strong>lower-case</strong> words where there are 4 unique letters in the <strong>lower-case word</strong>. For example, dogs and mississippi both have 4 unique letters. Implement:</p>
 <p><code>def count_unqiue_words(letter_1, letter_2, letter_3, letter_4)</code></p>
 <p>For each parameter in the function, the parameter stores the number of occurences of that letter, so letter_1 for mississippi stores 1 for 1 occurence of m, whereas letter_2 stores 4 because of 4 is. The function returns the number of words from the letters given in the parameters.</p>
 <p>Samples:</p>
-<pre><code>cats: count_unqiue_words(1, 1, 1, 1) = 24
+<pre tabindex=0><code>cats: count_unqiue_words(1, 1, 1, 1) = 24
 mississippi: count_unqiue_words(1, 4, 4, 2) = 34650
-</code></pre><h3 id="hackerrank-questions">
-  HackerRank Questions
-  <a class="anchor" href="#hackerrank-questions">#</a>
+</code></pre><h3 id=hackerrank-questions>
+HackerRank Questions
+<a class=anchor href=#hackerrank-questions>#</a>
 </h3>
 <p>The following are HackerRank programming questions to test your knowledge. To complete questions do the following:</p>
 <ol>
 <li>Register an account</li>
 <li>In the editor, change the language from Python 2 to Python 3:
-<img src="/~ves314/img/hackerrank.png?raw=true" alt="" /></li>
+<img src="/~ves314/img/hackerrank.png?raw=true" alt></li>
 <li>Type your code within the <code>if __name__ == '__main__':</code> segment (you don&rsquo;t have to know why this if statement is here)</li>
 <li>Write your code</li>
 <li>Hit &ldquo;Run Code&rdquo; to test if your solution solves the sample input.</li>
@@ -1083,34 +931,34 @@ mississippi: count_unqiue_words(1, 4, 4, 2) = 34650
 </ol>
 <p>On Target Problems:</p>
 <ul>
-<li><a href="https://www.hackerrank.com/challenges/whats-your-name/problem">Printing/Concatenation</a></li>
-<li><a href="https://www.hackerrank.com/challenges/python-power-mod-power/problem">Using Functions</a></li>
-<li><a href="https://www.hackerrank.com/challenges/py-if-else/problem">If-Else</a></li>
-<li><a href="https://www.hackerrank.com/challenges/python-loops/problem">Loops</a></li>
-<li><a href="https://www.hackerrank.com/challenges/python-print/problem">Concatenaition/Loops</a></li>
-<li><a href="https://www.hackerrank.com/challenges/write-a-function/problem">Functions</a></li>
+<li><a href=https://www.hackerrank.com/challenges/whats-your-name/problem>Printing/Concatenation</a></li>
+<li><a href=https://www.hackerrank.com/challenges/python-power-mod-power/problem>Using Functions</a></li>
+<li><a href=https://www.hackerrank.com/challenges/py-if-else/problem>If-Else</a></li>
+<li><a href=https://www.hackerrank.com/challenges/python-loops/problem>Loops</a></li>
+<li><a href=https://www.hackerrank.com/challenges/python-print/problem>Concatenaition/Loops</a></li>
+<li><a href=https://www.hackerrank.com/challenges/write-a-function/problem>Functions</a></li>
 </ul>
 <p>Difficult (Above Exam) Problems:</p>
 <ul>
-<li><a href="https://www.hackerrank.com/challenges/swap-case/problem">sWAP cASE</a>
+<li><a href=https://www.hackerrank.com/challenges/swap-case/problem>sWAP cASE</a>
 <ul>
 <li>Hint: <code>for let in s</code> will make <code>let</code> store each character in the string while iterating</li>
 </ul>
 </li>
 </ul>
-<h2 id="solutions">
-  Solutions
-  <a class="anchor" href="#solutions">#</a>
+<h2 id=solutions>
+Solutions
+<a class=anchor href=#solutions>#</a>
 </h2>
-<h3 id="mcshort-answers">
-  MC/Short Answers
-  <a class="anchor" href="#mcshort-answers">#</a>
+<h3 id=mcshort-answers>
+MC/Short Answers
+<a class=anchor href=#mcshort-answers>#</a>
 </h3>
-<h4 id="noahs-mc">
-  Noah&rsquo;s MC
-  <a class="anchor" href="#noahs-mc">#</a>
+<h4 id=noahs-mc>
+Noah&rsquo;s MC
+<a class=anchor href=#noahs-mc>#</a>
 </h4>
-<pre><code>1. B
+<pre tabindex=0><code>1. B
 2. F
 3. E
 4. E
@@ -1136,11 +984,11 @@ mississippi: count_unqiue_words(1, 4, 4, 2) = 34650
 24. D
 25. A
 26. D
-</code></pre><h4 id="fall-19">
-  Fall &lsquo;19
-  <a class="anchor" href="#fall-19">#</a>
+</code></pre><h4 id=fall-19>
+Fall &lsquo;19
+<a class=anchor href=#fall-19>#</a>
 </h4>
-<pre><code>1: 12 7
+<pre tabindex=0><code>1: 12 7
 2: 30.0 2.0
 3: 70
 4: 25
@@ -1152,11 +1000,11 @@ mississippi: count_unqiue_words(1, 4, 4, 2) = 34650
     -----
 7: 16 3.75
 8: -2 3 -5
-</code></pre><h4 id="fall-18">
-  Fall &lsquo;18
-  <a class="anchor" href="#fall-18">#</a>
+</code></pre><h4 id=fall-18>
+Fall &lsquo;18
+<a class=anchor href=#fall-18>#</a>
 </h4>
-<pre><code>1: 5 8 2.5
+<pre tabindex=0><code>1: 5 8 2.5
 2: -20
 3: 42x32.01
 4: 18
@@ -1174,194 +1022,157 @@ mississippi: count_unqiue_words(1, 4, 4, 2) = 34650
     5
     17 
     -----
-</code></pre><h3 id="written-section-1">
-  Written Section
-  <a class="anchor" href="#written-section-1">#</a>
+</code></pre><h3 id=written-section-1>
+Written Section
+<a class=anchor href=#written-section-1>#</a>
 </h3>
-<h4 id="original-questions-1">
-  Original Questions
-  <a class="anchor" href="#original-questions-1">#</a>
+<h4 id=original-questions-1>
+Original Questions
+<a class=anchor href=#original-questions-1>#</a>
 </h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Level 1 Difficulty</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">det_3x3</span>(a, b, c, d, e, f, g, h, i):
-    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">*</span> det_2x2(e, f, h, i) <span style="color:#f92672">-</span> b 
-        <span style="color:#f92672">*</span> det_2x2(d, f, g, i) <span style="color:#f92672">+</span> c <span style="color:#f92672">*</span> det_2x2(d, e, g, h)
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e># Level 1 Difficulty</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>det_3x3</span>(a, b, c, d, e, f, g, h, i):
+    <span style=color:#66d9ef>return</span> a <span style=color:#f92672>*</span> det_2x2(e, f, h, i) <span style=color:#f92672>-</span> b 
+        <span style=color:#f92672>*</span> det_2x2(d, f, g, i) <span style=color:#f92672>+</span> c <span style=color:#f92672>*</span> det_2x2(d, e, g, h)
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">det_2x2</span>(a, b, c, d):
-    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">*</span> d <span style="color:#f92672">-</span> b <span style="color:#f92672">*</span> c
-
-
-
-<span style="color:#75715e"># Level 2 Difficulty</span>
-<span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> randint
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">random_walker_1d</span>(n):
-    moves <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#66d9ef">while</span> abs(x) <span style="color:#f92672">&lt;</span> n:
-        <span style="color:#75715e"># Makes random numbers only -1 and 1. More straight forward code</span>
-        <span style="color:#75715e"># to just use an if statement</span>
-        x <span style="color:#f92672">+=</span> (randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
-        moves <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-        total <span style="color:#f92672">+=</span> x
-    <span style="color:#66d9ef">return</span> moves, total<span style="color:#f92672">/</span>moves
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>det_2x2</span>(a, b, c, d):
+    <span style=color:#66d9ef>return</span> a <span style=color:#f92672>*</span> d <span style=color:#f92672>-</span> b <span style=color:#f92672>*</span> c
 
 
 
-<span style="color:#75715e"># Level 3 Difficulty</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count_unqiue_words</span>(letter_1, letter_2, letter_3, letter_4):
-    total <span style="color:#f92672">=</span> letter_1 <span style="color:#f92672">+</span> letter_2 <span style="color:#f92672">+</span> letter_3 <span style="color:#f92672">+</span> letter_4
-    n <span style="color:#f92672">=</span> factorial(total)
-    let_1_factor <span style="color:#f92672">=</span> factorial(letter_1)
-    let_2_factor <span style="color:#f92672">=</span> factorial(letter_2)
-    let_3_factor <span style="color:#f92672">=</span> factorial(letter_3)
-    let_4_factor <span style="color:#f92672">=</span> factorial(letter_4)
-    <span style="color:#66d9ef">return</span> n <span style="color:#f92672">/</span> (let_1_factor <span style="color:#f92672">*</span> let_2_factor <span style="color:#f92672">*</span> let_3_factor <span style="color:#f92672">*</span> let_4_factor)
+<span style=color:#75715e># Level 2 Difficulty</span>
+<span style=color:#f92672>from</span> random <span style=color:#f92672>import</span> randint
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">factorial</span>(n):
-    num <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
-        num <span style="color:#f92672">*=</span> i
-    <span style="color:#66d9ef">return</span> num
-</code></pre></div><h4 id="hackerrank">
-  HackerRank
-  <a class="anchor" href="#hackerrank">#</a>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>random_walker_1d</span>(n):
+    moves <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+    x <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+    total <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+    <span style=color:#66d9ef>while</span> abs(x) <span style=color:#f92672>&lt;</span> n:
+        <span style=color:#75715e># Makes random numbers only -1 and 1. More straight forward code</span>
+        <span style=color:#75715e># to just use an if statement</span>
+        x <span style=color:#f92672>+=</span> (randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>1</span>) <span style=color:#f92672>*</span> <span style=color:#ae81ff>2</span>) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>
+        moves <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+        total <span style=color:#f92672>+=</span> x
+    <span style=color:#66d9ef>return</span> moves, total<span style=color:#f92672>/</span>moves
+
+
+
+<span style=color:#75715e># Level 3 Difficulty</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>count_unqiue_words</span>(letter_1, letter_2, letter_3, letter_4):
+    total <span style=color:#f92672>=</span> letter_1 <span style=color:#f92672>+</span> letter_2 <span style=color:#f92672>+</span> letter_3 <span style=color:#f92672>+</span> letter_4
+    n <span style=color:#f92672>=</span> factorial(total)
+    let_1_factor <span style=color:#f92672>=</span> factorial(letter_1)
+    let_2_factor <span style=color:#f92672>=</span> factorial(letter_2)
+    let_3_factor <span style=color:#f92672>=</span> factorial(letter_3)
+    let_4_factor <span style=color:#f92672>=</span> factorial(letter_4)
+    <span style=color:#66d9ef>return</span> n <span style=color:#f92672>/</span> (let_1_factor <span style=color:#f92672>*</span> let_2_factor <span style=color:#f92672>*</span> let_3_factor <span style=color:#f92672>*</span> let_4_factor)
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>factorial</span>(n):
+    num <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>2</span>, n <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
+        num <span style=color:#f92672>*=</span> i
+    <span style=color:#66d9ef>return</span> num
+</code></pre></div><h4 id=hackerrank>
+HackerRank
+<a class=anchor href=#hackerrank>#</a>
 </h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">##### On Target: #####</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e>##### On Target: #####</span>
 
-<span style="color:#75715e"># Printing/Concatenation</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_full_name</span>(a, b):
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>, a, b <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;! You just delved into python.&#34;</span>)
+<span style=color:#75715e># Printing/Concatenation</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>print_full_name</span>(a, b):
+    print(<span style=color:#e6db74>&#34;Hello&#34;</span>, a, b <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;! You just delved into python.&#34;</span>)
 
-<span style="color:#75715e"># Using Functions</span>
-a <span style="color:#f92672">=</span> eval(input())
-b <span style="color:#f92672">=</span> eval(input())
-m <span style="color:#f92672">=</span> eval(input())
-<span style="color:#66d9ef">print</span>(pow(a, b))
-<span style="color:#66d9ef">print</span>(pow(a, b, m))
+<span style=color:#75715e># Using Functions</span>
+a <span style=color:#f92672>=</span> eval(input())
+b <span style=color:#f92672>=</span> eval(input())
+m <span style=color:#f92672>=</span> eval(input())
+print(pow(a, b))
+print(pow(a, b, m))
 
-<span style="color:#75715e"># If-Else</span>
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-    n <span style="color:#f92672">=</span> int(input()<span style="color:#f92672">.</span>strip())
-    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Weird&#34;</span>)
-    <span style="color:#66d9ef">elif</span> n <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">and</span> n <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Not Weird&#34;</span>)
-    <span style="color:#66d9ef">elif</span> n <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">6</span> <span style="color:#f92672">and</span> n <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">20</span>:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Weird&#34;</span>)
-    <span style="color:#66d9ef">elif</span> n <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">20</span>:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Not Weird&#34;</span>)
+<span style=color:#75715e># If-Else</span>
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
+    n <span style=color:#f92672>=</span> int(input()<span style=color:#f92672>.</span>strip())
+    <span style=color:#66d9ef>if</span> n <span style=color:#f92672>%</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>:
+        print(<span style=color:#e6db74>&#34;Weird&#34;</span>)
+    <span style=color:#66d9ef>elif</span> n <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>and</span> n <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>5</span>:
+        print(<span style=color:#e6db74>&#34;Not Weird&#34;</span>)
+    <span style=color:#66d9ef>elif</span> n <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>6</span> <span style=color:#f92672>and</span> n <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>20</span>:
+        print(<span style=color:#e6db74>&#34;Weird&#34;</span>)
+    <span style=color:#66d9ef>elif</span> n <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>20</span>:
+        print(<span style=color:#e6db74>&#34;Not Weird&#34;</span>)
 
-<span style="color:#75715e"># Loops</span>
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-    n <span style="color:#f92672">=</span> int(input())
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
-        <span style="color:#66d9ef">print</span>(i <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>)
+<span style=color:#75715e># Loops</span>
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
+    n <span style=color:#f92672>=</span> int(input())
+    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n):
+        print(i <span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span>)
 
-<span style="color:#75715e"># Print Function</span>
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-    n <span style="color:#f92672">=</span> int(input())
-    output <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
-        output <span style="color:#f92672">+=</span> str(i)
-    <span style="color:#66d9ef">print</span>(output)
+<span style=color:#75715e># Print Function</span>
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
+    n <span style=color:#f92672>=</span> int(input())
+    output <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, n <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
+        output <span style=color:#f92672>+=</span> str(i)
+    print(output)
 
-<span style="color:#75715e"># Functions</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">is_leap</span>(year):
-    <span style="color:#66d9ef">return</span> (year <span style="color:#f92672">%</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> year <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">or</span> year <span style="color:#f92672">%</span> <span style="color:#ae81ff">400</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
+<span style=color:#75715e># Functions</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>is_leap</span>(year):
+    <span style=color:#66d9ef>return</span> (year <span style=color:#f92672>%</span> <span style=color:#ae81ff>4</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>and</span> year <span style=color:#f92672>%</span> <span style=color:#ae81ff>100</span> <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>) <span style=color:#f92672>or</span> year <span style=color:#f92672>%</span> <span style=color:#ae81ff>400</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>
 
 
-<span style="color:#75715e">##### Difficult: #####</span>
+<span style=color:#75715e>##### Difficult: #####</span>
 
-<span style="color:#75715e"># sWAP cASE</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">swap_case</span>(s):
-    new_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
-    <span style="color:#66d9ef">for</span> let <span style="color:#f92672">in</span> s:
-        let_id <span style="color:#f92672">=</span> ord(let)
-        <span style="color:#66d9ef">if</span> (let_id <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">65</span> <span style="color:#f92672">and</span> let_id <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">90</span> 
-                <span style="color:#f92672">or</span> let_id <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">97</span> <span style="color:#f92672">and</span> let_id <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">122</span>):
-            multiple <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> let_id <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">97</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span>
-            new_str <span style="color:#f92672">+=</span> chr(let_id <span style="color:#f92672">+</span> multiple <span style="color:#f92672">*</span> <span style="color:#ae81ff">32</span>)
-        <span style="color:#66d9ef">else</span>:
-            new_str <span style="color:#f92672">+=</span> let
-    <span style="color:#66d9ef">return</span> new_str
+<span style=color:#75715e># sWAP cASE</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>swap_case</span>(s):
+    new_str <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+    <span style=color:#66d9ef>for</span> let <span style=color:#f92672>in</span> s:
+        let_id <span style=color:#f92672>=</span> ord(let)
+        <span style=color:#66d9ef>if</span> (let_id <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>65</span> <span style=color:#f92672>and</span> let_id <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>90</span> 
+                <span style=color:#f92672>or</span> let_id <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>97</span> <span style=color:#f92672>and</span> let_id <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>122</span>):
+            multiple <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span> <span style=color:#66d9ef>if</span> let_id <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>97</span> <span style=color:#66d9ef>else</span> <span style=color:#ae81ff>1</span>
+            new_str <span style=color:#f92672>+=</span> chr(let_id <span style=color:#f92672>+</span> multiple <span style=color:#f92672>*</span> <span style=color:#ae81ff>32</span>)
+        <span style=color:#66d9ef>else</span>:
+            new_str <span style=color:#f92672>+=</span> let
+    <span style=color:#66d9ef>return</span> new_str
 </code></pre></div><p>Colette made me put this:<br>
-<img src="/~ves314/img/ein.gif?raw=true" alt="" /></p>
+<img src="/~ves314/img/ein.gif?raw=true" alt></p>
 </article>
- 
-      
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
 </div>
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
 </div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#mcshort-answer-section">MC/Short Answer Section</a>
-      <ul>
-        <li><a href="#noahs-multiple-choice">Noah&rsquo;s Multiple Choice</a></li>
-        <li><a href="#cs-312-fall-19">CS 312 Fall &lsquo;19</a></li>
-        <li><a href="#cs-312-fall-18">CS 312 Fall &lsquo;18</a></li>
-      </ul>
-    </li>
-    <li><a href="#written-section">Written Section</a>
-      <ul>
-        <li><a href="#original-questions">Original Questions</a></li>
-        <li><a href="#hackerrank-questions">HackerRank Questions</a></li>
-      </ul>
-    </li>
-    <li><a href="#solutions">Solutions</a>
-      <ul>
-        <li><a href="#mcshort-answers">MC/Short Answers</a></li>
-        <li><a href="#written-section-1">Written Section</a></li>
-      </ul>
-    </li>
-  </ul>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#mcshort-answer-section>MC/Short Answer Section</a>
+<ul>
+<li><a href=#noahs-multiple-choice>Noah&rsquo;s Multiple Choice</a></li>
+<li><a href=#cs-312-fall-19>CS 312 Fall &lsquo;19</a></li>
+<li><a href=#cs-312-fall-18>CS 312 Fall &lsquo;18</a></li>
+</ul>
+</li>
+<li><a href=#written-section>Written Section</a>
+<ul>
+<li><a href=#original-questions>Original Questions</a></li>
+<li><a href=#hackerrank-questions>HackerRank Questions</a></li>
+</ul>
+</li>
+<li><a href=#solutions>Solutions</a>
+<ul>
+<li><a href=#mcshort-answers>MC/Short Answers</a></li>
+<li><a href=#written-section-1>Written Section</a></li>
+</ul>
+</li>
+</ul>
 </nav>
-
- 
-    </aside>
-    
-  </main>
-
-  
+</div>
+</aside>
+</main>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

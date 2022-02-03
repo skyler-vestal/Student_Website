@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Exam Reviews on Skyler ~ UTCS</title>
-    <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/</link>
-    <description>Recent content in Exam Reviews on Skyler ~ UTCS</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Studying Guide</title>
-      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/</guid>
-      <description>How to Prepare For Exams#The exams are by far the biggest portion of this class. They will be what determines your letter grade.
-Feeling a bit anxious the closer you get to the exam? Good! That means you understand the significane of these exams in the class. If this feeling makes you study harder for the exam that&amp;rsquo;s great. However, if this feeling prevents you from wanting to study out of fear then please reach out to me ASAP.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Exam Reviews on Skyler ~ UTCS</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/</link><description>Recent content in Exam Reviews on Skyler ~ UTCS</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/index.xml" rel="self" type="application/rss+xml"/><item><title>Studying Guide</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/</guid><description>How to Prepare For Exams
+#
+The exams are by far the biggest portion of this class. They will be what determines your letter grade.
+Feeling a bit anxious the closer you get to the exam? Good! That means you understand the significane of these exams in the class. If this feeling makes you study harder for the exam that&amp;rsquo;s great. However, if this feeling prevents you from wanting to study out of fear then please reach out to me ASAP.</description></item></channel></rss>
