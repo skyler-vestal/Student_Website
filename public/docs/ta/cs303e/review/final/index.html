@@ -1,265 +1,696 @@
-<!doctype html><html lang=en-us dir=ltr>
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Free Response Final Review#Classes#Stacks#Stacks are a commonly used data structure in computer science, and especially for memory: Quite complicated. However, the foundation of stacks is quite simple. Just think of &lsquo;em as pancakes!
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free Response Final Review#Classes#Stacks#Stacks are a commonly used data structure in computer science, and especially for memory: Quite complicated. However, the foundation of stacks is quite simple. Just think of &lsquo;em as pancakes!
 If you wanted to add to a stack, where would you add it to? Well, of course the top, since it&rsquo;d be a hastle and borderline dangerous to your breakfast to lift up a bunch of pancakes for no reason.">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Final">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Final" />
 <meta property="og:description" content="Free Response Final Review#Classes#Stacks#Stacks are a commonly used data structure in computer science, and especially for memory: Quite complicated. However, the foundation of stacks is quite simple. Just think of &lsquo;em as pancakes!
-If you wanted to add to a stack, where would you add it to? Well, of course the top, since it&rsquo;d be a hastle and borderline dangerous to your breakfast to lift up a bunch of pancakes for no reason.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/"><meta property="article:section" content="docs">
+If you wanted to add to a stack, where would you add it to? Well, of course the top, since it&rsquo;d be a hastle and borderline dangerous to your breakfast to lift up a bunch of pancakes for no reason." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/" /><meta property="article:section" content="docs" />
+
+
+
 <title>Final | Skyler ~ UTCS</title>
-<link rel=manifest href=/~ves314/manifest.json>
-<link rel=icon href=/~ves314/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
-<script defer src=/~ves314/flexsearch.min.js></script>
-<script defer src=/~ves314/en.search.min.3a7053bb48bd226734ae8ddf4f80001a00821dc797d0e9c47b160eb66c6661ad.js integrity="sha256-OnBTu0i9Imc0ro3fT4AAGgCCHceX0OnEexYOtmxmYa0=" crossorigin=anonymous></script>
+<link rel="manifest" href="/~ves314/manifest.json">
+<link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
+  <script defer src="/~ves314/flexsearch.min.js"></script>
+  <script defer src="/~ves314/en.search.min.f848756dd2e657fbd48ad5e69b78185b7a48cc47ae3967abd1cbdc22f57b0166.js" integrity="sha256-&#43;Eh1bdLmV/vUitXmm3gYW3pIzEeuOWer0cvcIvV7AWY=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
 </head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/~ves314/><span>Skyler ~ UTCS</span>
-</a>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/~ves314/"><span>Skyler ~ UTCS</span>
+  </a>
 </h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
-<ul>
-<li class=book-section-flat>
-<span>TA Classes</span>
-<ul>
-<li>
-<input type=checkbox id=section-33af6ef1d279801de2f779931fe7714a class=toggle>
-<label for=section-33af6ef1d279801de2f779931fe7714a class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/>CS 314</a>
-</label>
-<ul>
-<li>
-<input type=checkbox id=section-c172f569569f14516626820cca02b95a class=toggle>
-<label for=section-c172f569569f14516626820cca02b95a class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/>Explanations</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/>Big O</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-af21d64a3e1d155d273311b14a7fdf1c class=toggle>
-<label for=section-af21d64a3e1d155d273311b14a7fdf1c class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/>Practice</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/>Big O</a>
-</li>
-</ul>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/>Slides</a>
-<ul>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-cd9969c9531e65499ac6445bfce50541 class=toggle>
-<label for=section-cd9969c9531e65499ac6445bfce50541 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/>Exam Reviews</a>
-</label>
-<ul>
-<li>
-<input type=checkbox id=section-0353b14a7f76e905c757a5cc55b058a0 class=toggle>
-<label for=section-0353b14a7f76e905c757a5cc55b058a0 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/>Studying Guide</a>
-</label>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-c1e9ef8e25f48d65bad575ca842d14f6 class=toggle checked>
-<label for=section-c1e9ef8e25f48d65bad575ca842d14f6 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/>CS 303E</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/>Syntax</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/>Style</a>
-</li>
-<li>
-<input type=checkbox id=section-194fbff478cddfab80ada7a56b30c489 class=toggle>
-<label for=section-194fbff478cddfab80ada7a56b30c489 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/>Exercises</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/>Chapter 1</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/>Chapter 2</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/>Chapter 3</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/>Chapter 4</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/>Chapter 5</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/>Chapter 6</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/>Chapter 7</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/>Chapter 8</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/>Chapter 10</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/>Chapter 11</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/>Chapter 13</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/>Chapter 14</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/>Chapter 15</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class=toggle checked>
-<label for=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/>Exam Reviews</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/>Midterm</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/ class=active>Final</a>
-</li>
-</ul>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/>A9 Tester</a>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=book-section-flat>
-<span>Personal Work</span>
-<ul>
-<li>
-<span>Projects</span>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>TA Classes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-33af6ef1d279801de2f779931fe7714a" class="toggle"  />
+    <label for="section-33af6ef1d279801de2f779931fe7714a" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/" class="">CS 314</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c172f569569f14516626820cca02b95a" class="toggle"  />
+    <label for="section-c172f569569f14516626820cca02b95a" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/" class="">Explanations</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/" class="">Big O</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-af21d64a3e1d155d273311b14a7fdf1c" class="toggle"  />
+    <label for="section-af21d64a3e1d155d273311b14a7fdf1c" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/" class="">Practice</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/" class="">Big O</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/" class="">Slides</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cd9969c9531e65499ac6445bfce50541" class="toggle"  />
+    <label for="section-cd9969c9531e65499ac6445bfce50541" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/" class="">Exam Reviews</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0353b14a7f76e905c757a5cc55b058a0" class="toggle"  />
+    <label for="section-0353b14a7f76e905c757a5cc55b058a0" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/" class="">Studying Guide</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1e9ef8e25f48d65bad575ca842d14f6" class="toggle" checked />
+    <label for="section-c1e9ef8e25f48d65bad575ca842d14f6" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/" class="">CS 303E</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/" class="">Syntax</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-194fbff478cddfab80ada7a56b30c489" class="toggle"  />
+    <label for="section-194fbff478cddfab80ada7a56b30c489" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/" class="">Exercises</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/" class="">Chapter 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/" class="">Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/" class="">Chapter 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/" class="">Chapter 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/" class="">Chapter 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/" class="">Chapter 6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/" class="">Chapter 7</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/" class="">Chapter 8</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/" class="">Chapter 10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/" class="">Chapter 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/" class="">Chapter 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/" class="">Chapter 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/" class="">Chapter 15</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbc0fb0ff9f2d886cc5d2be0d1e5463e" class="toggle" checked />
+    <label for="section-cbc0fb0ff9f2d886cc5d2be0d1e5463e" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/" class="">Exam Reviews</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/" class="">Midterm</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/" class=" active">Final</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/" class="">A9 Tester</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Personal Work</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Final</strong>
+
+  <label for="toc-control">
+    
+    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
 </div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/~ves314/svg/menu.svg class=book-icon alt=Menu>
-</label>
-<strong>Final</strong>
-<label for=toc-control>
-<img src=/~ves314/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents>
-<ul>
-<li><a href=#classes>Classes</a>
-<ul>
-<li><a href=#stacks>Stacks</a></li>
-<li><a href=#fibonacci>Fibonacci</a></li>
-</ul>
-</li>
-<li><a href=#lists>Lists</a>
-<ul>
-<li><a href=#last_index_of>last_index_of</a></li>
-<li><a href=#is_distinct_column_sum>is_distinct_column_sum</a></li>
-</ul>
-</li>
-<li><a href=#dictionaries>Dictionaries</a>
-<ul>
-<li><a href=#counting-part-2>Counting Part 2</a></li>
-</ul>
-</li>
-<li><a href=#recursion>Recursion</a>
-<ul>
-<li><a href=#climbing-stairs>Climbing Stairs</a></li>
-<li><a href=#counting-part-3>Counting Part 3</a></li>
-</ul>
-</li>
-<li><a href=#solutions>Solutions</a>
-<ul>
-<li><a href=#stacks-1>Stacks</a></li>
-<li><a href=#fibonacci-1>Fibonacci</a></li>
-<li><a href=#last_index_of-1>last_index_of</a></li>
-<li><a href=#is_distinct_column_sum-1>is_distinct_column_sum</a></li>
-<li><a href=#counting-part-2-1>Counting Part 2</a></li>
-<li><a href=#climbing-stairs-1>Climbing Stairs</a></li>
-<li><a href=#counting-part-3-1>Counting Part 3</a></li>
-</ul>
-</li>
-</ul>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#classes">Classes</a>
+      <ul>
+        <li><a href="#stacks">Stacks</a></li>
+        <li><a href="#fibonacci">Fibonacci</a></li>
+      </ul>
+    </li>
+    <li><a href="#lists">Lists</a>
+      <ul>
+        <li><a href="#last_index_of">last_index_of</a></li>
+        <li><a href="#is_distinct_column_sum">is_distinct_column_sum</a></li>
+      </ul>
+    </li>
+    <li><a href="#dictionaries">Dictionaries</a>
+      <ul>
+        <li><a href="#counting-part-2">Counting Part 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#recursion">Recursion</a>
+      <ul>
+        <li><a href="#climbing-stairs">Climbing Stairs</a></li>
+        <li><a href="#counting-part-3">Counting Part 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#solutions">Solutions</a>
+      <ul>
+        <li><a href="#stacks-1">Stacks</a></li>
+        <li><a href="#fibonacci-1">Fibonacci</a></li>
+        <li><a href="#last_index_of-1">last_index_of</a></li>
+        <li><a href="#is_distinct_column_sum-1">is_distinct_column_sum</a></li>
+        <li><a href="#counting-part-2-1">Counting Part 2</a></li>
+        <li><a href="#climbing-stairs-1">Climbing Stairs</a></li>
+        <li><a href="#counting-part-3-1">Counting Part 3</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
-</aside>
-</header>
-<article class=markdown><p><img src="/~ves314/img/study_3.gif?raw=true" alt></p>
-<h1 id=free-response-final-review>
-Free Response Final Review
-<a class=anchor href=#free-response-final-review>#</a>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p><img src="/~ves314/img/study_3.gif?raw=true" alt="" /></p>
+<h1 id="free-response-final-review">
+  Free Response Final Review
+  <a class="anchor" href="#free-response-final-review">#</a>
 </h1>
-<h2 id=classes>
-Classes
-<a class=anchor href=#classes>#</a>
+<h2 id="classes">
+  Classes
+  <a class="anchor" href="#classes">#</a>
 </h2>
-<h3 id=stacks>
-Stacks
-<a class=anchor href=#stacks>#</a>
+<h3 id="stacks">
+  Stacks
+  <a class="anchor" href="#stacks">#</a>
 </h3>
 <p>Stacks are a commonly used data structure in computer science, and especially for memory:
-<img src="https://www.embecosm.com/appnotes/ean3/images/prologue_frame.png?raw=true" alt></p>
+<img src="https://www.embecosm.com/appnotes/ean3/images/prologue_frame.png?raw=true" alt="" /></p>
 <p>Quite complicated. However, the foundation of stacks is quite simple. Just think of &lsquo;em as pancakes!</p>
-<p><img src="https://www.fsrmagazine.com/sites/default/files/styles/story_image_720x430/public/feature-images/ihop-teases-another-name-change-1559147480.jpg?itok=0lbOYeVa?raw=True" alt></p>
+<p><img src="https://www.fsrmagazine.com/sites/default/files/styles/story_image_720x430/public/feature-images/ihop-teases-another-name-change-1559147480.jpg?itok=0lbOYeVa?raw=True" alt="" /></p>
 <p>If you wanted to add to a stack, where would you add it to? Well, of course the top, since it&rsquo;d be a hastle and borderline <em><strong>dangerous</strong></em> to your breakfast to lift up a bunch of pancakes for no reason. Similarly, if you were to remove from a stack, where would you remove from? Also the top. Why would you try to risk your breakfast to pick a colder pancake? As a result, elements in a stack are what are called FIFO (first-in-first-out). HEre&rsquo;s a video that briefly explains them as well:</p>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/FNZ5o9S9prU style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/FNZ5o9S9prU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
+
 <p>You can also watch a video of one here which is useful for evaluating mathematical expressions in computers in the correct order:</p>
-<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/7ha78yWRDlE style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/7ha78yWRDlE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
+
 <p>For our purpose, we&rsquo;re going to make a stack class with four methods and a constructor. The methods are defined as follows:</p>
 <ul>
 <li>A constructor that takes in no parameter. This method creates a private list which will be used as the underlying data structure to act as the stack.</li>
@@ -269,34 +700,34 @@ Stacks
 <li>A <strong>str</strong> method. This method returns our underlying list as a string.</li>
 </ul>
 <p>For example, the following code:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>stack <span style=color:#f92672>=</span> Stack()
-stack<span style=color:#f92672>.</span>push(<span style=color:#ae81ff>1</span>)
-stack<span style=color:#f92672>.</span>push(<span style=color:#ae81ff>1</span>)
-stack<span style=color:#f92672>.</span>push(<span style=color:#ae81ff>3</span>)
-print(stack<span style=color:#f92672>.</span>peek())
-print(stack<span style=color:#f92672>.</span>pop())
-stack<span style=color:#f92672>.</span>push(<span style=color:#ae81ff>5</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">stack <span style="color:#f92672">=</span> Stack()
+stack<span style="color:#f92672">.</span>push(<span style="color:#ae81ff">1</span>)
+stack<span style="color:#f92672">.</span>push(<span style="color:#ae81ff">1</span>)
+stack<span style="color:#f92672">.</span>push(<span style="color:#ae81ff">3</span>)
+print(stack<span style="color:#f92672">.</span>peek())
+print(stack<span style="color:#f92672">.</span>pop())
+stack<span style="color:#f92672">.</span>push(<span style="color:#ae81ff">5</span>)
 print(stack)
 </code></pre></div><p>Outputs:</p>
-<pre tabindex=0><code>3
+<pre tabindex="0"><code>3
 3
 [1, 1, 5]
-</code></pre><h3 id=fibonacci>
-Fibonacci
-<a class=anchor href=#fibonacci>#</a>
+</code></pre><h3 id="fibonacci">
+  Fibonacci
+  <a class="anchor" href="#fibonacci">#</a>
 </h3>
 <p>Recall from the midterm that fibonacci numbers are defined as so:
-<link rel=stylesheet href=/~ves314/katex/katex.min.css>
-<script defer src=/~ves314/katex/katex.min.js></script>
-<script defer src=/~ves314/katex/auto-render.min.js onload=renderMathInElement(document.body)></script><span>
-\[
-F_n = F_{n - 1} + F_{n - 2}\\
-F_0 = 0, F_1 = 1
-\]
+
+<link rel="stylesheet" href="/~ves314/katex/katex.min.css" />
+<script defer src="/~ves314/katex/katex.min.js"></script>
+<script defer src="/~ves314/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \[
+F_n = F_{n - 1} &#43; F_{n - 2}\\
+F_0 = 0, F_1 = 1\]
 </span>
 </p>
 <p>Which means the first few fibonacci numbers are the following:
-0, 1, 1, 2, 3, 5, 8, 13, &mldr;
+0, 1, 1, 2, 3, 5, 8, 13, &hellip;
 Essentially, the next fibonacci number is the sum of the previous two fibonacci numbers.</p>
 <p>Create a class that generates and stores fibonacci numbers. The class contains the following methods:</p>
 <ul>
@@ -324,20 +755,20 @@ Essentially, the next fibonacci number is the sum of the previous two fibonacci 
 <li>A gen_until method that will generate fibonacci numbers up to (as a parameter) the nth fibonacci number.</li>
 </ul>
 <p>For example, the following code:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>fib <span style=color:#f92672>=</span> Fibonacci()
-fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>0</span>)
-fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>5</span>)
-fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>11</span>)
-fib<span style=color:#f92672>.</span>gen_next()
-fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>11</span>)
-fib<span style=color:#f92672>.</span>gen_next_n(<span style=color:#ae81ff>100</span>)
-fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>111</span>)
-fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>112</span>)
-fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>1100</span>)
-fib<span style=color:#f92672>.</span>gen_until(<span style=color:#ae81ff>1100</span>)
-fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>1100</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">fib <span style="color:#f92672">=</span> Fibonacci()
+fib<span style="color:#f92672">.</span>print_num(<span style="color:#ae81ff">0</span>)
+fib<span style="color:#f92672">.</span>print_num(<span style="color:#ae81ff">5</span>)
+fib<span style="color:#f92672">.</span>print_num(<span style="color:#ae81ff">11</span>)
+fib<span style="color:#f92672">.</span>gen_next()
+fib<span style="color:#f92672">.</span>print_num(<span style="color:#ae81ff">11</span>)
+fib<span style="color:#f92672">.</span>gen_next_n(<span style="color:#ae81ff">100</span>)
+fib<span style="color:#f92672">.</span>print_num(<span style="color:#ae81ff">111</span>)
+fib<span style="color:#f92672">.</span>print_num(<span style="color:#ae81ff">112</span>)
+fib<span style="color:#f92672">.</span>print_num(<span style="color:#ae81ff">1100</span>)
+fib<span style="color:#f92672">.</span>gen_until(<span style="color:#ae81ff">1100</span>)
+fib<span style="color:#f92672">.</span>print_num(<span style="color:#ae81ff">1100</span>)
 </code></pre></div><p>Outputs:</p>
-<pre tabindex=0><code>0th fibonacci number is 0
+<pre tabindex="0"><code>0th fibonacci number is 0
 5th fibonacci number is 5
 11th fibonacci number has not been generated
 11th fibonacci number is 89
@@ -345,14 +776,14 @@ fib<span style=color:#f92672>.</span>print_num(<span style=color:#ae81ff>1100</s
 112th fibonacci number has not been generated
 1100th fibonacci number has not been generated
 1100th fibonacci number is 34428592852410271940083613070919630635781894724017874396545964292826864597491403229723364359749415183436491553996529359881593653825629442519718308678951540824183325844045884746598230684751416672062124540392876245684047939604503325
-</code></pre><p>Fun fact: This method is extremely fast at generating fibonacci numbers as you only use the previous two result to calculate the next result. This is called caching your result, and can be thought of as a simple case of a programming strategy called <a href=https://en.wikipedia.org/wiki/Dynamic_programming>dynamic programming</a>.</p>
-<h2 id=lists>
-Lists
-<a class=anchor href=#lists>#</a>
+</code></pre><p>Fun fact: This method is extremely fast at generating fibonacci numbers as you only use the previous two result to calculate the next result. This is called caching your result, and can be thought of as a simple case of a programming strategy called <a href="https://en.wikipedia.org/wiki/Dynamic_programming">dynamic programming</a>.</p>
+<h2 id="lists">
+  Lists
+  <a class="anchor" href="#lists">#</a>
 </h2>
-<h3 id=last_index_of>
-last_index_of
-<a class=anchor href=#last_index_of>#</a>
+<h3 id="last_index_of">
+  last_index_of
+  <a class="anchor" href="#last_index_of">#</a>
 </h3>
 <p>The following method is based off of a question on Mike&rsquo;s 2019 CS 312 Final.</p>
 <p>Write the following function:</p>
@@ -364,69 +795,70 @@ last_index_of
 The function returns the following if n = 3: \( [6, -1, -1, 4]\)<br>
 (The last appearance of 0 in the passed list was index 6, 1 and 2 never appeared in the list, and the last appearance of 3 in the passed list was index 4).</p>
 <p>For this function, you&rsquo;re not allowed to use <code>rindex</code>.</p>
-<h3 id=is_distinct_column_sum>
-is_distinct_column_sum
-<a class=anchor href=#is_distinct_column_sum>#</a>
+<h3 id="is_distinct_column_sum">
+  is_distinct_column_sum
+  <a class="anchor" href="#is_distinct_column_sum">#</a>
 </h3>
 <p>Write a method is_distinct_column_sum that, given a list of lists (where each row has the same number of columns) of ints and a column index, returns true if the sum of values in each column is distinct compared to the column index in the passed list. The method is as follows:</p>
 <p><code>def is_distinct_column_sum(num_list, col_index)</code></p>
 <p>For example, in the following list of lists:
 <span>
-\[
+  \[
 \begin{bmatrix}
-8 & 7 & 4 & 3 & 3 & 4 & -7 \\
-6 & 1 & 2 & 3 & 2 & 0 & 3 \\
-8 & 11 & 0 & 5 & 2 & 7 & 3 \\
-8 & 9 & 1 & 2 & 7 & 2 & -8 \\
-4 & 2 & 5 & 8 & 1 & 2 & -5 \\
-\end{bmatrix}
-\]
+   8 &amp; 7 &amp; 4 &amp; 3 &amp; 3 &amp; 4 &amp; -7 \\
+   6 &amp; 1 &amp; 2 &amp; 3 &amp; 2 &amp; 0 &amp; 3 \\
+   8 &amp; 11 &amp; 0 &amp; 5 &amp; 2 &amp; 7 &amp; 3 \\
+   8 &amp; 9 &amp; 1 &amp; 2 &amp; 7 &amp; 2 &amp; -8 \\
+   4 &amp; 2 &amp; 5 &amp; 8 &amp; 1 &amp; 2 &amp; -5 \\
+\end{bmatrix}\]
 </span>
+
 The sums of columns are \([34, 30, 12, 21, 15, 15, -14]\). So, if the passed column index was 1, this would return true since no other column sums up to 30. However, if the passed column index was 4, this method would return false since both column 4 and 5 add up to 15.</p>
-<h2 id=dictionaries>
-Dictionaries
-<a class=anchor href=#dictionaries>#</a>
+<h2 id="dictionaries">
+  Dictionaries
+  <a class="anchor" href="#dictionaries">#</a>
 </h2>
-<h3 id=counting-part-2>
-Counting Part 2
-<a class=anchor href=#counting-part-2>#</a>
+<h3 id="counting-part-2">
+  Counting Part 2
+  <a class="anchor" href="#counting-part-2">#</a>
 </h3>
 <p>Counting in probability and discrete math have a more complete meaning than the every day meaning. Essentially, counting is determining the total number of elements in a set. This really is what we do when we count normally, but this can be taken much further:</p>
 <p>In mathematics, if you have \(n\) unique objects together, the amount of unique orderings is simply:</p>
 <span>
-\[
+  \[
 \text{Unique Combinations} = n!\\
-n! = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot 3 \cdot 2 \cdot 1
-\]
+
+n! = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot 3 \cdot 2 \cdot 1\]
 </span>
+
 <p>This can be used to calculate the number of unique orderings of letters in a word. For example, according to this formula, cat should have 6 unique ordering of letters since there are 3 unique letters, so \(n = 3\):</p>
 <table>
 <thead>
 <tr>
-<th style=text-align:left>#</th>
-<th style=text-align:left>Word</th>
-<th style=text-align:left>#</th>
-<th style=text-align:left>Word</th>
+<th style="text-align:left">#</th>
+<th style="text-align:left">Word</th>
+<th style="text-align:left">#</th>
+<th style="text-align:left">Word</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style=text-align:left>1</td>
-<td style=text-align:left>cat</td>
-<td style=text-align:left>3</td>
-<td style=text-align:left>tca</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">cat</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">tca</td>
 </tr>
 <tr>
-<td style=text-align:left>2</td>
-<td style=text-align:left>cta</td>
-<td style=text-align:left>4</td>
-<td style=text-align:left>tac</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">cta</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">tac</td>
 </tr>
 <tr>
-<td style=text-align:left>5</td>
-<td style=text-align:left>act</td>
-<td style=text-align:left>6</td>
-<td style=text-align:left>atc</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">act</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">atc</td>
 </tr>
 </tbody>
 </table>
@@ -434,277 +866,322 @@ n! = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot 3 \cdot 2 \cdot 1
 <table>
 <thead>
 <tr>
-<th style=text-align:left>#</th>
-<th style=text-align:left>Word</th>
+<th style="text-align:left">#</th>
+<th style="text-align:left">Word</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style=text-align:left>1</td>
-<td style=text-align:left>eel</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">eel</td>
 </tr>
 <tr>
-<td style=text-align:left>2</td>
-<td style=text-align:left>ele</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">ele</td>
 </tr>
 <tr>
-<td style=text-align:left>3</td>
-<td style=text-align:left>lee</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">lee</td>
 </tr>
 </tbody>
 </table>
 <p>As it turns out, the more useful formula for unique combinations is as follows, where \( a_k \) is the # of occurences of the identical objects in the entire group. For example, in eel, \( a_e = 2 \):</p>
 <p>$$
-\text{Unique Combinations} = \dfrac{n!}{a_1!a_2! &mldr; a_k!}
+\text{Unique Combinations} = \dfrac{n!}{a_1!a_2! &hellip; a_k!}
 $$</p>
 <p>For this problem, we&rsquo;re going to calculate the unique combinations of any <strong>lower-case</strong> word passed into the following function:</p>
 <p><code>def count_unqiue_words(word)</code></p>
 <p>Samples:</p>
-<pre tabindex=0><code>cats: count_unqiue_words(&quot;cats&quot;) = 24
+<pre tabindex="0"><code>cats: count_unqiue_words(&quot;cats&quot;) = 24
 mississippi: count_unqiue_words(&quot;mississippi&quot;) = 34650
-</code></pre><h2 id=recursion>
-Recursion
-<a class=anchor href=#recursion>#</a>
+</code></pre><h2 id="recursion">
+  Recursion
+  <a class="anchor" href="#recursion">#</a>
 </h2>
-<h3 id=climbing-stairs>
-Climbing Stairs
-<a class=anchor href=#climbing-stairs>#</a>
+<h3 id="climbing-stairs">
+  Climbing Stairs
+  <a class="anchor" href="#climbing-stairs">#</a>
 </h3>
 <p>Let&rsquo;s say you got some good legs. You can either skip one stair at a time or two. However, one day during quarantine when we all have too much time, you wonder how many different combinations of climbing the stairs are possible. For example, if you had a staircase with 5 stairs. There are many different ways to climb this set with your skills:</p>
 <span>
-\[
+  \[
 [1, 1, 1, 1, 1]\\
 [1, 1, 1, 2]\\
 [1, 1, 2, 1]
-...
-\]
+...\]
 </span>
+
 <p>Instead of climbing all the ways manually, you realize it may be better to create a program, that, given n amount of stairs, will determine all the different ways to climb up the stairs.</p>
 <p>Write the following functions</p>
 <p><code>def ways_to_climb(num_stairs, cur_list)</code></p>
 <p>Which prints out lists, where each list represents a unique way to climb the stairs.</p>
-<p>Fun fact: The number of stair combinations based on the total number of stairs follows the <a href=https://myworldtheirway.com/2019/11/its-fibonacci-sequence-day/>Fibonacci numbers</a>, as the logic is really just the fibonacci algorithm in disguise.</p>
-<p>Hint:
+<p>Fun fact: The number of stair combinations based on the total number of stairs follows the <a href="https://myworldtheirway.com/2019/11/its-fibonacci-sequence-day/">Fibonacci numbers</a>, as the logic is really just the fibonacci algorithm in disguise.</p>
+<p>Hint: 
 The parameter cur_list for this is a bit strange, so I&rsquo;ll help you out. Essentially cur_list stores the current list we&rsquo;ll be using to track our previous steps. In this case, we don&rsquo;t need anything in this list to begin with, so we&rsquo;ll just start with it as an empty list. Consider it a temporary container we&rsquo;ll be using to store all the different possibilities. You should not need to delete anything from this list in your function to get the correct output. For example, a proper function call would look like:
 <code>ways_to_climb(3, [])</code></p>
 <p>To check your answers:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>ways_to_climb(<span style=color:#ae81ff>3</span>, [])
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ways_to_climb(<span style="color:#ae81ff">3</span>, [])
 </code></pre></div><p>outputs:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>[<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>]
-[<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>]
-[<span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>1</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>]
+[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]
 </code></pre></div><p>and</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>ways_to_climb(<span style=color:#ae81ff>4</span>, [])
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ways_to_climb(<span style="color:#ae81ff">4</span>, [])
 </code></pre></div><p>outputs:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>[<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>]
-[<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>]
-[<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>1</span>]
-[<span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>]
-[<span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>2</span>]
-</code></pre></div><h3 id=counting-part-3>
-Counting Part 3
-<a class=anchor href=#counting-part-3>#</a>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>]
+[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]
+[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>]
+[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>]
+</code></pre></div><h3 id="counting-part-3">
+  Counting Part 3
+  <a class="anchor" href="#counting-part-3">#</a>
 </h3>
-<h4 id=this-is-way-beyond-the-difficulty-of-what-yall-are-expected-to-do-proceed-with-caution>
-THIS IS WAY BEYOND THE DIFFICULTY OF WHAT Y&rsquo;ALL ARE EXPECTED TO DO. PROCEED WITH CAUTION.
-<a class=anchor href=#this-is-way-beyond-the-difficulty-of-what-yall-are-expected-to-do-proceed-with-caution>#</a>
+<h4 id="this-is-way-beyond-the-difficulty-of-what-yall-are-expected-to-do-proceed-with-caution">
+  THIS IS WAY BEYOND THE DIFFICULTY OF WHAT Y&rsquo;ALL ARE EXPECTED TO DO. PROCEED WITH CAUTION.
+  <a class="anchor" href="#this-is-way-beyond-the-difficulty-of-what-yall-are-expected-to-do-proceed-with-caution">#</a>
 </h4>
 <p>Based off of a random reddit thread where my reply is the answer to this question:
-<img src="https://i.imgur.com/fDpzacF.png?raw=True" alt></p>
+<img src="https://i.imgur.com/fDpzacF.png?raw=True" alt="" /></p>
 <p>Reference Counting Part 2 on the table of contents for the background behind permutating words. In this case, using recursion, we&rsquo;ll actually create all the unique permutations for a given word. Write the following function:</p>
 <p><code>def create_permutations(letter_bank, cur_word, perm_set)</code></p>
 <p>Where letter_bank is the given word we want to create permutations of, cur_word is a temporary variable to help us create permutations, and perm_set is the set of all unique word permutations of letter_bank.</p>
 <p>Hint: Again, the setup is a bit strange for this method like with climbing stairs, so I&rsquo;ll help you out. letter_bank is the string of characters for our current permutation not yet used. cur_word are the letters we&rsquo;ve used so far in our current iteration (so when we start out this will be empty). perm_set is just used to hold all of our finished permutations so far. As a result, when we start out, we want this to be empty. So some code like the following will help get you on your way for using the function. Actually programming it is up to you:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>word_set <span style=color:#f92672>=</span> set()
-create_permutations(<span style=color:#e6db74>&#34;cats&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>, word_set)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">word_set <span style="color:#f92672">=</span> set()
+create_permutations(<span style="color:#e6db74">&#34;cats&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, word_set)
 print(word_set)
 </code></pre></div><p>As for results, here are some examples:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>create_permutations(<span style=color:#e6db74>&#34;cat&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>, word_set)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">create_permutations(<span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, word_set)
 </code></pre></div><p>outputs:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>{<span style=color:#e6db74>&#39;atc&#39;</span>, <span style=color:#e6db74>&#39;cat&#39;</span>, <span style=color:#e6db74>&#39;tac&#39;</span>, <span style=color:#e6db74>&#39;tca&#39;</span>, <span style=color:#e6db74>&#39;act&#39;</span>, <span style=color:#e6db74>&#39;cta&#39;</span>}
-</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>create_permutations(<span style=color:#e6db74>&#34;cats&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>, word_set)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{<span style="color:#e6db74">&#39;atc&#39;</span>, <span style="color:#e6db74">&#39;cat&#39;</span>, <span style="color:#e6db74">&#39;tac&#39;</span>, <span style="color:#e6db74">&#39;tca&#39;</span>, <span style="color:#e6db74">&#39;act&#39;</span>, <span style="color:#e6db74">&#39;cta&#39;</span>}
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">create_permutations(<span style="color:#e6db74">&#34;cats&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, word_set)
 </code></pre></div><p>outputs:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>{<span style=color:#e6db74>&#39;cats&#39;</span>, <span style=color:#e6db74>&#39;ctas&#39;</span>, <span style=color:#e6db74>&#39;stac&#39;</span>, <span style=color:#e6db74>&#39;tcas&#39;</span>, <span style=color:#e6db74>&#39;tasc&#39;</span>, <span style=color:#e6db74>&#39;tacs&#39;</span>, <span style=color:#e6db74>&#39;ctsa&#39;</span>, <span style=color:#e6db74>&#39;scta&#39;</span>, <span style=color:#e6db74>&#39;tcsa&#39;</span>, <span style=color:#e6db74>&#39;astc&#39;</span>, <span style=color:#e6db74>&#39;tsca&#39;</span>, <span style=color:#e6db74>&#39;atsc&#39;</span>, <span style=color:#e6db74>&#39;atcs&#39;</span>, <span style=color:#e6db74>&#39;csat&#39;</span>, <span style=color:#e6db74>&#39;acts&#39;</span>, <span style=color:#e6db74>&#39;tsac&#39;</span>, <span style=color:#e6db74>&#39;satc&#39;</span>, <span style=color:#e6db74>&#39;scat&#39;</span>, <span style=color:#e6db74>&#39;asct&#39;</span>, <span style=color:#e6db74>&#39;sact&#39;</span>, <span style=color:#e6db74>&#39;acst&#39;</span>, <span style=color:#e6db74>&#39;csta&#39;</span>, <span style=color:#e6db74>&#39;cast&#39;</span>, <span style=color:#e6db74>&#39;stca&#39;</span>}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{<span style="color:#e6db74">&#39;cats&#39;</span>, <span style="color:#e6db74">&#39;ctas&#39;</span>, <span style="color:#e6db74">&#39;stac&#39;</span>, <span style="color:#e6db74">&#39;tcas&#39;</span>, <span style="color:#e6db74">&#39;tasc&#39;</span>, <span style="color:#e6db74">&#39;tacs&#39;</span>, <span style="color:#e6db74">&#39;ctsa&#39;</span>, <span style="color:#e6db74">&#39;scta&#39;</span>, <span style="color:#e6db74">&#39;tcsa&#39;</span>, <span style="color:#e6db74">&#39;astc&#39;</span>, <span style="color:#e6db74">&#39;tsca&#39;</span>, <span style="color:#e6db74">&#39;atsc&#39;</span>, <span style="color:#e6db74">&#39;atcs&#39;</span>, <span style="color:#e6db74">&#39;csat&#39;</span>, <span style="color:#e6db74">&#39;acts&#39;</span>, <span style="color:#e6db74">&#39;tsac&#39;</span>, <span style="color:#e6db74">&#39;satc&#39;</span>, <span style="color:#e6db74">&#39;scat&#39;</span>, <span style="color:#e6db74">&#39;asct&#39;</span>, <span style="color:#e6db74">&#39;sact&#39;</span>, <span style="color:#e6db74">&#39;acst&#39;</span>, <span style="color:#e6db74">&#39;csta&#39;</span>, <span style="color:#e6db74">&#39;cast&#39;</span>, <span style="color:#e6db74">&#39;stca&#39;</span>}
 </code></pre></div><p>and</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>create_permutations(<span style=color:#e6db74>&#34;alabama&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>, word_set)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">create_permutations(<span style="color:#e6db74">&#34;alabama&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, word_set)
 </code></pre></div><p>outputs:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>{<span style=color:#e6db74>&#39;baaamal&#39;</span>, <span style=color:#e6db74>&#39;bamlaaa&#39;</span>, <span style=color:#e6db74>&#39;maalaab&#39;</span>, <span style=color:#e6db74>&#39;aaabalm&#39;</span>, <span style=color:#e6db74>&#39;laaaabm&#39;</span>, <span style=color:#e6db74>&#39;almbaaa&#39;</span>, <span style=color:#e6db74>&#39;alambaa&#39;</span>, <span style=color:#e6db74>&#39;maaalba&#39;</span>, <span style=color:#e6db74>&#39;aaalmab&#39;</span>, <span style=color:#e6db74>&#39;aaambla&#39;</span>, <span style=color:#e6db74>&#39;aalabma&#39;</span>, <span style=color:#e6db74>&#39;aaaalmb&#39;</span>, <span style=color:#e6db74>&#39;abmaaal&#39;</span>, <span style=color:#e6db74>&#39;aaaabml&#39;</span>, <span style=color:#e6db74>&#39;blaamaa&#39;</span>, <span style=color:#e6db74>&#39;aaalmba&#39;</span>, <span style=color:#e6db74>&#39;ablaama&#39;</span>, <span style=color:#e6db74>&#39;abaalam&#39;</span>, <span style=color:#e6db74>&#39;bmalaaa&#39;</span>, <span style=color:#e6db74>&#39;aalamab&#39;</span>, <span style=color:#e6db74>&#39;aalmbaa&#39;</span>, <span style=color:#e6db74>&#39;baamaal&#39;</span>, <span style=color:#e6db74>&#39;aaablma&#39;</span>, <span style=color:#e6db74>&#39;mlbaaaa&#39;</span>, <span style=color:#e6db74>&#39;laaamba&#39;</span>, <span style=color:#e6db74>&#39;lbamaaa&#39;</span>, <span style=color:#e6db74>&#39;amabala&#39;</span>, <span style=color:#e6db74>&#39;aaamlba&#39;</span>, <span style=color:#e6db74>&#39;albmaaa&#39;</span>, <span style=color:#e6db74>&#39;malbaaa&#39;</span>, <span style=color:#e6db74>&#39;ablamaa&#39;</span>, <span style=color:#e6db74>&#39;lamaaba&#39;</span>, <span style=color:#e6db74>&#39;alabama&#39;</span>, <span style=color:#e6db74>&#39;baaaaml&#39;</span>, <span style=color:#e6db74>&#39;abaalma&#39;</span>, <span style=color:#e6db74>&#39;bamalaa&#39;</span>, <span style=color:#e6db74>&#39;aambaal&#39;</span>, <span style=color:#e6db74>&#39;maaaabl&#39;</span>, <span style=color:#e6db74>&#39;aambala&#39;</span>, <span style=color:#e6db74>&#39;balaama&#39;</span>, <span style=color:#e6db74>&#39;mabaala&#39;</span>, <span style=color:#e6db74>&#39;aamalba&#39;</span>, <span style=color:#e6db74>&#39;labamaa&#39;</span>, <span style=color:#e6db74>&#39;amalaab&#39;</span>, <span style=color:#e6db74>&#39;aablama&#39;</span>, <span style=color:#e6db74>&#39;aabaalm&#39;</span>, <span style=color:#e6db74>&#39;aablaam&#39;</span>, <span style=color:#e6db74>&#39;baaaalm&#39;</span>, <span style=color:#e6db74>&#39;maaaalb&#39;</span>, <span style=color:#e6db74>&#39;aalbmaa&#39;</span>, <span style=color:#e6db74>&#39;lambaaa&#39;</span>, <span style=color:#e6db74>&#39;mbaaaal&#39;</span>, <span style=color:#e6db74>&#39;malabaa&#39;</span>, <span style=color:#e6db74>&#39;maalbaa&#39;</span>, <span style=color:#e6db74>&#39;aamlaba&#39;</span>, <span style=color:#e6db74>&#39;laabmaa&#39;</span>, <span style=color:#e6db74>&#39;baalmaa&#39;</span>, <span style=color:#e6db74>&#39;aaalamb&#39;</span>, <span style=color:#e6db74>&#39;lbaamaa&#39;</span>, <span style=color:#e6db74>&#39;amaaabl&#39;</span>, <span style=color:#e6db74>&#39;alaamba&#39;</span>, <span style=color:#e6db74>&#39;amlbaaa&#39;</span>, <span style=color:#e6db74>&#39;amaaalb&#39;</span>, <span style=color:#e6db74>&#39;lmaaaba&#39;</span>, <span style=color:#e6db74>&#39;aaalabm&#39;</span>, <span style=color:#e6db74>&#39;mlaaaba&#39;</span>, <span style=color:#e6db74>&#39;alabaam&#39;</span>, <span style=color:#e6db74>&#39;abamlaa&#39;</span>, <span style=color:#e6db74>&#39;laaabma&#39;</span>, <span style=color:#e6db74>&#39;lbaaama&#39;</span>, <span style=color:#e6db74>&#39;lmbaaaa&#39;</span>, <span style=color:#e6db74>&#39;mlaabaa&#39;</span>, <span style=color:#e6db74>&#39;abalaam&#39;</span>, <span style=color:#e6db74>&#39;aaaamlb&#39;</span>, <span style=color:#e6db74>&#39;laamaab&#39;</span>, <span style=color:#e6db74>&#39;aaalbam&#39;</span>, <span style=color:#e6db74>&#39;bamaaal&#39;</span>, <span style=color:#e6db74>&#39;aabamla&#39;</span>, <span style=color:#e6db74>&#39;mabaaal&#39;</span>, <span style=color:#e6db74>&#39;aamblaa&#39;</span>, <span style=color:#e6db74>&#39;blamaaa&#39;</span>, <span style=color:#e6db74>&#39;ablmaaa&#39;</span>, <span style=color:#e6db74>&#39;labaama&#39;</span>, <span style=color:#e6db74>&#39;lbaaaam&#39;</span>, <span style=color:#e6db74>&#39;aabalam&#39;</span>, <span style=color:#e6db74>&#39;abmlaaa&#39;</span>, <span style=color:#e6db74>&#39;mabalaa&#39;</span>, <span style=color:#e6db74>&#39;baalama&#39;</span>, <span style=color:#e6db74>&#39;mlaaaab&#39;</span>, <span style=color:#e6db74>&#39;bamaala&#39;</span>, <span style=color:#e6db74>&#39;blaaama&#39;</span>, <span style=color:#e6db74>&#39;maalaba&#39;</span>, <span style=color:#e6db74>&#39;amblaaa&#39;</span>, <span style=color:#e6db74>&#39;amlaaba&#39;</span>, 
-<span style=color:#e6db74>&#39;alamaba&#39;</span>, <span style=color:#e6db74>&#39;alaaamb&#39;</span>, <span style=color:#e6db74>&#39;abmalaa&#39;</span>, <span style=color:#e6db74>&#39;amalaba&#39;</span>, <span style=color:#e6db74>&#39;aaambal&#39;</span>, <span style=color:#e6db74>&#39;amaalba&#39;</span>, <span style=color:#e6db74>&#39;abaamla&#39;</span>, <span style=color:#e6db74>&#39;aabmaal&#39;</span>, <span style=color:#e6db74>&#39;ablaaam&#39;</span>, <span style=color:#e6db74>&#39;aalmaba&#39;</span>, <span style=color:#e6db74>&#39;aaamalb&#39;</span>, <span style=color:#e6db74>&#39;baaamla&#39;</span>, <span style=color:#e6db74>&#39;bmaaala&#39;</span>, <span style=color:#e6db74>&#39;amaabla&#39;</span>, <span style=color:#e6db74>&#39;alamaab&#39;</span>, <span style=color:#e6db74>&#39;aabmlaa&#39;</span>, <span style=color:#e6db74>&#39;abamala&#39;</span>, <span style=color:#e6db74>&#39;aablmaa&#39;</span>, <span style=color:#e6db74>&#39;abamaal&#39;</span>, <span style=color:#e6db74>&#39;aalbaam&#39;</span>, <span style=color:#e6db74>&#39;aamabla&#39;</span>, <span style=color:#e6db74>&#39;laambaa&#39;</span>, <span style=color:#e6db74>&#39;almaaab&#39;</span>, <span style=color:#e6db74>&#39;aaabaml&#39;</span>, <span style=color:#e6db74>&#39;aamabal&#39;</span>, <span style=color:#e6db74>&#39;maaabla&#39;</span>, <span style=color:#e6db74>&#39;baaalma&#39;</span>, <span style=color:#e6db74>&#39;mbalaaa&#39;</span>, <span style=color:#e6db74>&#39;labmaaa&#39;</span>, <span style=color:#e6db74>&#39;alabmaa&#39;</span>, <span style=color:#e6db74>&#39;maaabal&#39;</span>, <span style=color:#e6db74>&#39;mblaaaa&#39;</span>, <span style=color:#e6db74>&#39;aamalab&#39;</span>, <span style=color:#e6db74>&#39;amlabaa&#39;</span>, <span style=color:#e6db74>&#39;bmlaaaa&#39;</span>, <span style=color:#e6db74>&#39;laabama&#39;</span>, <span style=color:#e6db74>&#39;ambaala&#39;</span>, <span style=color:#e6db74>&#39;balamaa&#39;</span>, <span style=color:#e6db74>&#39;baamlaa&#39;</span>, <span style=color:#e6db74>&#39;malaaab&#39;</span>, <span style=color:#e6db74>&#39;mbaaala&#39;</span>, <span style=color:#e6db74>&#39;aalaamb&#39;</span>, <span style=color:#e6db74>&#39;aaamabl&#39;</span>, <span style=color:#e6db74>&#39;abaamal&#39;</span>, <span style=color:#e6db74>&#39;almabaa&#39;</span>, <span style=color:#e6db74>&#39;aaabmla&#39;</span>, <span style=color:#e6db74>&#39;amalbaa&#39;</span>, <span style=color:#e6db74>&#39;lmabaaa&#39;</span>, <span style=color:#e6db74>&#39;balmaaa&#39;</span>, <span style=color:#e6db74>&#39;baamala&#39;</span>, <span style=color:#e6db74>&#39;laaaamb&#39;</span>, <span style=color:#e6db74>&#39;albaaam&#39;</span>, <span style=color:#e6db74>&#39;aamlaab&#39;</span>, <span style=color:#e6db74>&#39;labaaam&#39;</span>, <span style=color:#e6db74>&#39;bmaalaa&#39;</span>, <span style=color:#e6db74>&#39;bmaaaal&#39;</span>, <span style=color:#e6db74>&#39;albaama&#39;</span>, <span style=color:#e6db74>&#39;lbmaaaa&#39;</span>, <span style=color:#e6db74>&#39;aamaabl&#39;</span>, <span style=color:#e6db74>&#39;laabaam&#39;</span>, <span style=color:#e6db74>&#39;amlaaab&#39;</span>, <span style=color:#e6db74>&#39;abaaalm&#39;</span>, <span style=color:#e6db74>&#39;aalabam&#39;</span>, <span style=color:#e6db74>&#39;laaamab&#39;</span>, <span style=color:#e6db74>&#39;lmaabaa&#39;</span>, <span style=color:#e6db74>&#39;aaaambl&#39;</span>, <span style=color:#e6db74>&#39;mlabaaa&#39;</span>, <span style=color:#e6db74>&#39;aabaaml&#39;</span>, <span style=color:#e6db74>&#39;amaalab&#39;</span>, <span style=color:#e6db74>&#39;aamlbaa&#39;</span>, <span style=color:#e6db74>&#39;maabaal&#39;</span>, <span style=color:#e6db74>&#39;malaaba&#39;</span>, <span style=color:#e6db74>&#39;lamaaab&#39;</span>, <span style=color:#e6db74>&#39;alaaabm&#39;</span>, <span style=color:#e6db74>&#39;abalmaa&#39;</span>, <span style=color:#e6db74>&#39;aaaablm&#39;</span>, <span style=color:#e6db74>&#39;amablaa&#39;</span>, <span style=color:#e6db74>&#39;balaaam&#39;</span>, <span style=color:#e6db74>&#39;albamaa&#39;</span>, <span style=color:#e6db74>&#39;aabamal&#39;</span>, <span style=color:#e6db74>&#39;blmaaaa&#39;</span>, <span style=color:#e6db74>&#39;maaalab&#39;</span>, <span style=color:#e6db74>&#39;aalbama&#39;</span>, <span style=color:#e6db74>&#39;ambaaal&#39;</span>, <span style=color:#e6db74>&#39;abaaaml&#39;</span>, <span style=color:#e6db74>&#39;mablaaa&#39;</span>, <span style=color:#e6db74>&#39;amabaal&#39;</span>, <span style=color:#e6db74>&#39;aabmala&#39;</span>, <span style=color:#e6db74>&#39;lmaaaab&#39;</span>, <span style=color:#e6db74>&#39;aabalma&#39;</span>, <span style=color:#e6db74>&#39;almaaba&#39;</span>, <span style=color:#e6db74>&#39;aaalbma&#39;</span>, <span style=color:#e6db74>&#39;blaaaam&#39;</span>, <span style=color:#e6db74>&#39;aalaabm&#39;</span>, <span style=color:#e6db74>&#39;maablaa&#39;</span>, <span style=color:#e6db74>&#39;amaabal&#39;</span>, <span style=color:#e6db74>&#39;alaabam&#39;</span>, <span style=color:#e6db74>&#39;aamaalb&#39;</span>, <span style=color:#e6db74>&#39;abmaala&#39;</span>, <span style=color:#e6db74>&#39;alaabma&#39;</span>, <span style=color:#e6db74>&#39;laaabam&#39;</span>, <span style=color:#e6db74>&#39;aaamlab&#39;</span>, <span style=color:#e6db74>&#39;aaablam&#39;</span>, <span style=color:#e6db74>&#39;aaabmal&#39;</span>, <span style=color:#e6db74>&#39;aalamba&#39;</span>, <span style=color:#e6db74>&#39;abalama&#39;</span>, <span style=color:#e6db74>&#39;ambalaa&#39;</span>, <span style=color:#e6db74>&#39;baalaam&#39;</span>, <span style=color:#e6db74>&#39;laamaba&#39;</span>, <span style=color:#e6db74>&#39;mbaalaa&#39;</span>, <span style=color:#e6db74>&#39;baaalam&#39;</span>, <span style=color:#e6db74>&#39;alaamab&#39;</span>, <span style=color:#e6db74>&#39;aalmaab&#39;</span>, <span style=color:#e6db74>&#39;lamabaa&#39;</span>, <span style=color:#e6db74>&#39;aaaalbm&#39;</span>, 
-<span style=color:#e6db74>&#39;maabala&#39;</span>}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{<span style="color:#e6db74">&#39;baaamal&#39;</span>, <span style="color:#e6db74">&#39;bamlaaa&#39;</span>, <span style="color:#e6db74">&#39;maalaab&#39;</span>, <span style="color:#e6db74">&#39;aaabalm&#39;</span>, <span style="color:#e6db74">&#39;laaaabm&#39;</span>, <span style="color:#e6db74">&#39;almbaaa&#39;</span>, <span style="color:#e6db74">&#39;alambaa&#39;</span>, <span style="color:#e6db74">&#39;maaalba&#39;</span>, <span style="color:#e6db74">&#39;aaalmab&#39;</span>, <span style="color:#e6db74">&#39;aaambla&#39;</span>, <span style="color:#e6db74">&#39;aalabma&#39;</span>, <span style="color:#e6db74">&#39;aaaalmb&#39;</span>, <span style="color:#e6db74">&#39;abmaaal&#39;</span>, <span style="color:#e6db74">&#39;aaaabml&#39;</span>, <span style="color:#e6db74">&#39;blaamaa&#39;</span>, <span style="color:#e6db74">&#39;aaalmba&#39;</span>, <span style="color:#e6db74">&#39;ablaama&#39;</span>, <span style="color:#e6db74">&#39;abaalam&#39;</span>, <span style="color:#e6db74">&#39;bmalaaa&#39;</span>, <span style="color:#e6db74">&#39;aalamab&#39;</span>, <span style="color:#e6db74">&#39;aalmbaa&#39;</span>, <span style="color:#e6db74">&#39;baamaal&#39;</span>, <span style="color:#e6db74">&#39;aaablma&#39;</span>, <span style="color:#e6db74">&#39;mlbaaaa&#39;</span>, <span style="color:#e6db74">&#39;laaamba&#39;</span>, <span style="color:#e6db74">&#39;lbamaaa&#39;</span>, <span style="color:#e6db74">&#39;amabala&#39;</span>, <span style="color:#e6db74">&#39;aaamlba&#39;</span>, <span style="color:#e6db74">&#39;albmaaa&#39;</span>, <span style="color:#e6db74">&#39;malbaaa&#39;</span>, <span style="color:#e6db74">&#39;ablamaa&#39;</span>, <span style="color:#e6db74">&#39;lamaaba&#39;</span>, <span style="color:#e6db74">&#39;alabama&#39;</span>, <span style="color:#e6db74">&#39;baaaaml&#39;</span>, <span style="color:#e6db74">&#39;abaalma&#39;</span>, <span style="color:#e6db74">&#39;bamalaa&#39;</span>, <span style="color:#e6db74">&#39;aambaal&#39;</span>, <span style="color:#e6db74">&#39;maaaabl&#39;</span>, <span style="color:#e6db74">&#39;aambala&#39;</span>, <span style="color:#e6db74">&#39;balaama&#39;</span>, <span style="color:#e6db74">&#39;mabaala&#39;</span>, <span style="color:#e6db74">&#39;aamalba&#39;</span>, <span style="color:#e6db74">&#39;labamaa&#39;</span>, <span style="color:#e6db74">&#39;amalaab&#39;</span>, <span style="color:#e6db74">&#39;aablama&#39;</span>, <span style="color:#e6db74">&#39;aabaalm&#39;</span>, <span style="color:#e6db74">&#39;aablaam&#39;</span>, <span style="color:#e6db74">&#39;baaaalm&#39;</span>, <span style="color:#e6db74">&#39;maaaalb&#39;</span>, <span style="color:#e6db74">&#39;aalbmaa&#39;</span>, <span style="color:#e6db74">&#39;lambaaa&#39;</span>, <span style="color:#e6db74">&#39;mbaaaal&#39;</span>, <span style="color:#e6db74">&#39;malabaa&#39;</span>, <span style="color:#e6db74">&#39;maalbaa&#39;</span>, <span style="color:#e6db74">&#39;aamlaba&#39;</span>, <span style="color:#e6db74">&#39;laabmaa&#39;</span>, <span style="color:#e6db74">&#39;baalmaa&#39;</span>, <span style="color:#e6db74">&#39;aaalamb&#39;</span>, <span style="color:#e6db74">&#39;lbaamaa&#39;</span>, <span style="color:#e6db74">&#39;amaaabl&#39;</span>, <span style="color:#e6db74">&#39;alaamba&#39;</span>, <span style="color:#e6db74">&#39;amlbaaa&#39;</span>, <span style="color:#e6db74">&#39;amaaalb&#39;</span>, <span style="color:#e6db74">&#39;lmaaaba&#39;</span>, <span style="color:#e6db74">&#39;aaalabm&#39;</span>, <span style="color:#e6db74">&#39;mlaaaba&#39;</span>, <span style="color:#e6db74">&#39;alabaam&#39;</span>, <span style="color:#e6db74">&#39;abamlaa&#39;</span>, <span style="color:#e6db74">&#39;laaabma&#39;</span>, <span style="color:#e6db74">&#39;lbaaama&#39;</span>, <span style="color:#e6db74">&#39;lmbaaaa&#39;</span>, <span style="color:#e6db74">&#39;mlaabaa&#39;</span>, <span style="color:#e6db74">&#39;abalaam&#39;</span>, <span style="color:#e6db74">&#39;aaaamlb&#39;</span>, <span style="color:#e6db74">&#39;laamaab&#39;</span>, <span style="color:#e6db74">&#39;aaalbam&#39;</span>, <span style="color:#e6db74">&#39;bamaaal&#39;</span>, <span style="color:#e6db74">&#39;aabamla&#39;</span>, <span style="color:#e6db74">&#39;mabaaal&#39;</span>, <span style="color:#e6db74">&#39;aamblaa&#39;</span>, <span style="color:#e6db74">&#39;blamaaa&#39;</span>, <span style="color:#e6db74">&#39;ablmaaa&#39;</span>, <span style="color:#e6db74">&#39;labaama&#39;</span>, <span style="color:#e6db74">&#39;lbaaaam&#39;</span>, <span style="color:#e6db74">&#39;aabalam&#39;</span>, <span style="color:#e6db74">&#39;abmlaaa&#39;</span>, <span style="color:#e6db74">&#39;mabalaa&#39;</span>, <span style="color:#e6db74">&#39;baalama&#39;</span>, <span style="color:#e6db74">&#39;mlaaaab&#39;</span>, <span style="color:#e6db74">&#39;bamaala&#39;</span>, <span style="color:#e6db74">&#39;blaaama&#39;</span>, <span style="color:#e6db74">&#39;maalaba&#39;</span>, <span style="color:#e6db74">&#39;amblaaa&#39;</span>, <span style="color:#e6db74">&#39;amlaaba&#39;</span>, 
+<span style="color:#e6db74">&#39;alamaba&#39;</span>, <span style="color:#e6db74">&#39;alaaamb&#39;</span>, <span style="color:#e6db74">&#39;abmalaa&#39;</span>, <span style="color:#e6db74">&#39;amalaba&#39;</span>, <span style="color:#e6db74">&#39;aaambal&#39;</span>, <span style="color:#e6db74">&#39;amaalba&#39;</span>, <span style="color:#e6db74">&#39;abaamla&#39;</span>, <span style="color:#e6db74">&#39;aabmaal&#39;</span>, <span style="color:#e6db74">&#39;ablaaam&#39;</span>, <span style="color:#e6db74">&#39;aalmaba&#39;</span>, <span style="color:#e6db74">&#39;aaamalb&#39;</span>, <span style="color:#e6db74">&#39;baaamla&#39;</span>, <span style="color:#e6db74">&#39;bmaaala&#39;</span>, <span style="color:#e6db74">&#39;amaabla&#39;</span>, <span style="color:#e6db74">&#39;alamaab&#39;</span>, <span style="color:#e6db74">&#39;aabmlaa&#39;</span>, <span style="color:#e6db74">&#39;abamala&#39;</span>, <span style="color:#e6db74">&#39;aablmaa&#39;</span>, <span style="color:#e6db74">&#39;abamaal&#39;</span>, <span style="color:#e6db74">&#39;aalbaam&#39;</span>, <span style="color:#e6db74">&#39;aamabla&#39;</span>, <span style="color:#e6db74">&#39;laambaa&#39;</span>, <span style="color:#e6db74">&#39;almaaab&#39;</span>, <span style="color:#e6db74">&#39;aaabaml&#39;</span>, <span style="color:#e6db74">&#39;aamabal&#39;</span>, <span style="color:#e6db74">&#39;maaabla&#39;</span>, <span style="color:#e6db74">&#39;baaalma&#39;</span>, <span style="color:#e6db74">&#39;mbalaaa&#39;</span>, <span style="color:#e6db74">&#39;labmaaa&#39;</span>, <span style="color:#e6db74">&#39;alabmaa&#39;</span>, <span style="color:#e6db74">&#39;maaabal&#39;</span>, <span style="color:#e6db74">&#39;mblaaaa&#39;</span>, <span style="color:#e6db74">&#39;aamalab&#39;</span>, <span style="color:#e6db74">&#39;amlabaa&#39;</span>, <span style="color:#e6db74">&#39;bmlaaaa&#39;</span>, <span style="color:#e6db74">&#39;laabama&#39;</span>, <span style="color:#e6db74">&#39;ambaala&#39;</span>, <span style="color:#e6db74">&#39;balamaa&#39;</span>, <span style="color:#e6db74">&#39;baamlaa&#39;</span>, <span style="color:#e6db74">&#39;malaaab&#39;</span>, <span style="color:#e6db74">&#39;mbaaala&#39;</span>, <span style="color:#e6db74">&#39;aalaamb&#39;</span>, <span style="color:#e6db74">&#39;aaamabl&#39;</span>, <span style="color:#e6db74">&#39;abaamal&#39;</span>, <span style="color:#e6db74">&#39;almabaa&#39;</span>, <span style="color:#e6db74">&#39;aaabmla&#39;</span>, <span style="color:#e6db74">&#39;amalbaa&#39;</span>, <span style="color:#e6db74">&#39;lmabaaa&#39;</span>, <span style="color:#e6db74">&#39;balmaaa&#39;</span>, <span style="color:#e6db74">&#39;baamala&#39;</span>, <span style="color:#e6db74">&#39;laaaamb&#39;</span>, <span style="color:#e6db74">&#39;albaaam&#39;</span>, <span style="color:#e6db74">&#39;aamlaab&#39;</span>, <span style="color:#e6db74">&#39;labaaam&#39;</span>, <span style="color:#e6db74">&#39;bmaalaa&#39;</span>, <span style="color:#e6db74">&#39;bmaaaal&#39;</span>, <span style="color:#e6db74">&#39;albaama&#39;</span>, <span style="color:#e6db74">&#39;lbmaaaa&#39;</span>, <span style="color:#e6db74">&#39;aamaabl&#39;</span>, <span style="color:#e6db74">&#39;laabaam&#39;</span>, <span style="color:#e6db74">&#39;amlaaab&#39;</span>, <span style="color:#e6db74">&#39;abaaalm&#39;</span>, <span style="color:#e6db74">&#39;aalabam&#39;</span>, <span style="color:#e6db74">&#39;laaamab&#39;</span>, <span style="color:#e6db74">&#39;lmaabaa&#39;</span>, <span style="color:#e6db74">&#39;aaaambl&#39;</span>, <span style="color:#e6db74">&#39;mlabaaa&#39;</span>, <span style="color:#e6db74">&#39;aabaaml&#39;</span>, <span style="color:#e6db74">&#39;amaalab&#39;</span>, <span style="color:#e6db74">&#39;aamlbaa&#39;</span>, <span style="color:#e6db74">&#39;maabaal&#39;</span>, <span style="color:#e6db74">&#39;malaaba&#39;</span>, <span style="color:#e6db74">&#39;lamaaab&#39;</span>, <span style="color:#e6db74">&#39;alaaabm&#39;</span>, <span style="color:#e6db74">&#39;abalmaa&#39;</span>, <span style="color:#e6db74">&#39;aaaablm&#39;</span>, <span style="color:#e6db74">&#39;amablaa&#39;</span>, <span style="color:#e6db74">&#39;balaaam&#39;</span>, <span style="color:#e6db74">&#39;albamaa&#39;</span>, <span style="color:#e6db74">&#39;aabamal&#39;</span>, <span style="color:#e6db74">&#39;blmaaaa&#39;</span>, <span style="color:#e6db74">&#39;maaalab&#39;</span>, <span style="color:#e6db74">&#39;aalbama&#39;</span>, <span style="color:#e6db74">&#39;ambaaal&#39;</span>, <span style="color:#e6db74">&#39;abaaaml&#39;</span>, <span style="color:#e6db74">&#39;mablaaa&#39;</span>, <span style="color:#e6db74">&#39;amabaal&#39;</span>, <span style="color:#e6db74">&#39;aabmala&#39;</span>, <span style="color:#e6db74">&#39;lmaaaab&#39;</span>, <span style="color:#e6db74">&#39;aabalma&#39;</span>, <span style="color:#e6db74">&#39;almaaba&#39;</span>, <span style="color:#e6db74">&#39;aaalbma&#39;</span>, <span style="color:#e6db74">&#39;blaaaam&#39;</span>, <span style="color:#e6db74">&#39;aalaabm&#39;</span>, <span style="color:#e6db74">&#39;maablaa&#39;</span>, <span style="color:#e6db74">&#39;amaabal&#39;</span>, <span style="color:#e6db74">&#39;alaabam&#39;</span>, <span style="color:#e6db74">&#39;aamaalb&#39;</span>, <span style="color:#e6db74">&#39;abmaala&#39;</span>, <span style="color:#e6db74">&#39;alaabma&#39;</span>, <span style="color:#e6db74">&#39;laaabam&#39;</span>, <span style="color:#e6db74">&#39;aaamlab&#39;</span>, <span style="color:#e6db74">&#39;aaablam&#39;</span>, <span style="color:#e6db74">&#39;aaabmal&#39;</span>, <span style="color:#e6db74">&#39;aalamba&#39;</span>, <span style="color:#e6db74">&#39;abalama&#39;</span>, <span style="color:#e6db74">&#39;ambalaa&#39;</span>, <span style="color:#e6db74">&#39;baalaam&#39;</span>, <span style="color:#e6db74">&#39;laamaba&#39;</span>, <span style="color:#e6db74">&#39;mbaalaa&#39;</span>, <span style="color:#e6db74">&#39;baaalam&#39;</span>, <span style="color:#e6db74">&#39;alaamab&#39;</span>, <span style="color:#e6db74">&#39;aalmaab&#39;</span>, <span style="color:#e6db74">&#39;lamabaa&#39;</span>, <span style="color:#e6db74">&#39;aaaalbm&#39;</span>, 
+<span style="color:#e6db74">&#39;maabala&#39;</span>}
 </code></pre></div><p><em><strong>I&rsquo;m not showing you what mississippi generates nope</strong></em></p>
-<h2 id=solutions>
-Solutions
-<a class=anchor href=#solutions>#</a>
+<h2 id="solutions">
+  Solutions
+  <a class="anchor" href="#solutions">#</a>
 </h2>
-<h3 id=stacks-1>
-Stacks
-<a class=anchor href=#stacks-1>#</a>
+<h3 id="stacks-1">
+  Stacks
+  <a class="anchor" href="#stacks-1">#</a>
 </h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Stack</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Stack</span>:
 
-    <span style=color:#66d9ef>def</span> __init__(self):
-        self<span style=color:#f92672>.</span>__stack__ <span style=color:#f92672>=</span> []
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>__stack__ <span style="color:#f92672">=</span> []
 
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>push</span>(self, elem):
-        self<span style=color:#f92672>.</span>__stack__<span style=color:#f92672>.</span>append(elem)
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(self, elem):
+        self<span style="color:#f92672">.</span>__stack__<span style="color:#f92672">.</span>append(elem)
 
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>pop</span>(self):
-        <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>__stack__<span style=color:#f92672>.</span>pop(len(self<span style=color:#f92672>.</span>__stack__) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pop</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>__stack__<span style="color:#f92672">.</span>pop(len(self<span style="color:#f92672">.</span>__stack__) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
 
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>peek</span>(self):
-        <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>__stack__[<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">peek</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>__stack__[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
     
-    <span style=color:#66d9ef>def</span> __str__(self):
-        <span style=color:#66d9ef>return</span> str(self<span style=color:#f92672>.</span>__stack__)
-</code></pre></div><h3 id=fibonacci-1>
-Fibonacci
-<a class=anchor href=#fibonacci-1>#</a>
+    <span style="color:#66d9ef">def</span> __str__(self):
+        <span style="color:#66d9ef">return</span> str(self<span style="color:#f92672">.</span>__stack__)
+</code></pre></div><h3 id="fibonacci-1">
+  Fibonacci
+  <a class="anchor" href="#fibonacci-1">#</a>
 </h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Fibonacci</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fibonacci</span>:
 
-    <span style=color:#66d9ef>def</span> __init__(self, gen_num <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>):
-        self<span style=color:#f92672>.</span>fib_list <span style=color:#f92672>=</span> [<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>1</span>]
-        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(gen_num <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>):
-            self<span style=color:#f92672>.</span>gen_next()
+    <span style="color:#66d9ef">def</span> __init__(self, gen_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>):
+        self<span style="color:#f92672">.</span>fib_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>]
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(gen_num <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>):
+            self<span style="color:#f92672">.</span>gen_next()
 
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>print_num</span>(self, num):
-        <span style=color:#66d9ef>if</span> num <span style=color:#f92672>&lt;</span> len(self<span style=color:#f92672>.</span>fib_list):
-            print(str(num) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;th fibonacci number is&#34;</span>, self<span style=color:#f92672>.</span>fib_list[num])
-        <span style=color:#66d9ef>else</span>:
-            print(str(num) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;th fibonacci number has not been generated&#34;</span>) 
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_num</span>(self, num):
+        <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&lt;</span> len(self<span style="color:#f92672">.</span>fib_list):
+            print(str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;th fibonacci number is&#34;</span>, self<span style="color:#f92672">.</span>fib_list[num])
+        <span style="color:#66d9ef">else</span>:
+            print(str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;th fibonacci number has not been generated&#34;</span>) 
 
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>gen_next</span>(self):
-        self<span style=color:#f92672>.</span>fib_list<span style=color:#f92672>.</span>append(self<span style=color:#f92672>.</span>fib_list[<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>] <span style=color:#f92672>+</span> self<span style=color:#f92672>.</span>fib_list[<span style=color:#f92672>-</span><span style=color:#ae81ff>2</span>])
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">gen_next</span>(self):
+        self<span style="color:#f92672">.</span>fib_list<span style="color:#f92672">.</span>append(self<span style="color:#f92672">.</span>fib_list[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>fib_list[<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>])
 
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>gen_next_n</span>(self, n):
-        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n):
-            self<span style=color:#f92672>.</span>gen_next()
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">gen_next_n</span>(self, n):
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+            self<span style="color:#f92672">.</span>gen_next()
 
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>gen_until</span>(self, n):
-        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n <span style=color:#f92672>-</span> len(self<span style=color:#f92672>.</span>fib_list) <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
-            self<span style=color:#f92672>.</span>gen_next()
-</code></pre></div><h3 id=last_index_of-1>
-last_index_of
-<a class=anchor href=#last_index_of-1>#</a>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">gen_until</span>(self, n):
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n <span style="color:#f92672">-</span> len(self<span style="color:#f92672">.</span>fib_list) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+            self<span style="color:#f92672">.</span>gen_next()
+</code></pre></div><h3 id="last_index_of-1">
+  last_index_of
+  <a class="anchor" href="#last_index_of-1">#</a>
 </h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>last_index_of</span>(num_list, n):
-    res_list <span style=color:#f92672>=</span> [<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>] <span style=color:#f92672>*</span> (n <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>)
-    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(res_list)):
-        <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(len(num_list)):
-            <span style=color:#66d9ef>if</span> num_list[j] <span style=color:#f92672>==</span> i:
-                res_list[i] <span style=color:#f92672>=</span> j
-    <span style=color:#66d9ef>return</span> res_list
-</code></pre></div><h3 id=is_distinct_column_sum-1>
-is_distinct_column_sum
-<a class=anchor href=#is_distinct_column_sum-1>#</a>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">last_index_of</span>(num_list, n):
+    res_list <span style="color:#f92672">=</span> [<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> (n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(res_list)):
+        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(len(num_list)):
+            <span style="color:#66d9ef">if</span> num_list[j] <span style="color:#f92672">==</span> i:
+                res_list[i] <span style="color:#f92672">=</span> j
+    <span style="color:#66d9ef">return</span> res_list
+</code></pre></div><h3 id="is_distinct_column_sum-1">
+  is_distinct_column_sum
+  <a class="anchor" href="#is_distinct_column_sum-1">#</a>
 </h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>is_distinct_column_sum</span>(num_list, col_index):
-    check_sum <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-    <span style=color:#66d9ef>for</span> row <span style=color:#f92672>in</span> num_list:
-        check_sum <span style=color:#f92672>+=</span> row[col_index]
-    <span style=color:#66d9ef>for</span> col <span style=color:#f92672>in</span> range(len(num_list[<span style=color:#ae81ff>0</span>])):
-        <span style=color:#66d9ef>if</span> col <span style=color:#f92672>!=</span> col_index:
-            col_sum <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-            <span style=color:#66d9ef>for</span> row <span style=color:#f92672>in</span> range(len(num_list)):
-                col_sum <span style=color:#f92672>+=</span> num_list[row][col]
-            <span style=color:#66d9ef>if</span> check_sum <span style=color:#f92672>==</span> col_sum:
-                <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>False</span>
-    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>True</span>
-</code></pre></div><h3 id=counting-part-2-1>
-Counting Part 2
-<a class=anchor href=#counting-part-2-1>#</a>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">is_distinct_column_sum</span>(num_list, col_index):
+    check_sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> num_list:
+        check_sum <span style="color:#f92672">+=</span> row[col_index]
+    <span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> range(len(num_list[<span style="color:#ae81ff">0</span>])):
+        <span style="color:#66d9ef">if</span> col <span style="color:#f92672">!=</span> col_index:
+            col_sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> range(len(num_list)):
+                col_sum <span style="color:#f92672">+=</span> num_list[row][col]
+            <span style="color:#66d9ef">if</span> check_sum <span style="color:#f92672">==</span> col_sum:
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</code></pre></div><h3 id="counting-part-2-1">
+  Counting Part 2
+  <a class="anchor" href="#counting-part-2-1">#</a>
 </h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>count_unqiue_words</span>(word):
-    char_count <span style=color:#f92672>=</span> {}
-    <span style=color:#66d9ef>for</span> char <span style=color:#f92672>in</span> word:
-        <span style=color:#66d9ef>if</span> char <span style=color:#f92672>in</span> char_count:
-            char_count[char] <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-        <span style=color:#66d9ef>else</span>:
-            char_count[char] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
-    div <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
-    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> char_count:
-        div <span style=color:#f92672>*=</span> factorial(char_count[i])
-    <span style=color:#66d9ef>return</span> factorial(len(word)) <span style=color:#f92672>//</span> div
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count_unqiue_words</span>(word):
+    char_count <span style="color:#f92672">=</span> {}
+    <span style="color:#66d9ef">for</span> char <span style="color:#f92672">in</span> word:
+        <span style="color:#66d9ef">if</span> char <span style="color:#f92672">in</span> char_count:
+            char_count[char] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">else</span>:
+            char_count[char] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    div <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> char_count:
+        div <span style="color:#f92672">*=</span> factorial(char_count[i])
+    <span style="color:#66d9ef">return</span> factorial(len(word)) <span style="color:#f92672">//</span> div
     
-<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>factorial</span>(n):
-    num <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
-    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>2</span>, n <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
-        num <span style=color:#f92672>*=</span> i
-    <span style=color:#66d9ef>return</span> num
-</code></pre></div><h3 id=climbing-stairs-1>
-Climbing Stairs
-<a class=anchor href=#climbing-stairs-1>#</a>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">factorial</span>(n):
+    num <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+        num <span style="color:#f92672">*=</span> i
+    <span style="color:#66d9ef">return</span> num
+</code></pre></div><h3 id="climbing-stairs-1">
+  Climbing Stairs
+  <a class="anchor" href="#climbing-stairs-1">#</a>
 </h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>ways_to_climb</span>(num_stairs, cur_list):
-    <span style=color:#66d9ef>if</span> num_stairs <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ways_to_climb</span>(num_stairs, cur_list):
+    <span style="color:#66d9ef">if</span> num_stairs <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
         print(cur_list)
-    <span style=color:#66d9ef>elif</span> num_stairs <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>:
-        ways_to_climb(num_stairs <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>, cur_list <span style=color:#f92672>+</span> [<span style=color:#ae81ff>1</span>])
-        ways_to_climb(num_stairs <span style=color:#f92672>-</span> <span style=color:#ae81ff>2</span>, cur_list <span style=color:#f92672>+</span> [<span style=color:#ae81ff>2</span>])
-</code></pre></div><h3 id=counting-part-3-1>
-Counting Part 3
-<a class=anchor href=#counting-part-3-1>#</a>
+    <span style="color:#66d9ef">elif</span> num_stairs <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+        ways_to_climb(num_stairs <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, cur_list <span style="color:#f92672">+</span> [<span style="color:#ae81ff">1</span>])
+        ways_to_climb(num_stairs <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>, cur_list <span style="color:#f92672">+</span> [<span style="color:#ae81ff">2</span>])
+</code></pre></div><h3 id="counting-part-3-1">
+  Counting Part 3
+  <a class="anchor" href="#counting-part-3-1">#</a>
 </h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>create_permutations</span>(letter_bank, cur_word, perm_set):
-    <span style=color:#66d9ef>if</span> len(letter_bank) <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-        word_set<span style=color:#f92672>.</span>add(cur_word)
-    <span style=color:#66d9ef>else</span>:
-        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(letter_bank)):
-            tmp_cur <span style=color:#f92672>=</span> cur_word <span style=color:#f92672>+</span> letter_bank[i]
-            tmp_letter_bank <span style=color:#f92672>=</span> letter_bank[:i] <span style=color:#f92672>+</span> letter_bank[i <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>:]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_permutations</span>(letter_bank, cur_word, perm_set):
+    <span style="color:#66d9ef">if</span> len(letter_bank) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        word_set<span style="color:#f92672">.</span>add(cur_word)
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(letter_bank)):
+            tmp_cur <span style="color:#f92672">=</span> cur_word <span style="color:#f92672">+</span> letter_bank[i]
+            tmp_letter_bank <span style="color:#f92672">=</span> letter_bank[:i] <span style="color:#f92672">+</span> letter_bank[i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>:]
             create_permutations(tmp_letter_bank, tmp_cur, perm_set)
 </code></pre></div></article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
 </div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
 </div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#classes>Classes</a>
-<ul>
-<li><a href=#stacks>Stacks</a></li>
-<li><a href=#fibonacci>Fibonacci</a></li>
-</ul>
-</li>
-<li><a href=#lists>Lists</a>
-<ul>
-<li><a href=#last_index_of>last_index_of</a></li>
-<li><a href=#is_distinct_column_sum>is_distinct_column_sum</a></li>
-</ul>
-</li>
-<li><a href=#dictionaries>Dictionaries</a>
-<ul>
-<li><a href=#counting-part-2>Counting Part 2</a></li>
-</ul>
-</li>
-<li><a href=#recursion>Recursion</a>
-<ul>
-<li><a href=#climbing-stairs>Climbing Stairs</a></li>
-<li><a href=#counting-part-3>Counting Part 3</a></li>
-</ul>
-</li>
-<li><a href=#solutions>Solutions</a>
-<ul>
-<li><a href=#stacks-1>Stacks</a></li>
-<li><a href=#fibonacci-1>Fibonacci</a></li>
-<li><a href=#last_index_of-1>last_index_of</a></li>
-<li><a href=#is_distinct_column_sum-1>is_distinct_column_sum</a></li>
-<li><a href=#counting-part-2-1>Counting Part 2</a></li>
-<li><a href=#climbing-stairs-1>Climbing Stairs</a></li>
-<li><a href=#counting-part-3-1>Counting Part 3</a></li>
-</ul>
-</li>
-</ul>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#classes">Classes</a>
+      <ul>
+        <li><a href="#stacks">Stacks</a></li>
+        <li><a href="#fibonacci">Fibonacci</a></li>
+      </ul>
+    </li>
+    <li><a href="#lists">Lists</a>
+      <ul>
+        <li><a href="#last_index_of">last_index_of</a></li>
+        <li><a href="#is_distinct_column_sum">is_distinct_column_sum</a></li>
+      </ul>
+    </li>
+    <li><a href="#dictionaries">Dictionaries</a>
+      <ul>
+        <li><a href="#counting-part-2">Counting Part 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#recursion">Recursion</a>
+      <ul>
+        <li><a href="#climbing-stairs">Climbing Stairs</a></li>
+        <li><a href="#counting-part-3">Counting Part 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#solutions">Solutions</a>
+      <ul>
+        <li><a href="#stacks-1">Stacks</a></li>
+        <li><a href="#fibonacci-1">Fibonacci</a></li>
+        <li><a href="#last_index_of-1">last_index_of</a></li>
+        <li><a href="#is_distinct_column_sum-1">is_distinct_column_sum</a></li>
+        <li><a href="#counting-part-2-1">Counting Part 2</a></li>
+        <li><a href="#climbing-stairs-1">Climbing Stairs</a></li>
+        <li><a href="#counting-part-3-1">Counting Part 3</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
-</div>
-</aside>
-</main>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

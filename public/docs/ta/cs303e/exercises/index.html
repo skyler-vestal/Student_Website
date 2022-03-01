@@ -1,269 +1,739 @@
-<!doctype html><html lang=en-us dir=ltr>
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Solved Excersises for CS 303E#This directory contains solutions for the suggested exercises Mike has put up on the class schedule page.
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Solved Excersises for CS 303E#This directory contains solutions for the suggested exercises Mike has put up on the class schedule page.
 The solutions should be posted here early in the week for the following week of assignments. Make sure to come back here for solutions if they aren&rsquo;t up yet!
 If you think I made an error in a solution make sure to contact me here.
    Week Exercises Covered     1 1.">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Exercises">
-<meta property="og:description" content>
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Exercises" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/" />
+
 <title>Exercises | Skyler ~ UTCS</title>
-<link rel=manifest href=/~ves314/manifest.json>
-<link rel=icon href=/~ves314/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
-<script defer src=/~ves314/flexsearch.min.js></script>
-<script defer src=/~ves314/en.search.min.3a7053bb48bd226734ae8ddf4f80001a00821dc797d0e9c47b160eb66c6661ad.js integrity="sha256-OnBTu0i9Imc0ro3fT4AAGgCCHceX0OnEexYOtmxmYa0=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/index.xml title="Skyler ~ UTCS">
+<link rel="manifest" href="/~ves314/manifest.json">
+<link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
+  <script defer src="/~ves314/flexsearch.min.js"></script>
+  <script defer src="/~ves314/en.search.min.f848756dd2e657fbd48ad5e69b78185b7a48cc47ae3967abd1cbdc22f57b0166.js" integrity="sha256-&#43;Eh1bdLmV/vUitXmm3gYW3pIzEeuOWer0cvcIvV7AWY=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/index.xml" title="Skyler ~ UTCS" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
 </head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/~ves314/><span>Skyler ~ UTCS</span>
-</a>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/~ves314/"><span>Skyler ~ UTCS</span>
+  </a>
 </h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
-<ul>
-<li class=book-section-flat>
-<span>TA Classes</span>
-<ul>
-<li>
-<input type=checkbox id=section-33af6ef1d279801de2f779931fe7714a class=toggle>
-<label for=section-33af6ef1d279801de2f779931fe7714a class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/>CS 314</a>
-</label>
-<ul>
-<li>
-<input type=checkbox id=section-c172f569569f14516626820cca02b95a class=toggle>
-<label for=section-c172f569569f14516626820cca02b95a class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/>Explanations</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/>Big O</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-af21d64a3e1d155d273311b14a7fdf1c class=toggle>
-<label for=section-af21d64a3e1d155d273311b14a7fdf1c class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/>Practice</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/>Big O</a>
-</li>
-</ul>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/>Slides</a>
-<ul>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-cd9969c9531e65499ac6445bfce50541 class=toggle>
-<label for=section-cd9969c9531e65499ac6445bfce50541 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/>Exam Reviews</a>
-</label>
-<ul>
-<li>
-<input type=checkbox id=section-0353b14a7f76e905c757a5cc55b058a0 class=toggle>
-<label for=section-0353b14a7f76e905c757a5cc55b058a0 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/>Studying Guide</a>
-</label>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-c1e9ef8e25f48d65bad575ca842d14f6 class=toggle checked>
-<label for=section-c1e9ef8e25f48d65bad575ca842d14f6 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/>CS 303E</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/>Syntax</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/>Style</a>
-</li>
-<li>
-<input type=checkbox id=section-194fbff478cddfab80ada7a56b30c489 class=toggle checked>
-<label for=section-194fbff478cddfab80ada7a56b30c489 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ class=active>Exercises</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/>Chapter 1</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/>Chapter 2</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/>Chapter 3</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/>Chapter 4</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/>Chapter 5</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/>Chapter 6</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/>Chapter 7</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/>Chapter 8</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/>Chapter 10</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/>Chapter 11</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/>Chapter 13</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/>Chapter 14</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/>Chapter 15</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class=toggle>
-<label for=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/>Exam Reviews</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/>Midterm</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/>Final</a>
-</li>
-</ul>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/>A9 Tester</a>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=book-section-flat>
-<span>Personal Work</span>
-<ul>
-<li>
-<span>Projects</span>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>TA Classes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-33af6ef1d279801de2f779931fe7714a" class="toggle"  />
+    <label for="section-33af6ef1d279801de2f779931fe7714a" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/" class="">CS 314</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c172f569569f14516626820cca02b95a" class="toggle"  />
+    <label for="section-c172f569569f14516626820cca02b95a" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/" class="">Explanations</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/" class="">Big O</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-af21d64a3e1d155d273311b14a7fdf1c" class="toggle"  />
+    <label for="section-af21d64a3e1d155d273311b14a7fdf1c" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/" class="">Practice</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/" class="">Big O</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/" class="">Slides</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cd9969c9531e65499ac6445bfce50541" class="toggle"  />
+    <label for="section-cd9969c9531e65499ac6445bfce50541" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/" class="">Exam Reviews</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0353b14a7f76e905c757a5cc55b058a0" class="toggle"  />
+    <label for="section-0353b14a7f76e905c757a5cc55b058a0" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/" class="">Studying Guide</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1e9ef8e25f48d65bad575ca842d14f6" class="toggle" checked />
+    <label for="section-c1e9ef8e25f48d65bad575ca842d14f6" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/" class="">CS 303E</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/" class="">Syntax</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-194fbff478cddfab80ada7a56b30c489" class="toggle" checked />
+    <label for="section-194fbff478cddfab80ada7a56b30c489" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/" class="active">Exercises</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/" class="">Chapter 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/" class="">Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/" class="">Chapter 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/" class="">Chapter 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/" class="">Chapter 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/" class="">Chapter 6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/" class="">Chapter 7</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/" class="">Chapter 8</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/" class="">Chapter 10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/" class="">Chapter 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/" class="">Chapter 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/" class="">Chapter 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/" class="">Chapter 15</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbc0fb0ff9f2d886cc5d2be0d1e5463e" class="toggle"  />
+    <label for="section-cbc0fb0ff9f2d886cc5d2be0d1e5463e" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/" class="">Exam Reviews</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/" class="">Midterm</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/" class="">Final</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/" class="">A9 Tester</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Personal Work</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Exercises</strong>
+
+  <label for="toc-control">
+    
+    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
 </div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/~ves314/svg/menu.svg class=book-icon alt=Menu>
-</label>
-<strong>Exercises</strong>
-<label for=toc-control>
-<img src=/~ves314/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents></nav>
-</aside>
-</header>
-<article class=markdown><h1 id=solved-excersises-for-cs-303e>
-Solved Excersises for CS 303E
-<a class=anchor href=#solved-excersises-for-cs-303e>#</a>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="solved-excersises-for-cs-303e">
+  Solved Excersises for CS 303E
+  <a class="anchor" href="#solved-excersises-for-cs-303e">#</a>
 </h1>
-<p>This directory contains solutions for the suggested exercises Mike has put up on the <a href=https://www.cs.utexas.edu/~scottm/cs303e/schedule.htm>class schedule page</a>.</p>
+<p>This directory contains solutions for the suggested exercises Mike has put up on the <a href="https://www.cs.utexas.edu/~scottm/cs303e/schedule.htm">class schedule page</a>.</p>
 <p>The solutions should be posted here early in the week for the following week of assignments. Make sure to come back here for solutions if they aren&rsquo;t up yet!</p>
-<p>If you think I made an error in a solution make sure to contact me <a href=/~ves314/#contact>here</a>.</p>
+<p>If you think I made an error in a solution make sure to contact me <a href="/~ves314/#contact">here</a>.</p>
 <table>
 <thead>
 <tr>
-<th style=text-align:center>Week</th>
-<th style=text-align:left>Exercises Covered</th>
+<th style="text-align:center">Week</th>
+<th style="text-align:left">Exercises Covered</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style=text-align:center>1</td>
-<td style=text-align:left><a href=ch1>1.2 - 1.11</a></td>
+<td style="text-align:center">1</td>
+<td style="text-align:left"><a href="ch1">1.2 - 1.11</a></td>
 </tr>
 <tr>
-<td style=text-align:center>2</td>
-<td style=text-align:left><a href=ch2>2.1 - 2.22</a> &mdash; <a href=ch3>3.2 - 3.10</a></td>
+<td style="text-align:center">2</td>
+<td style="text-align:left"><a href="ch2">2.1 - 2.22</a> &mdash; <a href="ch3">3.2 - 3.10</a></td>
 </tr>
 <tr>
-<td style=text-align:center>3</td>
-<td style=text-align:left><a href=ch4>4.1 - 4.22</a> &mdash; <a href=ch5>5.1 - 5.14</a></td>
+<td style="text-align:center">3</td>
+<td style="text-align:left"><a href="ch4">4.1 - 4.22</a> &mdash; <a href="ch5">5.1 - 5.14</a></td>
 </tr>
 <tr>
-<td style=text-align:center>4</td>
-<td style=text-align:left><a href=ch5>5.18 - 5.45</a> &mdash; <a href=ch6>6.1 - 6.8</a></td>
+<td style="text-align:center">4</td>
+<td style="text-align:left"><a href="ch5">5.18 - 5.45</a> &mdash; <a href="ch6">6.1 - 6.8</a></td>
 </tr>
 <tr>
-<td style=text-align:center>5</td>
-<td style=text-align:left><a href=ch6>6.13 - 6.28</a> &mdash; <a href=ch7>7.1 - 7.8</a></td>
+<td style="text-align:center">5</td>
+<td style="text-align:left"><a href="ch6">6.13 - 6.28</a> &mdash; <a href="ch7">7.1 - 7.8</a></td>
 </tr>
 <tr>
-<td style=text-align:center>6</td>
-<td style=text-align:left><a href=ch8>8.1 - 8.15</a> &mdash; <a href=ch10>10.2 - 10.27</a></td>
+<td style="text-align:center">6</td>
+<td style="text-align:left"><a href="ch8">8.1 - 8.15</a> &mdash; <a href="ch10">10.2 - 10.27</a></td>
 </tr>
 <tr>
-<td style=text-align:center>7</td>
-<td style=text-align:left><a href=ch11>11.1 - 11.22</a> &mdash; <a href=ch13>13.1 - 13.3</a></td>
+<td style="text-align:center">7</td>
+<td style="text-align:left"><a href="ch11">11.1 - 11.22</a> &mdash; <a href="ch13">13.1 - 13.3</a></td>
 </tr>
 <tr>
-<td style=text-align:center>8</td>
-<td style=text-align:left><a href=ch14>14.2 - 14.11</a> &mdash; <a href=ch15>15.1 - 15.2</a></td>
+<td style="text-align:center">8</td>
+<td style="text-align:left"><a href="ch14">14.2 - 14.11</a> &mdash; <a href="ch15">15.1 - 15.2</a></td>
 </tr>
 </tbody>
 </table>
 </article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
 </div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
 </div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents></nav>
-</div>
-</aside>
-</main>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

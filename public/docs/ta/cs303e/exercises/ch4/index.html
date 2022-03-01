@@ -1,350 +1,822 @@
-<!doctype html><html lang=en-us dir=ltr>
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Chapter 4 Exercise Solutions#Download Solutions
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chapter 4 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercies for Chapter 4 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook 'Em) import math import random # 4.1 a, b, c = eval(input(&#34;Enter, a, b, c: &#34;)) discrim = b ** 2 - (4 * a * c) if discrim < 0: print(&#34;The equation has no real roots&#34;) else: root_1 = (-b + math.">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Chapter 4">
+# Exercies for Chapter 4 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) import math import random # 4.1 a, b, c = eval(input(&#34;Enter, a, b, c: &#34;)) discrim = b ** 2 - (4 * a * c) if discrim &lt; 0: print(&#34;The equation has no real roots&#34;) else: root_1 = (-b &#43; math.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Chapter 4" />
 <meta property="og:description" content="Chapter 4 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercies for Chapter 4 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook 'Em) import math import random # 4.1 a, b, c = eval(input(&#34;Enter, a, b, c: &#34;)) discrim = b ** 2 - (4 * a * c) if discrim < 0: print(&#34;The equation has no real roots&#34;) else: root_1 = (-b + math.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/"><meta property="article:section" content="docs">
+# Exercies for Chapter 4 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) import math import random # 4.1 a, b, c = eval(input(&#34;Enter, a, b, c: &#34;)) discrim = b ** 2 - (4 * a * c) if discrim &lt; 0: print(&#34;The equation has no real roots&#34;) else: root_1 = (-b &#43; math." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/" /><meta property="article:section" content="docs" />
+
+
+
 <title>Chapter 4 | Skyler ~ UTCS</title>
-<link rel=manifest href=/~ves314/manifest.json>
-<link rel=icon href=/~ves314/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
-<script defer src=/~ves314/flexsearch.min.js></script>
-<script defer src=/~ves314/en.search.min.3a7053bb48bd226734ae8ddf4f80001a00821dc797d0e9c47b160eb66c6661ad.js integrity="sha256-OnBTu0i9Imc0ro3fT4AAGgCCHceX0OnEexYOtmxmYa0=" crossorigin=anonymous></script>
+<link rel="manifest" href="/~ves314/manifest.json">
+<link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
+  <script defer src="/~ves314/flexsearch.min.js"></script>
+  <script defer src="/~ves314/en.search.min.f848756dd2e657fbd48ad5e69b78185b7a48cc47ae3967abd1cbdc22f57b0166.js" integrity="sha256-&#43;Eh1bdLmV/vUitXmm3gYW3pIzEeuOWer0cvcIvV7AWY=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
 </head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/~ves314/><span>Skyler ~ UTCS</span>
-</a>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/~ves314/"><span>Skyler ~ UTCS</span>
+  </a>
 </h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
-<ul>
-<li class=book-section-flat>
-<span>TA Classes</span>
-<ul>
-<li>
-<input type=checkbox id=section-33af6ef1d279801de2f779931fe7714a class=toggle>
-<label for=section-33af6ef1d279801de2f779931fe7714a class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/>CS 314</a>
-</label>
-<ul>
-<li>
-<input type=checkbox id=section-c172f569569f14516626820cca02b95a class=toggle>
-<label for=section-c172f569569f14516626820cca02b95a class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/>Explanations</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/>Big O</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-af21d64a3e1d155d273311b14a7fdf1c class=toggle>
-<label for=section-af21d64a3e1d155d273311b14a7fdf1c class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/>Practice</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/>Big O</a>
-</li>
-</ul>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/>Slides</a>
-<ul>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-cd9969c9531e65499ac6445bfce50541 class=toggle>
-<label for=section-cd9969c9531e65499ac6445bfce50541 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/>Exam Reviews</a>
-</label>
-<ul>
-<li>
-<input type=checkbox id=section-0353b14a7f76e905c757a5cc55b058a0 class=toggle>
-<label for=section-0353b14a7f76e905c757a5cc55b058a0 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/>Studying Guide</a>
-</label>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-c1e9ef8e25f48d65bad575ca842d14f6 class=toggle checked>
-<label for=section-c1e9ef8e25f48d65bad575ca842d14f6 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/>CS 303E</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/>Syntax</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/>Style</a>
-</li>
-<li>
-<input type=checkbox id=section-194fbff478cddfab80ada7a56b30c489 class=toggle checked>
-<label for=section-194fbff478cddfab80ada7a56b30c489 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/>Exercises</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/>Chapter 1</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/>Chapter 2</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/>Chapter 3</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/ class=active>Chapter 4</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/>Chapter 5</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/>Chapter 6</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/>Chapter 7</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/>Chapter 8</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/>Chapter 10</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/>Chapter 11</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/>Chapter 13</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/>Chapter 14</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/>Chapter 15</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class=toggle>
-<label for=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/>Exam Reviews</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/>Midterm</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/>Final</a>
-</li>
-</ul>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/>A9 Tester</a>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=book-section-flat>
-<span>Personal Work</span>
-<ul>
-<li>
-<span>Projects</span>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>TA Classes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-33af6ef1d279801de2f779931fe7714a" class="toggle"  />
+    <label for="section-33af6ef1d279801de2f779931fe7714a" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/" class="">CS 314</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c172f569569f14516626820cca02b95a" class="toggle"  />
+    <label for="section-c172f569569f14516626820cca02b95a" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/" class="">Explanations</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/" class="">Big O</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-af21d64a3e1d155d273311b14a7fdf1c" class="toggle"  />
+    <label for="section-af21d64a3e1d155d273311b14a7fdf1c" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/" class="">Practice</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/" class="">Big O</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/" class="">Slides</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cd9969c9531e65499ac6445bfce50541" class="toggle"  />
+    <label for="section-cd9969c9531e65499ac6445bfce50541" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/" class="">Exam Reviews</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0353b14a7f76e905c757a5cc55b058a0" class="toggle"  />
+    <label for="section-0353b14a7f76e905c757a5cc55b058a0" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/" class="">Studying Guide</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1e9ef8e25f48d65bad575ca842d14f6" class="toggle" checked />
+    <label for="section-c1e9ef8e25f48d65bad575ca842d14f6" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/" class="">CS 303E</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/" class="">Syntax</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-194fbff478cddfab80ada7a56b30c489" class="toggle" checked />
+    <label for="section-194fbff478cddfab80ada7a56b30c489" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/" class="">Exercises</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/" class="">Chapter 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/" class="">Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/" class="">Chapter 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/" class=" active">Chapter 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/" class="">Chapter 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/" class="">Chapter 6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/" class="">Chapter 7</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/" class="">Chapter 8</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/" class="">Chapter 10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/" class="">Chapter 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/" class="">Chapter 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/" class="">Chapter 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/" class="">Chapter 15</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbc0fb0ff9f2d886cc5d2be0d1e5463e" class="toggle"  />
+    <label for="section-cbc0fb0ff9f2d886cc5d2be0d1e5463e" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/" class="">Exam Reviews</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/" class="">Midterm</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/" class="">Final</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/" class="">A9 Tester</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Personal Work</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Chapter 4</strong>
+
+  <label for="toc-control">
+    
+    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
 </div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/~ves314/svg/menu.svg class=book-icon alt=Menu>
-</label>
-<strong>Chapter 4</strong>
-<label for=toc-control>
-<img src=/~ves314/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents></nav>
-</aside>
-</header>
-<article class=markdown><h1 id=chapter-4-exercise-solutions>
-Chapter 4 Exercise Solutions
-<a class=anchor href=#chapter-4-exercise-solutions>#</a>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="chapter-4-exercise-solutions">
+  Chapter 4 Exercise Solutions
+  <a class="anchor" href="#chapter-4-exercise-solutions">#</a>
 </h1>
-<p><a href=../files/Ch_4.py>Download Solutions</a></p>
+<p><a href="../files/Ch_4.py">Download Solutions</a></p>
 <p>Embedded solutions:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e># Exercies for Chapter 4 of &#34;Introduction to Programming using Python&#34;</span>
-<span style=color:#75715e># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Exercies for Chapter 4 of &#34;Introduction to Programming using Python&#34;</span>
+<span style="color:#75715e"># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
 
-<span style=color:#f92672>import</span> math
-<span style=color:#f92672>import</span> random
+<span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> random
 
-<span style=color:#75715e># 4.1</span>
-a, b, c <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;Enter, a, b, c: &#34;</span>))
-discrim <span style=color:#f92672>=</span> b <span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>-</span> (<span style=color:#ae81ff>4</span> <span style=color:#f92672>*</span> a <span style=color:#f92672>*</span> c)
-<span style=color:#66d9ef>if</span> discrim <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span>:
-    print(<span style=color:#e6db74>&#34;The equation has no real roots&#34;</span>)
-<span style=color:#66d9ef>else</span>:
-    root_1 <span style=color:#f92672>=</span> (<span style=color:#f92672>-</span>b <span style=color:#f92672>+</span> math<span style=color:#f92672>.</span>sqrt(discrim)) <span style=color:#f92672>/</span> (<span style=color:#ae81ff>2</span> <span style=color:#f92672>*</span> a)
-    <span style=color:#66d9ef>if</span> discrim <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-        print(<span style=color:#e6db74>&#34;The root is&#34;</span>, root_1)
-    <span style=color:#66d9ef>else</span>:
-        root_2 <span style=color:#f92672>=</span> (<span style=color:#f92672>-</span>b <span style=color:#f92672>-</span> math<span style=color:#f92672>.</span>sqrt(discrim)) <span style=color:#f92672>/</span> (<span style=color:#ae81ff>2</span> <span style=color:#f92672>*</span> a)
-        print(<span style=color:#e6db74>&#34;The roots are&#34;</span>, root_1, <span style=color:#e6db74>&#34;and&#34;</span>, root_2)
+<span style="color:#75715e"># 4.1</span>
+a, b, c <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter, a, b, c: &#34;</span>))
+discrim <span style="color:#f92672">=</span> b <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> (<span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> a <span style="color:#f92672">*</span> c)
+<span style="color:#66d9ef">if</span> discrim <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+    print(<span style="color:#e6db74">&#34;The equation has no real roots&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    root_1 <span style="color:#f92672">=</span> (<span style="color:#f92672">-</span>b <span style="color:#f92672">+</span> math<span style="color:#f92672">.</span>sqrt(discrim)) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> a)
+    <span style="color:#66d9ef">if</span> discrim <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        print(<span style="color:#e6db74">&#34;The root is&#34;</span>, root_1)
+    <span style="color:#66d9ef">else</span>:
+        root_2 <span style="color:#f92672">=</span> (<span style="color:#f92672">-</span>b <span style="color:#f92672">-</span> math<span style="color:#f92672">.</span>sqrt(discrim)) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> a)
+        print(<span style="color:#e6db74">&#34;The roots are&#34;</span>, root_1, <span style="color:#e6db74">&#34;and&#34;</span>, root_2)
 
-<span style=color:#75715e># 4.2</span>
-num_1 <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>9</span>)
-num_2 <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>9</span>)
-num_3 <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>9</span>)
-add_string <span style=color:#f92672>=</span> str(num_1) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; + &#34;</span> <span style=color:#f92672>+</span> str(num_2) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; + &#34;</span> <span style=color:#f92672>+</span> str(num_3)
-answer <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;What is &#34;</span> <span style=color:#f92672>+</span> add_string <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;? &#34;</span>))
-print(add_string, <span style=color:#e6db74>&#34;=&#34;</span>, answer, <span style=color:#e6db74>&#34;is&#34;</span>, answer <span style=color:#f92672>==</span> num_1 <span style=color:#f92672>+</span> num_2 <span style=color:#f92672>+</span> num_3)
+<span style="color:#75715e"># 4.2</span>
+num_1 <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">9</span>)
+num_2 <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">9</span>)
+num_3 <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">9</span>)
+add_string <span style="color:#f92672">=</span> str(num_1) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; + &#34;</span> <span style="color:#f92672">+</span> str(num_2) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; + &#34;</span> <span style="color:#f92672">+</span> str(num_3)
+answer <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;What is &#34;</span> <span style="color:#f92672">+</span> add_string <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;? &#34;</span>))
+print(add_string, <span style="color:#e6db74">&#34;=&#34;</span>, answer, <span style="color:#e6db74">&#34;is&#34;</span>, answer <span style="color:#f92672">==</span> num_1 <span style="color:#f92672">+</span> num_2 <span style="color:#f92672">+</span> num_3)
 
-<span style=color:#75715e># 4.4</span>
-num_1 <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>99</span>)
-num_2 <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>99</span>)
-add_string <span style=color:#f92672>=</span> str(num_1) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; + &#34;</span> <span style=color:#f92672>+</span> str(num_2)
-answer <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;What is &#34;</span> <span style=color:#f92672>+</span> add_string <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;? &#34;</span>))
-print(add_string, <span style=color:#e6db74>&#34;=&#34;</span>, answer, <span style=color:#e6db74>&#34;is&#34;</span>, answer <span style=color:#f92672>==</span> num_1 <span style=color:#f92672>+</span> num_2)
+<span style="color:#75715e"># 4.4</span>
+num_1 <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">99</span>)
+num_2 <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">99</span>)
+add_string <span style="color:#f92672">=</span> str(num_1) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; + &#34;</span> <span style="color:#f92672">+</span> str(num_2)
+answer <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;What is &#34;</span> <span style="color:#f92672">+</span> add_string <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;? &#34;</span>))
+print(add_string, <span style="color:#e6db74">&#34;=&#34;</span>, answer, <span style="color:#e6db74">&#34;is&#34;</span>, answer <span style="color:#f92672">==</span> num_1 <span style="color:#f92672">+</span> num_2)
 
-<span style=color:#75715e># 4.6</span>
-weight <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;Enter weight in pounds: &#34;</span>))
-feet <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;Enter feet: &#34;</span>))
-inches <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;Enter inches: &#34;</span>))
-inches <span style=color:#f92672>+=</span> feet <span style=color:#f92672>*</span> <span style=color:#ae81ff>12</span>
+<span style="color:#75715e"># 4.6</span>
+weight <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter weight in pounds: &#34;</span>))
+feet <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter feet: &#34;</span>))
+inches <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter inches: &#34;</span>))
+inches <span style="color:#f92672">+=</span> feet <span style="color:#f92672">*</span> <span style="color:#ae81ff">12</span>
 
-KILOGRAMS_PER_POUND <span style=color:#f92672>=</span> <span style=color:#ae81ff>.45359237</span>
-METERS_PER_INCH <span style=color:#f92672>=</span> <span style=color:#ae81ff>.0254</span>
-weight_in_kilograms <span style=color:#f92672>=</span> weight <span style=color:#f92672>*</span> KILOGRAMS_PER_POUND
-height_in_meters <span style=color:#f92672>=</span> inches <span style=color:#f92672>*</span> METERS_PER_INCH
-bmi <span style=color:#f92672>=</span> weight_in_kilograms <span style=color:#f92672>/</span> (height_in_meters <span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span>)
+KILOGRAMS_PER_POUND <span style="color:#f92672">=</span> <span style="color:#ae81ff">.45359237</span>
+METERS_PER_INCH <span style="color:#f92672">=</span> <span style="color:#ae81ff">.0254</span>
+weight_in_kilograms <span style="color:#f92672">=</span> weight <span style="color:#f92672">*</span> KILOGRAMS_PER_POUND
+height_in_meters <span style="color:#f92672">=</span> inches <span style="color:#f92672">*</span> METERS_PER_INCH
+bmi <span style="color:#f92672">=</span> weight_in_kilograms <span style="color:#f92672">/</span> (height_in_meters <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>)
 
-print(<span style=color:#e6db74>&#34;BMI is&#34;</span>, bmi)
-<span style=color:#66d9ef>if</span> bmi <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>18.5</span>:
-    print(<span style=color:#e6db74>&#34;You are Underweight&#34;</span>)
-<span style=color:#66d9ef>elif</span> bmi <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>25</span>:
-    print(<span style=color:#e6db74>&#34;You are Normal&#34;</span>)
-<span style=color:#66d9ef>elif</span> bmi <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>30</span>:
-    print(<span style=color:#e6db74>&#34;You are Overweight&#34;</span>)
-<span style=color:#66d9ef>else</span>:
-    print(<span style=color:#e6db74>&#34;You are Obese&#34;</span>)
+print(<span style="color:#e6db74">&#34;BMI is&#34;</span>, bmi)
+<span style="color:#66d9ef">if</span> bmi <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">18.5</span>:
+    print(<span style="color:#e6db74">&#34;You are Underweight&#34;</span>)
+<span style="color:#66d9ef">elif</span> bmi <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">25</span>:
+    print(<span style="color:#e6db74">&#34;You are Normal&#34;</span>)
+<span style="color:#66d9ef">elif</span> bmi <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">30</span>:
+    print(<span style="color:#e6db74">&#34;You are Overweight&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    print(<span style="color:#e6db74">&#34;You are Obese&#34;</span>)
 
-<span style=color:#75715e># 4.8</span>
-num_1, num_2, num_3 <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;Enter 3 numberss (a, b, c): &#34;</span>))
-<span style=color:#66d9ef>if</span> num_1 <span style=color:#f92672>&gt;</span> num_2:
-    num_1, num_2 <span style=color:#f92672>=</span> num_2, num_1
-<span style=color:#66d9ef>if</span> num_2 <span style=color:#f92672>&gt;</span> num_3:
-    num_2, num_3 <span style=color:#f92672>=</span> num_3, num_2
-<span style=color:#66d9ef>if</span> num_1 <span style=color:#f92672>&gt;</span> num_3:
-    num_1, num_3 <span style=color:#f92672>=</span> num_3, num_1
-<span style=color:#66d9ef>if</span> num_1 <span style=color:#f92672>&gt;</span> num_2:
-    num_1, num_2 <span style=color:#f92672>=</span> num_2, num_1
+<span style="color:#75715e"># 4.8</span>
+num_1, num_2, num_3 <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter 3 numberss (a, b, c): &#34;</span>))
+<span style="color:#66d9ef">if</span> num_1 <span style="color:#f92672">&gt;</span> num_2:
+    num_1, num_2 <span style="color:#f92672">=</span> num_2, num_1
+<span style="color:#66d9ef">if</span> num_2 <span style="color:#f92672">&gt;</span> num_3:
+    num_2, num_3 <span style="color:#f92672">=</span> num_3, num_2
+<span style="color:#66d9ef">if</span> num_1 <span style="color:#f92672">&gt;</span> num_3:
+    num_1, num_3 <span style="color:#f92672">=</span> num_3, num_1
+<span style="color:#66d9ef">if</span> num_1 <span style="color:#f92672">&gt;</span> num_2:
+    num_1, num_2 <span style="color:#f92672">=</span> num_2, num_1
 
-print(<span style=color:#e6db74>&#34;Numbers ordered:&#34;</span>, num_1, num_2, num_3)
+print(<span style="color:#e6db74">&#34;Numbers ordered:&#34;</span>, num_1, num_2, num_3)
 
-<span style=color:#75715e># 4.10</span>
-num_1 <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>99</span>)
-num_2 <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>99</span>)
-mult_string <span style=color:#f92672>=</span> str(num_1) <span style=color:#f92672>+</span>  <span style=color:#e6db74>&#34; * &#34;</span> <span style=color:#f92672>+</span> str(num_2)
-real_answer <span style=color:#f92672>=</span> num_1 <span style=color:#f92672>*</span> num_2
-answer <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;What is &#34;</span> <span style=color:#f92672>+</span> mult_string <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;? &#34;</span>))
-<span style=color:#66d9ef>if</span> real_answer <span style=color:#f92672>==</span> answer:
-    print(<span style=color:#e6db74>&#34;You are correct!&#34;</span>)
-<span style=color:#66d9ef>else</span>:
-    print(<span style=color:#e6db74>&#34;Your answer is wrong.</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, mult_string, <span style=color:#e6db74>&#34;is&#34;</span>, real_answer)
+<span style="color:#75715e"># 4.10</span>
+num_1 <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">99</span>)
+num_2 <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">99</span>)
+mult_string <span style="color:#f92672">=</span> str(num_1) <span style="color:#f92672">+</span>  <span style="color:#e6db74">&#34; * &#34;</span> <span style="color:#f92672">+</span> str(num_2)
+real_answer <span style="color:#f92672">=</span> num_1 <span style="color:#f92672">*</span> num_2
+answer <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;What is &#34;</span> <span style="color:#f92672">+</span> mult_string <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;? &#34;</span>))
+<span style="color:#66d9ef">if</span> real_answer <span style="color:#f92672">==</span> answer:
+    print(<span style="color:#e6db74">&#34;You are correct!&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    print(<span style="color:#e6db74">&#34;Your answer is wrong.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, mult_string, <span style="color:#e6db74">&#34;is&#34;</span>, real_answer)
 
-<span style=color:#75715e># 4.11</span>
-<span style=color:#75715e># Omitted due to similarity with assignment 4/5</span>
+<span style="color:#75715e"># 4.11</span>
+<span style="color:#75715e"># Omitted due to similarity with assignment 4/5</span>
 
-<span style=color:#75715e># 4.14</span>
-flip <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>1</span>)
-guess <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Guess heads or tails: &#34;</span>)
-guess_num <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span> <span style=color:#66d9ef>if</span> guess <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;heads&#34;</span> <span style=color:#66d9ef>else</span> <span style=color:#ae81ff>1</span>
-<span style=color:#66d9ef>if</span> flip <span style=color:#f92672>==</span> guess_num:
-    print(<span style=color:#e6db74>&#34;Correct!&#34;</span>)
-<span style=color:#66d9ef>else</span>:
-    print(<span style=color:#e6db74>&#34;Wrong guess.&#34;</span>)
+<span style="color:#75715e"># 4.14</span>
+flip <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>)
+guess <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Guess heads or tails: &#34;</span>)
+guess_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">if</span> guess <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;heads&#34;</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">if</span> flip <span style="color:#f92672">==</span> guess_num:
+    print(<span style="color:#e6db74">&#34;Correct!&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    print(<span style="color:#e6db74">&#34;Wrong guess.&#34;</span>)
 
-<span style=color:#75715e># 4.17</span>
-user_move <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;scissor (0), rock (1), paper (2): &#34;</span>))
-computer_move <span style=color:#f92672>=</span> random<span style=color:#f92672>.</span>randint(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>2</span>)
+<span style="color:#75715e"># 4.17</span>
+user_move <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;scissor (0), rock (1), paper (2): &#34;</span>))
+computer_move <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>)
 
-user_display <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;scissor&#34;</span>
-<span style=color:#66d9ef>if</span> user_move <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>:
-    user_display <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;rock&#34;</span>
-<span style=color:#66d9ef>elif</span> user_move <span style=color:#f92672>==</span> <span style=color:#ae81ff>2</span>:
-    user_display <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;paper&#34;</span>
+user_display <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;scissor&#34;</span>
+<span style="color:#66d9ef">if</span> user_move <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+    user_display <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;rock&#34;</span>
+<span style="color:#66d9ef">elif</span> user_move <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+    user_display <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;paper&#34;</span>
 
-computer_display <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;scissor&#34;</span>
-<span style=color:#66d9ef>if</span> computer_move <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>:
-    user_display <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;rock&#34;</span>
-<span style=color:#66d9ef>elif</span> computer_move <span style=color:#f92672>==</span> <span style=color:#ae81ff>2</span>:
-    user_display <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;paper&#34;</span>
+computer_display <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;scissor&#34;</span>
+<span style="color:#66d9ef">if</span> computer_move <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+    user_display <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;rock&#34;</span>
+<span style="color:#66d9ef">elif</span> computer_move <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+    user_display <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;paper&#34;</span>
 
-outcome <span style=color:#f92672>=</span> user_move <span style=color:#f92672>-</span> computer_move
-<span style=color:#66d9ef>if</span> outcome <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-    print(<span style=color:#e6db74>&#34;The computer is &#34;</span> <span style=color:#f92672>+</span> str(computer_display) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;. You are &#34;</span>
-            <span style=color:#f92672>+</span> str(user_display) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; too. It is a draw.&#34;</span>)
-<span style=color:#66d9ef>else</span>:
-    result <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;You won.&#34;</span> <span style=color:#66d9ef>if</span> outcome <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span> <span style=color:#66d9ef>else</span> <span style=color:#e6db74>&#34;You lost.&#34;</span>
-    print(<span style=color:#e6db74>&#34;The computer is &#34;</span> <span style=color:#f92672>+</span> str(computer_display) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;. You are &#34;</span>
-            <span style=color:#f92672>+</span> str(user_display) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;. &#34;</span> <span style=color:#f92672>+</span> result)
+outcome <span style="color:#f92672">=</span> user_move <span style="color:#f92672">-</span> computer_move
+<span style="color:#66d9ef">if</span> outcome <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+    print(<span style="color:#e6db74">&#34;The computer is &#34;</span> <span style="color:#f92672">+</span> str(computer_display) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;. You are &#34;</span>
+            <span style="color:#f92672">+</span> str(user_display) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; too. It is a draw.&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;You won.&#34;</span> <span style="color:#66d9ef">if</span> outcome <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;You lost.&#34;</span>
+    print(<span style="color:#e6db74">&#34;The computer is &#34;</span> <span style="color:#f92672">+</span> str(computer_display) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;. You are &#34;</span>
+            <span style="color:#f92672">+</span> str(user_display) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;. &#34;</span> <span style="color:#f92672">+</span> result)
 
-<span style=color:#75715e># 4.22</span>
-x, y <span style=color:#f92672>=</span> eval(input(<span style=color:#e6db74>&#34;Enter a point with two coordinates: &#34;</span>))
-dist <span style=color:#f92672>=</span> math<span style=color:#f92672>.</span>sqrt(x <span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>+</span> y <span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span>)
-result <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;is&#34;</span>
-<span style=color:#66d9ef>if</span> dist <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>10</span>:
-    result <span style=color:#f92672>+=</span> <span style=color:#e6db74>&#34; not&#34;</span>
-print(<span style=color:#e6db74>&#34;Point (&#34;</span> <span style=color:#f92672>+</span> str(x) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;, &#34;</span> <span style=color:#f92672>+</span> str(y) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;) &#34;</span> <span style=color:#f92672>+</span> result <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; in the circle&#34;</span>)
+<span style="color:#75715e"># 4.22</span>
+x, y <span style="color:#f92672">=</span> eval(input(<span style="color:#e6db74">&#34;Enter a point with two coordinates: &#34;</span>))
+dist <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>sqrt(x <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> y <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>)
+result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;is&#34;</span>
+<span style="color:#66d9ef">if</span> dist <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>:
+    result <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34; not&#34;</span>
+print(<span style="color:#e6db74">&#34;Point (&#34;</span> <span style="color:#f92672">+</span> str(x) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, &#34;</span> <span style="color:#f92672">+</span> str(y) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;) &#34;</span> <span style="color:#f92672">+</span> result <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; in the circle&#34;</span>)
 </code></pre></div></article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
 </div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
 </div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents></nav>
-</div>
-</aside>
-</main>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

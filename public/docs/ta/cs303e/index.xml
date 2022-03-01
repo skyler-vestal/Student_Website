@@ -1,17 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CS 303E on Skyler ~ UTCS</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/</link><description>Recent content in CS 303E on Skyler ~ UTCS</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/index.xml" rel="self" type="application/rss+xml"/><item><title>Syntax</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</guid><description>Python Syntax Review for CS 303E
-#
-Variables and Datatypes
-#
-Types of Data
-#
-# Integer datatype: Stores whole numbers like -32, 0, 66, 2332312, ... int_var = -54 # Float datatype: Stores decimal numbers like 3.0, -2.3232, .00033, # 5.6e+15 float_var = -.04 # Boolean datatype: Stores the value true or false bool_var = True bool_var = False # String datatype: Stores any word str_var = &amp;#34;You can use double quotes&amp;#34; str_var = &amp;#39;or single quotes for strings&amp;#39; Modification
-#
-# These two are the same # This works for +, -, *, /, //, %, ** int_var = int_var + 5 int_var += 5 # Operators examples 10 / 3 # == 3.</description></item><item><title>Style</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/</guid><description>Python Style Guide for CS 303E
-#
-Highlights
-#
-The following are highlighted style guidelines to follow based off the assignment page here.
-Two Blank Lines
-#
-This highlight states to include two blank lines both before and after our function:
-# ... # Grader: Skyler # # On my honor, Skyler Vestal, this programming assignment is my own work # and I have not provided this code to any other student.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS 303E on Skyler ~ UTCS</title>
+    <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/</link>
+    <description>Recent content in CS 303E on Skyler ~ UTCS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Syntax</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/</guid>
+      <description>Python Syntax Review for CS 303E#Variables and Datatypes#Types of Data## Integer datatype: Stores whole numbers like -32, 0, 66, 2332312, ... int_var = -54 # Float datatype: Stores decimal numbers like 3.0, -2.3232, .00033, # 5.6e+15 float_var = -.04 # Boolean datatype: Stores the value true or false bool_var = True bool_var = False # String datatype: Stores any word str_var = &amp;#34;You can use double quotes&amp;#34; str_var = &amp;#39;or single quotes for strings&amp;#39; Modification## These two are the same # This works for +, -, *, /, //, %, ** int_var = int_var + 5 int_var += 5 # Operators examples 10 / 3 # == 3.</description>
+    </item>
+    
+    <item>
+      <title>Style</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/</guid>
+      <description>Python Style Guide for CS 303E#Highlights#The following are highlighted style guidelines to follow based off the assignment page here.
+Two Blank Lines#This highlight states to include two blank lines both before and after our function:
+# ... # Grader: Skyler # # On my honor, Skyler Vestal, this programming assignment is my own work # and I have not provided this code to any other student.</description>
+    </item>
+    
+  </channel>
+</rss>

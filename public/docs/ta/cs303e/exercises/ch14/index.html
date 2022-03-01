@@ -1,271 +1,743 @@
-<!doctype html><html lang=en-us dir=ltr>
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Chapter 14 Exercise Solutions#Download Solutions
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chapter 14 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook 'Em) # 14.2 nums = input(&#34;Enter some numbers separated by spaces: &#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] + 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ > max_num: max_list = [num] max_num = occ elif occ == max_num: max_list.">
-<meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="Chapter 14">
+# Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 14.2 nums = input(&#34;Enter some numbers separated by spaces: &#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] &#43; 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ &gt; max_num: max_list = [num] max_num = occ elif occ == max_num: max_list.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Chapter 14" />
 <meta property="og:description" content="Chapter 14 Exercise Solutions#Download Solutions
 Embedded solutions:
-# Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook 'Em) # 14.2 nums = input(&#34;Enter some numbers separated by spaces: &#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] + 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ > max_num: max_list = [num] max_num = occ elif occ == max_num: max_list.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/"><meta property="article:section" content="docs">
+# Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34; # Solutions made by Skyler Vestal (Hook &#39;Em) # 14.2 nums = input(&#34;Enter some numbers separated by spaces: &#34;).split() num_dict = {} for num in nums: num_dict[num] = num_dict[num] &#43; 1 if num in num_dict else 1 max_num = -1 max_list = [] for num in num_dict.keys(): occ = num_dict[num] if occ &gt; max_num: max_list = [num] max_num = occ elif occ == max_num: max_list." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/" /><meta property="article:section" content="docs" />
+
+
+
 <title>Chapter 14 | Skyler ~ UTCS</title>
-<link rel=manifest href=/~ves314/manifest.json>
-<link rel=icon href=/~ves314/favicon.png type=image/x-icon>
-<link rel=stylesheet href=/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
-<script defer src=/~ves314/flexsearch.min.js></script>
-<script defer src=/~ves314/en.search.min.3a7053bb48bd226734ae8ddf4f80001a00821dc797d0e9c47b160eb66c6661ad.js integrity="sha256-OnBTu0i9Imc0ro3fT4AAGgCCHceX0OnEexYOtmxmYa0=" crossorigin=anonymous></script>
+<link rel="manifest" href="/~ves314/manifest.json">
+<link rel="icon" href="/~ves314/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~ves314/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
+  <script defer src="/~ves314/flexsearch.min.js"></script>
+  <script defer src="/~ves314/en.search.min.f848756dd2e657fbd48ad5e69b78185b7a48cc47ae3967abd1cbdc22f57b0166.js" integrity="sha256-&#43;Eh1bdLmV/vUitXmm3gYW3pIzEeuOWer0cvcIvV7AWY=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
 </head>
-<body dir=ltr>
-<input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control>
-<main class="container flex">
-<aside class=book-menu>
-<div class=book-menu-content>
-<nav>
-<h2 class=book-brand>
-<a class="flex align-center" href=/~ves314/><span>Skyler ~ UTCS</span>
-</a>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/~ves314/"><span>Skyler ~ UTCS</span>
+  </a>
 </h2>
-<div class=book-search>
-<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
-<div class="book-search-spinner hidden"></div>
-<ul id=book-search-results></ul>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
-<ul>
-<li class=book-section-flat>
-<span>TA Classes</span>
-<ul>
-<li>
-<input type=checkbox id=section-33af6ef1d279801de2f779931fe7714a class=toggle>
-<label for=section-33af6ef1d279801de2f779931fe7714a class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/>CS 314</a>
-</label>
-<ul>
-<li>
-<input type=checkbox id=section-c172f569569f14516626820cca02b95a class=toggle>
-<label for=section-c172f569569f14516626820cca02b95a class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/>Explanations</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/>Big O</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-af21d64a3e1d155d273311b14a7fdf1c class=toggle>
-<label for=section-af21d64a3e1d155d273311b14a7fdf1c class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/>Practice</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/>Big O</a>
-</li>
-</ul>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/>Slides</a>
-<ul>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-cd9969c9531e65499ac6445bfce50541 class=toggle>
-<label for=section-cd9969c9531e65499ac6445bfce50541 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/>Exam Reviews</a>
-</label>
-<ul>
-<li>
-<input type=checkbox id=section-0353b14a7f76e905c757a5cc55b058a0 class=toggle>
-<label for=section-0353b14a7f76e905c757a5cc55b058a0 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/>Studying Guide</a>
-</label>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-c1e9ef8e25f48d65bad575ca842d14f6 class=toggle checked>
-<label for=section-c1e9ef8e25f48d65bad575ca842d14f6 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/>CS 303E</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/>Syntax</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/>Style</a>
-</li>
-<li>
-<input type=checkbox id=section-194fbff478cddfab80ada7a56b30c489 class=toggle checked>
-<label for=section-194fbff478cddfab80ada7a56b30c489 class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/>Exercises</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/>Chapter 1</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/>Chapter 2</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/>Chapter 3</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/>Chapter 4</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/>Chapter 5</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/>Chapter 6</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/>Chapter 7</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/>Chapter 8</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/>Chapter 10</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/>Chapter 11</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/>Chapter 13</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/ class=active>Chapter 14</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/>Chapter 15</a>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox id=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class=toggle>
-<label for=section-cbc0fb0ff9f2d886cc5d2be0d1e5463e class="flex justify-between">
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/>Exam Reviews</a>
-</label>
-<ul>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/>Midterm</a>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/>Final</a>
-</li>
-</ul>
-</li>
-<li>
-<a href=https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/>A9 Tester</a>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=book-section-flat>
-<span>Personal Work</span>
-<ul>
-<li>
-<span>Projects</span>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>TA Classes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-33af6ef1d279801de2f779931fe7714a" class="toggle"  />
+    <label for="section-33af6ef1d279801de2f779931fe7714a" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/" class="">CS 314</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c172f569569f14516626820cca02b95a" class="toggle"  />
+    <label for="section-c172f569569f14516626820cca02b95a" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/" class="">Explanations</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/explanations/big_o/" class="">Big O</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-af21d64a3e1d155d273311b14a7fdf1c" class="toggle"  />
+    <label for="section-af21d64a3e1d155d273311b14a7fdf1c" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/" class="">Practice</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/practice/big_o/" class="">Big O</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/slides/" class="">Slides</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cd9969c9531e65499ac6445bfce50541" class="toggle"  />
+    <label for="section-cd9969c9531e65499ac6445bfce50541" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/" class="">Exam Reviews</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0353b14a7f76e905c757a5cc55b058a0" class="toggle"  />
+    <label for="section-0353b14a7f76e905c757a5cc55b058a0" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs314/review/guide/" class="">Studying Guide</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1e9ef8e25f48d65bad575ca842d14f6" class="toggle" checked />
+    <label for="section-c1e9ef8e25f48d65bad575ca842d14f6" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/" class="">CS 303E</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/syntax/" class="">Syntax</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-194fbff478cddfab80ada7a56b30c489" class="toggle" checked />
+    <label for="section-194fbff478cddfab80ada7a56b30c489" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/" class="">Exercises</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch1/" class="">Chapter 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch2/" class="">Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch3/" class="">Chapter 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch4/" class="">Chapter 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch5/" class="">Chapter 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch6/" class="">Chapter 6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch7/" class="">Chapter 7</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch8/" class="">Chapter 8</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch10/" class="">Chapter 10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch11/" class="">Chapter 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch13/" class="">Chapter 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch14/" class=" active">Chapter 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/exercises/ch15/" class="">Chapter 15</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbc0fb0ff9f2d886cc5d2be0d1e5463e" class="toggle"  />
+    <label for="section-cbc0fb0ff9f2d886cc5d2be0d1e5463e" class="flex justify-between">
+      <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/" class="">Exam Reviews</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/" class="">Midterm</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/" class="">Final</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/assignment/" class="">A9 Tester</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Personal Work</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Projects</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </nav>
-<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~ves314/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Chapter 14</strong>
+
+  <label for="toc-control">
+    
+    <img src="/~ves314/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
 </div>
-</aside>
-<div class=book-page>
-<header class=book-header>
-<div class="flex align-center justify-between">
-<label for=menu-control>
-<img src=/~ves314/svg/menu.svg class=book-icon alt=Menu>
-</label>
-<strong>Chapter 14</strong>
-<label for=toc-control>
-<img src=/~ves314/svg/toc.svg class=book-icon alt="Table of Contents">
-</label>
-</div>
-<aside class="hidden clearfix">
-<nav id=TableOfContents></nav>
-</aside>
-</header>
-<article class=markdown><h1 id=chapter-14-exercise-solutions>
-Chapter 14 Exercise Solutions
-<a class=anchor href=#chapter-14-exercise-solutions>#</a>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="chapter-14-exercise-solutions">
+  Chapter 14 Exercise Solutions
+  <a class="anchor" href="#chapter-14-exercise-solutions">#</a>
 </h1>
-<p><a href=../files/Ch_14.py>Download Solutions</a></p>
+<p><a href="../files/Ch_14.py">Download Solutions</a></p>
 <p>Embedded solutions:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e># Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34;</span>
-<span style=color:#75715e># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Exercises for Chapter 14 of &#34;Introduction to Programming using Python&#34;</span>
+<span style="color:#75715e"># Solutions made by Skyler Vestal (Hook &#39;Em)</span>
 
-<span style=color:#75715e># 14.2</span>
-nums <span style=color:#f92672>=</span> input(<span style=color:#e6db74>&#34;Enter some numbers separated by spaces: &#34;</span>)<span style=color:#f92672>.</span>split()
-num_dict <span style=color:#f92672>=</span> {}
-<span style=color:#66d9ef>for</span> num <span style=color:#f92672>in</span> nums:
-    num_dict[num] <span style=color:#f92672>=</span> num_dict[num] <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span> <span style=color:#66d9ef>if</span> num <span style=color:#f92672>in</span> num_dict <span style=color:#66d9ef>else</span> <span style=color:#ae81ff>1</span>
-max_num <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>
-max_list <span style=color:#f92672>=</span> []
-<span style=color:#66d9ef>for</span> num <span style=color:#f92672>in</span> num_dict<span style=color:#f92672>.</span>keys():
-    occ <span style=color:#f92672>=</span> num_dict[num]
-    <span style=color:#66d9ef>if</span> occ <span style=color:#f92672>&gt;</span> max_num:
-        max_list <span style=color:#f92672>=</span> [num]
-        max_num <span style=color:#f92672>=</span> occ
-    <span style=color:#66d9ef>elif</span> occ <span style=color:#f92672>==</span> max_num:
-        max_list<span style=color:#f92672>.</span>append(num)
-<span style=color:#75715e># You could make this prettier if you wanted</span>
-print(<span style=color:#e6db74>&#34;Numbers that occured the most:&#34;</span>, max_list)
+<span style="color:#75715e"># 14.2</span>
+nums <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Enter some numbers separated by spaces: &#34;</span>)<span style="color:#f92672">.</span>split()
+num_dict <span style="color:#f92672">=</span> {}
+<span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> nums:
+    num_dict[num] <span style="color:#f92672">=</span> num_dict[num] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> num <span style="color:#f92672">in</span> num_dict <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span>
+max_num <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+max_list <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> num <span style="color:#f92672">in</span> num_dict<span style="color:#f92672">.</span>keys():
+    occ <span style="color:#f92672">=</span> num_dict[num]
+    <span style="color:#66d9ef">if</span> occ <span style="color:#f92672">&gt;</span> max_num:
+        max_list <span style="color:#f92672">=</span> [num]
+        max_num <span style="color:#f92672">=</span> occ
+    <span style="color:#66d9ef">elif</span> occ <span style="color:#f92672">==</span> max_num:
+        max_list<span style="color:#f92672">.</span>append(num)
+<span style="color:#75715e"># You could make this prettier if you wanted</span>
+print(<span style="color:#e6db74">&#34;Numbers that occured the most:&#34;</span>, max_list)
 
-<span style=color:#75715e># 14.4</span>
-<span style=color:#75715e># Are we supposed to do this one? Seems weird to mess with Tkinter</span>
+<span style="color:#75715e"># 14.4</span>
+<span style="color:#75715e"># Are we supposed to do this one? Seems weird to mess with Tkinter</span>
 
-<span style=color:#75715e># 14.8</span>
-sort_list <span style=color:#f92672>=</span> []
-word_file <span style=color:#f92672>=</span> open(input(<span style=color:#e6db74>&#34;Enter a text file: &#34;</span>), <span style=color:#e6db74>&#34;r&#34;</span>)
-<span style=color:#66d9ef>for</span> line <span style=color:#f92672>in</span> word_file<span style=color:#f92672>.</span>readlines():
-    <span style=color:#66d9ef>for</span> word <span style=color:#f92672>in</span> line<span style=color:#f92672>.</span>split():
-        <span style=color:#66d9ef>if</span> word <span style=color:#f92672>not</span> <span style=color:#f92672>in</span> sort_list:
-            sort_list<span style=color:#f92672>.</span>append(word)
-sort_list<span style=color:#f92672>.</span>sort()
+<span style="color:#75715e"># 14.8</span>
+sort_list <span style="color:#f92672">=</span> []
+word_file <span style="color:#f92672">=</span> open(input(<span style="color:#e6db74">&#34;Enter a text file: &#34;</span>), <span style="color:#e6db74">&#34;r&#34;</span>)
+<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> word_file<span style="color:#f92672">.</span>readlines():
+    <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> line<span style="color:#f92672">.</span>split():
+        <span style="color:#66d9ef">if</span> word <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> sort_list:
+            sort_list<span style="color:#f92672">.</span>append(word)
+sort_list<span style="color:#f92672">.</span>sort()
 print(sort_list)
 
-<span style=color:#75715e># 14.11</span>
-vowel_count, const_count <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>
-word_file <span style=color:#f92672>=</span> open(input(<span style=color:#e6db74>&#34;Enter a text file: &#34;</span>), <span style=color:#e6db74>&#34;r&#34;</span>)
-<span style=color:#66d9ef>for</span> line <span style=color:#f92672>in</span> word_file<span style=color:#f92672>.</span>readlines():
-    <span style=color:#66d9ef>for</span> word <span style=color:#f92672>in</span> line:
-        <span style=color:#66d9ef>for</span> char <span style=color:#f92672>in</span> word:
-            <span style=color:#66d9ef>if</span> char<span style=color:#f92672>.</span>isalpha():
-                <span style=color:#66d9ef>if</span> char<span style=color:#f92672>.</span>upper() <span style=color:#f92672>in</span> <span style=color:#e6db74>&#34;AEIOU&#34;</span>:
-                    vowel_count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-                <span style=color:#66d9ef>else</span>:
-                    const_count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-print(<span style=color:#e6db74>&#34;Vowel Count:&#34;</span>, vowel_count, <span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>Consonant Count:&#34;</span>, const_count)
+<span style="color:#75715e"># 14.11</span>
+vowel_count, const_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>
+word_file <span style="color:#f92672">=</span> open(input(<span style="color:#e6db74">&#34;Enter a text file: &#34;</span>), <span style="color:#e6db74">&#34;r&#34;</span>)
+<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> word_file<span style="color:#f92672">.</span>readlines():
+    <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> line:
+        <span style="color:#66d9ef">for</span> char <span style="color:#f92672">in</span> word:
+            <span style="color:#66d9ef">if</span> char<span style="color:#f92672">.</span>isalpha():
+                <span style="color:#66d9ef">if</span> char<span style="color:#f92672">.</span>upper() <span style="color:#f92672">in</span> <span style="color:#e6db74">&#34;AEIOU&#34;</span>:
+                    vowel_count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+                <span style="color:#66d9ef">else</span>:
+                    const_count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+print(<span style="color:#e6db74">&#34;Vowel Count:&#34;</span>, vowel_count, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Consonant Count:&#34;</span>, const_count)
 </code></pre></div></article>
-<footer class=book-footer>
-<div class="flex flex-wrap justify-between">
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
 </div>
-<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
-</footer>
-<div class=book-comments>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
 </div>
-<label for=menu-control class="hidden book-menu-overlay"></label>
-</div>
-<aside class=book-toc>
-<div class=book-toc-content>
-<nav id=TableOfContents></nav>
-</div>
-</aside>
-</main>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

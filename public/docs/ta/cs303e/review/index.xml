@@ -1,18 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Exam Reviews on Skyler ~ UTCS</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/</link><description>Recent content in Exam Reviews on Skyler ~ UTCS</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/index.xml" rel="self" type="application/rss+xml"/><item><title>Midterm</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</guid><description>Midterm Review
-#
-MC/Short Answer Section
-#
-Noah&amp;rsquo;s Multiple Choice
-#
-Noah (fellow TA) has made a lot of great multiple choice questions that he&amp;rsquo;s decided to share with me. Big 👏 for him.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exam Reviews on Skyler ~ UTCS</title>
+    <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/</link>
+    <description>Recent content in Exam Reviews on Skyler ~ UTCS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Midterm</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/midterm/</guid>
+      <description>Midterm Review#MC/Short Answer Section#Noah&amp;rsquo;s Multiple Choice#Noah (fellow TA) has made a lot of great multiple choice questions that he&amp;rsquo;s decided to share with me. Big 👏 for him.
 Assume libraries have been imported correctly for the following questions.
-What is output by the following code? x = int(52.2) y = math.floor(999.9) print(x, y) A. 52 1000
-B. 52 999
-C.</description></item><item><title>Final</title><link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</guid><description>Free Response Final Review
-#
-Classes
-#
-Stacks
-#
-Stacks are a commonly used data structure in computer science, and especially for memory: Quite complicated. However, the foundation of stacks is quite simple. Just think of &amp;lsquo;em as pancakes!
-If you wanted to add to a stack, where would you add it to? Well, of course the top, since it&amp;rsquo;d be a hastle and borderline dangerous to your breakfast to lift up a bunch of pancakes for no reason.</description></item></channel></rss>
+ What is output by the following code?  x = int(52.2) y = math.floor(999.9) print(x, y) A. 52 1000B. 52 999C.</description>
+    </item>
+    
+    <item>
+      <title>Final</title>
+      <link>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~ves314/docs/ta/cs303e/review/final/</guid>
+      <description>Free Response Final Review#Classes#Stacks#Stacks are a commonly used data structure in computer science, and especially for memory: Quite complicated. However, the foundation of stacks is quite simple. Just think of &amp;lsquo;em as pancakes!
+If you wanted to add to a stack, where would you add it to? Well, of course the top, since it&amp;rsquo;d be a hastle and borderline dangerous to your breakfast to lift up a bunch of pancakes for no reason.</description>
+    </item>
+    
+  </channel>
+</rss>
