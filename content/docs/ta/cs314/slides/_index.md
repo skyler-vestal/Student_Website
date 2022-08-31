@@ -7,4 +7,4 @@ weight: 20
 
 | Date | Topics | Slides |
 | :--- | :--- | :--- |
-| 1/31 | Intro, Algo Analysis | Slides |
+| 1/31 | Intro, Algo Analysis | [Slides](/~ves314/pdfs/slides_1.pdf) |
